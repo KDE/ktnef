@@ -18,8 +18,8 @@
   Boston, MA 02110-1301, USA.
 */
 
-#ifndef KTNEF_H
-#define KTNEF_H
+#ifndef KTNEF_EXPORT_H
+#define KTNEF_EXPORT_H
 
 #include <kdemacros.h>
 
