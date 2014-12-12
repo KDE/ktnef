@@ -33,12 +33,9 @@ find_package(KF5KDELibs4Support ${KF5_VERSION} CONFIG REQUIRED)
 
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5Tnef")
 
-# FIXME: remove this if/endif when KCalCore is split.
-if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_CURRENT_SOURCE_DIR}")
-  find_package(KF5CalendarCore ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
-  find_package(KF5CalendarUtils ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
-  find_package(KF5Contacts ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
-endif()
+find_package(KF5CalendarCore ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
+find_package(KF5CalendarUtils ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
+find_package(KF5Contacts ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
 
 
 ecm_configure_package_config_file(
@@ -71,7 +68,4 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
 add_definitions("-DQT_NO_CAST_FROM_ASCII -DQT_NO_CAST_TO_ASCII")
 add_subdirectory(src)
 add_subdirectory(autotests)
-
-if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
-    feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-endif()
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
