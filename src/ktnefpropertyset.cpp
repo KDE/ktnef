@@ -31,7 +31,7 @@
 #include "ktnefpropertyset.h"
 #include "ktnefproperty.h"
 
-#include <qdebug.h>
+#include "ktnef_debug.h"
 
 #include <QtCore/QList>
 

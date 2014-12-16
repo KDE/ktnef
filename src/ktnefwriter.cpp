@@ -33,7 +33,7 @@
 #include "ktnefpropertyset.h"
 #include "ktnefdefs.h"
 
-#include <qdebug.h>
+#include "ktnef_debug.h"
 
 #include <QtCore/QFile>
 #include <QtCore/QDateTime>
@@ -316,12 +316,12 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
     addToChecksum( i, checksum );
     // from reader: d->message_->addProperty( 0x0E07, MAPI_TYPE_ULONG, flag );
     }
-    qDebug() << "Message Status" << "(length=" << i2 << ")";
+    qCDebug(KTNEF_LOG) << "Message Status" << "(length=" << i2 << ")";
     break;
     */
 
     default:
-        qDebug() << "Unknown TNEF tag:" << tag;
+        qCDebug(KTNEF_LOG) << "Unknown TNEF tag:" << tag;
         return false;
     }
 

@@ -1,6 +1,7 @@
 remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
 
 set(ktnef_SRCS
+  ktnef_debug.cpp
   ktnefparser.cpp
   ktnefproperty.cpp
   ktnefattach.cpp

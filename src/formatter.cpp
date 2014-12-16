@@ -87,7 +87,7 @@ static struct save_tz set_tz(const char *_tc)
     rv.old_tz = 0;
     rv.tz_env_str = 0;
 
-    //qDebug() << "set_tz(), timezone before =" << timezone;
+    //qCDebug(KTNEF_LOG) << "set_tz(), timezone before =" << timezone;
 
     char *tz_env = 0;
     if (!qgetenv("TZ").isEmpty()) {
@@ -104,7 +104,7 @@ static struct save_tz set_tz(const char *_tc)
     /* tmp_env is not free'ed -- it is part of the environment */
 
     tzset();
-    //qDebug() << "set_tz(), timezone after =" << timezone;
+    //qCDebug(KTNEF_LOG) << "set_tz(), timezone after =" << timezone;
 
     return rv;
 }
