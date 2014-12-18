@@ -358,7 +358,7 @@ bool KTNEFParser::ParserPrivate::decodeAttachment()
     default:
         value = readTNEFAttribute(stream_, type, i);
         qCDebug(KTNEF_LOG) << "Attachment unknown field:         tag="
-                 << hex << tag << ", length=" << dec << i;
+                           << hex << tag << ", length=" << dec << i;
         break;
     }
     stream_ >> u;        // u <- checksum
@@ -395,7 +395,7 @@ bool KTNEFParser::ParserPrivate::parseDevice()
     if (i == TNEF_SIGNATURE) {
         stream_ >> u;
         qCDebug(KTNEF_LOG).nospace() << "Attachment cross reference key: 0x"
-                           << hex << qSetFieldWidth(4) << qSetPadChar(QLatin1Char('0')) << u;
+                                     << hex << qSetFieldWidth(4) << qSetPadChar(QLatin1Char('0')) << u;
         //qCDebug(KTNEF_LOG) << "stream:" << device_->pos();
         while (!stream_.atEnd()) {
             stream_ >> c;
@@ -501,7 +501,7 @@ bool KTNEFParser::extractFileTo(const QString &filename,
                                 const QString &dirname) const
 {
     qCDebug(KTNEF_LOG) << "Extracting attachment: filename="
-             << filename << ", dir=" << dirname;
+                       << filename << ", dir=" << dirname;
     KTNEFAttach *att = d->message_->attachment(filename);
     if (!att) {
         return false;
@@ -603,8 +603,8 @@ QDateTime formatTime(quint32 lowB, quint32 highB)
         dt.setTime_t((unsigned int)u64);
     } else {
         qCWarning(KTNEF_LOG).nospace() << "Invalid date: low byte="
-                             << showbase << qSetFieldWidth(8) << qSetPadChar(QLatin1Char('0'))
-                             << lowB << ", high byte=" << highB;
+                                       << showbase << qSetFieldWidth(8) << qSetPadChar(QLatin1Char('0'))
+                                       << lowB << ", high byte=" << highB;
         dt.setTime_t(0xffffffffU);
     }
     return dt;
@@ -862,7 +862,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
         readMAPIValue(stream_, mapi);
         if (mapi.type == MAPI_TYPE_NONE) {
             qCDebug(KTNEF_LOG).nospace() << "MAPI unsupported:         tag="
-                               << hex << mapi.tag << ", type=" << mapi.type;
+                                         << hex << mapi.tag << ", type=" << mapi.type;
             clearMAPIValue(mapi);
             return false;
         }
@@ -910,41 +910,41 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
             switch (mapi.type & 0x0FFF) {
             case MAPI_TYPE_UINT16:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI short" <<  mapiname.toLatin1().data()
-                                   << ":" << hex << mapi.value.toUInt();
+                                             << hex << mapi.tag
+                                             << ") MAPI short" <<  mapiname.toLatin1().data()
+                                             << ":" << hex << mapi.value.toUInt();
                 break;
             case MAPI_TYPE_ULONG:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI long" <<  mapiname.toLatin1().data()
-                                   << ":" << hex << mapi.value.toUInt();
+                                             << hex << mapi.tag
+                                             << ") MAPI long" <<  mapiname.toLatin1().data()
+                                             << ":" << hex << mapi.value.toUInt();
                 break;
             case MAPI_TYPE_BOOLEAN:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI boolean" <<  mapiname.toLatin1().data()
-                                   << ":" << mapi.value.toBool();
+                                             << hex << mapi.tag
+                                             << ") MAPI boolean" <<  mapiname.toLatin1().data()
+                                             << ":" << mapi.value.toBool();
                 break;
             case MAPI_TYPE_TIME:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI time" <<  mapiname.toLatin1().data()
-                                   << ":" << mapi.value.toString().toLatin1().data();
+                                             << hex << mapi.tag
+                                             << ") MAPI time" <<  mapiname.toLatin1().data()
+                                             << ":" << mapi.value.toString().toLatin1().data();
                 break;
             case MAPI_TYPE_USTRING:
             case MAPI_TYPE_STRING8:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI string" <<  mapiname.toLatin1().data()
-                                   << ":size=" << mapi.value.toByteArray().size()
-                                   << mapi.value.toString();
+                                             << hex << mapi.tag
+                                             << ") MAPI string" <<  mapiname.toLatin1().data()
+                                             << ":size=" << mapi.value.toByteArray().size()
+                                             << mapi.value.toString();
                 break;
             case MAPI_TYPE_BINARY:
                 qCDebug(KTNEF_LOG).nospace() << "(tag="
-                                   << hex << mapi.tag
-                                   << ") MAPI binary" <<  mapiname.toLatin1().data()
-                                   << ":size=" << mapi.value.toByteArray().size();
+                                             << hex << mapi.tag
+                                             << ") MAPI binary" <<  mapiname.toLatin1().data()
+                                             << ":size=" << mapi.value.toByteArray().size();
                 break;
             }
         }
