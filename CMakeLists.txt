@@ -20,9 +20,11 @@ include(KDEFrameworkCompilerSettings)
 
 # FIXME: Do we want the same versions in kdepimlibs and kf5?
 set(KF5_VERSION "5.5.0")
-set(KDEPIMLIBS_VERSION "4.79.0")
-
-ecm_setup_version(${KDEPIMLIBS_VERSION} VARIABLE_PREFIX KTNEF
+set(KTNEFLIB_VERSION "4.79.0")
+set(CALENDARCORELIB_VERSION "4.79.0")
+set(CALENDARUTILSLIB_VERSION "4.79.0")
+set(KCONTACTSLIB_VERSION "4.79.0") 
+ecm_setup_version(${KTNEFLIB_VERSION} VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfigVersion.cmake"
                         SOVERSION 5
@@ -33,9 +35,9 @@ find_package(KF5KDELibs4Support ${KF5_VERSION} CONFIG REQUIRED)
 
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5Tnef")
 
-find_package(KF5CalendarCore ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
-find_package(KF5CalendarUtils ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
-find_package(KF5Contacts ${KDEPIMLIBS_VERSION} CONFIG REQUIRED)
+find_package(KF5CalendarCore ${CALENDARCORELIB_VERSION} CONFIG REQUIRED)
+find_package(KF5CalendarUtils ${CALENDARUTILSLIB_VERSION} CONFIG REQUIRED)
+find_package(KF5Contacts ${KCONTACTSLIB_VERSION} CONFIG REQUIRED)
 
 
 ecm_configure_package_config_file(
