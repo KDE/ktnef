@@ -29,6 +29,7 @@ private Q_SLOTS:
     void testSingleAttachment();
     void testTwoAttachments();
     void testMAPIAttachments();
+    void testUmlautAttachmentFilenames();
 };
 
 #endif
