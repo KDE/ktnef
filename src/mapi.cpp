@@ -220,19 +220,19 @@ QString KTnef::mapiTagString(int key)
 QString KTnef::mapiNamedTagString(int key, int tag)
 {
     if (MAPI_NamedTagMap.count() == 0) {
-        for (int i = 0; MAPI_NamedTagStrings[ i ].str; i++) {
+        for (int i = 0; MAPI_NamedTagStrings[ i ].str; ++i) {
             MAPI_NamedTagMap[ MAPI_NamedTagStrings[ i ].tag ] =
                 i18n(MAPI_NamedTagStrings[ i ].str);
         }
     }
     QMap<int, QString>::ConstIterator it = MAPI_NamedTagMap.constFind(key);
-    if (it == MAPI_NamedTagMap.constEnd()) {
+    if (it != MAPI_NamedTagMap.constEnd()) {
         if (tag >= 0) {
             return QString().sprintf("0x%04X [0x%04X]: ", tag, key) + *it;
         } else {
             return QString().sprintf("0x%04X ________:", key) + *it;
         }
     } else {
-        return *it;
+        return QString().sprintf( "0x%04X ________:", key );
     }
 }
