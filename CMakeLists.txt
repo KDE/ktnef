@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.12)
 project(KTnef)
 
 # ECM setup
-find_package(ECM 1.7.0 CONFIG REQUIRED)
+find_package(ECM 5.9.0 CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(GenerateExportHeader)
@@ -19,7 +19,7 @@ include(KDEFrameworkCompilerSettings)
 
 
 # FIXME: Do we want the same versions in kdepimlibs and kf5?
-set(KF5_VERSION "5.7.0")
+set(KF5_VERSION "5.9.0")
 set(KTNEF_LIB_VERSION "4.79.0")
 set(CALENDARCORE_LIB_VERSION "4.79.0")
 set(CALENDARUTILS_LIB_VERSION "4.79.0")
