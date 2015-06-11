@@ -248,6 +248,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
         quint32 rows;
         QList<QVariant> recipTable;
         stream_ >> rows;
+        recipTable.reserve(rows);
         for (uint i = 0; i < rows; i++) {
             QMap<int, KTNEFProperty *> props;
             readMAPIProperties(props, 0);
