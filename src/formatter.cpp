@@ -432,7 +432,10 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-Anniversary"), s);
                 }
 
-                addressee.setUrl(QUrl(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_WEBPAGE))));
+                KContacts::ResourceLocatorUrl url;
+                url.setUrl(QUrl(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_WEBPAGE))));
+
+                addressee.setUrl(url);
 
                 // collect parts of Name entry
                 addressee.setFamilyName(stringProp(tnefMsg, MAPI_TAG_PR_SURNAME));
