@@ -85,7 +85,7 @@ class KTnef::KTNEFParser::ParserPrivate
 public:
     ParserPrivate()
     {
-        defaultdir_ = QLatin1String("/tmp/");
+        defaultdir_ = QStringLiteral("/tmp/");
         current_ = 0;
         deleteDevice_ = false;
         device_ = 0;
@@ -535,7 +535,7 @@ void KTNEFParser::ParserPrivate::checkCurrent(int key)
         if (current_->attributes().contains(key)) {
             if (current_->offset() >= 0) {
                 if (current_->name().isEmpty()) {
-                    current_->setName(QLatin1String("Unnamed"));
+                    current_->setName(QStringLiteral("Unnamed"));
                 }
                 if (current_->mimeTag().isEmpty()) {
                     // No mime type defined in the TNEF structure,
@@ -624,16 +624,16 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
     if ((it = props.find(0x0C15)) != props.end()) {
         switch ((*it)->value().toInt()) {
         case 0:
-            t = QLatin1String("From:");
+            t = QStringLiteral("From:");
             break;
         case 1:
-            t = QLatin1String("To:");
+            t = QStringLiteral("To:");
             break;
         case 2:
-            t = QLatin1String("Cc:");
+            t = QStringLiteral("Cc:");
             break;
         case 3:
-            t = QLatin1String("Bcc:");
+            t = QStringLiteral("Bcc:");
             break;
         }
     }
@@ -882,8 +882,8 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                     attach->unsetDataParser();
                     attach->setOffset(device_->pos() + 12);
                     attach->setSize(data.size() - 16);
-                    attach->setMimeTag(QLatin1String("application/vnd.ms-tnef"));
-                    attach->setDisplayName(QLatin1String("Embedded Message"));
+                    attach->setMimeTag(QStringLiteral("application/vnd.ms-tnef"));
+                    attach->setDisplayName(QStringLiteral("Embedded Message"));
                     qCDebug(KTNEF_LOG) << "MAPI Embedded Message: size=" << data.size();
                 }
                 device_->seek(device_->pos() + (len - 4));

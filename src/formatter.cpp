@@ -238,11 +238,11 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
             if (bCompatClassAppointment || QLatin1String("IPM.APPOINTMENT") == msgClass) {
                 // Compose a vCal
                 bool bIsReply = false;
-                QString prodID = QLatin1String("-//Microsoft Corporation//Outlook ");
-                prodID += tnefMsg->findNamedProp(QLatin1String("0x8554"), QLatin1String("9.0"));
+                QString prodID = QStringLiteral("-//Microsoft Corporation//Outlook ");
+                prodID += tnefMsg->findNamedProp(QStringLiteral("0x8554"), QStringLiteral("9.0"));
                 prodID += QLatin1String("MIMEDIR/EN\n");
                 prodID += QLatin1String("VERSION:2.0\n");
-                calFormat.setApplication(QLatin1String("Outlook"), prodID);
+                calFormat.setApplication(QStringLiteral("Outlook"), prodID);
 
                 iTIPMethod method;
                 if (bCompatMethodRequest) {
@@ -364,7 +364,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 // ### kcal always uses currentDateTime()
                 // event->setDtStamp( QDateTime::fromString( s ) );
 
-                s = tnefMsg->findNamedProp(QLatin1String("Keywords"));
+                s = tnefMsg->findNamedProp(QStringLiteral("Keywords"));
                 event->setCategories(s);
 
                 s = tnefMsg->findProp(0x1000);
@@ -408,32 +408,32 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
             } else if (bCompatClassNote || QLatin1String("IPM.CONTACT") == msgClass) {
                 addressee.setUid(stringProp(tnefMsg, attMSGID));
                 addressee.setFormattedName(stringProp(tnefMsg, MAPI_TAG_PR_DISPLAY_NAME));
-                addressee.insertEmail(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_EMAIL1EMAILADDRESS)), true);
-                addressee.insertEmail(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_EMAIL2EMAILADDRESS)), false);
-                addressee.insertEmail(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_EMAIL3EMAILADDRESS)), false);
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-IMAddress"),
-                                       sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_IMADDRESS)));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-SpousesName"),
+                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL1EMAILADDRESS)), true);
+                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL2EMAILADDRESS)), false);
+                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL3EMAILADDRESS)), false);
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-IMAddress"),
+                                       sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_IMADDRESS)));
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_SPOUSE_NAME));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-ManagersName"),
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-ManagersName"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_MANAGER_NAME));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-AssistantsName"),
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-AssistantsName"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_ASSISTANT));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-Department"),
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Department"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_DEPARTMENT_NAME));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-Office"),
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Office"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_OFFICE_LOCATION));
-                addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-Profession"),
+                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Profession"),
                                        stringProp(tnefMsg, MAPI_TAG_PR_PROFESSION));
 
                 QString s = tnefMsg->findProp(MAPI_TAG_PR_WEDDING_ANNIVERSARY).
                             remove(QLatin1Char('-')).remove(QLatin1Char(':'));
                 if (!s.isEmpty()) {
-                    addressee.insertCustom(QLatin1String("KADDRESSBOOK"), QLatin1String("X-Anniversary"), s);
+                    addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"), s);
                 }
 
                 KContacts::ResourceLocatorUrl url;
-                url.setUrl(QUrl(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_WEBPAGE))));
+                url.setUrl(QUrl(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_WEBPAGE))));
 
                 addressee.setUrl(url);
 
@@ -462,12 +462,12 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 adr.setType(KContacts::Address::Home);
                 addressee.insertAddress(adr);
 
-                adr.setPostOfficeBox(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSPOBOX)));
-                adr.setStreet(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSSTREET)));
-                adr.setLocality(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSCITY)));
-                adr.setRegion(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSSTATE)));
-                adr.setPostalCode(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSPOSTALCODE)));
-                adr.setCountry(sNamedProp(tnefMsg, QLatin1String(MAPI_TAG_CONTACT_BUSINESSADDRESSCOUNTRY)));
+                adr.setPostOfficeBox(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSPOBOX)));
+                adr.setStreet(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSSTREET)));
+                adr.setLocality(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSCITY)));
+                adr.setRegion(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSSTATE)));
+                adr.setPostalCode(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSPOSTALCODE)));
+                adr.setCountry(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_BUSINESSADDRESSCOUNTRY)));
                 adr.setType(KContacts::Address::Work);
                 addressee.insertAddress(adr);
 
