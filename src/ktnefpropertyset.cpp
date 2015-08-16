@@ -37,7 +37,7 @@
 
 using namespace KTnef;
 
-class KTNEFPropertySet::Private
+class KTNEFPropertySetPrivate
 {
 public:
     QMap<int, KTNEFProperty *> properties_; // used to store MAPI properties
@@ -45,7 +45,7 @@ public:
 };
 
 KTNEFPropertySet::KTNEFPropertySet()
-    : d(new Private)
+    : d(new KTNEFPropertySetPrivate)
 {
 }
 

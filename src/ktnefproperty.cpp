@@ -37,7 +37,7 @@
 
 using namespace KTnef;
 
-class KTNEFProperty::Private
+class KTNEFPropertyPrivate
 {
 public:
     int _key;
@@ -47,13 +47,13 @@ public:
 };
 
 KTNEFProperty::KTNEFProperty()
-    : d(new Private)
+    : d(new KTNEFPropertyPrivate)
 {
 }
 
 KTNEFProperty::KTNEFProperty(int key_, int type_, const QVariant &value_,
                              const QVariant &name_)
-    : d(new Private)
+    : d(new KTNEFPropertyPrivate)
 {
     d->_key = key_;
     d->_type = type_;
@@ -62,7 +62,7 @@ KTNEFProperty::KTNEFProperty(int key_, int type_, const QVariant &value_,
 }
 
 KTNEFProperty::KTNEFProperty(const KTNEFProperty &p)
-    : d(new Private)
+    : d(new KTNEFPropertyPrivate)
 {
     *d = *p.d;
 }

@@ -33,6 +33,7 @@
 
 #include <QtCore/QVariant>
 #include <QtCore/QString>
+class KTNEFPropertyPrivate;
 #include "ktnef_export.h"
 
 namespace KTnef
@@ -152,8 +153,7 @@ public:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    KTNEFPropertyPrivate *const d;
     //@endcond
 };
 

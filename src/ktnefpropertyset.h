@@ -33,6 +33,7 @@
 
 #include <QtCore/QMap>
 #include <QtCore/QVariant>
+class KTNEFPropertySetPrivate;
 #include "ktnef_export.h"
 
 namespace KTnef
@@ -159,8 +160,7 @@ public:
 
 private:
     //@cond PRIVATE
-    class Private;
-    Private *const d;
+    KTNEFPropertySetPrivate *const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFPropertySet)

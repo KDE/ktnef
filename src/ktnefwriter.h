@@ -43,7 +43,7 @@ class QStringList;
 
 namespace KTnef
 {
-
+class KTNEFWriterPrivateData;
 /**
  * @brief
  * Manages the writing of @acronym TNEF attachments.
@@ -289,8 +289,7 @@ public:
 
 private:
     //@cond PRIVATE
-    class PrivateData;
-    PrivateData *const d;
+    KTNEFWriterPrivateData *const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFWriter)

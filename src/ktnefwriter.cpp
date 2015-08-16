@@ -46,14 +46,14 @@
 using namespace KTnef;
 
 /**
- * Private class that helps to provide binary compatibility between releases.
+ * KTNEFWriterPrivate class that helps to provide binary compatibility between releases.
  * @internal
  */
 //@cond PRIVATE
-class KTnef::KTNEFWriter::PrivateData
+class KTnef::KTNEFWriterPrivateData
 {
 public:
-    PrivateData()
+    KTNEFWriterPrivateData()
     {
         mFirstAttachNum = QDateTime::currentDateTime().toTime_t();
     }
@@ -62,7 +62,7 @@ public:
 };
 //@endcond
 
-KTNEFWriter::KTNEFWriter() : d(new KTnef::KTNEFWriter::PrivateData)
+KTNEFWriter::KTNEFWriter() : d(new KTnef::KTNEFWriterPrivateData)
 {
     // This is not something the user should fiddle with
     // First set the TNEF version
