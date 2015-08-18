@@ -193,7 +193,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
             readMAPIProperties(message_->properties(), 0);
             device_->seek(i2);
             qCDebug(KTNEF_LOG) << "Properties:" << message_->properties().count();
-            value = QString::fromLatin1("< %1 properties >").
+            value = QStringLiteral("< %1 properties >").
                     arg(message_->properties().count() - nProps);
         }
         break;
@@ -318,7 +318,7 @@ bool KTNEFParser::ParserPrivate::decodeAttachment()
         current_->setSize(i);
         current_->setOffset(device_->pos());
         device_->seek(device_->pos() + i);
-        value = QString::fromLatin1("< size=%1 >").arg(i);
+        value = QStringLiteral("< size=%1 >").arg(i);
         qCDebug(KTNEF_LOG) << "Attachment Data: size=" << i;
         break;
     case attATTACHMENT:  // try to get attachment info
@@ -339,7 +339,7 @@ bool KTNEFParser::ParserPrivate::decodeAttachment()
         }
         current_->setExtension(current_->property(MAPI_TAG_EXTENSION).
                                toString());
-        value = QString::fromLatin1("< %1 properties >").
+        value = QStringLiteral("< %1 properties >").
                 arg(current_->properties().count());
         break;
     case attATTACHMODDATE:
@@ -894,7 +894,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                 ALIGN(len, 4);
                 attach->setSize(len);
                 attach->setOffset(device_->pos() - len);
-                attach->addAttribute(attATTACHDATA, atpBYTE, QString::fromLatin1("< size=%1 >").arg(len), false);
+                attach->addAttribute(attATTACHDATA, atpBYTE, QStringLiteral("< size=%1 >").arg(len), false);
             }
         }
         qCDebug(KTNEF_LOG) << "MAPI data: size=" << mapi.value.toByteArray().size();
@@ -905,7 +905,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                 if (mapi.name.type == 0) {
                     mapiname = QString().sprintf(" [name = 0x%04x]", mapi.name.value.toUInt());
                 } else {
-                    mapiname = QString::fromLatin1(" [name = %1]").arg(mapi.name.value.toString());
+                    mapiname = QStringLiteral(" [name = %1]").arg(mapi.name.value.toString());
                 }
             }
             switch (mapi.type & 0x0FFF) {
