@@ -197,20 +197,23 @@ MAPI_NamedTagStrings[] = {
     { 0x8560, I18N_NOOP("Reminder Next Time") },
     { 0, 0 }
 };
-static QMap<int, QString> MAPI_TagMap;
-static QMap<int, QString> MAPI_NamedTagMap;
+
+typedef QMap<int, QString> TagMap;
+Q_GLOBAL_STATIC(TagMap, MAPI_TagMap)
+Q_GLOBAL_STATIC(TagMap, MAPI_NamedTagMap)
+
 //@endcond
 
 QString KTnef::mapiTagString(int key)
 {
-    if (MAPI_TagMap.count() == 0) {
+    if (MAPI_TagMap()->count() == 0) {
         for (int i = 0; MAPI_TagStrings[ i ].str; i++) {
-            MAPI_TagMap[ MAPI_TagStrings[ i ].tag ] =
+            (*MAPI_TagMap())[ MAPI_TagStrings[ i ].tag ] =
                 i18n(MAPI_TagStrings[ i ].str);
         }
     }
-    QMap<int, QString>::ConstIterator it = MAPI_TagMap.constFind(key);
-    if (it == MAPI_TagMap.constEnd()) {
+    QMap<int, QString>::ConstIterator it = MAPI_TagMap()->constFind(key);
+    if (it == MAPI_TagMap()->constEnd()) {
         return QString().sprintf("0x%04X", key);
     } else {
         return QString().sprintf("0x%04X ________: ", key) + *it;
@@ -219,14 +222,14 @@ QString KTnef::mapiTagString(int key)
 
 QString KTnef::mapiNamedTagString(int key, int tag)
 {
-    if (MAPI_NamedTagMap.count() == 0) {
+    if (MAPI_NamedTagMap()->count() == 0) {
         for (int i = 0; MAPI_NamedTagStrings[ i ].str; ++i) {
-            MAPI_NamedTagMap[ MAPI_NamedTagStrings[ i ].tag ] =
+            (*MAPI_NamedTagMap())[ MAPI_NamedTagStrings[ i ].tag ] =
                 i18n(MAPI_NamedTagStrings[ i ].str);
         }
     }
-    QMap<int, QString>::ConstIterator it = MAPI_NamedTagMap.constFind(key);
-    if (it != MAPI_NamedTagMap.constEnd()) {
+    QMap<int, QString>::ConstIterator it = MAPI_NamedTagMap()->constFind(key);
+    if (it != MAPI_NamedTagMap()->constEnd()) {
         if (tag >= 0) {
             return QString().sprintf("0x%04X [0x%04X]: ", tag, key) + *it;
         } else {
