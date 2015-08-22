@@ -206,13 +206,13 @@ Q_GLOBAL_STATIC(TagMap, MAPI_NamedTagMap)
 
 QString KTnef::mapiTagString(int key)
 {
-    if (MAPI_TagMap()->count() == 0) {
+    if (MAPI_TagMap()->isEmpty()) {
         for (int i = 0; MAPI_TagStrings[ i ].str; i++) {
             (*MAPI_TagMap())[ MAPI_TagStrings[ i ].tag ] =
                 i18n(MAPI_TagStrings[ i ].str);
         }
     }
-    QMap<int, QString>::ConstIterator it = MAPI_TagMap()->constFind(key);
+    auto it = MAPI_TagMap()->constFind(key);
     if (it == MAPI_TagMap()->constEnd()) {
         return QString().sprintf("0x%04X", key);
     } else {
@@ -222,13 +222,13 @@ QString KTnef::mapiTagString(int key)
 
 QString KTnef::mapiNamedTagString(int key, int tag)
 {
-    if (MAPI_NamedTagMap()->count() == 0) {
+    if (MAPI_NamedTagMap()->isEmpty()) {
         for (int i = 0; MAPI_NamedTagStrings[ i ].str; ++i) {
             (*MAPI_NamedTagMap())[ MAPI_NamedTagStrings[ i ].tag ] =
                 i18n(MAPI_NamedTagStrings[ i ].str);
         }
     }
-    QMap<int, QString>::ConstIterator it = MAPI_NamedTagMap()->constFind(key);
+    auto it = MAPI_NamedTagMap()->constFind(key);
     if (it != MAPI_NamedTagMap()->constEnd()) {
         if (tag >= 0) {
             return QString().sprintf("0x%04X [0x%04X]: ", tag, key) + *it;
