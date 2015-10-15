@@ -152,19 +152,19 @@ static KDateTime pureISOToLocalQDateTime(const QString &dtStr,
     int year, month, day, hour, minute, second;
 
     if (bDateOnly) {
-        year = dtStr.left(4).toInt();
-        month = dtStr.mid(4, 2).toInt();
-        day = dtStr.mid(6, 2).toInt();
+        year = dtStr.leftRef(4).toInt();
+        month = dtStr.midRef(4, 2).toInt();
+        day = dtStr.midRef(6, 2).toInt();
         hour = 0;
         minute = 0;
         second = 0;
     } else {
-        year = dtStr.left(4).toInt();
-        month = dtStr.mid(4, 2).toInt();
-        day = dtStr.mid(6, 2).toInt();
-        hour = dtStr.mid(9, 2).toInt();
-        minute = dtStr.mid(11, 2).toInt();
-        second = dtStr.mid(13, 2).toInt();
+        year = dtStr.leftRef(4).toInt();
+        month = dtStr.midRef(4, 2).toInt();
+        day = dtStr.midRef(6, 2).toInt();
+        hour = dtStr.midRef(9, 2).toInt();
+        minute = dtStr.midRef(11, 2).toInt();
+        second = dtStr.midRef(13, 2).toInt();
     }
     tmpDate.setYMD(year, month, day);
     tmpTime.setHMS(hour, minute, second);
