@@ -90,8 +90,9 @@ static struct save_tz set_tz(const char *_tc)
     //qCDebug(KTNEF_LOG) << "set_tz(), timezone before =" << timezone;
 
     char *tz_env = 0;
-    if (!qgetenv("TZ").isEmpty()) {
-        tz_env = qstrdup(qgetenv("TZ"));
+    const QByteArray tzEnv = qgetenv("TZ");
+    if (!tzEnv.isEmpty()) {
+        tz_env = qstrdup(tzEnv);
         rv.old_tz = tz_env;
     }
     char *tmp_env = (char *)malloc(strlen(tc) + 4);
