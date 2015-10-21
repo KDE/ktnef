@@ -20,7 +20,7 @@ include(ECMQtDeclareLoggingCategory)
 
 
 # FIXME: Do we want the same versions in kdepimlibs and kf5?
-set(KF5_VERSION "5.12.0")
+set(KF5_VERSION "5.14.0")
 set(KTNEF_LIB_VERSION "4.79.0")
 set(CALENDARCORE_LIB_VERSION "4.79.0")
 set(CALENDARUTILS_LIB_VERSION "4.79.0")
