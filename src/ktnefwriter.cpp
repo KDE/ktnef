@@ -53,12 +53,12 @@ using namespace KTnef;
 class KTnef::KTNEFWriterPrivateData
 {
 public:
-    KTNEFWriterPrivateData()
+    KTNEFWriterPrivateData() : mFirstAttachNum(QDateTime::currentDateTimeUtc().toTime_t())
     {
-        mFirstAttachNum = QDateTime::currentDateTime().toTime_t();
     }
+
     KTNEFPropertySet properties;
-    quint16 mFirstAttachNum;
+    const quint16 mFirstAttachNum;
 };
 //@endcond
 
