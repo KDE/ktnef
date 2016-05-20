@@ -517,8 +517,6 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
     }
 
     // Compose return string
-    // KDAB_TODO: Interesting, without the explicit QString the toString call is
-    //            reported to be ambigious with toString( const Incidence::Ptr & ).
     const QString iCal = calFormat.toString(cal, QString());
     if (!iCal.isEmpty()) {
         // This was an iCal
@@ -535,11 +533,10 @@ QString KTnef::formatTNEFInvitation(const QByteArray &tnef,
                                     KCalUtils::InvitationFormatterHelper *h)
 {
     const QString vPart = msTNEFToVPart(tnef);
-    QString iCal = KCalUtils::IncidenceFormatter::formatICalInvitation(vPart, cal, h, true);
+    QString iCal = KCalUtils::IncidenceFormatter::formatICalInvitation(vPart, cal, h);
     if (!iCal.isEmpty()) {
         return iCal;
     } else {
         return vPart;
     }
 }
-
