@@ -12,3 +12,6 @@ libraries:
    cmake: "KF5::Tnef"
 cmakename: KF5Tnef
 
+public_lib: true
+group: kdepim
+
