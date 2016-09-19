@@ -12,7 +12,7 @@ set(ktnef_SRCS
   formatter.cpp
 )
 
-ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME log_ktnef)
+ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef)
 
 add_library(KF5Tnef ${ktnef_SRCS})
 
