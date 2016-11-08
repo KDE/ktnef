@@ -19,7 +19,7 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 
 
-set(PIM_VERSION "5.3.40")
+set(PIM_VERSION "5.3.80")
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
 set(CALENDARCORE_LIB_VERSION "5.3.40")
 set(CALENDARUTILS_LIB_VERSION "5.3.40")
