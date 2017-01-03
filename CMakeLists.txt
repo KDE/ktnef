@@ -1,6 +1,7 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.0)
+set(PIM_VERSION "5.4.40")
 
-project(KTnef)
+project(KTnef VERSION ${PIM_VERSION})
 
 # ECM setup
 set(KF5_VERSION "5.28.0")
@@ -21,12 +22,11 @@ include(ECMCoverageOption)
 
 
 
-set(PIM_VERSION "5.4.40")
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
 set(CALENDARCORE_LIB_VERSION "5.4.40")
 set(CALENDARUTILS_LIB_VERSION "5.4.40")
 set(KCONTACTS_LIB_VERSION "5.4.40")
-ecm_setup_version(${KTNEF_LIB_VERSION} VARIABLE_PREFIX KTNEF
+ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfigVersion.cmake"
                         SOVERSION 5
