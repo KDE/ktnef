@@ -84,12 +84,12 @@ static struct save_tz set_tz(const char *_tc)
 
     struct save_tz rv;
 
-    rv.old_tz = 0;
-    rv.tz_env_str = 0;
+    rv.old_tz = nullptr;
+    rv.tz_env_str = nullptr;
 
     //qCDebug(KTNEF_LOG) << "set_tz(), timezone before =" << timezone;
 
-    char *tz_env = 0;
+    char *tz_env = nullptr;
     const QByteArray tzEnv = qgetenv("TZ");
     if (!tzEnv.isEmpty()) {
         tz_env = qstrdup(tzEnv);

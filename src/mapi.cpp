@@ -162,7 +162,7 @@ static const struct {
     { 0x9006, I18N_NOOP("TNEF Version") },
     { 0x9007, I18N_NOOP("OEM Code Page") },
 
-    { 0, 0 }
+    { 0, nullptr }
 },
 MAPI_NamedTagStrings[] = {
     { 0x8005, I18N_NOOP("Contact File Under") },
@@ -195,7 +195,7 @@ MAPI_NamedTagStrings[] = {
     { 0x8516, I18N_NOOP("Start Date") },
     { 0x8517, I18N_NOOP("End Date") },
     { 0x8560, I18N_NOOP("Reminder Next Time") },
-    { 0, 0 }
+    { 0, nullptr }
 };
 
 typedef QMap<int, QString> TagMap;

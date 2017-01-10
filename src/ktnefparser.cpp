@@ -86,9 +86,9 @@ public:
     ParserPrivate()
     {
         defaultdir_ = QStringLiteral("/tmp/");
-        current_ = 0;
+        current_ = nullptr;
         deleteDevice_ = false;
-        device_ = 0;
+        device_ = nullptr;
         message_ = new KTNEFMessage;
     }
     ~ParserPrivate()
@@ -101,7 +101,7 @@ public:
     bool extractAttachmentTo(KTNEFAttach *att, const QString &dirname);
     void checkCurrent(int key);
     bool readMAPIProperties(QMap<int, KTNEFProperty *> &props,
-                            KTNEFAttach *attach = 0);
+                            KTNEFAttach *attach = nullptr);
     bool parseDevice();
     void deleteDevice();
 
@@ -135,7 +135,7 @@ void KTNEFParser::ParserPrivate::deleteDevice()
     if (deleteDevice_) {
         delete device_;
     }
-    device_ = 0;
+    device_ = nullptr;
     deleteDevice_ = false;
 }
 
@@ -190,7 +190,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
         {
             int nProps = message_->properties().count();
             i2 += device_->pos();
-            readMAPIProperties(message_->properties(), 0);
+            readMAPIProperties(message_->properties(), nullptr);
             device_->seek(i2);
             qCDebug(KTNEF_LOG) << "Properties:" << message_->properties().count();
             value = QStringLiteral("< %1 properties >").
@@ -251,7 +251,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
         recipTable.reserve(rows);
         for (uint i = 0; i < rows; i++) {
             QMap<int, KTNEFProperty *> props;
-            readMAPIProperties(props, 0);
+            readMAPIProperties(props, nullptr);
             recipTable << formatRecipient(props);
         }
         message_->addProperty(0x0E12, MAPI_TYPE_STRING8, recipTable);
@@ -383,7 +383,7 @@ bool KTNEFParser::ParserPrivate::parseDevice()
 
     message_->clearAttachments();
     delete current_;
-    current_ = 0;
+    current_ = nullptr;
 
     if (!device_->open(QIODevice::ReadOnly)) {
         qCDebug(KTNEF_LOG) << "Couldn't open device";
@@ -421,7 +421,7 @@ bool KTNEFParser::ParserPrivate::parseDevice()
             // attachment, if it has data. If not it does
             // nothing, and the attachment will be discarded
             delete current_;
-            current_ = 0;
+            current_ = nullptr;
         }
         return true;
     } else {
@@ -561,11 +561,11 @@ void KTNEFParser::ParserPrivate::checkCurrent(int key)
                     current_->setMimeTag(mimetype.name());
                 }
                 message_->addAttachment(current_);
-                current_ = 0;
+                current_ = nullptr;
             } else {
                 // invalid attachment, skip it
                 delete current_;
-                current_ = 0;
+                current_ = nullptr;
             }
             current_ = new KTNEFAttach();
         }
@@ -700,7 +700,7 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align,
                        int len_)
 {
     quint32 len;
-    char *buf = 0;
+    char *buf = nullptr;
     if (len_ == -1) {
         stream >> len;
     } else {

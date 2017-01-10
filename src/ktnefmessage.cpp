@@ -89,7 +89,7 @@ KTNEFAttach *KTNEFMessage::attachment(const QString &filename) const
             return *it;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 void KTNEFMessage::addAttachment(KTNEFAttach *attach)
