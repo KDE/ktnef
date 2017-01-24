@@ -490,7 +490,8 @@ bool KTNEFParser::extractAll()
 {
     QList<KTNEFAttach *> l = d->message_->attachmentList();
     QList<KTNEFAttach *>::const_iterator it = l.constBegin();
-    for (; it != l.constEnd(); ++it) {
+    const QList<KTNEFAttach *>::const_iterator itEnd = l.constEnd();
+    for (; it != itEnd ; ++it) {
         if (!d->extractAttachmentTo(*it, d->defaultdir_)) {
             return false;
         }

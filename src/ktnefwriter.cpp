@@ -378,11 +378,8 @@ void KTNEFWriter::setSender(const QString &name, const QString &email)
     QVariant v1(name);
     QVariant v2(email);
 
-    QList<QVariant> list;
-    list << v1;
-    list << v2;
+    const QList<QVariant> list = {v1, v2};
 
-    QVariant v(list);
     addProperty(attFROM, 0, list);   // What's up with the 0 here ??
 }
 

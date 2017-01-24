@@ -220,17 +220,13 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 bCompatClassAppointment = true;
                 if (msgClass.endsWith(QLatin1String(".MTGREQ"))) {
                     bCompatMethodRequest = true;
-                }
-                if (msgClass.endsWith(QLatin1String(".MTGCNCL"))) {
+                } else if (msgClass.endsWith(QLatin1String(".MTGCNCL"))) {
                     bCompatMethodCancled = true;
-                }
-                if (msgClass.endsWith(QLatin1String(".MTGRESPP"))) {
+                } else if (msgClass.endsWith(QLatin1String(".MTGRESPP"))) {
                     bCompatMethodAccepted = true;
-                }
-                if (msgClass.endsWith(QLatin1String(".MTGRESPA"))) {
+                } else if (msgClass.endsWith(QLatin1String(".MTGRESPA"))) {
                     bCompatMethodAcceptedCond = true;
-                }
-                if (msgClass.endsWith(QLatin1String(".MTGRESPN"))) {
+                } else if (msgClass.endsWith(QLatin1String(".MTGRESPN"))) {
                     bCompatMethodDeclined = true;
                 }
             }
@@ -275,9 +271,9 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 QString sSenderSearchKeyEmail(tnefMsg->findProp(0x0C1D));
 
                 if (!sSenderSearchKeyEmail.isEmpty()) {
-                    int colon = sSenderSearchKeyEmail.indexOf(QLatin1Char(':'));
+                    const int colon = sSenderSearchKeyEmail.indexOf(QLatin1Char(':'));
                     // May be e.g. "SMTP:KHZ@KDE.ORG"
-                    if (sSenderSearchKeyEmail.indexOf(QLatin1Char(':')) == -1) {
+                    if (colon == -1) {
                         sSenderSearchKeyEmail.remove(0, colon + 1);
                     }
                 }
