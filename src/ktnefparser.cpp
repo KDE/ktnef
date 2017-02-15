@@ -248,6 +248,8 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
         quint32 rows;
         QList<QVariant> recipTable;
         stream_ >> rows;
+        if (rows > (INT_MAX / sizeof(QVariant)))
+            return false;
         recipTable.reserve(rows);
         for (uint i = 0; i < rows; i++) {
             QMap<int, KTNEFProperty *> props;
@@ -707,6 +709,9 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align,
     } else {
         len = len_;
     }
+    if (len > INT_MAX)
+        return QString();
+
     quint32 fullLen = len;
     if (align) {
         ALIGN(fullLen, 4);
@@ -807,17 +812,17 @@ quint16 readMAPIValue(QDataStream &stream, MAPI_value &mapi)
             } else {
                 stream >> d;
             }
-            for (uint i = 0; i < d; i++) {
+            for (uint i = 0; i < d && !stream.atEnd(); i++) {
                 value.clear();
                 quint32 len;
                 stream >> len;
                 value = QByteArray(len, '\0');
-                if (len > 0) {
-                    int fullLen = len;
+                if (len > 0 && len <= INT_MAX) {
+                    uint fullLen = len;
                     ALIGN(fullLen, 4);
                     stream.readRawData(value.toByteArray().data(), len);
                     quint8 c;
-                    for (int i = len; i < fullLen; i++) {
+                    for (uint i = len; i < fullLen; i++) {
                         stream >> c;
                     }
                     // FIXME: Shouldn't we do something with the value???
