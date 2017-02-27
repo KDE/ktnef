@@ -41,7 +41,9 @@
 
 #include <QtCore/QDateTime>
 #include <QtCore/QDataStream>
+#include <QtCore/QDir>
 #include <QtCore/QFile>
+#include <QtCore/QFileInfo>
 #include <QtCore/QVariant>
 #include <QtCore/QList>
 
@@ -446,7 +448,9 @@ bool KTNEFParser::extractFile(const QString &filename) const
 bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att,
         const QString &dirname)
 {
-    QString filename = dirname + QLatin1Char('/');
+    const QString destDir(QDir(dirname).absolutePath()); // get directory path without any "." or ".."
+
+    QString filename = destDir + QLatin1Char('/');
     if (!att->fileName().isEmpty()) {
         filename += att->fileName();
     } else {
@@ -462,6 +466,15 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att,
     if (!device_->seek(att->offset())) {
         return false;
     }
+
+    const QFileInfo fi(filename);
+    if (!fi.absoluteFilePath().startsWith(destDir)) {
+        qWarning() << "Attempted extract into" << fi.absoluteFilePath()
+                   << "which is outside of the extraction root folder" << destDir << "."
+                   << "Changing export of contained files to extraction root folder.";
+        filename = destDir + QLatin1Char('/') + fi.fileName();
+    }
+
     QSaveFile outfile(filename);
     if (!outfile.open(QIODevice::WriteOnly)) {
         return false;
