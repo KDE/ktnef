@@ -2,16 +2,24 @@ maintainer:
 description: An API for handling TNEF data
 tier: 3
 type: functional
-platforms:
-    - name: All
 portingAid: false
 deprecated: false
 release: false
 libraries:
  - qmake: KTNef
    cmake: "KF5::Tnef"
-cmakename: KF5Tnef
+   cmakename: KF5Tnef
 
 public_lib: true
 group: kdepim
+
+group_info:
+    fancyname: KDE PIM
+    maintainer:
+        - mlaurent
+    irc: kontact
+    mailinglist: kde-pim
+    platforms:
+        - All
+    logo: docs/kontact.svg
 
