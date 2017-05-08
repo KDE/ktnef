@@ -92,7 +92,7 @@ static struct save_tz set_tz(const char *_tc)
     char *tz_env = nullptr;
     const QByteArray tzEnv = qgetenv("TZ");
     if (!tzEnv.isEmpty()) {
-        tz_env = qstrdup(tzEnv);
+        tz_env = qstrdup(tzEnv.constData());
         rv.old_tz = tz_env;
     }
     char *tmp_env = (char *)malloc(strlen(tc) + 4);

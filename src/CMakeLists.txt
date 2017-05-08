@@ -1,4 +1,3 @@
-remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
 
 set(ktnef_SRCS
   ktnefparser.cpp
