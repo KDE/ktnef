@@ -30,7 +30,7 @@
 
 #include "lzfu.h"
 
-#include <QtCore/QIODevice>
+#include <QIODevice>
 
 #include <sys/types.h>
 #include <string.h>

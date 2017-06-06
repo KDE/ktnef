@@ -31,7 +31,7 @@
 #ifndef KTNEFMESSAGE_H
 #define KTNEFMESSAGE_H
 
-#include <QtCore/QList>
+#include <QList>
 
 #include "ktnefpropertyset.h"
 #include "ktnef_export.h"

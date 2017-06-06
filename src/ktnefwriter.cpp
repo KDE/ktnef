@@ -35,11 +35,11 @@
 
 #include "ktnef_debug.h"
 
-#include <QtCore/QFile>
-#include <QtCore/QDateTime>
-#include <QtCore/QDataStream>
-#include <QtCore/QList>
-#include <QtCore/QByteArray>
+#include <QFile>
+#include <QDateTime>
+#include <QDataStream>
+#include <QList>
+#include <QByteArray>
 
 #include <assert.h>
 

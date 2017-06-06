@@ -31,8 +31,8 @@
 #ifndef KTNEFPROPERTY_H
 #define KTNEFPROPERTY_H
 
-#include <QtCore/QVariant>
-#include <QtCore/QString>
+#include <QVariant>
+#include <QString>
 class KTNEFPropertyPrivate;
 #include "ktnef_export.h"
 

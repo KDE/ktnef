@@ -31,7 +31,7 @@
 #ifndef MAPI_H
 #define MAPI_H
 
-#include <QtCore/QString>
+#include <QString>
 namespace KTnef
 {
 /**

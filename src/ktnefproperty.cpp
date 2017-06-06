@@ -31,7 +31,7 @@
 #include "ktnefproperty.h"
 #include "mapi.h"
 
-#include <QtCore/QDateTime>
+#include <QDateTime>
 
 #include <ctype.h>
 

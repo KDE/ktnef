@@ -29,7 +29,7 @@
  */
 
 #include "mapi.h"
-#include <QtCore/QMap>
+#include <QMap>
 #include <klocalizedstring.h>
 //@cond IGNORE
 static const struct {

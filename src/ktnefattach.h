@@ -31,9 +31,9 @@
 #ifndef KTNEFATTACH_H
 #define KTNEFATTACH_H
 
-#include <QtCore/QMap>
-#include <QtCore/QString>
-#include <QtCore/QVariant>
+#include <QMap>
+#include <QString>
+#include <QVariant>
 
 #include "ktnefpropertyset.h"
 #include "ktnef_export.h"

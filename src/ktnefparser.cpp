@@ -39,13 +39,13 @@
 #include <QMimeDatabase>
 #include <qsavefile.h>
 
-#include <QtCore/QDateTime>
-#include <QtCore/QDataStream>
-#include <QtCore/QDir>
-#include <QtCore/QFile>
-#include <QtCore/QFileInfo>
-#include <QtCore/QVariant>
-#include <QtCore/QList>
+#include <QDateTime>
+#include <QDataStream>
+#include <QDir>
+#include <QFile>
+#include <QFileInfo>
+#include <QVariant>
+#include <QList>
 
 using namespace KTnef;
 

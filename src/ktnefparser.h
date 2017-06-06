@@ -31,9 +31,9 @@
 #ifndef KTNEFPARSER_H
 #define KTNEFPARSER_H
 
-#include <QtCore/QString>
-#include <QtCore/QMap>
-#include <QtCore/QIODevice>
+#include <QString>
+#include <QMap>
+#include <QIODevice>
 #include "ktnef_export.h"
 
 namespace KTnef

@@ -32,8 +32,8 @@
 #include "ktnefattach.h"
 #include "lzfu.h"
 
-#include <QtCore/QBuffer>
-#include <QtCore/QList>
+#include <QBuffer>
+#include <QList>
 
 using namespace KTnef;
 

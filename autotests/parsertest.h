@@ -20,7 +20,7 @@
 #ifndef PARSERTEST_H
 #define PARSERTEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 
 class ParserTest : public QObject
 {

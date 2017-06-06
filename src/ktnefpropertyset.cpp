@@ -33,7 +33,7 @@
 
 #include "ktnef_debug.h"
 
-#include <QtCore/QList>
+#include <QList>
 
 using namespace KTnef;
 

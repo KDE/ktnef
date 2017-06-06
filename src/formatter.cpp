@@ -47,7 +47,7 @@
 #include <klocalizedstring.h>
 #include <kdatetime.h>
 
-#include <QtCore/QBuffer>
+#include <QBuffer>
 
 #include <time.h>
 
