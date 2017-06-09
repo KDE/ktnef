@@ -284,7 +284,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     for (auto it = attendees.cbegin(), end = attendees.cend(); it != end; ++it) {
                         // Skip all entries that have no '@' since these are
                         // no mail addresses
-                        if ((*it).indexOf(QLatin1Char('@')) == -1) {
+                        if (!(*it).contains(QLatin1Char('@'))) {
                             s = (*it).trimmed();
 
                             Attendee::Ptr attendee(new Attendee(s, s, true));
