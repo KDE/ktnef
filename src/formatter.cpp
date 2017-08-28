@@ -73,8 +73,8 @@ static QString sNamedProp(KTNEFMessage *tnefMsg, const QString &name,
 }
 
 struct save_tz {
-    char *old_tz;
-    char *tz_env_str;
+    char *old_tz = nullptr;
+    char *tz_env_str = nullptr;
 };
 
 /* temporarily go to a different timezone */

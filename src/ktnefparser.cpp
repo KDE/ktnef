@@ -108,11 +108,11 @@ public:
     void deleteDevice();
 
     QDataStream  stream_;
-    QIODevice    *device_;
-    bool         deleteDevice_;
+    QIODevice    *device_ = nullptr;
+    bool         deleteDevice_ = false;
     QString      defaultdir_;
-    KTNEFAttach  *current_;
-    KTNEFMessage *message_;
+    KTNEFAttach  *current_ = nullptr;
+    KTNEFMessage *message_ = nullptr;
 };
 //@endcond
 
