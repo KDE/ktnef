@@ -48,6 +48,7 @@
 #include <kdatetime.h>
 
 #include <QBuffer>
+#include <QTimeZone>
 
 #include <time.h>
 
@@ -195,7 +196,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
     KTNEFParser parser;
     QByteArray b(tnef);
     QBuffer buf(&b);
-    MemoryCalendar::Ptr cal(new MemoryCalendar(KDateTime::UTC));
+    MemoryCalendar::Ptr cal(new MemoryCalendar(QTimeZone::utc()));
     KContacts::Addressee addressee;
     ICalFormat calFormat;
     Event::Ptr event(new Event());
