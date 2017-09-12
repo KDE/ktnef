@@ -133,7 +133,7 @@ static void unset_tz(struct save_tz old_tz)
     }
 }
 
-static KDateTime utc2Local(const KDateTime &utcdt)
+static QDateTime utc2Local(const QDateTime &utcdt)
 {
     struct tm tmL;
 
@@ -142,11 +142,11 @@ static KDateTime utc2Local(const KDateTime &utcdt)
     unset_tz(tmp_tz);
 
     localtime_r(&utc, &tmL);
-    return KDateTime(QDate(tmL.tm_year + 1900, tmL.tm_mon + 1, tmL.tm_mday),
+    return QDateTime(QDate(tmL.tm_year + 1900, tmL.tm_mon + 1, tmL.tm_mday),
                      QTime(tmL.tm_hour, tmL.tm_min, tmL.tm_sec));
 }
 
-static KDateTime pureISOToLocalQDateTime(const QString &dtStr,
+static QDateTime pureISOToLocalQDateTime(const QString &dtStr,
         bool bDateOnly = false)
 {
     QDate tmpDate;
@@ -172,7 +172,7 @@ static KDateTime pureISOToLocalQDateTime(const QString &dtStr,
     tmpTime.setHMS(hour, minute, second);
 
     if (tmpDate.isValid() && tmpTime.isValid()) {
-        KDateTime dT = KDateTime(tmpDate, tmpTime);
+        QDateTime dT = QDateTime(tmpDate, tmpTime);
 
         if (!bDateOnly) {
             // correct for GMT ( == Zulu time == UTC )
@@ -184,7 +184,7 @@ static KDateTime pureISOToLocalQDateTime(const QString &dtStr,
         }
         return dT;
     } else {
-        return KDateTime();
+        return QDateTime();
     }
 }
 //@endcond
@@ -375,10 +375,10 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 // is reminder flag set ?
                 if (!tnefMsg->findProp(0x8503).isEmpty()) {
                     Alarm::Ptr alarm(new Alarm(event.data()));     // TODO: fix when KCalCore::Alarm is fixed
-                    KDateTime highNoonTime =
+                    QDateTime highNoonTime =
                         pureISOToLocalQDateTime(tnefMsg->findProp(0x8502).
                                                 remove(QLatin1Char('-')).remove(QLatin1Char(':')));
-                    KDateTime wakeMeUpTime =
+                    QDateTime wakeMeUpTime =
                         pureISOToLocalQDateTime(tnefMsg->findProp(0x8560, QString()).
                                                 remove(QLatin1Char('-')).remove(QLatin1Char(':')));
                     alarm->setTime(wakeMeUpTime);
