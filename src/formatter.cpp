@@ -167,7 +167,7 @@ static QDateTime pureISOToLocalQDateTime(const QString &dtStr,
         minute = dtStr.midRef(11, 2).toInt();
         second = dtStr.midRef(13, 2).toInt();
     }
-    tmpDate.setYMD(year, month, day);
+    tmpDate.setDate(year, month, day);
     tmpTime.setHMS(hour, minute, second);
 
     if (tmpDate.isValid() && tmpTime.isValid()) {
