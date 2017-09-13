@@ -34,8 +34,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
 )
 
 ########### Find packages ###########
-find_package(KF5KDELibs4Support ${KF5_VERSION} CONFIG REQUIRED)
-
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Tnef")
 
 find_package(KF5CalendarCore ${CALENDARCORE_LIB_VERSION} CONFIG REQUIRED)

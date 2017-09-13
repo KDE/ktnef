@@ -26,9 +26,9 @@ target_link_libraries(KF5Tnef
 PUBLIC
   KF5::CalendarCore
 PRIVATE
-  KF5::KDELibs4Support
   KF5::CalendarUtils
   KF5::Contacts
+  KF5::I18n
 )
 
 set_target_properties(KF5Tnef PROPERTIES

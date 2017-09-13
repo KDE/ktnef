@@ -45,7 +45,6 @@
 #include <kcalutils/incidenceformatter.h>
 
 #include <klocalizedstring.h>
-#include <kdatetime.h>
 
 #include <QBuffer>
 #include <QTimeZone>
