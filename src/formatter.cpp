@@ -339,10 +339,10 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 }
 
                 s = tnefMsg->findProp(0x819b).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
-                event->setDtStart(KDateTime::fromString(s));     // ## Format??
+                event->setDtStart(QDateTime::fromString(s));     // ## Format??
 
                 s = tnefMsg->findProp(0x819c).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
-                event->setDtEnd(KDateTime::fromString(s));
+                event->setDtEnd(QDateTime::fromString(s));
 
                 s = tnefMsg->findProp(0x810d);
                 event->setLocation(s);
