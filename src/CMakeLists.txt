@@ -19,7 +19,7 @@ generate_export_header(KF5Tnef BASE_NAME ktnef)
 
 add_library(KF5::Tnef ALIAS KF5Tnef)
 
-target_include_directories(KF5Tnef INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KTNEF;${Boost_INCLUDE_DIR}>")
+target_include_directories(KF5Tnef INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KTNEF>")
 target_include_directories(KF5Tnef PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DIR}/src;${KTnef_BINARY_DIR}/src>")
 
 target_link_libraries(KF5Tnef
