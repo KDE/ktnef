@@ -35,7 +35,6 @@
 
 #include "ktnef_debug.h"
 
-#include <QFile>
 #include <QDateTime>
 #include <QDataStream>
 #include <QList>

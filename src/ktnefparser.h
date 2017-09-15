@@ -32,7 +32,6 @@
 #define KTNEFPARSER_H
 
 #include <QString>
-#include <QMap>
 #include <QIODevice>
 #include "ktnef_export.h"
 
