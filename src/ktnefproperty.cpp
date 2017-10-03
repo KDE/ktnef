@@ -39,8 +39,8 @@ using namespace KTnef;
 class KTNEFPropertyPrivate
 {
 public:
-    int _key;
-    int _type;
+    int _key = 0;
+    int _type = 0;
     QVariant _value;
     QVariant _name;
 };

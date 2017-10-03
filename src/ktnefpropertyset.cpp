@@ -88,9 +88,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name,
                                         const QString &fallback,
                                         bool upper) const
 {
-    for (QMap<int, KTNEFProperty *>::Iterator it = d->properties_.begin();
-            it != d->properties_.end();
-            ++it) {
+    for (QMap<int, KTNEFProperty *>::Iterator it = d->properties_.begin(), protEnd = d->properties_.end(); it != protEnd; ++it) {
         if ((*it)->name().isValid()) {
             QString s;
             if ((*it)->name().type() == QVariant::String) {
@@ -104,9 +102,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name,
                 if (value.type() == QVariant::List) {
                     QList<QVariant> l = value.toList();
                     s = QLatin1String("");
-                    for (QList<QVariant>::ConstIterator lit = l.constBegin();
-                            lit != l.constEnd();
-                            ++lit) {
+                    for (QList<QVariant>::ConstIterator lit = l.constBegin(), litEnd = l.constEnd(); lit != litEnd; ++lit) {
                         if (!s.isEmpty()) {
                             s += QLatin1Char(',');
                         }

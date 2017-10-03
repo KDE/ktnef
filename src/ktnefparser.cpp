@@ -107,12 +107,12 @@ public:
     bool parseDevice();
     void deleteDevice();
 
+    QString      defaultdir_;
     QDataStream  stream_;
     QIODevice    *device_ = nullptr;
-    bool         deleteDevice_ = false;
-    QString      defaultdir_;
     KTNEFAttach  *current_ = nullptr;
     KTNEFMessage *message_ = nullptr;
+    bool         deleteDevice_ = false;
 };
 //@endcond
 
