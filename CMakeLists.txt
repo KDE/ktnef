@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 set(PIM_VERSION "5.6.90")
 
 project(KTnef VERSION ${PIM_VERSION})
-option(RUN_UNINSTALL "test run uninstalled apps (experimental)" FALSE)
 
 set(KF5_VERSION "5.39.0")
 
