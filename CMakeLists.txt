@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.0)
 set(PIM_VERSION "5.7.40")
 
 project(KTnef VERSION ${PIM_VERSION})
-option(RUN_UNINSTALL "test run uninstalled apps (experimental)" FALSE)
 
 set(KF5_VERSION "5.39.0")
 
@@ -24,9 +23,9 @@ include(ECMCoverageOption)
 
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARCORE_LIB_VERSION "5.6.80")
-set(CALENDARUTILS_LIB_VERSION "5.6.80")
-set(KCONTACTS_LIB_VERSION "5.6.80")
+set(CALENDARCORE_LIB_VERSION "5.6.90")
+set(CALENDARUTILS_LIB_VERSION "5.6.90")
+set(KCONTACTS_LIB_VERSION "5.6.90")
 set(QT_REQUIRED_VERSION "5.8.0")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
