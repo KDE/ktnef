@@ -46,6 +46,7 @@
 #include <QFileInfo>
 #include <QVariant>
 #include <QList>
+#include <QStandardPaths>
 
 using namespace KTnef;
 
@@ -87,7 +88,7 @@ class KTnef::KTNEFParser::ParserPrivate
 public:
     ParserPrivate()
     {
-        defaultdir_ = QStringLiteral("/tmp/");
+        defaultdir_ = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
         current_ = nullptr;
         deleteDevice_ = false;
         device_ = nullptr;
