@@ -1,6 +1,5 @@
-maintainer: 
 description: An API for handling TNEF data
-tier: 3
+maintainer: mlaurent
 type: functional
 portingAid: false
 deprecated: false
@@ -12,14 +11,3 @@ libraries:
 
 public_lib: true
 group: kdepim
-
-group_info:
-    fancyname: KDE PIM
-    maintainer:
-        - mlaurent
-    irc: kontact
-    mailinglist: kde-pim
-    platforms:
-        - All
-    logo: docs/kontact.svg
-
