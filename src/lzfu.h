@@ -30,7 +30,7 @@
 
 #ifndef LZFU_H
 #define LZFU_H
-
+#include <QtGlobal>
 class QIODevice;
 namespace KTnef
 {
@@ -39,6 +39,6 @@ namespace KTnef
  * @param input compressed input data.
  * @param output decompressed output data.
  */
-int lzfu_decompress(QIODevice *input, QIODevice *output);
+Q_REQUIRED_RESULT int lzfu_decompress(QIODevice *input, QIODevice *output);
 }
 #endif

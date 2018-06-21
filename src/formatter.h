@@ -53,7 +53,7 @@ namespace KTnef
     @param cal is a pointer to a Calendar object.
     @param h is a pointer to a InvitationFormatterHelp object.
   */
-KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
+Q_REQUIRED_RESULT KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
         const KCalCore::MemoryCalendar::Ptr &cal,
         KCalUtils::InvitationFormatterHelper *h);
 
@@ -64,7 +64,7 @@ KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
 
     @return a string containing the transformed attachment.
   */
-KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
+Q_REQUIRED_RESULT KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
 }
 
 #endif

@@ -97,14 +97,14 @@ public:
      *
      * @return the key string.
      */
-    QString keyString() const;
+    Q_REQUIRED_RESULT QString keyString() const;
 
     /**
      * Returns the value string of the property.
      *
      * @return the value string.
      */
-    QString valueString() const;
+    Q_REQUIRED_RESULT QString valueString() const;
 
     /**
      * Creates a formatted string from the value of the property.
@@ -114,42 +114,42 @@ public:
      *
      * @return the formatted value string.
      */
-    static QString formatValue(const QVariant &v, bool beautify = true);
+    Q_REQUIRED_RESULT static QString formatValue(const QVariant &v, bool beautify = true);
 
     /**
      * Returns the integer key of the property.
      *
      * @return the property key.
      */
-    int key() const;
+    Q_REQUIRED_RESULT int key() const;
 
     /**
      * Returns the integer type of the property.
      *
      * @return the property type.
      */
-    int type() const;
+    Q_REQUIRED_RESULT int type() const;
 
     /**
      * Returns the value of the property.
      *
      * @return the property value.
      */
-    QVariant value() const;
+    Q_REQUIRED_RESULT QVariant value() const;
 
     /**
      * Returns the name of the property.
      *
      * @return the property name.
      */
-    QVariant name() const;
+    Q_REQUIRED_RESULT QVariant name() const;
 
     /**
      * Determines if the property is a vector type.
      *
      * @returns true if the property is a vector type; otherwise false.
      */
-    bool isVector() const;
+    Q_REQUIRED_RESULT bool isVector() const;
 
 private:
     //@cond PRIVATE

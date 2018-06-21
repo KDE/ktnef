@@ -91,7 +91,7 @@ public:
      * Returns the Rich Text Format (@acronym RTF) data contained in the message.
      * @return A QString containing the @acronym RTF data.
      */
-    QString rtfString() const;
+    Q_REQUIRED_RESULT QString rtfString() const;
 
 private:
     //@cond PRIVATE
