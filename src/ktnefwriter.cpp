@@ -52,7 +52,7 @@ using namespace KTnef;
 class KTnef::KTNEFWriterPrivateData
 {
 public:
-    KTNEFWriterPrivateData() : mFirstAttachNum(QDateTime::currentDateTimeUtc().toTime_t())
+    KTNEFWriterPrivateData() : mFirstAttachNum(QDateTime::currentDateTimeUtc().toSecsSinceEpoch())
     {
     }
 

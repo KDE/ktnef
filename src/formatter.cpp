@@ -137,7 +137,7 @@ static QDateTime utc2Local(const QDateTime &utcdt)
     struct tm tmL;
 
     save_tz tmp_tz = set_tz("UTC");
-    time_t utc = utcdt.toTime_t();
+    time_t utc = utcdt.toSecsSinceEpoch();
     unset_tz(tmp_tz);
 
     localtime_r(&utc, &tmL);

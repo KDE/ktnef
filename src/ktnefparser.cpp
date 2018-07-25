@@ -618,12 +618,12 @@ QDateTime formatTime(quint32 lowB, quint32 highB)
     u64 -= 116444736000000000LL;
     u64 /= 10000000;
     if (u64 <= 0xffffffffU) {
-        dt.setTime_t((unsigned int)u64);
+        dt.fromSecsSinceEpoch((unsigned int)u64);
     } else {
         qCWarning(KTNEF_LOG).nospace() << "Invalid date: low byte="
                                        << showbase << qSetFieldWidth(8) << qSetPadChar(QLatin1Char('0'))
                                        << lowB << ", high byte=" << highB;
-        dt.setTime_t(0xffffffffU);
+        dt.fromSecsSinceEpoch(0xffffffffU);
     }
     return dt;
 }
