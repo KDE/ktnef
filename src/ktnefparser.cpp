@@ -568,7 +568,7 @@ void KTNEFParser::ParserPrivate::checkCurrent(int key)
                     }
                     if (mimetype.name() == QLatin1String("application/octet-stream") &&
                             current_->size() > 0) {
-                        int oldOffset = device_->pos();
+                        qint64 oldOffset = device_->pos();
                         QByteArray buffer(qMin(32, current_->size()), '\0');
                         device_->seek(current_->offset());
                         device_->read(buffer.data(), buffer.size());
