@@ -72,79 +72,6 @@ static QString sNamedProp(KTNEFMessage *tnefMsg, const QString &name,
     return tnefMsg->findNamedProp(name, fallback);
 }
 
-struct save_tz {
-    char *old_tz = nullptr;
-    char *tz_env_str = nullptr;
-};
-
-/* temporarily go to a different timezone */
-static struct save_tz set_tz(const char *_tc)
-{
-    const char *tc = _tc ? _tc : "UTC";
-
-    struct save_tz rv;
-
-    rv.old_tz = nullptr;
-    rv.tz_env_str = nullptr;
-
-    //qCDebug(KTNEF_LOG) << "set_tz(), timezone before =" << timezone;
-
-    char *tz_env = nullptr;
-    const QByteArray tzEnv = qgetenv("TZ");
-    if (!tzEnv.isEmpty()) {
-        tz_env = qstrdup(tzEnv.constData());
-        rv.old_tz = tz_env;
-    }
-    char *tmp_env = (char *)malloc(strlen(tc) + 4);
-    strcpy(tmp_env, "TZ=");
-    strcpy(tmp_env + 3, tc);
-    putenv(tmp_env);
-
-    rv.tz_env_str = tmp_env;
-
-    /* tmp_env is not free'ed -- it is part of the environment */
-
-    tzset();
-    //qCDebug(KTNEF_LOG) << "set_tz(), timezone after =" << timezone;
-
-    return rv;
-}
-
-/* restore previous timezone */
-static void unset_tz(struct save_tz old_tz)
-{
-    if (old_tz.old_tz) {
-        char *tmp_env = (char *)malloc(strlen(old_tz.old_tz) + 4);
-        strcpy(tmp_env, "TZ=");
-        strcpy(tmp_env + 3, old_tz.old_tz);
-        putenv(tmp_env);
-        /* tmp_env is not free'ed -- it is part of the environment */
-        free(old_tz.old_tz);
-    } else {
-        /* clear TZ from env */
-        putenv(strdup("TZ"));
-    }
-    tzset();
-
-    /* is this OK? */
-    if (old_tz.tz_env_str) {
-        free(old_tz.tz_env_str);
-    }
-}
-
-static QDateTime utc2Local(const QDateTime &utcdt)
-{
-    struct tm tmL;
-
-    save_tz tmp_tz = set_tz("UTC");
-    time_t utc = utcdt.toSecsSinceEpoch();
-    unset_tz(tmp_tz);
-
-    localtime_r(&utc, &tmL);
-    return QDateTime(QDate(tmL.tm_year + 1900, tmL.tm_mon + 1, tmL.tm_mday),
-                     QTime(tmL.tm_hour, tmL.tm_min, tmL.tm_sec));
-}
-
 static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
 {
     QDate tmpDate;
@@ -167,7 +94,7 @@ static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
         if (dtStr.at(dtStr.length() - 1) == QLatin1Char('Z')) {
             //dT = dT.addSecs( 60 * KRFCDate::localUTCOffset() );
             //localUTCOffset( dT ) );
-            dT = utc2Local(dT);
+            dT = dT.toLocalTime();
         }
         return dT;
     } else {
