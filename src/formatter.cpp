@@ -145,41 +145,29 @@ static QDateTime utc2Local(const QDateTime &utcdt)
                      QTime(tmL.tm_hour, tmL.tm_min, tmL.tm_sec));
 }
 
-static QDateTime pureISOToLocalQDateTime(const QString &dtStr,
-        bool bDateOnly = false)
+static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
 {
     QDate tmpDate;
     QTime tmpTime;
     int year, month, day, hour, minute, second;
 
-    if (bDateOnly) {
-        year = dtStr.leftRef(4).toInt();
-        month = dtStr.midRef(4, 2).toInt();
-        day = dtStr.midRef(6, 2).toInt();
-        hour = 0;
-        minute = 0;
-        second = 0;
-    } else {
-        year = dtStr.leftRef(4).toInt();
-        month = dtStr.midRef(4, 2).toInt();
-        day = dtStr.midRef(6, 2).toInt();
-        hour = dtStr.midRef(9, 2).toInt();
-        minute = dtStr.midRef(11, 2).toInt();
-        second = dtStr.midRef(13, 2).toInt();
-    }
+    year = dtStr.leftRef(4).toInt();
+    month = dtStr.midRef(4, 2).toInt();
+    day = dtStr.midRef(6, 2).toInt();
+    hour = dtStr.midRef(9, 2).toInt();
+    minute = dtStr.midRef(11, 2).toInt();
+    second = dtStr.midRef(13, 2).toInt();
     tmpDate.setDate(year, month, day);
     tmpTime.setHMS(hour, minute, second);
 
     if (tmpDate.isValid() && tmpTime.isValid()) {
         QDateTime dT = QDateTime(tmpDate, tmpTime);
 
-        if (!bDateOnly) {
-            // correct for GMT ( == Zulu time == UTC )
-            if (dtStr.at(dtStr.length() - 1) == QLatin1Char('Z')) {
-                //dT = dT.addSecs( 60 * KRFCDate::localUTCOffset() );
-                //localUTCOffset( dT ) );
-                dT = utc2Local(dT);
-            }
+        // correct for GMT ( == Zulu time == UTC )
+        if (dtStr.at(dtStr.length() - 1) == QLatin1Char('Z')) {
+            //dT = dT.addSecs( 60 * KRFCDate::localUTCOffset() );
+            //localUTCOffset( dT ) );
+            dT = utc2Local(dT);
         }
         return dT;
     } else {
