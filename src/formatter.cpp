@@ -252,11 +252,18 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     event->setOrganizer(s);
                 }
 
-                s = tnefMsg->findProp(0x819b).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
-                event->setDtStart(QDateTime::fromString(s));     // ## Format??
+                QDateTime dt = tnefMsg->property(0x819b).toDateTime();
+                if (!dt.isValid()) {
+                    dt = tnefMsg->property(0x0060).toDateTime();
+                }
+                event->setDtStart(dt);     // ## Format??
 
-                s = tnefMsg->findProp(0x819c).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
-                event->setDtEnd(QDateTime::fromString(s));
+                dt = tnefMsg->property(0x819c).toDateTime();
+                if (!dt.isValid())
+                {
+                    dt = tnefMsg->property(0x0061).toDateTime();
+                }
+                event->setDtEnd(dt);
 
                 s = tnefMsg->findProp(0x810d);
                 event->setLocation(s);
