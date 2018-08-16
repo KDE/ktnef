@@ -390,8 +390,14 @@ bool KTNEFParser::ParserPrivate::parseDevice()
     delete current_;
     current_ = nullptr;
 
-    if (!device_->open(QIODevice::ReadOnly)) {
-        qCDebug(KTNEF_LOG) << "Couldn't open device";
+    if (!device_->isOpen()) {
+        if (!device_->open(QIODevice::ReadOnly)) {
+            qCDebug(KTNEF_LOG) << "Couldn't open device";
+            return false;
+        }
+    }
+    if (!device_->isReadable()) {
+        qCDebug(KTNEF_LOG) << "Device not readable";
         return false;
     }
 
