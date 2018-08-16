@@ -275,7 +275,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 //vPart += "SEQUENCE:0\n";
 
                 // is "0x0023" OK  -  or should we look for "0x0003" ??
-                s = tnefMsg->findProp(0x0023);
+                s = tnefMsg->findProp(0x0062);
                 event->setUid(s);
 
                 // PENDING(khz): is this value in local timezone? Must it be
