@@ -184,6 +184,9 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 //ScheduleMessage schedMsg( event, method, ScheduleMessage::Unknown );
 
                 QString sSenderSearchKeyEmail(tnefMsg->findProp(0x0C1D));
+                if (sSenderSearchKeyEmail.isEmpty()) {
+                    sSenderSearchKeyEmail = tnefMsg->findProp(0x0C1f);
+                }
 
                 if (!sSenderSearchKeyEmail.isEmpty()) {
                     const int colon = sSenderSearchKeyEmail.indexOf(QLatin1Char(':'));
@@ -286,9 +289,15 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 event->setCategories(s);
 
                 s = tnefMsg->findProp(0x1000);
+                if (s.isEmpty()) {
+                    s = tnefMsg->findProp(0x3fd9);
+                }
                 event->setDescription(s);
 
                 s = tnefMsg->findProp(0x0070);
+                if (s.isEmpty()) {
+                    s = tnefMsg->findProp(0x0037);
+                }
                 event->setSummary(s);
 
                 s = tnefMsg->findProp(0x0026);
