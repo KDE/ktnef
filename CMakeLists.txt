@@ -43,7 +43,7 @@ find_package(KF5Contacts ${KCONTACTS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5I18n ${KF5_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
-add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+
 
 configure_package_config_file(
   "${KTnef_SOURCE_DIR}/KF5TnefConfig.cmake.in"
@@ -72,7 +72,7 @@ install(FILES
 
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
-add_definitions(-DQT_NO_NARROWING_CONVERSIONS_IN_CONNECT)
+
 add_subdirectory(src)
 
 if(BUILD_TESTING)
