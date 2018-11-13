@@ -113,7 +113,7 @@ public:
     const QMap<int, KTNEFProperty *> &properties() const; //krazy:exclude=constref
 
     /**
-      Returns the property associcated with the specified @p key.
+      Returns the property associated with the specified @p key.
 
       @param key is the property key.
 
@@ -143,7 +143,7 @@ public:
     const QMap<int, KTNEFProperty *> &attributes() const; //krazy:exclude=constref
 
     /**
-      Returns the attribute associcated with the specified @p key.
+      Returns the attribute associated with the specified @p key.
 
       @param key is the @acronym TNEF key.
 
