@@ -1,6 +1,12 @@
 description: An API for handling TNEF data
 maintainer: mlaurent
 type: functional
+platforms:
+    - name: Linux
+    - name: FreeBSD
+    - name: Windows
+    - name: MacOSX
+    - name: Android
 portingAid: false
 deprecated: false
 release: false
