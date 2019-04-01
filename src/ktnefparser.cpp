@@ -37,7 +37,7 @@
 #include "ktnef_debug.h"
 #include <QMimeType>
 #include <QMimeDatabase>
-#include <qsavefile.h>
+#include <QSaveFile>
 
 #include <QDateTime>
 #include <QDataStream>
