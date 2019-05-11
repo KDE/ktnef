@@ -11,7 +11,7 @@
  *
  * @section desc Description
  *
- * To quote <a href="http://en.wikipedia.org/wiki/TNEF">Wikipedia</a>:
+ * To quote <a href="https://en.wikipedia.org/wiki/TNEF">Wikipedia</a>:
  *
  * "<em><b>Transport Neutral Encapsulation Format</b> or @acronym TNEF is a
  * proprietary format of e-mail attachment used by Microsoft Outlook and
@@ -19,7 +19,7 @@
  * usually called winmail.dat or win.dat.
  *
  * Within the Outlook email client TNEF encoding cannot be explicitly enabled
- * or disabled.  Selecting <a href="http://en.wikipedia.org/wiki/Rtf">RTF</a>
+ * or disabled.  Selecting <a href="https://en.wikipedia.org/wiki/Rich_Text_Format">RTF</a>
  * (Rich Text Format) as the format for sending an e-mail implicitly enables
  * TNEF encoding, using it in preference to the more common and widely
  * compatible @acronym MIME standard.  When sending plain-text or @acronym
