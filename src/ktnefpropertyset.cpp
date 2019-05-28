@@ -101,7 +101,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name,
                 QVariant value = (*it)->value();
                 if (value.type() == QVariant::List) {
                     QList<QVariant> l = value.toList();
-                    s = QLatin1String("");
+                    s.clear();
                     for (QList<QVariant>::ConstIterator lit = l.constBegin(), litEnd = l.constEnd(); lit != litEnd; ++lit) {
                         if (!s.isEmpty()) {
                             s += QLatin1Char(',');
