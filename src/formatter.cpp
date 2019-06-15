@@ -205,20 +205,20 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                         if (!(*it).contains(QLatin1Char('@'))) {
                             s = (*it).trimmed();
 
-                            Attendee::Ptr attendee(new Attendee(s, s, true));
+                            Attendee attendee(s, s, true);
                             if (bIsReply) {
                                 if (bCompatMethodAccepted) {
-                                    attendee->setStatus(Attendee::Accepted);
+                                    attendee.setStatus(Attendee::Accepted);
                                 }
                                 if (bCompatMethodDeclined) {
-                                    attendee->setStatus(Attendee::Declined);
+                                    attendee.setStatus(Attendee::Declined);
                                 }
                                 if (bCompatMethodAcceptedCond) {
-                                    attendee->setStatus(Attendee::Tentative);
+                                    attendee.setStatus(Attendee::Tentative);
                                 }
                             } else {
-                                attendee->setStatus(Attendee::NeedsAction);
-                                attendee->setRole(Attendee::ReqParticipant);
+                                attendee.setStatus(Attendee::NeedsAction);
+                                attendee.setRole(Attendee::ReqParticipant);
                             }
                             event->addAttendee(attendee);
                         }
@@ -228,20 +228,20 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     // This must be old style, let us use the PR_SENDER_SEARCH_KEY.
                     s = sSenderSearchKeyEmail;
                     if (!s.isEmpty()) {
-                        Attendee::Ptr attendee(new Attendee(QString(), QString(), true));
+                        Attendee attendee(QString(), QString(), true);
                         if (bIsReply) {
                             if (bCompatMethodAccepted) {
-                                attendee->setStatus(Attendee::Accepted);
+                                attendee.setStatus(Attendee::Accepted);
                             }
                             if (bCompatMethodAcceptedCond) {
-                                attendee->setStatus(Attendee::Declined);
+                                attendee.setStatus(Attendee::Declined);
                             }
                             if (bCompatMethodDeclined) {
-                                attendee->setStatus(Attendee::Tentative);
+                                attendee.setStatus(Attendee::Tentative);
                             }
                         } else {
-                            attendee->setStatus(Attendee::NeedsAction);
-                            attendee->setRole(Attendee::ReqParticipant);
+                            attendee.setStatus(Attendee::NeedsAction);
+                            attendee.setRole(Attendee::ReqParticipant);
                         }
                         event->addAttendee(attendee);
                     }
