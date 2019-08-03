@@ -40,8 +40,8 @@
 #include <kcontacts/phonenumber.h>
 #include <kcontacts/vcardconverter.h>
 
-#include <kcalcore/calendar.h>
-#include <kcalcore/icalformat.h>
+#include <kcalendarcore/calendar.h>
+#include <kcalendarcore/icalformat.h>
 #include <kcalutils/incidenceformatter.h>
 
 #include <klocalizedstring.h>
@@ -51,7 +51,7 @@
 
 #include <time.h>
 
-using namespace KCalCore;
+using namespace KCalendarCore;
 using namespace KTnef;
 
 /*******************************************************************
@@ -304,7 +304,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 event->setPriority(s.toInt());
                 // is reminder flag set ?
                 if (!tnefMsg->findProp(0x8503).isEmpty()) {
-                    Alarm::Ptr alarm(new Alarm(event.data()));     // TODO: fix when KCalCore::Alarm is fixed
+                    Alarm::Ptr alarm(new Alarm(event.data()));     // TODO: fix when KCalendarCore::Alarm is fixed
                     QDateTime highNoonTime =
                         pureISOToLocalQDateTime(tnefMsg->findProp(0x8502).
                                                 remove(QLatin1Char('-')).remove(QLatin1Char(':')));
