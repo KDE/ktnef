@@ -34,7 +34,7 @@
 #define KTNEF_FORMATTER_H
 
 #include <QString>
-#include <kcalcore/memorycalendar.h>
+#include <kcalendarcore/memorycalendar.h>
 
 #include "ktnef_export.h"
 
@@ -54,7 +54,7 @@ namespace KTnef
     @param h is a pointer to a InvitationFormatterHelp object.
   */
 Q_REQUIRED_RESULT KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
-        const KCalCore::MemoryCalendar::Ptr &cal,
+        const KCalendarCore::MemoryCalendar::Ptr &cal,
         KCalUtils::InvitationFormatterHelper *h);
 
 /**
