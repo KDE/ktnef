@@ -110,7 +110,7 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
             for (i = 0; i < txtCount; ++i) {
                 s.append(QString().sprintf("%02X", (uchar)arr[ i ]));
                 if (beautify) {
-                    s.append(QLatin1String(" "));
+                    s.append(QLatin1Char(' '));
                 }
             }
             if (i < arr.size()) {

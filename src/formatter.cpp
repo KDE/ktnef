@@ -174,7 +174,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     //
                     //
 
-                    if (tnefMsg->findProp(0x0c17) == QLatin1String("1")) {
+                    if (tnefMsg->findProp(0x0c17) == QLatin1Char('1')) {
                         bIsReply = true;
                     }
                     method = iTIPRequest;
