@@ -214,9 +214,9 @@ QString KTnef::mapiTagString(int key)
     }
     auto it = MAPI_TagMap()->constFind(key);
     if (it == MAPI_TagMap()->constEnd()) {
-        return QString().sprintf("0x%04X", key);
+        return QString::asprintf("0x%04X", key);
     } else {
-        return QString().sprintf("0x%04X ________: ", key) + *it;
+        return QString::asprintf("0x%04X ________: ", key) + *it;
     }
 }
 
@@ -231,11 +231,11 @@ QString KTnef::mapiNamedTagString(int key, int tag)
     auto it = MAPI_NamedTagMap()->constFind(key);
     if (it != MAPI_NamedTagMap()->constEnd()) {
         if (tag >= 0) {
-            return QString().sprintf("0x%04X [0x%04X]: ", tag, key) + *it;
+            return QString::asprintf("0x%04X [0x%04X]: ", tag, key) + *it;
         } else {
-            return QString().sprintf("0x%04X ________:", key) + *it;
+            return QString::asprintf("0x%04X ________:", key) + *it;
         }
     } else {
-        return QString().sprintf( "0x%04X ________:", key );
+        return QString::asprintf( "0x%04X ________:", key );
     }
 }
