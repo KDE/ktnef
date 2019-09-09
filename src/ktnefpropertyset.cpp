@@ -94,7 +94,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name,
             if ((*it)->name().type() == QVariant::String) {
                 s = (*it)->name().toString();
             } else {
-                s = QString().sprintf("0X%04X", (*it)->name().toUInt());
+                s = QString::asprintf("0X%04X", (*it)->name().toUInt());
             }
 
             if (s.toUpper() == name.toUpper()) {

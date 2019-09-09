@@ -928,7 +928,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
             QString mapiname = QLatin1String("");
             if (mapi.tag >= 0x8000 && mapi.tag <= 0xFFFE) {
                 if (mapi.name.type == 0) {
-                    mapiname = QString().sprintf(" [name = 0x%04x]", mapi.name.value.toUInt());
+                    mapiname = QString::asprintf(" [name = 0x%04x]", mapi.name.value.toUInt());
                 } else {
                     mapiname = QStringLiteral(" [name = %1]").arg(mapi.name.value.toString());
                 }
