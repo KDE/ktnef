@@ -1,5 +1,5 @@
 @PACKAGE_INIT@
 include(CMakeFindDependencyMacro)
-find_dependency(KF5CalendarCore "@CALENDARCORE_LIB_VERSION@")
+find_dependency(KF5CalendarCore "@KF5_MIN_VERSION@")
 
 include("${CMAKE_CURRENT_LIST_DIR}/KF5TnefTargets.cmake")
