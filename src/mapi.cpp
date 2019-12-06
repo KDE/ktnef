@@ -30,7 +30,7 @@
 
 #include "mapi.h"
 #include <QMap>
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 //@cond IGNORE
 static const struct {
     int tag;

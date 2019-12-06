@@ -44,7 +44,7 @@
 #include <kcalendarcore/icalformat.h>
 #include <kcalutils/incidenceformatter.h>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include <QBuffer>
 #include <QTimeZone>
