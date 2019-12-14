@@ -27,7 +27,7 @@
 #include <ktnef/ktnefattach.h>
 
 #include <QString>
-#include <QtTest>
+#include <QTest>
 
 using namespace KTnef;
 
