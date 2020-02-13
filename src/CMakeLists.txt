@@ -11,7 +11,13 @@ set(ktnef_SRCS
   formatter.cpp
 )
 
-ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef)
+if (ECM_VERSION VERSION_LESS "5.68.0")
+    ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef)
+else()
+    ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef
+        OLD_CATEGORY_NAMES log_ktnef
+        DESCRIPTION "ktnef (pim lib)" EXPORT KTNEF)
+endif()
 
 add_library(KF5Tnef ${ktnef_SRCS})
 
@@ -64,3 +70,6 @@ install(FILES
 
 ecm_generate_pri_file(BASE_NAME KTNef LIB_NAME KF5Tnef DEPS "CalendarCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KTNEF)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
+if (NOT ECM_VERSION VERSION_LESS "5.68.0")
+   ecm_qt_install_logging_categories(EXPORT KTNEF FILE ktnef.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
+endif()
