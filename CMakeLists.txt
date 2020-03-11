@@ -82,8 +82,4 @@ if(BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    install(FILES ktnef.renamecategories ktnef.categories  DESTINATION  ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
-endif()
-
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
