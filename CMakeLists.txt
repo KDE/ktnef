@@ -24,7 +24,7 @@ include(ECMQtDeclareLoggingCategory)
 
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARUTILS_LIB_VERSION "5.13.40")
+set(CALENDARUTILS_LIB_VERSION "5.13.80")
 set(QT_REQUIRED_VERSION "5.12.0")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
@@ -43,7 +43,7 @@ find_package(KF5I18n ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
 if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
-   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x058000)
+   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054400)
 endif()
 
 add_definitions(-DQT_NO_FOREACH)
