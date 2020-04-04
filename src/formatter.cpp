@@ -40,9 +40,9 @@
 #include <kcontacts/phonenumber.h>
 #include <kcontacts/vcardconverter.h>
 
-#include <kcalendarcore/calendar.h>
-#include <kcalendarcore/icalformat.h>
-#include <kcalutils/incidenceformatter.h>
+#include <KCalendarCore/Calendar>
+#include <KCalendarCore/ICalFormat>
+#include <KCalUtils/IncidenceFormatter>
 
 #include <KLocalizedString>
 
