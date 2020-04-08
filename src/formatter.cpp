@@ -60,7 +60,7 @@ using namespace KTnef;
 
 //-----------------------------------------------------------------------------
 //@cond IGNORE
-static QString stringProp(KTNEFMessage *tnefMsg, const quint32 &key,
+static QString stringProp(KTNEFMessage *tnefMsg, quint32 key,
                           const QString &fallback = QString())
 {
     return tnefMsg->findProp(key < 0x10000 ? key & 0xFFFF : key >> 16, fallback);
