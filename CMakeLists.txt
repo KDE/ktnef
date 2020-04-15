@@ -47,6 +47,7 @@ if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
 endif()
 
 add_definitions(-DQT_NO_FOREACH)
+add_definitions(-DQT_NO_KEYWORDS)
 
 configure_package_config_file(
   "${KTnef_SOURCE_DIR}/KF5TnefConfig.cmake.in"
