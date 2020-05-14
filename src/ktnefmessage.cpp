@@ -33,6 +33,7 @@
 #include "lzfu.h"
 
 #include <QBuffer>
+#include <QDebug>
 #include <QList>
 
 using namespace KTnef;
@@ -113,7 +114,9 @@ QString KTNEFMessage::rtfString() const
         QBuffer input(&propArray), output(&rtf);
         if (input.open(QIODevice::ReadOnly) &&
                 output.open(QIODevice::WriteOnly)) {
-            KTnef::lzfu_decompress(&input, &output);
+            if (KTnef::lzfu_decompress(&input, &output) == 0) {
+                qWarning() << "Error when decompress data";
+            }
         }
         return QString::fromLatin1(rtf);
     }

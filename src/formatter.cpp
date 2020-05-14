@@ -156,14 +156,14 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 prodID += QLatin1String("VERSION:2.0\n");
                 calFormat.setApplication(QStringLiteral("Outlook"), prodID);
 
-                iTIPMethod method;
+                //iTIPMethod method;
                 if (bCompatMethodRequest) {
-                    method = iTIPRequest;
+                    //method = iTIPRequest;
                 } else if (bCompatMethodCancled) {
-                    method = iTIPCancel;
+                    //method = iTIPCancel;
                 } else if (bCompatMethodAccepted || bCompatMethodAcceptedCond ||
                            bCompatMethodDeclined) {
-                    method = iTIPReply;
+                    //method = iTIPReply;
                     bIsReply = true;
                 } else {
                     // pending(khz): verify whether "0x0c17" is the right tag ???
@@ -177,7 +177,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     if (tnefMsg->findProp(0x0c17) == QLatin1Char('1')) {
                         bIsReply = true;
                     }
-                    method = iTIPRequest;
+                    //method = iTIPRequest;
                 }
 
                 /// ###  FIXME Need to get this attribute written
