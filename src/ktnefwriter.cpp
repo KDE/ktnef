@@ -138,7 +138,6 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
     quint32 i;
     quint16 checksum = 0;
     QList<QVariant> list;
-    QString s;
     QByteArray cs, cs2;
     QDateTime dt;
     QDate date;
