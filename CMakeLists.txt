@@ -24,7 +24,7 @@ include(ECMQtDeclareLoggingCategory)
 
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARUTILS_LIB_VERSION "5.14.2")
+set(CALENDARUTILS_LIB_VERSION "5.14.3")
 set(QT_REQUIRED_VERSION "5.12.0")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
