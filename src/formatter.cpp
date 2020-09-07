@@ -61,17 +61,15 @@ static QString sNamedProp(KTNEFMessage *tnefMsg, const QString &name,
 
 static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
 {
+    const int year = dtStr.leftRef(4).toInt();
+    const int month = dtStr.midRef(4, 2).toInt();
+    const int day = dtStr.midRef(6, 2).toInt();
+    const int hour = dtStr.midRef(9, 2).toInt();
+    const int minute = dtStr.midRef(11, 2).toInt();
+    const int second = dtStr.midRef(13, 2).toInt();
     QDate tmpDate;
-    QTime tmpTime;
-    int year, month, day, hour, minute, second;
-
-    year = dtStr.leftRef(4).toInt();
-    month = dtStr.midRef(4, 2).toInt();
-    day = dtStr.midRef(6, 2).toInt();
-    hour = dtStr.midRef(9, 2).toInt();
-    minute = dtStr.midRef(11, 2).toInt();
-    second = dtStr.midRef(13, 2).toInt();
     tmpDate.setDate(year, month, day);
+    QTime tmpTime;
     tmpTime.setHMS(hour, minute, second);
 
     if (tmpDate.isValid() && tmpTime.isValid()) {
@@ -92,8 +90,6 @@ static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
 
 QString KTnef::msTNEFToVPart(const QByteArray &tnef)
 {
-    //bool bOk = false;
-
     KTNEFParser parser;
     QByteArray b(tnef);
     QBuffer buf(&b);

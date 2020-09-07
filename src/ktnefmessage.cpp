@@ -38,7 +38,7 @@ public:
 
     void clearAttachments();
 
-    QList<KTNEFAttach *>attachments_;
+    QList<KTNEFAttach *> attachments_;
 };
 
 KTNEFMessage::MessagePrivate::~MessagePrivate()

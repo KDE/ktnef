@@ -76,9 +76,6 @@ public:
     ParserPrivate()
     {
         defaultdir_ = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
-        current_ = nullptr;
-        deleteDevice_ = false;
-        device_ = nullptr;
         message_ = new KTNEFMessage;
     }
     ~ParserPrivate()
