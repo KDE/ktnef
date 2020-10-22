@@ -21,7 +21,6 @@
 
 #include <QBuffer>
 #include <QDebug>
-#include <QList>
 
 using namespace KTnef;
 
