@@ -538,7 +538,7 @@ bool KTNEFParser::openFile(const QString &filename) const
     d->deleteDevice();
     delete d->message_;
     d->message_ = new KTNEFMessage();
-    QFile *file = new QFile(filename);
+    auto *file = new QFile(filename);
     d->device_ = file;
     d->deleteDevice_ = true;
     if (!file->exists()) {
