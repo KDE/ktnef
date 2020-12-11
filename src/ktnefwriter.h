@@ -23,7 +23,7 @@ class QVariant;
 class QIODevice;
 class QDataStream;
 class QDateTime;
-class QStringList;
+#include <QStringList>
 
 #include "ktnef_export.h"
 #include <qglobal.h>
