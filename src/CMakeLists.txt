@@ -16,7 +16,9 @@ ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF
         DESCRIPTION "ktnef (pim lib)" EXPORT KTNEF)
 
 add_library(KF5Tnef ${ktnef_SRCS})
-
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+    set_target_properties(KF5Tnef PROPERTIES UNITY_BUILD ON)
+endif()
 generate_export_header(KF5Tnef BASE_NAME ktnef)
 
 add_library(KF5::Tnef ALIAS KF5Tnef)
