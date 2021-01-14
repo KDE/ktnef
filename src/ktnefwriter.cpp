@@ -421,11 +421,11 @@ void KTNEFWriter::addAttendee(const QString &cn, Role r,
                               PartStat p, bool rsvp,
                               const QString &mailto)
 {
-    Q_UNUSED(cn);
-    Q_UNUSED(r);
-    Q_UNUSED(p);
-    Q_UNUSED(rsvp);
-    Q_UNUSED(mailto);
+    Q_UNUSED(cn)
+    Q_UNUSED(r)
+    Q_UNUSED(p)
+    Q_UNUSED(rsvp)
+    Q_UNUSED(mailto)
 }
 
 // I assume this is the same as the sender?
@@ -506,7 +506,7 @@ void KTNEFWriter::setAlarm(const QString &description,
                            AlarmAction action,
                            const QDateTime &wakeBefore)
 {
-    Q_UNUSED(description);
-    Q_UNUSED(action);
-    Q_UNUSED(wakeBefore);
+    Q_UNUSED(description)
+    Q_UNUSED(action)
+    Q_UNUSED(wakeBefore)
 }
