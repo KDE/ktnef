@@ -32,7 +32,9 @@ using namespace KTnef;
 class KTnef::KTNEFMessage::MessagePrivate
 {
 public:
-    MessagePrivate() {}
+    MessagePrivate()
+    {
+    }
     ~MessagePrivate();
 
     void clearAttachments();
@@ -53,7 +55,8 @@ void KTNEFMessage::MessagePrivate::clearAttachments()
 }
 //@endcond
 
-KTNEFMessage::KTNEFMessage() : d(new KTnef::KTNEFMessage::MessagePrivate)
+KTNEFMessage::KTNEFMessage()
+    : d(new KTnef::KTNEFMessage::MessagePrivate)
 {
 }
 
@@ -98,8 +101,7 @@ QString KTNEFMessage::rtfString() const
         QByteArray rtf;
         QByteArray propArray(prop.toByteArray());
         QBuffer input(&propArray), output(&rtf);
-        if (input.open(QIODevice::ReadOnly) &&
-                output.open(QIODevice::WriteOnly)) {
+        if (input.open(QIODevice::ReadOnly) && output.open(QIODevice::WriteOnly)) {
             if (KTnef::lzfu_decompress(&input, &output) == 0) {
                 qWarning() << "Error when decompress data";
             }

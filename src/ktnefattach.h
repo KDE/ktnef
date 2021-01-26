@@ -20,8 +20,8 @@
 
 #include <QString>
 
-#include "ktnefpropertyset.h"
 #include "ktnef_export.h"
+#include "ktnefpropertyset.h"
 
 namespace KTnef
 {
@@ -30,7 +30,6 @@ class KTNEFProperty;
 
 namespace KTnef
 {
-
 /**
  * @brief
  * Represents a @acronym TNEF attachment.
@@ -42,10 +41,10 @@ public:
      * The different attachment parsed states.
      */
     enum ParseState {
-        Unparsed = 0x0000,    /**< Unparsed */
+        Unparsed = 0x0000, /**< Unparsed */
         TitleParsed = 0x0001, /**< The title is parsed */
-        DataParsed = 0x0002,  /**< The data is parsed */
-        InfoParsed = 0x0004   /**< The info is parsed */
+        DataParsed = 0x0002, /**< The data is parsed */
+        InfoParsed = 0x0004 /**< The info is parsed */
     };
 
     /**

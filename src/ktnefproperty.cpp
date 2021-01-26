@@ -18,7 +18,6 @@
 #include "ktnefproperty.h"
 #include "mapi.h"
 
-
 #include <ctype.h>
 
 using namespace KTnef;
@@ -37,8 +36,7 @@ KTNEFProperty::KTNEFProperty()
 {
 }
 
-KTNEFProperty::KTNEFProperty(int key_, int type_, const QVariant &value_,
-                             const QVariant &name_)
+KTNEFProperty::KTNEFProperty(int key_, int type_, const QVariant &value_, const QVariant &name_)
     : d(new KTNEFPropertyPrivate)
 {
     d->_key = key_;
@@ -88,14 +86,14 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
         QByteArray arr = value.toByteArray();
         bool printable = true;
         for (int i = qMin(arr.size(), 8) - 1; i >= 0 && printable; i--) {
-            printable = (isprint(arr[ i ]) != 0);
+            printable = (isprint(arr[i]) != 0);
         }
         if (!printable) {
             QString s;
             int i;
             int txtCount = beautify ? qMin(arr.size(), 32) : arr.size();
             for (i = 0; i < txtCount; ++i) {
-                s.append(QString::asprintf("%02X", (uchar)arr[ i ]));
+                s.append(QString::asprintf("%02X", (uchar)arr[i]));
                 if (beautify) {
                     s.append(QLatin1Char(' '));
                 }
@@ -106,7 +104,7 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
             return s;
         }
     }
-    //else if ( value.type() == QVariant::DateTime )
+    // else if ( value.type() == QVariant::DateTime )
     //   return value.toDateTime().toString();
     return value.toString();
 }

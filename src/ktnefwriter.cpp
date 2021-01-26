@@ -16,16 +16,16 @@
  */
 
 #include "ktnefwriter.h"
+#include "ktnefdefs.h"
 #include "ktnefproperty.h"
 #include "ktnefpropertyset.h"
-#include "ktnefdefs.h"
 
 #include "ktnef_debug.h"
 
-#include <QDateTime>
-#include <QDataStream>
-#include <QList>
 #include <QByteArray>
+#include <QDataStream>
+#include <QDateTime>
+#include <QList>
 
 #include <assert.h>
 
@@ -39,7 +39,8 @@ using namespace KTnef;
 class KTnef::KTNEFWriterPrivateData
 {
 public:
-    KTNEFWriterPrivateData() : mFirstAttachNum(QDateTime::currentDateTimeUtc().toSecsSinceEpoch())
+    KTNEFWriterPrivateData()
+        : mFirstAttachNum(QDateTime::currentDateTimeUtc().toSecsSinceEpoch())
     {
     }
 
@@ -48,7 +49,8 @@ public:
 };
 //@endcond
 
-KTNEFWriter::KTNEFWriter() : d(new KTnef::KTNEFWriterPrivateData)
+KTNEFWriter::KTNEFWriter()
+    : d(new KTnef::KTNEFWriterPrivateData)
 {
     // This is not something the user should fiddle with
     // First set the TNEF version
@@ -210,8 +212,8 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
         list = property->value().toList();
         assert(list.count() == 2);
 
-        cs = list[0].toString().toLocal8Bit();                           // Name
-        cs2 = QString(QLatin1String("smtp:") + list[1].toString()).toLocal8Bit();     // Email address
+        cs = list[0].toString().toLocal8Bit(); // Name
+        cs2 = QString(QLatin1String("smtp:") + list[1].toString()).toLocal8Bit(); // Email address
         i = 18 + cs.length() + cs2.length(); // 2 * sizof(TRP) + strings + 2x'\0'
 
         stream << (quint8)LVL_MESSAGE;
@@ -222,10 +224,10 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
         // TODO: Or does it? Looks like Outlook doesn't do this
         // bytes += 17;
         // Write the first TRP structure
-        stream << (quint16)4;                   // trpidOneOff
-        stream << (quint16)i;                   // totalsize
-        stream << (quint16)(cs.length() + 1);   // sizeof name
-        stream << (quint16)(cs2.length() + 1);  // sizeof address
+        stream << (quint16)4; // trpidOneOff
+        stream << (quint16)i; // totalsize
+        stream << (quint16)(cs.length() + 1); // sizeof name
+        stream << (quint16)(cs2.length() + 1); // sizeof address
 
         // if ( bytes % 4 != 0 )
         // Align the buffer
@@ -281,29 +283,29 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
         addToChecksum(i, checksum);
         stream << (quint16)i;
         break;
-    /*
-    case attMSGSTATUS:
-    {
-    quint8 c;
-    quint32 flag = 0;
-    if ( c & fmsRead ) flag |= MSGFLAG_READ;
-    if ( !( c & fmsModified ) ) flag |= MSGFLAG_UNMODIFIED;
-    if ( c & fmsSubmitted ) flag |= MSGFLAG_SUBMIT;
-    if ( c & fmsHasAttach ) flag |= MSGFLAG_HASATTACH;
-    if ( c & fmsLocal ) flag |= MSGFLAG_UNSENT;
-    d->stream_ >> c;
+        /*
+        case attMSGSTATUS:
+        {
+        quint8 c;
+        quint32 flag = 0;
+        if ( c & fmsRead ) flag |= MSGFLAG_READ;
+        if ( !( c & fmsModified ) ) flag |= MSGFLAG_UNMODIFIED;
+        if ( c & fmsSubmitted ) flag |= MSGFLAG_SUBMIT;
+        if ( c & fmsHasAttach ) flag |= MSGFLAG_HASATTACH;
+        if ( c & fmsLocal ) flag |= MSGFLAG_UNSENT;
+        d->stream_ >> c;
 
-    i = property->value().toUInt();
-    stream << (quint8)LVL_MESSAGE;
-    stream << (quint32)type;
-    stream << (quint32)2;
-    stream << (quint8)i;
-    addToChecksum( i, checksum );
-    // from reader: d->message_->addProperty( 0x0E07, MAPI_TYPE_ULONG, flag );
-    }
-    qCDebug(KTNEF_LOG) << "Message Status" << "(length=" << i2 << ")";
-    break;
-    */
+        i = property->value().toUInt();
+        stream << (quint8)LVL_MESSAGE;
+        stream << (quint32)type;
+        stream << (quint32)2;
+        stream << (quint8)i;
+        addToChecksum( i, checksum );
+        // from reader: d->message_->addProperty( 0x0E07, MAPI_TYPE_ULONG, flag );
+        }
+        qCDebug(KTNEF_LOG) << "Message Status" << "(length=" << i2 << ")";
+        break;
+        */
 
     default:
         qCDebug(KTNEF_LOG) << "Unknown TNEF tag:" << tag;
@@ -365,7 +367,7 @@ void KTNEFWriter::setSender(const QString &name, const QString &email)
 
     const QList<QVariant> list = {v1, v2};
 
-    addProperty(attFROM, 0, list);   // What's up with the 0 here ??
+    addProperty(attFROM, 0, list); // What's up with the 0 here ??
 }
 
 void KTNEFWriter::setMessageType(MessageType m)
@@ -409,17 +411,13 @@ void KTNEFWriter::setMessageType(MessageType m)
 
 void KTNEFWriter::setMethod(Method)
 {
-
 }
 
 void KTNEFWriter::clearAttendees()
 {
-
 }
 
-void KTNEFWriter::addAttendee(const QString &cn, Role r,
-                              PartStat p, bool rsvp,
-                              const QString &mailto)
+void KTNEFWriter::addAttendee(const QString &cn, Role r, PartStat p, bool rsvp, const QString &mailto)
 {
     Q_UNUSED(cn)
     Q_UNUSED(r)
@@ -458,9 +456,8 @@ void KTNEFWriter::setDtEnd(const QDateTime &dtEnd)
     addProperty(attDATEEND, atpDATE, v);
 }
 
-void KTNEFWriter::setLocation(const QString &/*location*/)
+void KTNEFWriter::setLocation(const QString & /*location*/)
 {
-
 }
 
 void KTNEFWriter::setUID(const QString &uid)
@@ -478,7 +475,6 @@ void KTNEFWriter::setDtStamp(const QDateTime &dtStamp)
 
 void KTNEFWriter::setCategories(const QStringList &)
 {
-
 }
 
 // I hope this is the body
@@ -502,9 +498,7 @@ void KTNEFWriter::setPriority(Priority p)
     addProperty(attMSGPRIORITY, atpSHORT, v);
 }
 
-void KTNEFWriter::setAlarm(const QString &description,
-                           AlarmAction action,
-                           const QDateTime &wakeBefore)
+void KTNEFWriter::setAlarm(const QString &description, AlarmAction action, const QDateTime &wakeBefore)
 {
     Q_UNUSED(description)
     Q_UNUSED(action)

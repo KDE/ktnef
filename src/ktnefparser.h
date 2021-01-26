@@ -18,9 +18,9 @@
 #ifndef KTNEFPARSER_H
 #define KTNEFPARSER_H
 
-#include <QString>
-#include <QIODevice>
 #include "ktnef_export.h"
+#include <QIODevice>
+#include <QString>
 
 namespace KTnef
 {
@@ -29,7 +29,6 @@ class KTNEFMessage;
 
 namespace KTnef
 {
-
 /**
  * @brief
  * Provides an @acronym TNEF parser.

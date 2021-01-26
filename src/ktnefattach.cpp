@@ -28,12 +28,12 @@ using namespace KTnef;
 class KTnef::KTNEFAttach::AttachPrivate
 {
 public:
-    int     state_;
-    int     size_;
-    int     offset_;
-    int     displaysize_;
+    int state_;
+    int size_;
+    int offset_;
+    int displaysize_;
     QString name_;
-    int     index_;
+    int index_;
     QString filename_;
     QString displayname_;
     QString mimetag_;
@@ -41,7 +41,8 @@ public:
 };
 //@endcond
 
-KTNEFAttach::KTNEFAttach() : d(new KTnef::KTNEFAttach::AttachPrivate)
+KTNEFAttach::KTNEFAttach()
+    : d(new KTnef::KTNEFAttach::AttachPrivate)
 {
     d->state_ = Unparsed;
     d->offset_ = -1;

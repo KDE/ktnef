@@ -30,7 +30,6 @@ class KTNEFProperty;
 
 namespace KTnef
 {
-
 /**
  * @brief
  * Interface for setting @acronym MAPI properties and @acronym TNEF attributes.
@@ -57,8 +56,7 @@ public:
       @param name is the property name.
       @param overwrite if true, then remove the property if it already exists.
     */
-    void addProperty(int key, int type, const QVariant &value,
-                     const QVariant &name = QVariant(), bool overwrite = false);
+    void addProperty(int key, int type, const QVariant &value, const QVariant &name = QVariant(), bool overwrite = false);
 
     /**
       Finds a property by @p key, returning a formatted value.
@@ -71,8 +69,7 @@ public:
 
       @return a formatted value string.
     */
-    Q_REQUIRED_RESULT QString findProp(int key, const QString &fallback = QString(),
-                     bool convertToUpper = false) const;
+    Q_REQUIRED_RESULT QString findProp(int key, const QString &fallback = QString(), bool convertToUpper = false) const;
 
     /**
       Finds a property by @p name, returning a formatted value.
@@ -85,9 +82,7 @@ public:
 
       @return a formatted value string.
     */
-    Q_REQUIRED_RESULT QString findNamedProp(const QString &name,
-                          const QString &fallback = QString(),
-                          bool convertToUpper = false) const;
+    Q_REQUIRED_RESULT QString findNamedProp(const QString &name, const QString &fallback = QString(), bool convertToUpper = false) const;
 
     /**
       Returns a #QMap of all (key,@acronym MAPI) properties
@@ -97,7 +92,7 @@ public:
     /**
       Returns a #QMap of all (key,@acronym MAPI) properties
     */
-    const QMap<int, KTNEFProperty *> &properties() const; //krazy:exclude=constref
+    const QMap<int, KTNEFProperty *> &properties() const; // krazy:exclude=constref
 
     /**
       Returns the property associated with the specified @p key.
@@ -116,8 +111,7 @@ public:
       @param value is the attribute value.
       @param overwrite if true, then remove the attribute if it already exists.
     */
-    void addAttribute(int key, int type, const QVariant &value,
-                      bool overwrite = false);
+    void addAttribute(int key, int type, const QVariant &value, bool overwrite = false);
 
     /**
       Returns a #QMap of all (key,@acronym TNEF) attributes.
@@ -127,7 +121,7 @@ public:
     /**
       Returns a #QMap of all (key,@acronym TNEF) attributes.
     */
-    const QMap<int, KTNEFProperty *> &attributes() const; //krazy:exclude=constref
+    const QMap<int, KTNEFProperty *> &attributes() const; // krazy:exclude=constref
 
     /**
       Returns the attribute associated with the specified @p key.

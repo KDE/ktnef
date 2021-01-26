@@ -19,21 +19,22 @@
 
 #include <QIODevice>
 
-#include <sys/types.h>
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
+#include <sys/types.h>
 
 //#define DO_DEBUG
 
 //@cond IGNORE
-#define LZFU_COMPRESSED    0x75465a4c
-#define LZFU_UNCOMPRESSED  0x414c454d
+#define LZFU_COMPRESSED 0x75465a4c
+#define LZFU_UNCOMPRESSED 0x414c454d
 
-#define LZFU_INITDICT   "{\\rtf1\\ansi\\mac\\deff0\\deftab720{\\fonttbl;}" \
-    "{\\f0\\fnil \\froman \\fswiss \\fmodern \\fscrip" \
-    "t \\fdecor MS Sans SerifSymbolArialTimes Ne" \
-    "w RomanCourier{\\colortbl\\red0\\green0\\blue0" \
-    "\r\n\\par \\pard\\plain\\f0\\fs20\\b\\i\\u\\tab" \
+#define LZFU_INITDICT                                                                                                                                          \
+    "{\\rtf1\\ansi\\mac\\deff0\\deftab720{\\fonttbl;}"                                                                                                         \
+    "{\\f0\\fnil \\froman \\fswiss \\fmodern \\fscrip"                                                                                                         \
+    "t \\fdecor MS Sans SerifSymbolArialTimes Ne"                                                                                                              \
+    "w RomanCourier{\\colortbl\\red0\\green0\\blue0"                                                                                                           \
+    "\r\n\\par \\pard\\plain\\f0\\fs20\\b\\i\\u\\tab"                                                                                                          \
     "\\tx"
 #define LZFU_INITLENGTH 207
 //@endcond
@@ -48,26 +49,26 @@ typedef struct _lzfuheader {
 //@endcond
 
 //@cond IGNORE
-#define FLAG(f,n) (f>>n)&0x1
+#define FLAG(f, n) (f >> n) & 0x1
 
 /*typedef struct _blockheader {
   unsigned int offset:12;
   unsigned int length:4;
   } blockheader;*/
 
-#define OFFSET(b) (b>>4)&0xFFF
-#define LENGTH(b) ((b&0xF)+2)
+#define OFFSET(b) (b >> 4) & 0xFFF
+#define LENGTH(b) ((b & 0xF) + 2)
 //@endcond
 
 int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
 {
     unsigned char window[4096];
-    unsigned int  wlength = 0, cursor = 0, ocursor = 0;
-    lzfuheader    lzfuhdr;
-    //blockheader blkhdr;
-    quint16      blkhdr;
-    char          bFlags;
-    int           nFlags;
+    unsigned int wlength = 0, cursor = 0, ocursor = 0;
+    lzfuheader lzfuhdr;
+    // blockheader blkhdr;
+    quint16 blkhdr;
+    char bFlags;
+    int nFlags;
 
     memcpy(window, LZFU_INITDICT, LZFU_INITLENGTH);
     wlength = LZFU_INITLENGTH;
@@ -112,10 +113,9 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
                 unsigned int offset = OFFSET(blkhdr), length = LENGTH(blkhdr);
                 cursor += 2;
 #ifdef DO_DEBUG
-                fprintf(stdout, "block : offset=%.4d [%d], length=%.2d (0x%04X)\n",
-                        OFFSET(blkhdr), wlength, LENGTH(blkhdr), blkhdr);
+                fprintf(stdout, "block : offset=%.4d [%d], length=%.2d (0x%04X)\n", OFFSET(blkhdr), wlength, LENGTH(blkhdr), blkhdr);
 #endif
-                //if ( offset >= wlength ) {
+                // if ( offset >= wlength ) {
                 //     break;
                 //}
 #ifdef DO_DEBUG
@@ -123,7 +123,7 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
 #endif
                 for (unsigned int i = 0; i < length; i++) {
                     c1 = window[(offset + i) % 4096];
-                    //if ( wlength < 4096 ) {
+                    // if ( wlength < 4096 ) {
                     window[wlength] = c1;
                     wlength = (wlength + 1) % 4096;
                     //}
@@ -154,7 +154,7 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
                 fprintf(stdout, "char  : %c\n", c);
 #endif
                 cursor++;
-                //if ( wlength < 4096 ) {
+                // if ( wlength < 4096 ) {
                 window[wlength] = c;
                 wlength = (wlength + 1) % 4096;
                 //}
@@ -162,7 +162,6 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
                 ocursor++;
             }
         }
-
     }
 
     return 0;

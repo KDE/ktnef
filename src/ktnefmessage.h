@@ -20,8 +20,8 @@
 
 #include <QList>
 
-#include "ktnefpropertyset.h"
 #include "ktnef_export.h"
+#include "ktnefpropertyset.h"
 
 namespace KTnef
 {
@@ -30,7 +30,6 @@ class KTNEFAttach;
 
 namespace KTnef
 {
-
 /**
  * @brief
  * Represents a @acronym TNEF message.

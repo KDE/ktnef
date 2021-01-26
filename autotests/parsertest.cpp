@@ -9,9 +9,9 @@
 
 #include "config-ktnef-tests.h"
 
-#include <ktnef/ktnefparser.h>
-#include <ktnef/ktnefmessage.h>
 #include <ktnef/ktnefattach.h>
+#include <ktnef/ktnefmessage.h>
+#include <ktnef/ktnefparser.h>
 
 #include <QString>
 #include <QTest>
@@ -94,10 +94,9 @@ void ParserTest::testUmlautAttachmentFilenames()
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
 
-    QList<KTNEFAttach*> atts = msg->attachmentList();
+    QList<KTNEFAttach *> atts = msg->attachmentList();
     QVERIFY(atts.count() == 1);
 
     KTNEFAttach *att = atts.first();
     QCOMPARE(att->fileName(), QString::fromUtf8("döcument.pdf"));
 }
-
