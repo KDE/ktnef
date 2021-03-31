@@ -17,8 +17,7 @@
   @author Reinhold Kainhofer
 */
 
-#ifndef KTNEF_FORMATTER_H
-#define KTNEF_FORMATTER_H
+#pragma once
 
 #include <KCalendarCore/MemoryCalendar>
 #include <QString>
@@ -53,4 +52,3 @@ Q_REQUIRED_RESULT KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tn
 Q_REQUIRED_RESULT KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
 }
 
-#endif

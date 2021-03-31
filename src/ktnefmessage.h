@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFMESSAGE_H
-#define KTNEFMESSAGE_H
+#pragma once
 
 #include <QList>
 
@@ -89,4 +88,3 @@ private:
 };
 
 }
-#endif

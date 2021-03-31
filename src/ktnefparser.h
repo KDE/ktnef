@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFPARSER_H
-#define KTNEFPARSER_H
+#pragma once
 
 #include "ktnef_export.h"
 #include <QIODevice>
@@ -114,4 +113,3 @@ private:
 };
 
 }
-#endif

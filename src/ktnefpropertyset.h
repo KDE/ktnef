@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFPROPERTYSET_H
-#define KTNEFPROPERTYSET_H
+#pragma once
 
 #include <QMap>
 #include <QVariant>
@@ -148,4 +147,3 @@ private:
 };
 
 }
-#endif

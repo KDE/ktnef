@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef MAPI_H
-#define MAPI_H
+#pragma once
 
 #include <QString>
 namespace KTnef
@@ -36,4 +35,3 @@ Q_REQUIRED_RESULT QString mapiTagString(int key);
  */
 Q_REQUIRED_RESULT QString mapiNamedTagString(int key, int tag = -1);
 }
-#endif

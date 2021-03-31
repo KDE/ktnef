@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef LZFU_H
-#define LZFU_H
+#pragma once
 #include <QtGlobal>
 class QIODevice;
 namespace KTnef
@@ -28,4 +27,3 @@ namespace KTnef
  */
 Q_REQUIRED_RESULT int lzfu_decompress(QIODevice *input, QIODevice *output);
 }
-#endif

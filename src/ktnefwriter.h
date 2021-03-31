@@ -15,8 +15,7 @@
  * @author Bo Thorsen
  */
 
-#ifndef KTNEFWRITER_H
-#define KTNEFWRITER_H
+#pragma once
 
 class QString;
 class QVariant;
@@ -282,4 +281,3 @@ private:
 
 }
 
-#endif // KTNEFWRITER_H

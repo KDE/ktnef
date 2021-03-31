@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFDEFS_H
-#define KTNEFDEFS_H
+#pragma once
 //@cond IGNORE
 #define TNEF_SIGNATURE 0x223e9f78
 #define LVL_MESSAGE 0x01
@@ -270,4 +269,3 @@
 #define MAPI_TAG_PR_REFERRED_BY_NAME 0X3A47001E // ReferredBy
 //@endcond
 
-#endif /* KTNEFDEFS_H */

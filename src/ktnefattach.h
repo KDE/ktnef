@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFATTACH_H
-#define KTNEFATTACH_H
+#pragma once
 
 #include <QString>
 
@@ -219,4 +218,3 @@ private:
 };
 
 }
-#endif

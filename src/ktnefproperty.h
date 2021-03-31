@@ -15,8 +15,7 @@
  * @author Michael Goffioul
  */
 
-#ifndef KTNEFPROPERTY_H
-#define KTNEFPROPERTY_H
+#pragma once
 
 #include <QString>
 #include <QVariant>
@@ -143,4 +142,3 @@ private:
 };
 
 }
-#endif
