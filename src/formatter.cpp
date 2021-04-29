@@ -59,12 +59,13 @@ static QString sNamedProp(KTNEFMessage *tnefMsg, const QString &name, const QStr
 
 static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
 {
-    const int year = dtStr.leftRef(4).toInt();
-    const int month = dtStr.midRef(4, 2).toInt();
-    const int day = dtStr.midRef(6, 2).toInt();
-    const int hour = dtStr.midRef(9, 2).toInt();
-    const int minute = dtStr.midRef(11, 2).toInt();
-    const int second = dtStr.midRef(13, 2).toInt();
+    const QStringView dtView{dtStr};
+    const int year = dtView.left(4).toInt();
+    const int month = dtView.mid(4, 2).toInt();
+    const int day = dtView.mid(6, 2).toInt();
+    const int hour = dtView.mid(9, 2).toInt();
+    const int minute = dtView.mid(11, 2).toInt();
+    const int second = dtView.mid(13, 2).toInt();
     QDate tmpDate;
     tmpDate.setDate(year, month, day);
     QTime tmpTime;
