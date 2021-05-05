@@ -143,7 +143,7 @@ void KTNEFPropertySet::addAttribute(int key, int type, const QVariant &value, bo
             return;
         }
     }
-    KTNEFProperty *p = new KTNEFProperty(key, type, value, QVariant());
+    auto *p = new KTNEFProperty(key, type, value, QVariant());
     d->attributes_[p->key()] = p;
 }
 

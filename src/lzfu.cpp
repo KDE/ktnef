@@ -40,12 +40,12 @@
 //@endcond
 
 //@cond PRIVATE
-typedef struct _lzfuheader {
+using lzfuheader = struct _lzfuheader {
     quint32 cbSize;
     quint32 cbRawSize;
     quint32 dwMagic;
     quint32 dwCRC;
-} lzfuheader;
+};
 //@endcond
 
 //@cond IGNORE

@@ -181,7 +181,7 @@ static const struct {
                             {0x8560, I18N_NOOP("Reminder Next Time")},
                             {0, nullptr}};
 
-typedef QMap<int, QString> TagMap;
+using TagMap = QMap<int, QString>;
 Q_GLOBAL_STATIC(TagMap, MAPI_TagMap)
 Q_GLOBAL_STATIC(TagMap, MAPI_NamedTagMap)
 
