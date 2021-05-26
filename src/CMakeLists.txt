@@ -1,5 +1,7 @@
+add_library(KF5Tnef)
+add_library(KF5::Tnef ALIAS KF5Tnef)
 
-set(ktnef_SRCS
+target_sources(KF5Tnef PRIVATE
   ktnefparser.cpp
   ktnefproperty.cpp
   ktnefattach.cpp
@@ -11,17 +13,16 @@ set(ktnef_SRCS
   formatter.cpp
 )
 
-ecm_qt_declare_logging_category(ktnef_SRCS HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef
+ecm_qt_declare_logging_category(KF5Tnef HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef
         OLD_CATEGORY_NAMES log_ktnef
         DESCRIPTION "ktnef (pim lib)" EXPORT KTNEF)
 
-add_library(KF5Tnef ${ktnef_SRCS})
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5Tnef PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KF5Tnef BASE_NAME ktnef)
 
-add_library(KF5::Tnef ALIAS KF5Tnef)
+
 
 target_include_directories(KF5Tnef INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KTNEF>")
 target_include_directories(KF5Tnef PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DIR}/src;${KTnef_BINARY_DIR}/src>")
