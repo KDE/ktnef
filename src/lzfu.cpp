@@ -101,7 +101,7 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
 #endif
         for (int i = 0; i < nFlags && ocursor < lzfuhdr.cbRawSize && cursor < lzfuhdr.cbSize + 4; i++) {
             if (FLAG(bFlags, i)) {
-                // compressed chunck
+                // compressed chunk
                 char c1, c2;
                 if (input->read(&c1, 1) != 1 || input->read(&c2, 1) != 1) {
                     fprintf(stderr, "unexpected eof, cannot read block header\n");
