@@ -126,8 +126,12 @@ void KTNEFParser::ParserPrivate::deleteDevice()
 
 bool KTNEFParser::ParserPrivate::decodeMessage()
 {
-    quint32 i1, i2, off;
-    quint16 u, tag, type;
+    quint32 i1;
+    quint32 i2;
+    quint32 off;
+    quint16 u;
+    quint16 tag;
+    quint16 type;
     QVariant value;
 
     // read (type+name)
@@ -242,8 +246,9 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
         quint32 rows;
         QList<QVariant> recipTable;
         stream_ >> rows;
-        if (rows > (INT_MAX / sizeof(QVariant)))
+        if (rows > (INT_MAX / sizeof(QVariant))) {
             return false;
+        }
         recipTable.reserve(rows);
         for (uint i = 0; i < rows; i++) {
             QMap<int, KTNEFProperty *> props;
@@ -300,7 +305,9 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
 bool KTNEFParser::ParserPrivate::decodeAttachment()
 {
     quint32 i;
-    quint16 tag, type, u;
+    quint16 tag;
+    quint16 type;
+    quint16 u;
     QVariant value;
     QString str;
 
@@ -476,7 +483,8 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QSt
         return false;
     }
 
-    quint32 len = att->size(), sz(16384);
+    quint32 len = att->size();
+    quint32 sz(16384);
     int n(0);
     char *buf = new char[sz];
     bool ok(true);
@@ -627,7 +635,10 @@ QDateTime formatTime(quint32 lowB, quint32 highB)
 
 QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
 {
-    QString s, dn, addr, t;
+    QString s;
+    QString dn;
+    QString addr;
+    QString t;
     QMap<int, KTnef::KTNEFProperty *>::ConstIterator it;
     if ((it = props.find(0x3001)) != props.end()) {
         dn = (*it)->valueString();
@@ -667,14 +678,22 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
 QDateTime readTNEFDate(QDataStream &stream)
 {
     // 14-bytes long
-    quint16 y, m, d, hh, mm, ss, dm;
+    quint16 y;
+    quint16 m;
+    quint16 d;
+    quint16 hh;
+    quint16 mm;
+    quint16 ss;
+    quint16 dm;
     stream >> y >> m >> d >> hh >> mm >> ss >> dm;
     return QDateTime(QDate(y, m, d), QTime(hh, mm, ss));
 }
 
 QString readTNEFAddress(QDataStream &stream)
 {
-    quint16 totalLen, strLen, addrLen;
+    quint16 totalLen;
+    quint16 strLen;
+    quint16 addrLen;
     QString s;
     stream >> totalLen >> totalLen >> strLen >> addrLen;
     s.append(readMAPIString(stream, false, false, strLen));
@@ -719,8 +738,9 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align, int len_
     } else {
         len = len_;
     }
-    if (len > INT_MAX)
+    if (len > INT_MAX) {
         return QString();
+    }
 
     quint32 fullLen = len;
     if (align) {
@@ -794,7 +814,8 @@ quint16 readMAPIValue(QDataStream &stream, MAPI_value &mapi)
             value.setValue(tmp);
         } break;
         case MAPI_TYPE_TIME: {
-            quint32 lowB, highB;
+            quint32 lowB;
+            quint32 highB;
             stream >> lowB >> highB;
             value = formatTime(lowB, highB);
         } break;

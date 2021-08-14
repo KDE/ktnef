@@ -100,7 +100,8 @@ QString KTNEFMessage::rtfString() const
     } else {
         QByteArray rtf;
         QByteArray propArray(prop.toByteArray());
-        QBuffer input(&propArray), output(&rtf);
+        QBuffer input(&propArray);
+        QBuffer output(&rtf);
         if (input.open(QIODevice::ReadOnly) && output.open(QIODevice::WriteOnly)) {
             if (KTnef::lzfu_decompress(&input, &output) == 0) {
                 qWarning() << "Error when decompress data";

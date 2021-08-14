@@ -63,7 +63,9 @@ using lzfuheader = struct _lzfuheader {
 int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
 {
     unsigned char window[4096];
-    unsigned int wlength = 0, cursor = 0, ocursor = 0;
+    unsigned int wlength = 0;
+    unsigned int cursor = 0;
+    unsigned int ocursor = 0;
     lzfuheader lzfuhdr;
     // blockheader blkhdr;
     quint16 blkhdr;
@@ -102,7 +104,8 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
         for (int i = 0; i < nFlags && ocursor < lzfuhdr.cbRawSize && cursor < lzfuhdr.cbSize + 4; i++) {
             if (FLAG(bFlags, i)) {
                 // compressed chunk
-                char c1, c2;
+                char c1;
+                char c2;
                 if (input->read(&c1, 1) != 1 || input->read(&c2, 1) != 1) {
                     fprintf(stderr, "unexpected eof, cannot read block header\n");
                     return -1;
@@ -110,7 +113,8 @@ int KTnef::lzfu_decompress(QIODevice *input, QIODevice *output)
                 blkhdr = c1;
                 blkhdr <<= 8;
                 blkhdr |= (0xFF & c2);
-                unsigned int offset = OFFSET(blkhdr), length = LENGTH(blkhdr);
+                unsigned int offset = OFFSET(blkhdr);
+                unsigned int length = LENGTH(blkhdr);
                 cursor += 2;
 #ifdef DO_DEBUG
                 fprintf(stdout, "block : offset=%.4d [%d], length=%.2d (0x%04X)\n", OFFSET(blkhdr), wlength, LENGTH(blkhdr), blkhdr);
