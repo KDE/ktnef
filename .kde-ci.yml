@@ -6,4 +6,4 @@ Dependencies:
   'require':
     'frameworks/kcontacts' : '@latest'
     'frameworks/kcalendarcore' : '@latest'
-    'kde/pim/kcalutils' : '@latest'
+    'kde/pim/kcalutils' : '@same'
