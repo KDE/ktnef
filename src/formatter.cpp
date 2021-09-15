@@ -24,8 +24,8 @@
 #include "ktnefmessage.h"
 #include "ktnefparser.h"
 
-#include <kcontacts/phonenumber.h>
-#include <kcontacts/vcardconverter.h>
+#include <KContacts/PhoneNumber>
+#include <KContacts/VCardConverter>
 
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalendarCore/Calendar>
