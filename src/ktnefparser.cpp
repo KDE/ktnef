@@ -73,9 +73,9 @@ class KTnef::KTNEFParser::ParserPrivate
 {
 public:
     ParserPrivate()
+        : defaultdir_(QStandardPaths::writableLocation(QStandardPaths::TempLocation))
+        , message_(new KTNEFMessage)
     {
-        defaultdir_ = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
-        message_ = new KTNEFMessage;
     }
     ~ParserPrivate()
     {
@@ -828,7 +828,7 @@ quint16 readMAPIValue(QDataStream &stream, MAPI_value &mapi)
             } else {
                 stream >> d;
             }
-            for (uint i = 0; i < d; i++) {
+            for (uint j = 0; j < d; j++) {
                 value.clear();
                 value.setValue(readMAPIString(stream, (mapi.type & 0x0FFF) == MAPI_TYPE_USTRING));
             }
