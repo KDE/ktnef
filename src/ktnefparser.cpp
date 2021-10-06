@@ -485,11 +485,10 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QSt
 
     quint32 len = att->size();
     quint32 sz(16384);
-    int n(0);
     char *buf = new char[sz];
     bool ok(true);
     while (ok && len > 0) {
-        n = device_->read(buf, qMin(sz, len));
+        const int n = device_->read(buf, qMin(sz, len));
         if (n < 0) {
             ok = false;
         } else {
