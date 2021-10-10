@@ -39,8 +39,6 @@ KTNEFPropertySet::KTNEFPropertySet()
 KTNEFPropertySet::~KTNEFPropertySet()
 {
     clear(true);
-
-    delete d;
 }
 
 void KTNEFPropertySet::addProperty(int key, int type, const QVariant &value, const QVariant &name, bool overwrite)

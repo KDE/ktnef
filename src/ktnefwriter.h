@@ -16,16 +16,17 @@
  */
 
 #pragma once
+#include <QStringList>
+
+#include "ktnef_export.h"
+#include <memory>
+#include <qglobal.h>
 
 class QString;
 class QVariant;
 class QIODevice;
 class QDataStream;
 class QDateTime;
-#include <QStringList>
-
-#include "ktnef_export.h"
-#include <qglobal.h>
 
 namespace KTnef
 {
@@ -273,7 +274,7 @@ public:
 
 private:
     //@cond PRIVATE
-    KTNEFWriterPrivateData *const d;
+    std::unique_ptr<KTNEFWriterPrivateData> const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFWriter)

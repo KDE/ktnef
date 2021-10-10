@@ -107,7 +107,6 @@ KTNEFParser::KTNEFParser()
 KTNEFParser::~KTNEFParser()
 {
     d->deleteDevice();
-    delete d;
 }
 
 KTNEFMessage *KTNEFParser::message() const

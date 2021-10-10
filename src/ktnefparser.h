@@ -20,6 +20,7 @@
 #include "ktnef_export.h"
 #include <QIODevice>
 #include <QString>
+#include <memory>
 
 namespace KTnef
 {
@@ -106,7 +107,7 @@ public:
 private:
     //@cond PRIVATE
     class ParserPrivate;
-    ParserPrivate *const d;
+    std::unique_ptr<ParserPrivate> const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFParser)

@@ -67,10 +67,7 @@ KTNEFWriter::KTNEFWriter()
     addProperty(attOEMCODEPAGE, atpBYTE, list);
 }
 
-KTNEFWriter::~KTNEFWriter()
-{
-    delete d;
-}
+KTNEFWriter::~KTNEFWriter() = default;
 
 void KTNEFWriter::addProperty(int tag, int type, const QVariant &value)
 {

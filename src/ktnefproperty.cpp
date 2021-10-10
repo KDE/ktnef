@@ -51,10 +51,7 @@ KTNEFProperty::KTNEFProperty(const KTNEFProperty &p)
     *d = *p.d;
 }
 
-KTNEFProperty::~KTNEFProperty()
-{
-    delete d;
-}
+KTNEFProperty::~KTNEFProperty() = default;
 
 KTNEFProperty &KTNEFProperty::operator=(const KTNEFProperty &other)
 {

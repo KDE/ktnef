@@ -21,7 +21,7 @@
 
 #include "ktnef_export.h"
 #include "ktnefpropertyset.h"
-
+#include <memory>
 namespace KTnef
 {
 class KTNEFAttach;
@@ -81,7 +81,7 @@ public:
 private:
     //@cond PRIVATE
     class MessagePrivate;
-    MessagePrivate *const d;
+    std::unique_ptr<MessagePrivate> const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFMessage)

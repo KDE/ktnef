@@ -51,10 +51,7 @@ KTNEFAttach::KTNEFAttach()
     d->index_ = -1;
 }
 
-KTNEFAttach::~KTNEFAttach()
-{
-    delete d;
-}
+KTNEFAttach::~KTNEFAttach() = default;
 
 void KTNEFAttach::setTitleParsed()
 {

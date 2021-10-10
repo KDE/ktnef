@@ -60,10 +60,7 @@ KTNEFMessage::KTNEFMessage()
 {
 }
 
-KTNEFMessage::~KTNEFMessage()
-{
-    delete d;
-}
+KTNEFMessage::~KTNEFMessage() = default;
 
 const QList<KTNEFAttach *> &KTNEFMessage::attachmentList() const
 {

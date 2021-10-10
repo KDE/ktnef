@@ -17,11 +17,11 @@
 
 #pragma once
 
+#include "ktnef_export.h"
 #include <QString>
 #include <QVariant>
+#include <memory>
 class KTNEFPropertyPrivate;
-#include "ktnef_export.h"
-
 namespace KTnef
 {
 /**
@@ -137,7 +137,7 @@ public:
 
 private:
     //@cond PRIVATE
-    KTNEFPropertyPrivate *const d;
+    std::unique_ptr<KTNEFPropertyPrivate> const d;
     //@endcond
 };
 

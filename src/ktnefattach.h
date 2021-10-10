@@ -21,6 +21,7 @@
 
 #include "ktnef_export.h"
 #include "ktnefpropertyset.h"
+#include <memory>
 
 namespace KTnef
 {
@@ -211,7 +212,7 @@ public:
 private:
     //@cond PRIVATE
     class AttachPrivate;
-    AttachPrivate *const d;
+    std::unique_ptr<AttachPrivate> const d;
     //@endcond
 
     Q_DISABLE_COPY(KTNEFAttach)
