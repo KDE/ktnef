@@ -11,6 +11,16 @@ target_sources(KF5Tnef PRIVATE
   ktnefwriter.cpp
   lzfu.cpp
   formatter.cpp
+  ktnefpropertyset.h
+  ktnefparser.h
+  mapi.h
+  ktnefattach.h
+  lzfu.h
+  ktnefmessage.h
+  ktnefdefs.h
+  formatter.h
+  ktnefwriter.h
+  ktnefproperty.h
 )
 
 ecm_qt_declare_logging_category(KF5Tnef HEADER ktnef_debug.h IDENTIFIER KTNEF_LOG CATEGORY_NAME org.kde.pim.ktnef
