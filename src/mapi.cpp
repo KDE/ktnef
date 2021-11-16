@@ -19,9 +19,20 @@
 #include <KLocalizedString>
 #include <QMap>
 //@cond IGNORE
+#include "ki18n_version.h"
+
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+#include <klazylocalizedstring.h>
+#undef I18N_NOOP
+#define I18N_NOOP kli18n
+#endif
 static const struct {
     int tag;
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+    const KLazyLocalizedString str;
+#else
     const char *str;
+#endif
 } MAPI_TagStrings[] = {{0x0002, I18N_NOOP("Alternate Recipient Allowed")},
                        {0x001A, I18N_NOOP("Message Class")},
                        {0x0023, I18N_NOOP("Originator Delivery Report Requested")},
@@ -147,8 +158,12 @@ static const struct {
                        {0x9005, I18N_NOOP("Attachment MAPI Properties")},
                        {0x9006, I18N_NOOP("TNEF Version")},
                        {0x9007, I18N_NOOP("OEM Code Page")},
-
-                       {0, nullptr}},
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+                       {0, KLazyLocalizedString()}
+#else
+                       {0, nullptr}
+#endif
+},
   MAPI_NamedTagStrings[] = {{0x8005, I18N_NOOP("Contact File Under")},
                             {0x8017, I18N_NOOP("Contact Last Name And First Name")},
                             {0x8018, I18N_NOOP("Contact Company And Full Name")},
@@ -179,7 +194,13 @@ static const struct {
                             {0x8516, I18N_NOOP("Start Date")},
                             {0x8517, I18N_NOOP("End Date")},
                             {0x8560, I18N_NOOP("Reminder Next Time")},
-                            {0, nullptr}};
+
+#if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
+                            {0, KLazyLocalizedString()}
+#else
+                            {0, nullptr}
+#endif
+};
 
 using TagMap = QMap<int, QString>;
 Q_GLOBAL_STATIC(TagMap, MAPI_TagMap)
@@ -190,9 +211,15 @@ Q_GLOBAL_STATIC(TagMap, MAPI_NamedTagMap)
 QString KTnef::mapiTagString(int key)
 {
     if (MAPI_TagMap()->isEmpty()) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         for (int i = 0; MAPI_TagStrings[i].str; i++) {
             (*MAPI_TagMap())[MAPI_TagStrings[i].tag] = i18n(MAPI_TagStrings[i].str);
         }
+#else
+        for (int i = 0; !KLocalizedString(MAPI_TagStrings[i].str).isEmpty(); i++) {
+            (*MAPI_TagMap())[MAPI_TagStrings[i].tag] = KLocalizedString(MAPI_TagStrings[i].str).toString();
+        }
+#endif
     }
     auto it = MAPI_TagMap()->constFind(key);
     if (it == MAPI_TagMap()->constEnd()) {
@@ -205,9 +232,15 @@ QString KTnef::mapiTagString(int key)
 QString KTnef::mapiNamedTagString(int key, int tag)
 {
     if (MAPI_NamedTagMap()->isEmpty()) {
+#if KI18N_VERSION < QT_VERSION_CHECK(5, 89, 0)
         for (int i = 0; MAPI_NamedTagStrings[i].str; ++i) {
             (*MAPI_NamedTagMap())[MAPI_NamedTagStrings[i].tag] = i18n(MAPI_NamedTagStrings[i].str);
         }
+#else
+        for (int i = 0; !KLocalizedString(MAPI_NamedTagStrings[i].str).isEmpty(); i++) {
+            (*MAPI_TagMap())[MAPI_TagStrings[i].tag] = KLocalizedString(MAPI_NamedTagStrings[i].str).toString();
+        }
+#endif
     }
     auto it = MAPI_NamedTagMap()->constFind(key);
     if (it != MAPI_NamedTagMap()->constEnd()) {
