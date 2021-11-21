@@ -7,4 +7,4 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@latest'
     'frameworks/kcontacts' : '@latest'
     'frameworks/kcalendarcore' : '@latest'
-    'kde/pim/kcalutils' : '@same'
+    'pim/kcalutils' : '@same'
