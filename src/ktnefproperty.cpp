@@ -18,7 +18,7 @@
 #include "ktnefproperty.h"
 #include "mapi.h"
 
-#include <ctype.h>
+#include <cctype>
 
 using namespace KTnef;
 

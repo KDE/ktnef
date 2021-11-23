@@ -27,7 +27,7 @@
 #include <QDateTime>
 #include <QList>
 
-#include <assert.h>
+#include <cassert>
 
 using namespace KTnef;
 

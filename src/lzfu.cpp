@@ -19,8 +19,8 @@
 
 #include <QIODevice>
 
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <sys/types.h>
 
 //#define DO_DEBUG

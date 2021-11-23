@@ -32,9 +32,7 @@ using namespace KTnef;
 class KTnef::KTNEFMessage::MessagePrivate
 {
 public:
-    MessagePrivate()
-    {
-    }
+    MessagePrivate() = default;
     ~MessagePrivate();
 
     void clearAttachments();
@@ -93,7 +91,7 @@ QString KTNEFMessage::rtfString() const
 {
     QVariant prop = property(0x1009);
     if (prop.isNull() || prop.type() != QVariant::ByteArray) {
-        return QString();
+        return {};
     } else {
         QByteArray rtf;
         QByteArray propArray(prop.toByteArray());

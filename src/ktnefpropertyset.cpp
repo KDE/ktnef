@@ -111,7 +111,7 @@ QVariant KTNEFPropertySet::property(int key) const
 {
     QMap<int, KTNEFProperty *>::ConstIterator it = d->properties_.constFind(key);
     if (it == d->properties_.constEnd()) {
-        return QVariant();
+        return {};
     } else {
         return (*it)->value();
     }
@@ -159,7 +159,7 @@ QVariant KTNEFPropertySet::attribute(int key) const
 {
     QMap<int, KTNEFProperty *>::ConstIterator it = d->attributes_.constFind(key);
     if (it == d->attributes_.constEnd()) {
-        return QVariant();
+        return {};
     } else {
         return (*it)->value();
     }

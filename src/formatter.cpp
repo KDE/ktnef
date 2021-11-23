@@ -37,7 +37,7 @@
 #include <QBuffer>
 #include <QTimeZone>
 
-#include <time.h>
+#include <ctime>
 
 using namespace KCalendarCore;
 using namespace KTnef;
@@ -83,7 +83,7 @@ static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
         }
         return dT;
     } else {
-        return QDateTime();
+        return {};
     }
 }
 //@endcond
