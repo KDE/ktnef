@@ -26,7 +26,6 @@
 
 #include <KContacts/PhoneNumber>
 #include <KContacts/VCardConverter>
-#include <kcontacts_version.h>
 
 #include <KCalUtils/IncidenceFormatter>
 #include <KCalendarCore/Calendar>
@@ -312,17 +311,11 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
             } else if (bCompatClassNote || QLatin1String("IPM.CONTACT") == msgClass) {
                 addressee.setUid(stringProp(tnefMsg, attMSGID));
                 addressee.setFormattedName(stringProp(tnefMsg, MAPI_TAG_PR_DISPLAY_NAME));
-#if KContacts_VERSION < QT_VERSION_CHECK(5, 88, 0)
-                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL1EMAILADDRESS)), true);
-                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL2EMAILADDRESS)), false);
-                addressee.insertEmail(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL3EMAILADDRESS)), false);
-#else
                 KContacts::Email email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL1EMAILADDRESS)));
                 email.setPreferred(true);
                 addressee.addEmail(email);
                 addressee.addEmail(KContacts::Email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL2EMAILADDRESS))));
                 addressee.addEmail(KContacts::Email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL3EMAILADDRESS))));
-#endif
                 addressee.insertCustom(QStringLiteral("KADDRESSBOOK"),
                                        QStringLiteral("X-IMAddress"),
                                        sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_IMADDRESS)));
