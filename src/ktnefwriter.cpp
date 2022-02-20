@@ -25,6 +25,7 @@
 #include <QByteArray>
 #include <QDataStream>
 #include <QDateTime>
+#include <QIODevice>
 #include <QList>
 
 #include <cassert>
