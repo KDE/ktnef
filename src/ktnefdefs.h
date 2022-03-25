@@ -268,4 +268,3 @@
 #define MAPI_TAG_PR_ORGANIZATIONAL_ID_NUMBER 0x3A10001E // OrganizationalIDNumber
 #define MAPI_TAG_PR_REFERRED_BY_NAME 0X3A47001E // ReferredBy
 //@endcond
-

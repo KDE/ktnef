@@ -51,4 +51,3 @@ Q_REQUIRED_RESULT KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tn
   */
 Q_REQUIRED_RESULT KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
 }
-
