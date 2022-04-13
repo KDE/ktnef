@@ -8,3 +8,6 @@ Dependencies:
     'frameworks/kcontacts' : '@latest'
     'frameworks/kcalendarcore' : '@latest'
     'pim/kcalutils' : '@same'
+
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
