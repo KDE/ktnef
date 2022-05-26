@@ -46,7 +46,7 @@ find_package(KF5CalendarUtils ${CALENDARUTILS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF5Contacts ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5I18n ${KF5_MIN_VERSION} CONFIG REQUIRED)
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.94.0)
+ecm_set_disabled_deprecation_versions(QT 5.15.2 KF 5.95.0)
 
 
 
