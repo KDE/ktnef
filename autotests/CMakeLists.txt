@@ -6,4 +6,4 @@ find_package(Qt${QT_MAJOR_VERSION}Test ${QT_REQUIRED_VERSION} CONFIG REQUIRED)
 
 configure_file(config-ktnef-tests.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-ktnef-tests.h)
 
-ecm_add_tests( parsertest.cpp NAME_PREFIX "ktnetf-" LINK_LIBRARIES KF5Tnef Qt${QT_MAJOR_VERSION}::Test)
+ecm_add_tests( parsertest.cpp NAME_PREFIX "ktnetf-" LINK_LIBRARIES KF5Tnef Qt::Test)
