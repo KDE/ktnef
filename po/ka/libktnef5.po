@@ -1,0 +1,592 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the ktnef package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2022-09-17 06:04+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "შემხსენებელი"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr ""
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "შეტყობინებების კლასი"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr ""
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr ""
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "პრიორიტეტი"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr ""
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr ""
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr ""
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr ""
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "მგრძნობიარობა"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "თემა"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr ""
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr ""
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "საგნის პრეფიქსი"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr ""
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr ""
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr ""
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr ""
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr ""
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr ""
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr ""
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr ""
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr ""
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr ""
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr ""
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr ""
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "გამგზავნის სახელი"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr ""
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr ""
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr ""
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr ""
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "ფარული ასლის ჩვენება"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "ასლის ჩვენება"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "ვის ეგზავნება, ჩვენება"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "შეტყობინების მიწოდების დრო"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "შეტყობინების ალმები"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "შეტყობინების ზომა"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr ""
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr ""
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr ""
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr ""
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr ""
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr ""
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr ""
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "მიმაგრებულის ზომა"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "მიმაგრებულის რიცხვი"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "წვდომა"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "წვდომის დონე"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr ""
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "ჩანაწერი გასაღები"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "ჩანაწერის გასაღების შენახვა"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "ელემენტს ID-ის შენახვა"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "ობიექტის ტიპი"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ელემენტის ID"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr ""
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr ""
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr ""
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr ""
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr ""
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr ""
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr ""
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr ""
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr ""
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr ""
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "ქმედება"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "ქმედების ალამი"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "ქმედეგის თარიღი"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "საჩვენებელი სახელი"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "შექმნის დრო"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "ბოლო ცვლილების დრო"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "ძებნის გასაღები"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr ""
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB მომწოდებელი"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "მიმაგრებულის მონაცემები"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "მიმაგრებულის კოდირება"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "მიმაგრებულის გაფართოება"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "მიმაგრების მეთოდი"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "მიმაგრების ფაილის გრძელი სახელი"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "მიმაგრების რენდერის მდებარეობა"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "მიმაგრების MIME ჭდე"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "მიმაგრების ალმებ"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "ანგარიში"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "გენერაცია"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "სახელი"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "ინიციალები"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "საკვანძო სიტყვა"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "ენა"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "მდებარეობა"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "გვარი"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "კომპანიის სახელი"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "სათაური"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "განყოფილების სახელი"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "ქვეყანა"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "რაიონი"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "რეგიონი/მხარე"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "შუა სახელი"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "სახელის პრეფიქსის ჩვენება"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "ვისგან"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr ""
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr ""
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr ""
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "მშობლის ID-ები"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr ""
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "სხეული"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr ""
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr ""
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr ""
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr ""
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "შეცვლის თარიღი"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr ""
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr ""
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr ""
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr ""
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr ""
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr ""
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr ""
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr ""
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr ""
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr ""
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr ""
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr ""
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr ""
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr ""
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr ""
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr ""
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr ""
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr ""
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr ""
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr ""
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr ""
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr ""
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr ""
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr ""
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr ""
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr ""
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr ""
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr ""
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr ""
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr ""
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "საწყისი დრო"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "დასასრული თარიღი"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr ""

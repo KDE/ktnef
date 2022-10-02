@@ -1,0 +1,594 @@
+# translation of libktnef.po to Arabic
+# translation of libktnef.po to
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Youssef Chahibi <chahibi@gmail.com>, 2007.
+# zayed <zayed.alsaidi@gmail.com>, 2009, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2022-01-09 22:48+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 21.07.70\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "التذكير"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "المستلم البديل مسموح"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "فئة الرسالة"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "مُنشئ تقرير التسليم مطلوب"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "مُنشئ عنوان العودة"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "أولوية"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "مطلوب قراءة الإيصال"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "ممنوع إعادة تعيين المستلم"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "حساسية الأصل"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "وسم التقرير"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "الحساسية"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "الموضوع"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "وقت إرسال العميل"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "أَرسِل مفتاح بحيث التمثيل"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "بادئة الموضوع"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "أَرسِل هوية مُدخلة التمثيل"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "أَرسِل اسم التمثيل"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "هوية إرسال الرسالة"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "اسم الكاتب الأصلي"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "هوية عنوان المالك"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "الرد مطلوب"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "أَرسِل نوع عنوان التمثيل"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "أَرسِل عنوان بريد الإلكتروني  للتمثيل"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "موضوع المحادثة"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "فهرس المحادثة"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF مفتاح ربط"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "الرد مطلوب"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "اسم المرسل"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "مفتاح بحث المُرسل"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "نوع عنوان المرسل"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "عنوان البريد الإلكتروني للمُرسل"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "احذف بعد الإرسال"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "عرض ن.ك.م"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "عرض ن.ك"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "عرض إلى"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "وقت تسليم الرسالة"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "أعلام الرسالة"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "حجم الرسالة"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "هوية أصل المُدخلة"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "هوية مُدخلة البريد المُرسل"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "مُستلمون الرسالة"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "أعلام الإرسال"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "لديه ملحق"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "موضوع مُطبّع"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF In Sync"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "حجم المُرفق"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "رقم المرفق"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "الوصول"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "مستوى الوصول"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "تخطيط التوقيع"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "مفتاح السجل"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "تخزين مفتاح السجل"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "تخزين هوية المُدخلة"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "نوع الكائن"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "هوية المُدخلة"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "متن الرّسالة"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF Sync Body CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF Sync Body Count"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF Sync Body Tag"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF مضغوط"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF Sync Prefix Count"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF Sync Trailing Count"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "متن رسالة HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "هوية الرسالة"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "هوية أصل الرسالة"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "إجراء"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "علم الإجراء"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "تاريخ الإجراء"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "وقت الإنشاء"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "وقت التعديل الأخير"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "مفتاح البحث"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "تخزين قناع الدعم"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "مزود MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "بيانات المُرفق"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "ترميز المُرفق"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "امتداد المُرفق"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "منهج المُرفق"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "الاسم الطويل لملف المُرفق"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "موضع تصيير المُرفق"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "وسم Mime للمُرفق"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "أعلام المُرفق"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "الحساب"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "الجيل"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "الإسم المعطى"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "أولي"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "الكلمة المفتاح"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "اللغة"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "الموقع"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "الكُنية"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "العنوان"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "اسم القسم"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "البلد"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "المحلّة"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "الولاية/المحافظة"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "الاسم الأوسط"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "بادئة اسم العرض"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "من"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "تاريخ الإرسال"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "تاريخ الاستقبال"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "حالة الرسالة"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "هوية الأصل"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "هوية المحادثة"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "المتن"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "عنوان المُرفق"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "الملف الوصفي للمُرفق"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "تاريخ إنشاء المُرفق"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "تاريخ تعديل المُرفق"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "تاريخ التعديل"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "اسم ملف نقل المُرفق"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "بيانات تصيير المُرفق"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "خصائص MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "جدول المُستملون"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "خصائص"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "إصدار TNEF "
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "رمز الصفحة OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "المُراسَل تحت الملف"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "الاسم الأول والأخير للمُراسَل"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "الاسم الكامل والشركة للمُراسَل"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "البريد الإلكتروني - 1 الكامل للمُراسَل"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "البريد الإلكتروني - 1 للمُراسَل"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "عنوان البريد الإلكتروني - 1 للمُراسَل"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "اسم العرض للبريد الإلكتروني - 1 للمُراسَل"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "هوية المُدخلة للبريد الإلكتروني - 1 للمُراسَل"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "البريد الإلكتروني - 2 الكامل للمُراسَل"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "نوع البريد الإلكتروني - 2 للمُراسَل"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "عنوان البريد الإلكتروني - 2 للمُراسَل"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "اسم العرض للبريد الإلكتروني - 2 للمُراسَل"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "هوية المُدخلة للبريد الإلكتروني - 2 للمُراسَل"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "موقع الموعد"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "تاريخ بداية الموعد"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "تاريخ نهاية الموعد"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "مدة الموعد"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "حالة استجابة الموعد"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "الموعد يُكرر"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "نوعية تكرار الموعد"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "نمط تكرار الموعد"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "وقت التذكير"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "ضبط التذكير"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "الوقت التالي للتذكير"

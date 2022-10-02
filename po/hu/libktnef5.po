@@ -1,0 +1,593 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Tamas Szanto <tszanto@interware.hu>, 2007.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011.
+# Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.0\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2021-09-22 09:19+0200\n"
+"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.03.80\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Emlékeztető"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Másodlagos címzett engedélyezett"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Üzenetosztály"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "A feladó kézbesítési visszajelzést kér"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Válaszcím"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Prioritás"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Elolvasási visszajelzést kér"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "A címzett átirányítása letiltva"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Eredeti érzékenység"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Jelentéscímke"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Érzékenység"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Tárgy"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Kliens feladási idő"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Keresési kulcs elküldve"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Tárgy-előtag"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Bejegyzésazonosító elküldve"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Megjelenítési név elküldve"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Üzenetfeladási azonosító"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "A szerző neve"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Tulajdonos találkozóazonosító"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Választ vár"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Címtípus elküldve"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "E-mail cím elküldve"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Téma"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Témaindex"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF korrellációs kulcs"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Választ vár"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Feladó neve"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Feladó keresési kulcsa"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Feladó címtípusa"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Feladó e-mail címe"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Törlés elküldés után"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "BCC megjelenítése"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "CC megjelenítése"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Megjelenítő"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Üzenetelküldési idő"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Üzenetjelzők"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Üzenetméret"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Szülőazonosító"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Elküldött üzenet azonosítója"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Címzettek"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Elküldési jelzők"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Van melléklete"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normalizált tárgy"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF IN Sync"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Melléklet mérete"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Mellékletek száma"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Hozzáférés"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Hozzáférési szint"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Aláírásleképezés"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Bejegyzéskulcs"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Tárolási kulcs"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Tárolási azonosító"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Objektumtípus"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Bejegyzésazonosító"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Üzenettörzs"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF Sync törzs-CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF Sync törzsszám"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF Sync törzscímke"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Tömörített RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF Sync előtagszám"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF Sync utótagszám"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML üzenettörzs"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Üzenetazonosító"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Szülő üzenetazonosítója"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Művelet"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Műveletjelző"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Műveleti dátum"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Megjelenített név"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Létrehozási idő"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Utolsó módosítás dátuma"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Keresési kulcs"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Tárolótámogatási maszk"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB-szolgáltató"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Csatolt adatok"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Melléklet kódolása"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Melléklet kiterjesztése"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Csatolási mód"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Melléklet hosszú fájlneve"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Mellékletmegjelenítési pozíció"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Melléklet MIME-típusa"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Melléklet jelzői"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Azonosító"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Generáció"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Utónév"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Monogram"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Kulcsszó"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Nyelv"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Hely"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Vezetéknév"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Munkahely"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Cím"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Osztály"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Ország"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Körzet"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Állam/megye"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Középső név"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Megjelenített név előtagja"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Küldő hely"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Elküldési dátum"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Érkezési dátum"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Üzenetállapot"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Szülő azonosítója"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Témaazonosító"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Törzs"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Melléklet címe"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Melléklet metafájlja"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Melléklet létrehozási dátuma"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Melléklet módosítási dátuma"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Utolsó módosítás dátuma"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Melléklet átvitelfájljának neve"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Mellékletmegjelenítési adatok"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI-jellemzők"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Címzettlista"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Melléklet MAPI-jellemzői"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF verzió"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM kódlap"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Névjegy név"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Névjegy vezetéknév és utónév"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Névjegy munkahely és teljes név"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Névjegy 1. teljes e-mail cím"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Névjegy 1. e-mail cím típusa"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Névjegy 1. e-mail cím típusa"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Névjegy 1. e-mail cím megjelenített neve"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Névjegy 1. e-mail cím bejegyzésazonosítója"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Névjegy 2. e-mail cím teljes név"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Névjegy 2. e-mail cím típusa"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Névjegy 2. e-mail cím"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Névjegy 2. e-mail cím megjelenített neve"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Névjegy 2. e-mail cím bejegyzésazonosítója"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Találkozó helye"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Találkozó kezdési dátuma"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Találkozó befejezési dátuma"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Találkozó időtartama"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Találkozó válaszállapota"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Találkozó ismétlődik"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Találkozó ismétlődési típusa"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Találkozó ismétlődési mintája"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Emlékeztető időpontja"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Emlékeztető beállítva"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Kezdési dátum"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Befejezési dátum"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Emlékeztető következő időpontja"

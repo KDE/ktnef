@@ -1,0 +1,597 @@
+# Slovenian translation of libktnef
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Andrej Vernekar <andrej.vernekar@moj.net>, 2007, 2008, 2009, 2011.
+# Jure Repinc <jlp@holodeck1.com>, 2012.
+# Andrej Mernik <andrejm@ubuntu.si>, 2015.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-02-27 12:24+0100\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Opomnik"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Dovoljen je alternativni prejemnik"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Razred sporočila"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Zahtevana je dostava poročila izvirnemu avtorju"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Naslov za odgovor izvirnega avtorja"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Prednost"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Zahtevano je potrdilo o branju"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Prenos prejemnika je prepovedan"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Občutljivost izvirnika"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Oznaka poročila"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Občutljivost"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Zadeva"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Čas pošiljanja s strani odjemalca"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Poslan predstavljajoč iskalni ključ"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Predpona zadeve"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Poslan predstavljajoč ID vnosa"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Poslano predstavljajoče ime"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ID pošiljanja sporočila"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Ime izvirnega avtorja"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ID lastnika sestanka"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Zahtevan je odgovor"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Poslana predstavljajoča vrsta naslova"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Poslan predstavljajoč naslov e-pošte"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Tema pogovora"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Kazalo pogovora"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Korelacijski ključ TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Zahtevan je odgovor"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Ime pošiljatelja"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Iskalni ključ pošiljatelja"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Vrsta naslova pošiljatelja"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "E-poštni naslov pošiljatelja"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Izbriši po pošiljanju"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Pokaži Skp"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Pokaži Kp"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Pokaži Za"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Čas dostave sporočila"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Zastavice sporočila"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Velikost sporočila"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ID nadrejenega vnosa"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "ID vnosa poslane pošte"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Prejemniki sporočila"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Zastavice pošiljanja"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Ima prilogo"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normalizirana zadeva"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF v usklajevanju"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Velikost priloge"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Številka priloge"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Dostop"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Nivo dostopa"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Podpis preslikave"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Ključ zapisa"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Shrani ključ zapisa"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Shrani ID vnosa"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Vrsta predmeta"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ID vnosa"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Telo sporočila"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF uskladitev nadzorne vsote telesa"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF uskladitev števila teles"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF uskladitev oznake telesa"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Stisnjen RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF uskladitev števila predpon"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF uskladitev števila zaključnih"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Telo sporočila HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID sporočila"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID nadrejenega sporočila"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Dejanje"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Zastavica dejanja"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Datum dejanja"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Ime za prikaz"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Čas ustvaritve"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Čas zadnje spremembe"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Iskalni ključ"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Shrani podporno masko"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Ponudnik MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Podatki priloge"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Kodiranje priloge"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Pripona priloge"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Metoda priloge"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Dolgo datotečno ime priloge"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Položaj izrisa priloge"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Oznaka MIME priloge"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Zastavice priloge"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Račun"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Ustvarjanje"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Dano ime"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Začetnice"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Ključna beseda"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Jezik"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Mesto"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Priimek"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Ime podjetja"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Naslov"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Ime oddelka"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Država"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Ime pošte"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Dežela ali pokrajina"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Srednje ime"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Predpona imena za prikaz"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Od"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Datum pošiljanja"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Datum prejema"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Stanje sporočila"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ID nadrejenega"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID pogovora"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Telo"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Naslov priloge"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Metadatoteka priloge"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Datum ustvaritve priloge"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Datum spremembe priloge"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Datum spremembe"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Ime datoteke za prenos priloge"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Podatki za izris priloge"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Lastnosti MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Razpredelnica prejemnikov"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Lastnosti priloge MAPI"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Različica TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Kodni nabor OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Datoteka stika pod"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Priimek in ime stika"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Podjetje in polno ime stika"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Celotna 1. e-pošta stika"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Vrsta naslova 1. e-pošte stika"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Naslov 1. e-pošte stika"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Ime za prikaz 1. e-pošte stika"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "ID vnosa 1. e-pošte stika"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Celotna 2. e-pošta stika"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Vrsta naslova 2. e-pošte stika"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Naslov 2. e-pošte stika"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Ime za prikaz 2. e-pošte stika"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "ID vnosa 2. e-pošte stika"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Mesto sestanka"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Datum začetka sestanka"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Datum konca sestanka"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Trajanje sestanka"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Stanje odgovora glede sestanka"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Sestanek se ponavlja"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Vrsta ponavljanja sestanka"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Vzorec ponavljanja sestanka"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Čas opomnika"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Opomnik nastavljen"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Začetni datum"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Končni datum"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Opomnik naslednjič"

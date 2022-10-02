@@ -1,0 +1,592 @@
+# translation of libktnef.po to Estonian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Marek Laane <bald@smail.ee>, 2007, 2010, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2019-11-17 00:52+0200\n"
+"Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
+"Language-Team: Estonian <kde-et@lists.linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Meeldetuletus"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Alternatiivne saaja lubatud"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Kirja klass"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Saatja soovib kättesaamise kinnitust"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Saatja vastamise aadress"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Tähtsus"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Lugemiskinnituse soov"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Saaja muutmine keelatud"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Algne tundlikkus"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Aruandesilt"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Tundlikkus"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Teema"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Kliendi lähetamise aeg"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Saadeti näidatav otsimisvõti"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Teema prefiks"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Saadeti näidatav kirje ID"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Saadeti näidatav nimi"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Kirja lähetamise ID"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Algse autori nimi"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Omaniku kohtumise ID"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Vastamise soov"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Saadeti näidatav aadressi tüüp"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Saadeti näidatav e-posti aadress"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Vestluse teema"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Vestluse indeks"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF korrelatsioonivõti"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Vastuse soov"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Saatja nimi"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Saatja otsimisvõti"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Saatja aadressi tüüp"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Saatja e-posti aadress"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Kustutamine pärast lähetamist"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "'BCC:' näitamine"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "'Koopia:' näitamine"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "'Kellele:' näitamine"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Kirja kättetoimetamise aeg"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Kirja lipud"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Kirja suurus"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Eellaskirje ID"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Sent-Mail kirje ID"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Kirja saajad"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Lähetamislipud"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Kaasatud failiga"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normaliseeritud teema"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF sünkroonis"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Kaasatud faili suurus"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Kaasatud faili number"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Juurdepääs"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Juurdepääsu tase"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Siduv signatuur"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Kirjevõti"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Kirjevõtme salvestamine"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Kirje ID salvestamine"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Objekti tüüp"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Kirje ID"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Kirja tekst"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF sünkroniseerimise põhiteksti CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF sünkroniseerimise põhitekstiarv"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF sünkroniseerimise põhiteksti silt"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Tihendatud RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF sünkroniseerimise prefiksiarv"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF sünkroniseerimise lõpetusarv"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML kirja põhitekst"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Kirja ID"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Eellaskirja ID"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Toiming"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Toimingu lipp"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Toimingu kuupäev"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Näidatav nimi"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Loomisaeg"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Viimase muutmise aeg"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Otsimisvõti"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Abimaski salvestamine"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB pakkuja"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Kaasatud faili andmed"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Kaasatud faili kodeering"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Kaasatud faili laiend"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Kaasamise meetod"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Kaasatud faili pikk nimi"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Kaasatud faili renderduspositsioon"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Kaasatud faili MIME silt"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Kaasatud faili lipud"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Konto"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Genereerimine"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Eesnimi"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Initsiaalid"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Võtmesõna"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Keel"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Asukoht"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Perekonnanimi"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Firma nimi"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Tiitel"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Osakonna nimi"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Riik"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Asukoht"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Osariik/provints"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Keskmine nimi"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Nime prefiksi näitamine"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Kellelt"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Andmed saadetud"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Andmed saadud"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Kirja olek"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Eellase ID"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Vestluse ID"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Põhitekst"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Kaasatud faili tiitel"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Kaasatud metafail"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Kaasatud faili loomisaeg"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Kaasatud faili muutmisaeg"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Muutmise kuupäev"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Kaasatud faili transpordifaili nimi"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Kaasatud faili renderdamise andmed"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI omadused"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Saajate tabel"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Kaasatud faili MAPI omadused"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF versioon"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM koodileht"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Salvestatud kontakt"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Kontakti perekonna- ja eesnimi"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Kontakti firma ja täielik nimi"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Kontakti 1. e-posti aadress täielikult"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Kontakti 1. e-posti aadressi tüüp"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Kontakti 1. e-posti aadress"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Kontakti 1. e-posti aadressi näidatav nimi"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Kontakti 1. e-posti aadressi kirje ID"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Kontakti 2. e-posti aadress täielikult"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Kontakti 2. e-posti aadressi tüüp"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Kontakti 2. e-posti aadress"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Kontakti 2. e-posti aadressi näidatav nimi"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Kontakti 2. e-posti aadressi kirje ID"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Kohtumise asukoht"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Kohtumise alguskuupäev"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Kohtumise lõppkuupäev"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Kohtumise kestus"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Kohtumise vastuse olek"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Kohtumine on korduv"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Kohtumise kordumise tüüp"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Kohtumise kordumise muster"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Meeldetuletuse aeg"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Meeldetuletus määratud"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Alguskuupäev"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Lõppkuupäev"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Meeldetuletuse järgmine kord"

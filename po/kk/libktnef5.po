@@ -1,0 +1,597 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sairan Kikkarin <sairan@computer.org>, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2013-07-12 04:06+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Еске салу"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Басқа алушылар рұқсат етілген"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Хабарлама класы"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Жетізген туралы хабарламасы сұралған"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Жіберушіге қайтару адресі"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Маңыздылығы"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Оқылған туралы хабарламасы сұралған"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Басқаға жолдауға тыйым салынған"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Бастапқы сезімділігі"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Есеп беру белгісі"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Сезімділігі"
+
+#: mapi.cpp:36 mapi.cpp:128
+#, fuzzy
+#| msgctxt "@label The subject of an email"
+#| msgid "Subject"
+msgid "Subject"
+msgstr "Тақырыбы"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Клиент бағдарламасы жіберген уақыт"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Жіберілген түйінді сөз"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Тақырып префиксі"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Жіберілген жазу индентификаторы"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Жіберілген аты"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Жіберілген хат ID-і"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Бастапқы авторының аты"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Кездесу ұйымдастырушысының ID-і"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Жауабы сұралған"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Жіберілген адресінің түрі"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Жіберілген эл.пошта адресі"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Не туралы әңгіме"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Әңгіменің индексі"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF кореляция кілті"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Жауабы қажет"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Жіберушінің аты"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Жіберушінің түйінді сөзі"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Жіберуші адресінің түрі"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Жіберушінің эл.пошта адресі"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Жібергеннен кейін өшірілсін"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Жасырын кімге көрінсін"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Көшірме кімге көрінсін"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Кімге көрінсін"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Хатты жеткізген уақыты"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Хаттың жалаушалары"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Хаттың өлшемі"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Аталық жазуының ID-і"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Жіберілген пошта жазуының ID-і"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Хаттың алушыары"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Жалаушалары жіберілсін"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Тіркемесі бар"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Нормаланған тақырыбы"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF қадамдастырылған"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Тіркемесінің өлшемі"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Тіркемесінің нөмірі"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Рұқсаттары"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Рұқсаттар деңгейі"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Колтаңба"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Жазу кілті"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Жазу кілті сақталсын"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Жазуының ID-і сақталсын"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Нысанның түрі"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Жазуының ID-і"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Хат беті"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF қадамдастыру денесінің бақылау қосындысы"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF қадамдастыру денесінің есептегіші"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF қадамдастыру денесінің тег-белгісі"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Сығылған RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF қадамдастыру префиксінің есептегіші"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF қадамдастыру аяқтауының есептегіші"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML хабарлама денесі"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Хаттың ID-і"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Аталық хаттың ID-і"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Әрекет"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Әрекет жалаушалары"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Әрекет кезі"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Көрсетілетін аты"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Жазылған кезі"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Сөңғы өзгетілген кезі"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Түйінді сөзі"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Қолдау қалқасы сақталсын"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB провайдері"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Тіркеме дерегі"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Тіркеменің кодтауы"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Тіркеменің жұрнағы"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Тіркемелеу әдісі"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Тіркеме файлының ұзын атауы"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Тіркемені көрсету орны"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Тіркеменің MIME белгісі"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Тіркеменің жалаушалары"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Тіркелгі"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Жасап шығару"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Өз аты"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Инициалдары"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Түйінді сөз"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Тіл"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Мекен жайы"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Фамилиясы"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Компаниясының атауы"
+
+#: mapi.cpp:116
+#, fuzzy
+#| msgctxt "@label The title of a person"
+#| msgid "Title"
+msgid "Title"
+msgstr "Атағы"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Бөлімі"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Ел"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Елді мекені"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Облыс/уалаяты"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Әкесінің аты"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Атының префиксі көрсетілсін"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Кімден"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Қашан жіберілген"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Қашан қабылданған"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Хаттың жағдайы"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Аталық ID-і"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Әңгіменің ID-і"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Беті"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Тіркемесі"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Тіркеме метафайлы"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Тіркеменің құрылған кезі"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Тіркеменің өзгертілген кезі"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Өзгертілген кезі"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Тіркеме файлының тасымал атауы"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Тіркеме көрсету дерегі"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI қасиетері"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Алушылар кестесі"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Тіркеме MAPI қасиеттері"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF нұсқасы"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM кодтамасы"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Контакт файлы"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Контакттің аты-жөні"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Компаниясы мен толық аты"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Толық 1-эл.поштасы"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Толық 1-эл.пошта адресі"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "1-эл.пошта адресі"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "1-эл.пошта адресінде көрсетілетін ат"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "1-эл.пошта адресінің жазуының ID-і"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Толық 2-эл.пошта адресі"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "2-эл.пошта адресінің түрі"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "2-эл.пошта адресі"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "2-эл.пошта адресінде көрсетілетін ат"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "2-эл.пошта адресінің жазуының ID-і"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Кездесу орны"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Кездесуінің басталу кезі"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Кездесуінің аяқталу кезі"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Кездесуінің ұзақтығы"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Кездесу ұсынысына жауаптың күйі"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Қайталанатын кездесу"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Кездесу қайталануының түрі"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Кездесу қайталануының қалыпы"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Еске салу уақыты"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Еске салу орнатылған"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Бастау кезі"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Аяқтау кезі"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Келесі еске салу уақыты"

@@ -1,0 +1,660 @@
+# translation of libktnef.po to Belarusian
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Darafei Praliaskouski <komzpa@licei2.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2007-04-23 16:57+0300\n"
+"Last-Translator: Darafei Praliaskouski <komzpa@licei2.com>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
+"%100>=11 && n%100<=14 ? 2 : 3);\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr ""
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr ""
+
+#: mapi.cpp:27 mapi.cpp:132
+#, fuzzy
+msgid "Message Class"
+msgstr "Кляса паведамленьня"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr ""
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr ""
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Прыярытэт"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr ""
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr ""
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr ""
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr ""
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr ""
+
+#: mapi.cpp:36 mapi.cpp:128
+#, fuzzy
+#| msgid "Subject"
+msgid "Subject"
+msgstr "Тэма"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr ""
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr ""
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr ""
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr ""
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr ""
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr ""
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr ""
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr ""
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr ""
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr ""
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr ""
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Тэма гутаркі"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Індэкс гутаркі"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Ключ карэляцыі TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr ""
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr ""
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr ""
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr ""
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr ""
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr ""
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Паказваць поле \"Таемная копія\""
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Паказваць поле \"Копія\""
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Паказваць поле \"Каму\""
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Час дастаўкі паведамлення"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr ""
+
+#: mapi.cpp:62
+#, fuzzy
+msgid "Message Size"
+msgstr "Памер паведамленьня"
+
+#: mapi.cpp:63
+#, fuzzy
+msgid "Parent Entry ID"
+msgstr "ID бацькоўскага элемэнту"
+
+#: mapi.cpp:64
+#, fuzzy
+msgid "Sent-Mail Entry ID"
+msgstr "ID элемэнту \"дасланай пошты\""
+
+#: mapi.cpp:65
+#, fuzzy
+msgid "Message Recipients"
+msgstr "Адрасаты паведамленьня"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr ""
+
+#: mapi.cpp:67
+#, fuzzy
+msgid "Has Attachment"
+msgstr "Змяшчае далучэнне"
+
+#: mapi.cpp:68
+#, fuzzy
+msgid "Normalized Subject"
+msgstr "Нармалізаваная тэма"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr ""
+
+#: mapi.cpp:70
+#, fuzzy
+msgid "Attachment Size"
+msgstr "Памер далучэньня"
+
+#: mapi.cpp:71
+#, fuzzy
+msgid "Attachment Number"
+msgstr "Нумар далучэньня"
+
+#: mapi.cpp:72
+#, fuzzy
+msgid "Access"
+msgstr "Доступ"
+
+#: mapi.cpp:73
+#, fuzzy
+msgid "Access Level"
+msgstr "Узровень доступу"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr ""
+
+#: mapi.cpp:75
+#, fuzzy
+msgid "Record Key"
+msgstr "Ключ запісу"
+
+#: mapi.cpp:76
+#, fuzzy
+msgid "Store Record Key"
+msgstr "Захоўваць ключ запісу"
+
+#: mapi.cpp:77
+#, fuzzy
+msgid "Store Entry ID"
+msgstr "Захоўваць ID элемэнту"
+
+#: mapi.cpp:78
+#, fuzzy
+msgid "Object Type"
+msgstr "Тып аб'екта"
+
+#: mapi.cpp:79
+#, fuzzy
+msgid "Entry ID"
+msgstr "ID элемэнту"
+
+#: mapi.cpp:80
+#, fuzzy
+msgid "Message Body"
+msgstr "Цела паведамлення"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr ""
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr ""
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr ""
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr ""
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr ""
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr ""
+
+#: mapi.cpp:87
+#, fuzzy
+msgid "HTML Message Body"
+msgstr "Цела HTML паведамленьня"
+
+#: mapi.cpp:88 mapi.cpp:133
+#, fuzzy
+msgid "Message ID"
+msgstr "ID паведамленьня"
+
+#: mapi.cpp:89
+#, fuzzy
+msgid "Parent's Message ID"
+msgstr "ID бацькоўскага паведамленьня"
+
+#: mapi.cpp:90
+#, fuzzy
+msgid "Action"
+msgstr "Дзеянне"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr ""
+
+#: mapi.cpp:92
+#, fuzzy
+msgid "Action Date"
+msgstr "Дата дзеяньня"
+
+#: mapi.cpp:93
+#, fuzzy
+msgid "Display Name"
+msgstr "Паказваць імя"
+
+#: mapi.cpp:94
+#, fuzzy
+msgid "Creation Time"
+msgstr "Час стварэньня"
+
+#: mapi.cpp:95
+#, fuzzy
+msgid "Last Modification Time"
+msgstr "Час апошняй мадыфікацыі"
+
+#: mapi.cpp:96
+#, fuzzy
+msgid "Search Key"
+msgstr "Ключ пошуку"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr ""
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr ""
+
+#: mapi.cpp:99 mapi.cpp:138
+#, fuzzy
+msgid "Attachment Data"
+msgstr "Дадзеныя далучэньня"
+
+#: mapi.cpp:100
+#, fuzzy
+msgid "Attachment Encoding"
+msgstr "Кадзіроўка далучэньня"
+
+#: mapi.cpp:101
+#, fuzzy
+msgid "Attachment Extension"
+msgstr "Пашырэньне далучэньня"
+
+#: mapi.cpp:102
+#, fuzzy
+msgid "Attachment Method"
+msgstr "Мэтад далучэньня"
+
+#: mapi.cpp:103
+#, fuzzy
+msgid "Attachment Long File Name"
+msgstr "Доўгае імя файла далучэньня"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr ""
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr ""
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr ""
+
+#: mapi.cpp:107
+#, fuzzy
+msgid "Account"
+msgstr "Рахунак"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr ""
+
+#: mapi.cpp:109
+#, fuzzy
+msgid "Given Name"
+msgstr "Імя"
+
+#: mapi.cpp:110
+#, fuzzy
+msgid "Initials"
+msgstr "Ініцыялы"
+
+#: mapi.cpp:111
+#, fuzzy
+msgid "Keyword"
+msgstr "Ключавое слова"
+
+#: mapi.cpp:112
+#, fuzzy
+msgid "Language"
+msgstr "Мова"
+
+#: mapi.cpp:113
+#, fuzzy
+msgid "Location"
+msgstr "Месцазнаходжанне"
+
+#: mapi.cpp:114
+#, fuzzy
+msgid "Surname"
+msgstr "Прозьвішча"
+
+#: mapi.cpp:115
+#, fuzzy
+msgid "Company Name"
+msgstr "Кампанія"
+
+#: mapi.cpp:116
+#, fuzzy
+msgid "Title"
+msgstr "Назва"
+
+#: mapi.cpp:117
+#, fuzzy
+msgid "Department Name"
+msgstr "Аддзел"
+
+#: mapi.cpp:118
+#, fuzzy
+msgid "Country"
+msgstr "Краіна"
+
+#: mapi.cpp:119
+#, fuzzy
+msgid "Locality"
+msgstr "Раён"
+
+#: mapi.cpp:120
+#, fuzzy
+msgid "State/Province"
+msgstr "Рэгіён"
+
+#: mapi.cpp:121
+#, fuzzy
+msgid "Middle Name"
+msgstr "Імя па бацьку"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr ""
+
+#: mapi.cpp:127
+#, fuzzy
+msgid "From"
+msgstr "Ад"
+
+#: mapi.cpp:129
+#, fuzzy
+msgid "Date Sent"
+msgstr "Дата адпраўкі"
+
+#: mapi.cpp:130
+#, fuzzy
+msgid "Date Received"
+msgstr "Дата атрыманьня"
+
+#: mapi.cpp:131
+#, fuzzy
+msgid "Message Status"
+msgstr "Статус паведамленьня"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr ""
+
+#: mapi.cpp:135
+#, fuzzy
+msgid "Conversation ID"
+msgstr "ID гутаркі"
+
+#: mapi.cpp:136
+#, fuzzy
+msgid "Body"
+msgstr "Цела"
+
+#: mapi.cpp:139
+#, fuzzy
+msgid "Attachment Title"
+msgstr "Назва далучэньня"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr ""
+
+#: mapi.cpp:141
+#, fuzzy
+msgid "Attachment Create Date"
+msgstr "Дата стварэньня далучэньня"
+
+#: mapi.cpp:142
+#, fuzzy
+msgid "Attachment Modify Date"
+msgstr "Дата мадыфікацыі далучэньня"
+
+#: mapi.cpp:143
+#, fuzzy
+msgid "Date Modified"
+msgstr "Дата мадыфікацыі"
+
+#: mapi.cpp:144
+#, fuzzy
+msgid "Attachment Transport File Name"
+msgstr "Імя файла для транспартаваньня далучэньня"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr ""
+
+#: mapi.cpp:146
+#, fuzzy
+msgid "MAPI Properties"
+msgstr "Уласьцівасьці MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr ""
+
+#: mapi.cpp:148
+#, fuzzy
+msgid "Attachment MAPI Properties"
+msgstr "Уласьцівасьці MAPI далучэньня"
+
+#: mapi.cpp:149
+#, fuzzy
+msgid "TNEF Version"
+msgstr "Вэрсія TNEF"
+
+#: mapi.cpp:150
+#, fuzzy
+msgid "OEM Code Page"
+msgstr "Кадзіроўка OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr ""
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr ""
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr ""
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr ""
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr ""
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr ""
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr ""
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr ""
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr ""
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr ""
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr ""
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr ""
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr ""
+
+#: mapi.cpp:168 mapi.cpp:169
+#, fuzzy
+msgid "Appointment Location"
+msgstr "Месца сустрэчы"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr ""
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr ""
+
+#: mapi.cpp:172
+#, fuzzy
+msgid "Appointment Duration"
+msgstr "Працягласьць сустрэчы"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr ""
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr ""
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr ""
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr ""
+
+#: mapi.cpp:177
+#, fuzzy
+msgid "Reminder Time"
+msgstr "Час напаміну"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr ""
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr ""
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr ""
+
+#: mapi.cpp:181
+#, fuzzy
+msgid "Reminder Next Time"
+msgstr "Наступны час напаміну"

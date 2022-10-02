@@ -1,0 +1,597 @@
+# translation of libktnef.po to Hindi
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Ravishankar Shrivastava <raviratlami@yahoo.com>, 2008.
+# Ravishankar Shrivastava <raviratlami@aol.in>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2009-02-28 22:29+0530\n"
+"Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
+"Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
+"Language: hne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "स्मरन"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "एकांतर पावइया स्वीकार"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "संदेस वर्ग"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "ओरिजिनेटर डिलीवरी रिपोट निवेदित"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "ओरिजिनेटर वापसी पता"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "प्राथमिकता"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "पढ़े के रसीद निवेदित"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "पावइया रीअसाइनमेंट निसिद्ध"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "मूल संवेदनसीलता"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "रिपोट टैग"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "संवेदनसीलता"
+
+#: mapi.cpp:36 mapi.cpp:128
+#, fuzzy
+#| msgid "Subject"
+msgid "Subject"
+msgstr "विसय"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "क्लायंट सबमिट समय"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "रीप्रेजेन्टिंग सर्च कुंजी भेजिस"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "विसय उपसर्ग"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "रीप्रेजेन्टिंग प्रविस्टि आईडी भेजिस"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "रीप्रेजेन्टिंग नाम भेजिस"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "संदेस पेस करे बर आईडी"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "मूल लेखक के नाम"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "मालिक नियोजित भेंट आईडी"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "प्रत्युत्तर निवेदित"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "रीप्रेजेन्टिंग पता किसिम भेजिस"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "रीप्रेजेन्टिंग ई-मेल पता भेजिस"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "बातचीत विसय"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "बातचीत निर्देसिका"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "टीएनईएफ कोरिलेसन कुंजी"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "जवाब निवेदित"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "भेजने वाले के नाम"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "भेजने वाले के सर्च कुंजी"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "भेजने वाले के पता किसिम"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "भेजने वाले के ई-मेल पता"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "जमा करे के बाद मेटाव"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "देखाव- बेनामी नकल"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "देखाव- नकल"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "देखाव- प्रति"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "संदेस प्रेसन समय"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "संदेस फ्लेग्स"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "संदेस आकार"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "पेरेंट एन्ट्री आईडी"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "मेल प्रविस्टि आईडी भेजिस"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "संदेस पावइया"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "जमा फ्लेग्स"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "संलग्नक हे"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "सामान्यीकृत विसय"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "आरटीएफ सिंक में"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "संलग्नक आकार"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "संलग्नक संख्या"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "पहुंच"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "पहुंच स्तर"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "मैपिंग दसखत"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "रेकार्ड कुंजी"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "भंडार रेकार्ड कुंजी"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "भंडार प्रविस्टि आईडी"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "चीज किसिम"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "एन्ट्री आईडी"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "संदेस ढांचा"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "आरटीएफ सिंक मुख्य हिस्सा सीआरसी"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "आरटीएफ सिंक मुख्य हिस्सा संख्या"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "आरटीएफ सिंक मुख्य हिस्सा टैग"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "आरटीएफ कम्प्रेस्ड"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "आरटीएफ सिंक उपसर्ग संख्या"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "आरटीएफ सिंक ट्रेलिंग संख्या"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "एचटीएमएल संदेस मुख्य भाग"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "संदेस आईडी"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "पैरेन्ट्स संदेस आईडी"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "काम"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "काम फ्लैग"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "काम तारीक"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "नाम देखाव"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "निर्मान समय"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "आखरी बदले के समय"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "खोज कुंजी"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "भंडार समर्थन मास्क"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "एमडीबी देवइया"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "संलग्नक डाटा"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "संलग्नक एनकोडिंग"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "संलग्नक एक्सटेंसन "
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "संलग्नक विधि"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "संलग्नक लंबा फाइल नाम"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "संलग्नक रेंडरिंग स्थिति"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "संलग्नक माइम टैग"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "संलग्नक फ्लेग्स"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "खाता"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "जेनरेसन"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "दे गे नाम"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "पहिलीअक्छर"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "कीवर्ड"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "भाखा"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "जगह"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "कुलनाम"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "कम्पनी नाम"
+
+#: mapi.cpp:116
+#, fuzzy
+#| msgid "Title"
+msgid "Title"
+msgstr "सीर्सक"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "विभाग के नाम"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "देस"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "जगह"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "प्रदेस/प्रांत"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "मध्य नाम"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "नाम के पहिलीअक्छर"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "से"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "ये तारीक ल भेजिस"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "प्राप्ति तारीक"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "संदेस स्थिति"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "पेरेंट आईडी"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "बातचीत आईडी"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "बाडी"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "संलग्नक फाइल"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "संलग्नक मेटा फाइल"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "संलग्नक सृजन तारीक"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "संलग्नक परिवर्धित तारीक"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "तारीक परिवर्धित"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "संलग्नक हस्तांतरन फाइल नाम"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "संलग्नक रेंडरिंग डाटा"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "एमएपीआई गुन"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "पावइया टेबल"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "संलग्न एमएपीआई गुन"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "टीएनईएफ संस्करन"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "ओईएम कोड पेज"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "सम्पर्क फाइल में"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "सम्पर्क आखरी नाम अउ पहिली नाम"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "सम्पर्क कम्पनी अउ पूरा नाम"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "सम्पर्क ई-मेल 1 पूरा"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "सम्पर्क ई-मेल 1 पता किसिम"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "सम्पर्क ई-मेल 1 पता"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "सम्पर्क ई-मेल 1 प्रदर्सित नाम"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "सम्पर्क ई-मेल 1 प्रविस्टि आईडी"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "सम्पर्क ई-मेल 2 पूरा"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "सम्पर्क ई-मेल 2 पता किसिम"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "सम्पर्क ई-मेल 2 पता"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "सम्पर्क ई-मेल 2 प्रदर्सित नाम"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "सम्पर्क ई-मेल 2 प्रविस्टि आईडी"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "नियोजित भेंट जगह"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "नियोजित भेंट चालू तारीक"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "नियोजित भेंट खतम तारीक"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "नियोजित भेंट अवधि"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "नियोजित भेंट प्रतिकिरिया स्थिति"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "नियोजित भेंट बारंबार होवत हे"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "नियोजित भेंट आवृत्ति किसिम"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "नियोजित भेंट आवृत्ति पैटर्न"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "स्मरन समय"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "नियत स्मरन"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "सुरू तारीक"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "खतम तारीक"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "अगले दफा याद दिलाव"

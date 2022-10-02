@@ -1,0 +1,606 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Tommi Nieminen <translator@legisign.org>, 2010, 2020.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2014, 2015.
+#
+# KDE Finnish translation sprint participants:
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-07-06 17:58+0300\n"
+"Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-POT-Import-Date: 2012-12-01 22:25:21+0000\n"
+"X-Generator: Lokalize 20.04.2\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Muistutus"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Vaihtoehtoinen vastaanottaja sallittu"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Viestin luokka"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Aloittajan toimitusraporttia pyydetty"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Aloittajan palautusosoite"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Prioriteetti"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Lukemiskuittausta pyydetty"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Vastaanottajan vaihtaminen kielletty"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Alkuperäinen arkaluonteisuus"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Raporttitunniste"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Arkaluonteisuus"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Aihe"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Asiakasohjelman lähetysaika"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Lähetetty edustaen – hakusana"
+
+# Subject Prefix eli viestin aiheen etuliite, esim. ”FW:” tai ”RE:”
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Aiheen etuliite"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Lähetetty edustaen – tietuetunniste"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Lähetetty edustaen – nimi"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Viestin lähetystunniste"
+
+# Original Author Name eli viestin alkuperäisen kirjoittajan nimi.
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Alkuperäisen kirjoittajan nimi"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Omistajan tapaamistunniste"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Vastausta pyydetty"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Lähetetty edustaen – osoitetyyppi"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Lähetetty edustaen – sähköpostiosoite"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Keskustelun aihe"
+
+# Conversation Index eli (Microsoftin dokumentaatiota lainaten) ”he relative position of this message within a conversation thread”.
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Keskustelun indeksi"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF-korrelointiavain"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Vastausta pyydetty"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Lähettäjän nimi"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Lähettäjän hakusana"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Lähettäjän osoitetyyppi"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Lähettäjän sähköpostiosoite"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Poista, kun lähetetty"
+
+# Display Bcc eli Microsoftin dokumentaatiota lainaten ”an ASCII list of the display names of any blind carbon copy (BCC) message recipients, separated by semicolons (;)”.
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Piilokopionsaajien näyttönimet"
+
+# Display Cc eli Microsoftin dokumentaatiota lainaten ” an ASCII list of the display names of any carbon copy (CC) message recipients, separated by semicolons (;)”.
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Kopionsaajien näyttönimet"
+
+# Display To eli Microsoftin dokumentaatiota lainaten ”a list of the display names of the primary (To) message recipients, separated by semicolons (;)”.
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Vastaanottajien näyttönimi"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Viestin välitysaika"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Viestin tilaliput"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Viestin koko"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Emotietueen tunniste"
+
+# Sent-Mail Entry ID eli Microsoftin dokumentaatiota lainaten ”the entry identifier of the folder where the message should be moved after submission”.
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Lähetetyt-kansion tietuetunniste"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Viestin vastaanottajat"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Lähetystilan liput"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Sisältää liitteen"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normalisoitu aihe"
+
+# RTF In Sync eli arvo, joka on tosi, jos viestin plain text -versio ja RTF-versio sisältävät saman sisällön.
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF:ssä on sama sisältö"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Liitteen koko"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Liitteen numero"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Saanti"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Saantitaso"
+
+# Mapping Signature eli Microsoftin dokumentaatiota lainaten ”the mapping signature for named properties of a particular MAPI object”.
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Ominaisuuksien vastaavuusallekirjoitus"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Tietueavain"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Säilön tietueavain"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Säilön tietuetunniste"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Objektin tyyppi"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Tietueen tunniste"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Viestin runko"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF-synkronointi: rungon CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF-synkronointi: rungon merkkimäärä"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF-synkronointi: rungon tunniste"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF (pakattu)"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF-synkronointi: etuliitteen merkkimäärä"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF-synkronointi: perässä olevien merkkien määrä"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML-viestin runko"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Viestin tunniste"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Emoviestin tunniste"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Toiminto"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Toimintolippu"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Toimintopäiväys"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Näyttönimi"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Luontiaika"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Viimeisin muutosaika"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Hakusana"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Säilön tukimaski"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB-tarjoaja"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Liitteen data"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Liitteen koodaus"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Liitteen nimen tunnisteosa"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Liitteen liittämistapa"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Liitteen pitkä tiedostonimi"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Liitteen näyttämissijainti"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Liitteen MIME-tunniste"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Liitteen tilaliput"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Tili"
+
+# Yleisiä arvoja Generation-kentälle ovat esim. Jr., Sr. ja III.
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Sukupolvi"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Etunimi"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Nimikirjaimet"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Avainsana"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Kieli"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Sijainti"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Sukunimi"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Yrityksen nimi"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Otsikko"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Osaston nimi"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Maa"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Paikkakunta"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Osavaltio tai provinssi"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Keskimmäinen nimi"
+
+# Display Name Prefix eli Microsoftin dokumentaatiota lainaten ”the display name prefix (such as Miss, Mr., Mrs.) for the messaging user”.
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Näyttönimen etuliite"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Lähettäjä"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Lähetyspäivä"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Vastaanottopäivä"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Viestin tila"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Emon tunniste"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Keskustelun tunniste"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Runko"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Liitteen otsikko"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Liitteen metatiedosto"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Liitteen luontipäivä"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Liitteen muutospäivä"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Muutospäivä"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Liitteen välitystiedostonimi"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Liitteen näyttämisdata"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI-ominaisuudet"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Vastaanottajataulukko"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Liitteen MAPI-ominaisuudet"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF-versio"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM-koodisivu"
+
+# Lähdekoodia lukemalla selvisi, että Contact File Under viittaa MAPI-ominaisuuteen, jonka tunniste on 0x8005. Verkosta hakemalla taas selvisi, että 0x8005 on Manager-nimisen ominaisuuden tunniste.
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Esimies"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Yhteystiedon suku- ja etunimi"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Yhteystiedon yritys ja koko nimi"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Yhteystiedon sähköposti-1, täysi"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Yhteystiedon sähköposti-1, tyyppi"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Yhteystiedon sähköposti-1, osoite"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Yhteystiedon sähköposti-1, näyttönimi"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Yhteystiedon sähköposti-1, tietueen tunniste"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Yhteystiedon sähköposti-2, täysi"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Yhteystiedon sähköposti-2, tyyppi"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Yhteystiedon sähköposti-2, osoite"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Yhteystiedon sähköposti-2, näyttönimi"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Yhteystiedon sähköposti-2, tietueen tunniste"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Tapaamisen sijainti"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Tapaamisen aloituspäivä"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Tapaamisen päättymispäivä"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Tapaamisen kesto"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Tapaamisen vastauksen tila"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Tapaaminen toistuu"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Tapaamisen toistumistyyppi"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Tapaamisen toistumistapa"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Muistutuksen aika"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Muistutus asetettu"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Aloituspäivä"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Päättymispäivä"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Muistuta seuraavan kerran"

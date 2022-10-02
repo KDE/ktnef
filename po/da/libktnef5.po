@@ -1,0 +1,592 @@
+# translation of libktnef.po to
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2010, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-07-21 17:34+0200\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Påmindelse"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Anden modtager tilladt"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Beskedklasse"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Anmodet om leveringsrapport fra oprindelse"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Returadresse til oprindelse"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Prioritet"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Anmodet om læsekvittering"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Omtildeling af modtager forbudt"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Oprindelig følsomhed"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Rapportmærke"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Følsomhed"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Emne"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Klientens sendetidspunkt"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Repræsenterende søgenøgle afsendt"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Emnepræfiks"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Repræsenterende indgangs-ID afsendt"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Repræsenterende navn afsendt"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Beskedafsendelses-ID"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Oprindelig forfatters navn"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Ejers tildelings-ID"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Anmodet om respons"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Repræsenterende adressetype afsendt"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Repræsenterende e-mailadresse afsendt"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Samtaleemne"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Samtaleindeks"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF-korrelationsnøgle"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Anmodet om svar"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Afsender navn"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Afsenders søgenøgle"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Afsenders adressetype"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Afsenders e-mailadresse"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Slet efter afsendelse"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Vis bcc"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Vis cc"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Vis til"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Beskedens leveringstidspunkt"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Beskedflag"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Beskedstørrelse"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Ingangs-ID for forælder"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Indgangs-ID for sendt post"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Beskedmodtagere"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Afsendelsesflag"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Har bilag"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normaliseret emne"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF synkroniseret"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Bilagsstørrelse"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Bilagsnummer"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Adgang"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Adgangsniveau"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Kortlægningssignatur"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Optegnelsesnøgle"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Gem optegnelsesnøgle"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Gem indgangs-ID"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Objekttype"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Indgangs-ID"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Beskedkrop"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF Sync Body CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF Sync Body Count"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF Sync Body Tag"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF komprimeret"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF Sync Prefix Count"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF Sync Trailing Count"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML beskedkrop"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Besked-ID"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Forælders besked-ID"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Handling"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Handlingsflag"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Handlingsdato"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Vist navn"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Oprettelsestidspunkt"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Tidspunkt for seneste ændring"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Søgenøgle"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Gem supportmaske"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB-udbyder"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Bilagdata"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Bilagindkodning"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Filendelse for bilag"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Bilagsmetode"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Fuldt filnavn for bilag"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Renderingsposition for bilag"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Mime-tag for bilag"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Bilagsflag"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Konto"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Oprettelse"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Givet navn"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Initialer"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Nøgleord"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Sprog"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Sted"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Efternavn"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Firmanavn"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Titel"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Afdelingsnavn"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Land"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Lokalitet"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Forbundsstat/provins"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Mellemnavn"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Præfiks for vist navn"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Fra"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Afsendelsesdato"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Modtagelsesdato"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Beskedstatus"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Forælder-ID"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Samtale-ID"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Krop"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Bilagstitel"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Bilags metafil"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Bilags oprettelsesdato"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Bilags ændringsdato"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Ændringsdato"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Bilagets transportfilnavn"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Bilags renderingsdata"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI-egenskaber"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Modtagertabel"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Bilagets MAPI-egenskaber"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF-version"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM-kodeside"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Kontakts fil under"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Kontakts efternavn og fornavn"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Kontakts firma og fulde navn"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Kontakts e-mail-1 fuld"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Kontakts e-mail-1 adressetype"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Kontakts e-mail-1 adresse"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Kontakts e-mail-1 vist navn"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Kontakts e-mail-1 indgangs-ID"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Kontakts e-mail-2 fuld"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Kontakts e-mail-2 adressetype"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Kontakts e-mail-2 adresse"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Kontakts e-mail-2 vist navn"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Kontakts e-mail-2 indgangs-ID"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Aftalens sted"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Aftalens startdato"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Aftalens slutdato"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Aftalens varighed"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Aftalens svarstatus"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Aftalen er gentagende"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Aftalens type af gentagelse"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Aftalens gentagelsesmønster"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Påmindelsestidspunkt"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Påmindelse sat"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Startdato"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Slutdato"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Påmindelse næste gang"

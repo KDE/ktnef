@@ -1,0 +1,591 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2022-09-20 01:56\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/ktnef/libktnef5.pot\n"
+"X-Crowdin-File-ID: 3811\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "提醒"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "允许备选收件人"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "信件类别"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "请求原始转发记录"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "原始回复地址"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "优先级"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "请求阅读回执"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "禁止收件人重指派"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "原始敏感性"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "记录标签"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "敏感性"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "主题"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "客户端提交时间"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "已发送描述搜索键"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "主题前缀"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "已发送描述条目编号"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "已发送描述名称"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "信件提交编号"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "原始作者名"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "所有者指定编号"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "请求响应"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "已发送描述地址类型"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "已发送描述邮件地址"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "对话主题"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "对话索引"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF 关联键"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "请求回复"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "发件人姓名"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "发件人搜索键"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "发件人地址类型"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "发件人邮件地址"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "提交后删除"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "显示密送对象"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "显示抄送对象"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "显示收件人"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "信件投递时间"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "信件标记"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "信件大小"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "父条目编号"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "发送邮件条目编号"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "信件收件人"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "提交标记"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "有附件"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "规格化主题"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "同步 RTF"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "附件大小"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "附件编号"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "访问"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "访问级别"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "映射签名"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "记录键"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "储存记录键"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "储存条目编号"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "对象类型"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "条目编号"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "信件正文"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF 同步正文 CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF 同步正文计数"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF 同步正文标签"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF 压缩"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF 同步前缀计数"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF 同步尾缀计数"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML 信件正文"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "信件编号"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "父信件编号"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "操作"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "操作标记"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "操作日期"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "显示名"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "创建时间"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "最后修改时间"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "搜索键"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "储存支持掩码"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB 提供者"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "附件数据"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "附件编码"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "附件扩展"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "附件方法"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "附件长文件名"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "附件位置"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "附件 MIME 标签"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "附件标记"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "账户"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "常规"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "姓名"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "缩写"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "关键字"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "语言"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "位置"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "姓氏"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "公司名"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "标题"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "部门名称"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "国家"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "位置"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "州/省"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "中间名"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "显示名前缀"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "发件人"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "发送日期"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "接收日期"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "信件状态"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "父类编号"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "对话编号"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "正文"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "附件标题"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "附件元文件"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "附件创建日期"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "附件修改日期"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "修改日期"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "附件传送文件名"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "附件数据"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI 属性"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "收件人表格"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "附件 MAPI 属性"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF 版本"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM 代码页"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "联系人文件"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "联系人姓名"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "联系人公司及全名"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "联系人邮件一全称"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "联系人邮件一地址类型"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "联系人邮件一地址"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "联系人邮件一显示名"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "联系人邮件一条目编号"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "联系人邮件二全称"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "联系人邮件二地址类型"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "联系人邮件二地址"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "联系人邮件二显示名"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "联系人邮件二条目编号"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "约会位置"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "约会开始时间"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "约会结束时间"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "约会持续时间"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "约会响应状态"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "约会重现中"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "约会重现类型"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "约会重现模式"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "提醒时间"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "提醒设置"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "开始日期"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "结束日期"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "下次提醒时间"

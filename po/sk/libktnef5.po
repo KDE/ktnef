@@ -1,0 +1,589 @@
+# translation of libktnef5.po to Slovak
+# Roman Paholík <wizzardsk@gmail.com>, 2014, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef5\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2021-11-15 17:32+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 21.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Upozornenie"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Alternatívny prijímateľ povolený"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Trieda správy"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Vyžadovaný správa o doručení pôvodcu"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Spätná adresa pôvodcu"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Priorita"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Vyžadované potvrdenie prečítania"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Zakázané preradenie prijímateľa"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Pôvodná citlivosť"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Oznámiť značku"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Citlivosť"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Predmet"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Čas odoslania klienta"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Poslať reprezentujúci kľúč hľadania"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Predpona predmetu"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Poslať reprezentujúce ID položky"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Poslať reprezentujúci názov"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ID príspevku správy"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Pôvodné meno autora"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ID vlastníka schôdze"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Vyžaduje sa odpoveď"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Poslať reprezentujúci typ adresy"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Poslať reprezentujúcu e-mailovú adresu"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Téma rozhovoru"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Index rozhovoru"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF korelačný kľúč"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Vyžaduje sa odpoveď"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Meno odosielateľa"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Kľúč hľadania odosielateľa"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Typ adresy odosielateľa"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "E-mailová adresa odosielateľa"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Vymazať po odoslaní"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Zobraziť Bcc"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Zobraziť Cc"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Zobraziť Pre"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Čas doručenia správy"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Príznaky správy"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Veľkosť správy"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ID nadradenej položky"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "ID položky poslaného mailu"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Prijímatelia správy"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Odoslať príznaky"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Má prílohu"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Normalizovaný predmet"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF v synchronizácii"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Veľkosť prílohy"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Číslo prílohy"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Prístup"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Prístupová úroveň"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Mapovací podpis"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Kľúč záznamu"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Uložiť kľúč záznamu"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Uložiť ID položky"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Typ objektu"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ID položky"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Telo správy"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF synchronizácia tela CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF synchronizácia tela počet"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF synchronizácia tela značka"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF komprimované"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF synchronizácia predpona počet"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF synchronizácia koncový počet"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML telo správy"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID správy"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID nadradenej správy"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Akcia"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Vlajka akcie"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Dátum akcie"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Zobrazené meno"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Čas vytvorenia"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Čas poslednej zmeny"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Kľúč hľadania"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Uložiť podpornú masku"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB poskytovateľ"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Dáta prílohy"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Kódovanie prílohy"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Prípona prílohy"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Metóda prílohy"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Dlhý názov súboru prílohy"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Poloha vykreslenia prílohy"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Mime značka prílohy"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Príznaky prílohy"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Účet"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Generácia"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Krstné meno"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Iniciály"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Kľúčové slovo"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Jazyk"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Umiestnenie"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Priezvisko"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Názov spoločnosti"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Názov"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Názov oddelenia"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Krajina"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Lokalita"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Štát alebo provincia"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Stredné meno"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Zobraziť predponu názvu"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Od"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Dátum odoslania"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Dátum prijatia"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Stav správy"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Nadradené ID"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID rozhovoru"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Telo"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Titulok prílohy"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Meta súbor prílohy"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Dátum vytvorenia prílohy"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Dátum zmeny prílohy"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Dátum zmeny"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Názov súboru prenosu prílohy"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Vykresľovacie dáta prílohy"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Vlastnosti MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Tabuľka prijímateľov"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "MAPI vlastnosti prílohy"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Verzia TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM kódová stránka"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Kontaktný súbor pod"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Druhé meno a prvé meno kontaktu"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Spoločnosť a plné meno kontaktu"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Kontaktný e-mail 1 plný"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Kontaktný e-mail 1 typ adresy"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Kontaktný e-mail 1 adresa"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Kontaktný e-mail 1 zobrazené meno"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Kontaktný e-mail 1 ID položky"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Kontaktný e-mail 2 plný"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Kontaktný e-mail 2 typ adresy"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Kontaktný e-mail 2 adresa"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Kontaktný e-mail 2 zobrazené meno"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Kontaktný e-mail 2 ID položky"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Miesto schôdze"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Dátum začiatku schôdze"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Dátum konca schôdze"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Trvanie schôdze"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Stav odpovede na schôdzu"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Schôdza je opakovaná"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Typ opakovania schôdze"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Vzor opakovania schôdze"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Čas pripomienky"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Pripomienka naastavená"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Počiatočný dátum"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Konečný dátum"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Ďalší čas pripomienky"

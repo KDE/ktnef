@@ -1,0 +1,594 @@
+# translation of libktnef.po to Greek
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Spiros Georgaras <sng@hellug.gr>, 2007.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2012.
+# Stelios <sstavra@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-09-08 09:52+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Υπενθύμιση"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Επιτρέπεται εναλλακτικός παραλήπτης"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Κλάση μηνύματος"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Αιτήθηκε αναφορά παράδοσης αρχικού συγγραφέα"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Διεύθυνση επιστροφής αρχικού συγγραφέα"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Προτεραιότητα"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Αιτήθηκε απόδειξη ανάγνωσης"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Απαγορεύθηκε επανορισμός παραλήπτη"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Αρχική ευαισθησία"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Ετικέτα αναφοράς"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Ευαισθησία"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Θέμα"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Χρόνος υποβολής πελάτη"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Αποστολή αντιπροσωπευτικού κλειδιού αναζήτησης"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Πρόθεμα θέματος"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Αποστολή αντιπροσωπευτικού ID καταχώρησης"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Αποστολή αντιπροσωπευτικού ονόματος"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ID υποβολής μηνύματος"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Όνομα αρχικού συγγραφέα"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ID ραντεβού ιδιοκτήτη"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Αιτήθηκε απάντηση"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Αποστολή αντιπροσωπευτικού τύπου διεύθυνσης"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Αποστολή αντιπροσωπευτικής διεύθυνσης Email"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Θέμα συζήτησης"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Ευρετήριο συζήτησης"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Κλειδί συσχέτισης TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Αιτήθηκε απάντηση"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Όνομα αποστολέα"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Κλειδί αναζήτησης αποστολέα"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Τύπος διεύθυνσης αποστολέα"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Διεύθυνση Email αποστολέα"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Διαγραφή μετά την υποβολή"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Εμφάνιση κρυφής κοινοποίησης"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Εμφάνιση κοινοποίησης"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Εμφάνιση προς"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Χρόνος παράδοσης μηνύματος"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Σημαίες μηνύματος"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Μέγεθος μηνύματος"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ID γονικής καταχώρησης"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "ID καταχώρησης αποστολής μηνύματος"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Παραλήπτες μηνύματος"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Σημαίες υποβολής"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Έχει επισύναψη"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Κανονικοποιημένο θέμα"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF σε συγχρονισμό"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Μέγεθος συνημμένου"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Αριθμός συνημμένου"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Πρόσβαση"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Επίπεδο πρόσβασης"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Υπογραφή αντιστοίχησης"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Κλειδί εγγραφής"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Αποθήκευση κλειδιού εγγραφής"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Αποθήκευση ID καταχώρησης"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Τύπος αντικειμένου"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ID καταχώρησης"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Σώμα μηνύματος"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "CRC συγχρονισμού θέματος RTF"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Αριθμός συγχρονισμού θέματος RTF"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Ετικέτα συγχρονισμού θέματος RTF"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Συμπιεσμένο RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Αριθμός συγχρονισμού προθέματος RTF"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Αριθμός συγχρονισμού κατάληξης RTF"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Σώμα μηνύματος HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID μηνύματος"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID γονικού μηνύματος"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Ενέργεια"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Σημαία ενέργειας"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Ημερομηνία ενέργειας"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Όνομα εμφάνισης"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Ώρα δημιουργίας"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Ώρα τελευταίας τροποποίησης"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Κλειδί αναζήτησης"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Αποθήκευση μάσκας υποστήριξης"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Πάροχος MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Δεδομένα συνημμένου"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Κωδικοποίηση συνημμένου"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Επέκταση συνημμένου"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Μέθοδος συνημμένου"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Πλήρες όνομα αρχείου συνημμένου"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Θέση αποτύπωσης συνημμένου"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Ετικέτα Mime συνημμένου"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Σημαίες συνημμένου"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Λογαριασμός"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Δημιουργία"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Μικρό όνομα"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Αρχικά"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Λέξη κλειδί"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Τοποθεσία"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Επίθετο"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Όνομα εταιρείας"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Τίτλος"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Όνομα τμήματος"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Χώρα"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Εντοπιότητα"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Πολιτεία/επαρχία"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Μεσαίο όνομα"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Πρόθεμα ονόματος εμφάνισης"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Από"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Ημερομηνία αποστολής"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Ημερομηνία παραλαβής"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Κατάσταση μηνύματος"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ID γονέα"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID συζήτησης"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Σώμα"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Τίτλος συνημμένου"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Αρχείο μεταδεδομένων συνημμένου"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Ημερομηνία δημιουργίας συνημμένου"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Ημερομηνία τροποποίησης συνημμένου"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Ημερομηνία τροποποίησης"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Όνομα αρχείου μεταφοράς συνημμένου"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Δεδομένα αποτύπωσης συνημμένου"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Ιδιότητες MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Πίνακας παραληπτών"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Ιδιότητες MAPI συνημμένου"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Έκδοση TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Κωδικοσελίδα OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Αρχείο επαφής κάτω από"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Επώνυμο και όνομα επαφής"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Εταιρεία και πλήρες όνομα επαφής"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Πλήρες 1ο EMail επαφής"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Τύπος διεύθυνσης 1ου EMail επαφής"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Διεύθυνση 1ου EMail επαφής"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Όνομα εμφάνισης 1ου EMail επαφής"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "ID καταχώρησης 1ου EMail επαφής"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Πλήρες 2ο EMail επαφής"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Τύπος διεύθυνσης 2ου EMail επαφής"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Διεύθυνση 2ου EMail επαφής"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Όνομα εμφάνισης 2ου EMail επαφής"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "ID καταχώρησης 2ου EMail επαφής"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Τοποθεσία ραντεβού"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Ημερομηνία έναρξης ραντεβού"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Ημερομηνία λήξης ραντεβού"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Διάρκεια ραντεβού"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Κατάσταση απάντησης ραντεβού"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Το ραντεβού επαναλαμβάνεται"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Τύπος επανάληψης ραντεβού"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Μοτίβο επανάληψης ραντεβού"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Ώρα υπενθύμισης"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Ορισμός υπενθύμισης"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Ημερομηνία έναρξης"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Ημερομηνία λήξης"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Επόμενος χρόνος υπενθύμισης"

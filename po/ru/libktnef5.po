@@ -1,0 +1,709 @@
+# KDE3 - kdepim/ktnef.po Russian translation.
+# Copyright (C) 2003, 2004 KDE Russian translation team.
+#
+# Marina Soboleva <marina_soboleva@inbox.ru>, 2003, 2004.
+# Leonid Kanter <leon@asplinux.ru>, 2004.
+# Nickolai Shaforostoff <shafff@ukr.net>, 2004.
+# Andrey Cherepanov <skull@kde.ru>, 2009.
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-04-22 17:42+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.12.3\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Напоминание"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Разрешённые альтернативные получатели"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Класс письма"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Запрошен отчёт о доставке"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Обратный адрес отправителя"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Приоритет"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Запрошено подтверждение о прочтении"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Перенаправление другому получателю запрещено"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Первоначальная чувствительность"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Отчёт"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Чувствительность"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Тема"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Время сохранения письма"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Отправленный ключ поиска"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Префикс темы"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Отправленный идентификатор элемента"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Отправленное имя"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Идентификатор подчинённого письма"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Имя автора"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Идентификатор организатора встречи"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Запрошен ответ"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Отправленный тип адреса"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Отправленный адрес электронной почты"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Тема разговора"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Индекс разговора"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Ключ корреляции TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Запрошен ответ"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Имя отправителя"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Ключ поиска отправителя"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Тип адреса отправителя"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Электронный адрес отправителя"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Удалить после отправки"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Показать поле «Скрытая копия»"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Показать поле «Копия»"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Показать поле «Получатель»"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Время доставки письма"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Флаги письма"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Размер письма"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Идентификатор родительского элемента"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Идентификатор элемента отправленной почты"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Получатели письма"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Флаги рассмотрения"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Имеет вложение"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Нормализованная тема"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "Синхронизируется RTF"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Размер вложения"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Номер вложения"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Доступ"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Уровень доступа"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Подпись"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Ключ записи"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Сохранять ключ записи"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Сохранять идентификатор элемента"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Тип объекта"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Номер записи"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Тело письма"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "Контрольная сумма тела синхронизации RTF"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Счётчик тела синхронизации RTF"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Тег тела синхронизации RTF"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Сжатый RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Счётчик заголовка синхронизации RTF"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Счётчик завершающего блока синхронизации RTF"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Тело HTML-письма"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID письма"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID родительского письма"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Действие"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Флаг действия"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Дата действия"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Время создания"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Время последнего изменения"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Ключ поиска"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Сохранять маску поддержки"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Провайдер MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Данные вложения"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Кодировка вложения"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Расширение вложения"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Метод кодирования вложения"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Длинное имя файла вложения"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Позиция показа вложения"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "MIME-тег вложения"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Метки вложения"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Учётная запись"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Создание"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Заданное имя"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Инициалы"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Ключевое слово"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Язык"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Местонахождение"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Отчество"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Название компании"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Должность"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Название подразделения"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Страна"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Регион"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Штат/Область"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Инициал"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Показываемый префикс имени"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Отправитель"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Дата отправки"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Дата получения"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Статус письма"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ID родительского письма"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID разговора"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Тело"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Заголовок вложения"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Метафайл вложения"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Дата создания вложения"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Дата изменения вложения"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Дата изменения"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Имя файла вложения при передаче"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Данные показа вложения"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Свойства MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Список получателей"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Свойства MAPI вложения"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Версия TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Кодировка OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Файл"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Фамилия и имя"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Компания и полное имя"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Полный адрес EMail-1"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Тип адреса EMail-1"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Адрес EMail-1"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Отображаемое имя в адресе EMail-1"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Идентификатор элемента адреса EMail-1"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Полный адрес EMail-2"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Тип адреса EMail-2"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Адрес EMail-2"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Отображаемое имя в адресе EMail-2"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Идентификатор элемента адреса EMail-2"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Место встречи"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Дата начала встречи"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Дата окончания встречи"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Продолжительность встречи"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Состояние запроса встречи"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Встреча состоится снова"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Тип повторения встречи"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Шаблон повторения встречи"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Время напоминания"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Напоминание включено"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Дата начала"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Дата окончания"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Следующее время напоминания"
+
+#~ msgid "&Action"
+#~ msgstr "&Действие"
+
+#~ msgid "Comment:"
+#~ msgstr "Комментарий:"
+
+#~ msgid "Description:"
+#~ msgstr "Описание:"
+
+#~ msgid "Mime type:"
+#~ msgstr "Тип MIME:"
+
+#~ msgid "File size:"
+#~ msgstr "Размер файла:"
+
+#~ msgid "Index:"
+#~ msgstr "Индекс:"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Value"
+#~ msgstr "Значение"
+
+#~ msgid "TNEF Attributes"
+#~ msgstr "Атрибуты TNEF"
+
+#~ msgid "Select an item."
+#~ msgstr "Выберите какой-либо элемент списка."
+
+#~ msgid "The selected item cannot be saved."
+#~ msgstr "Невозможно сохранить выбранный элемент."
+
+#~ msgid "Unable to open file for writing, check file permissions."
+#~ msgstr ""
+#~ "Невозможно открыть файл для записи, проверьте права на запись в файл."
+
+#~ msgid "View With..."
+#~ msgstr "Просмотреть в..."
+
+#~ msgid "Extract"
+#~ msgstr "Извлечь"
+
+#~ msgid "Extract To..."
+#~ msgstr "Извлечь в..."
+
+#~ msgid "Extract All To..."
+#~ msgstr "Извлечь все в..."
+
+#~ msgid "Message Properties"
+#~ msgstr "Свойства сообщения"
+
+#~ msgid "Show Message Text"
+#~ msgstr "Показать текст сообщения"
+
+#~ msgid "Save Message Text As..."
+#~ msgstr "Сохранить текст сообщения как..."
+
+#~ msgid "Default Folder..."
+#~ msgstr "Папка по умолчанию..."
+
+#~ msgid "100 attachments found"
+#~ msgstr "Найдено 100 вложений"
+
+#~ msgid "No file loaded"
+#~ msgstr "Файл не загружен"
+
+#~ msgid "Unable to open file."
+#~ msgstr "Не удалось открыть файл."
+
+#~ msgid ""
+#~ "_n: %n attachment found\n"
+#~ "%n attachments found"
+#~ msgstr ""
+#~ "Найдено %n вложение\n"
+#~ "Найдено %n вложения\n"
+#~ "Найдено %n вложений"
+
+#~ msgid "Unable to extract file \"%1\""
+#~ msgstr "Невозможно извлечь файл \"%1\""
+
+#~ msgid "File Name"
+#~ msgstr "Имя файла"
+
+#~ msgid "File Type"
+#~ msgstr "Тип файла"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "Viewer for mail attachments using TNEF format"
+#~ msgstr "Программа просмотра вложений в формате TNEF"
+
+#~ msgid "An optional argument 'file'"
+#~ msgstr "Необязательный аргумент 'файл'"
+
+#~ msgid "KTnef"
+#~ msgstr "KTnef"
+
+#~ msgid ""
+#~ "_: NAME OF TRANSLATORS\n"
+#~ "Your names"
+#~ msgstr "Марина Соболева,Леонид Кантер,Николай Шафоростов"
+
+#~ msgid ""
+#~ "_: EMAIL OF TRANSLATORS\n"
+#~ "Your emails"
+#~ msgstr "marina_soboleva@inbox.ru,leon@asplinux.ru,shafff@ukr.net"

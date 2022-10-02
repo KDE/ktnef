@@ -1,0 +1,595 @@
+# Translation of libktnef5.po to Ukrainian
+# Copyright (C) 2018-2019 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Ivan Petrouchtchak <ivanpetrouchtchak@yahoo.com>, 2007.
+# Yuri Chornoivan <yurchor@ukr.net>, 2009, 2010, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef5\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2019-10-24 07:46+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 19.11.70\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Нагадування"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Дозволені альтернативні адресати"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Клас повідомлення"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Запрошений звіт про доставку"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Зворотна адреса відправника"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Пріоритет"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Запрошене підтвердження про прочитання"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Перенаправлення до іншого адресата заборонене"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Первісна чутливість"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Мітка звіту"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Чутливість"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Тема"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Час надсилання клієнтом"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Відправлений пошуковий ключ"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Префікс теми"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Відісланий ІД елемента"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Відіслане ім'я"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ІД надісланого повідомлення"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Ім'я першого автора"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ІД організатора зустрічі"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Запит відповіді"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Тип відісланої адреси"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Відіслана адреса електронної пошти"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Тема розмови"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Індекс розмови"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Ключ кореляції TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Вимагається відповідь"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Ім'я відправника"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Пошуковий ключ відправника"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Тип адреси відправника"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Електронна адреса відправника"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Вилучити після відсилання"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Показувати прих. копію"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Показувати поле копія"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Показувати поле кому"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Час доставки повідомлення"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Прапорці повідомлення"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Розмір повідомлення"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ІД батьківського елемента"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "ІД елемента відісланої пошти"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Отримувачі повідомлення"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Надіслати прапорці"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Має долучення"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Нормалізована тема"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF синхронізовано"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Розмір долучення"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Номер долучення"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Доступ"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Рівень доступу"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Підпис"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Ключ запису"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Зберігати ключ запису"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Зберігати ІД запису"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Тип об'єкта"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ІД запису"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Тіло повідомлення"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "Контрольна сума тіла синхронізації RTF"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Лічильник тіла синхронізації RTF"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Мітка тіла синхронізації RTF"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "Стиснутий RTF"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Лічильник префікса синхронізації RTF"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Лічильник завершального блока синхронізації RTF"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Тіло HTML повідомлення"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ІД повідомлення"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ІД батьківського повідомлення"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Дія"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Прапорець дії"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Дата дії"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Екранне ім'я"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Час створення"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Час останньої модифікації"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Пошуковий ключ"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Зберігати маску підтримки"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Провайдер MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Дані долучення"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Кодування долучення"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Суфікс назви долучення"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Метод долучення"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Довга назва файла долучення"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Позиція зображення долучення"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Мітка MIME долучення"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Прапорці долучення"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Обліковий запис"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Створення"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Ім'я"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Ініціали"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Ключове слово"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Мова"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Адреса"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Прізвище"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Назва підприємства"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Звертання"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Назва відділу"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Країна"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Місто/Село"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Область/провінція"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "По-батькові"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Показувати префікс імені"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Від"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Дата відсилання"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Дата отримання"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Стан повідомлення"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ІД батьківського повідомлення"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ІД розмови"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Тіло"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Заголовок долучення"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Метафайл долучення"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Дата створення долучення"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Дата модифікації долучення"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Дата модифікації"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Назва файла транспорту долучення"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Дані відтворення долучення"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Властивості MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Таблиця адресатів"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Властивості долучення MAPI"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Версія TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Кодова сторінка OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Файл контакту"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Прізвище та ім'я контакту"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Підприємство і повне ім'я"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Повна адреса EMail-1 контакту"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Тип адреси EMail-1 контакту"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Адреса EMail-1 контакту"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Екранне ім'я адреси EMail-1 контакту"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "IД адреси EMail-1 контакту"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Повна адреса EMail-2 контакту"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Тип адреси EMail-2 контакту"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Адреса EMail-2 контакту"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Екранне ім'я адреси EMail-2 контакту"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "IД адреси EMail-2 контакту"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Адреса зустрічі"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Дата початку зустрічі"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Дата завершення зустрічі"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Тривалість зустрічі"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Стан запиту зустрічі"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Зустріч знов повториться"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Тип повторення зустрічі"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Шаблон повторення зустрічі"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Час нагадування"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Нагадування ввімкнене"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Дата початку"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Дата закінчення"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Наступний час нагадування"

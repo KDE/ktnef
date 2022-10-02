@@ -1,0 +1,596 @@
+# Translation of libktnef5.po to Catalan (Valencian)
+# Copyright (C) 2007-2021 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep M. Ferrer <txemaq@gmail.com>, 2007, 2009, 2010, 2012, 2014, 2015, 2021.
+# Manuel Tortosa <manutortosa@gmail.com>, 2010.
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2014, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: ktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2021-10-22 19:51+0200\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Accelerator-Marker: &\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Recordatori"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Destinatari alternatiu permés"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Classe de missatge"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "El remitent ha sol·licitat un comprovant de lliurament"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Adreça de retorn del remitent"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Prioritat"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "S'ha sol·licitat un comprovant de lectura"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "És prohibit de reassignar el destinatari"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Sensibilitat original"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Etiqueta d'informe"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Sensibilitat"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Assumpte"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Hora de tramesa del client"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "S'ha enviat la clau de busca del representant"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Prefix de l'assumpte"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "S'ha enviat l'entrada ID del representant"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "S'ha enviat el nom del representant"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ID de tramesa del missatge"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Nom de l'autor original"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ID de la cita del propietari"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Es demana una resposta"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "S'ha enviat el tipus d'adreça del representant"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "S'ha enviat el correu electrònic del representant"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Tema de la conversa"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Índex de la conversa"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Clau de correlació TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Resposta sol·licitada"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Nom del remitent"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Clau de busca del remitent"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Tipus d'adreça del remitent"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Adreça de correu del remitent"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Suprimix després d'enviar-ho"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Mostra el camp BCC"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Mostra el camp CC"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Mostra el camp A"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Temps de lliurament del missatge"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Indicadors del missatge"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Mida del missatge"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ID de l'entrada pare"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "ID de l'entrada del correu enviat"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Destinataris del missatge"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Indicadors de la tramesa"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Té un adjunt"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Assumpte normalitzat"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF sincronitzat"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Mida de l'adjunt"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Número de l'adjunt"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Accés"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Nivell d'accés"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Signatura de correspondència"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Tecla de gravació"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Guarda la tecla de gravació"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Guarda l'ID de l'entrada"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Tipus d'objecte"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ID de l'entrada"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Cos del missatge"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "CRC del cos de la sincronització RTF"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Compte del cos de la sincronització RTF"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Etiqueta del cos de la sincronització RTF"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF comprimit"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Compte del pròleg de la sincronització RTF"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Compte de l'epíleg de la sincronització RTF"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Cos del missatge HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID del missatge"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID del missatge pare"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Acció"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Indicador d'acció"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Data de l'acció"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Nom que es mostrarà"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Hora de creació"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Última hora de modificació"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Clau de busca"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Màscara de suport de l'emmagatzematge"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Proveïdor MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Dades de l'adjunt"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Codificació de l'adjunt"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Extensió de l'adjunt"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Mètode d'adjunció"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Nom llarg de fitxer de l'adjunt"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Posició on es representarà l'adjunt"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Etiqueta MIME de l'adjunt"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Indicadors de l'adjunt"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Compte"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Generació"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Nom"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Inicials"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Paraula clau"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Idioma"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Ubicació"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Cognoms"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Nom de l'empresa"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Títol"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Nom del departament"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "País"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Localitat"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Estat/Província"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Segon nom"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Prefix del nom mostrat"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Des de"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Data de la tramesa"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Data de la recepció"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Estat del missatge"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ID del pare"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID de la conversa"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Cos"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Títol de l'adjunt"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Metafitxer de l'adjunt"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Data de creació de l'adjunt"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Data de modificació de l'adjunt"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Data de modificació"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Nom de fitxer de transport de l'adjunt"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Dades de representació de l'adjunt"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Propietats del MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Taula de destinataris"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Propietats MAPI de l'adjunt"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Versió TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Pàgina de codis OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Fitxer de contacte davall"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Cognom i nom del contacte"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Empresa i nom complet del contacte"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Primer correu electrònic complet del contacte"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Tipus d'adreça del primer correu electrònic del contacte"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Primera adreça de correu electrònic del contacte"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Nom que es mostrarà del primer correu electrònic del contacte"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "ID de l'entrada del primer correu electrònic del contacte"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Segon correu electrònic complet del contacte"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Tipus d'adreça del segon correu electrònic del contacte"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Segona adreça de correu electrònic del contacte"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Nom que es mostrarà del segon correu electrònic del contacte"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "ID de l'entrada del segon correu electrònic del contacte"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Lloc de la cita"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Data d'inici de la cita"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Data final de la cita"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Duració de la cita"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Estat de la resposta a la cita"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "La cita és repetitiva"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Tipus de repetició de la cita"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Patró de repetició de la cita"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Hora del recordatori"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Recordatori activat"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Data d'inici"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Data final"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Recorda la pròxima vegada"

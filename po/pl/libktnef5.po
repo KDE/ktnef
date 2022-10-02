@@ -1,0 +1,592 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2019.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2019-11-09 06:55+0100\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
+"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 19.07.70\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Przypomnienie"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Zastępczy odbiorca możliwy"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Klasa wiadomości"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Nadawca zażądał potwierdzenia dostarczenia wiadomości"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Adres zwrotny nadawcy"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Priorytet"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Zażądano potwierdzenia odbioru"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Zmiana odbiorcy zabroniona"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Oryginalna poufność"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Znacznik raportu"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Czułość"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "Temat"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Czas wysyłki od klienta"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Wysłany reprezentujący klucz wyszukiwania"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Przedrostek tematu"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Wysłany reprezentujący identyfikator wpisu"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Wysłana reprezentująca nazwa"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "ID wysłania wiadomości"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Oryginalna nazwa autora"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "ID właściciela spotkania"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Zażądano odpowiedzi"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Wysłany reprezentujący typ adresu"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Wyślij reprezentujący adres e-mail"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Temat rozmowy"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Indeks rozmowy"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Klucz korelacji TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Żądanie odpowiedzi"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Nazwa nadawcy"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Klucz wyszukiwania nadawcy"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Rodzaj adresu nadawcy"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Adres e-mail nadawcy"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Usuń po wysłaniu"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Pokaż Bcc"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Pokaż Cc"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Pokaż Do"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Czas dostarczenia wiadomości"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Flagi wiadomości"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Wielkość wiadomości"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "ID wpisu rodzica"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Identyfikator wpisu wysłanego e-maila"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Odbiorcy wiadomości"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Flagi wysłania"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Ma załącznik"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Znormalizowany temat"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF zsynchronizowany"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Wielkość załącznika"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Ilość załączników"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Dostęp"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Poziom dostępu"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Sygnatura odwzorowania"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Klucz rekordu"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Przechowaj klucz rekordu"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Przechowuj ID wpisu"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Rodzaj obiektu"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "ID wpisu"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Treść wiadomości"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "CRC ciała RTF Sync"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Długość ciała RTF Sync"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Znacznik ciała RTF Sync"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF skompresowany"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Długość przedrostka RTF Sync"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Długość końcówki RTF Sync"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Treść wiadomości HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "ID wiadomości"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "ID rodzica wiadomości"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Działanie"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Flaga akcji"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Data akcji"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Wyświetlana nazwa"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Czas utworzenia"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Czas ostatniej modyfikacji"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Klusz wyszukiwania"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Zachowanie dodatkowej maski"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Dostawca MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Dane załącznika"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Kodowanie załącznika"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Rozszerzenie załącznika"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Metoda załącznika"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Długa nazwa załącznika"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Pozycja wyświetlenia załącznika"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Znacznik MIME załącznika"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Flagi załącznika"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Konto"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Generacja"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Imię"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Inicjały"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Słowo kluczowe"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Język"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Położenie"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Nazwisko"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Nazwa firmy"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "Tytuł"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Nazwa działu"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Kraj"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Położenie"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Województwo/Stan"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Środkowe imię"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Przedrostek nazwy wyświetlanej"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Od"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Data wysłania"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Data odbioru"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Stan wiadomości"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "ID rodzica"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "ID rozmowy"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Treść"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Tytuł załącznika"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Meta plik załącznika"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Czas utworenia załącznika"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Czas modyfikacji załącznika"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Data modyfikacji"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Nazwa pliku transportowego załącznika"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Dane wyświetlania załącznika"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Właściwości MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Tablica odbiorców"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Właściwości MAPI załącznika"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Wersja TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Strona kodowa OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Plik wizytówki pod"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Wizytówka: nazwisko i imię"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Wizytówka: nazwa firmy i pełne nazwisko"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Wizytówka: e-mail 1, pełny"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Wizytówka: e-mail 1, rodzaj adresu"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Wizytówka: e-mail 1, adres"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Wizytówka: e-mail 1, pokaż nazwisko"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Wizytówka: e-mail 1, ID wpisu"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Wizytówka: e-mail 2, pełny"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Wizytówka: e-mail 2, typ adresu"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Wizytówka: e-mail 2, adres"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Wizytówka: e-mail 2, pokaż nazwisko"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Wizytówka: e-mail 2, ID wpisu"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Lokalizacja spotkania"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Data początkowa spotkania"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Data końcowa spotkania"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Czas trwania spotkania"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Stan odpowiedzi na propozycję spotkania"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Spotkanie się powtarza"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Typ powtórzenia spotkania"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Wzorzec powtarzania spotkania"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Czas przypomnienia"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Ustaw przypomnienie"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Data rozpoczęcia"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Data zakończenia"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Przypomnij następnym razem"

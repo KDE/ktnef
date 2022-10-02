@@ -1,0 +1,591 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Shinjo Park <kde@peremen.name>, 2015, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2020-01-29 00:44+0100\n"
+"Last-Translator: Shinjo Park <kde@peremen.name>\n"
+"Language-Team: Korean <kde-kr@kde.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.04.3\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "알림"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "대체 수신자 허용됨"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "메시지 등급"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "원본 배달 보고 요청됨"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "원본 답장 주소"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "중요도"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "읽음 증명서 요청됨"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "수신자 변경 불가"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "원본 민감도"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "태그 보고"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "민감도"
+
+#: mapi.cpp:36 mapi.cpp:128
+msgid "Subject"
+msgstr "제목"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "클라이언트 접수 시간"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "보낸 메시지 검색 키"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "제목 접두사"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "보낸 메시지 항목 ID"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "보낸 메시지 이름"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "메시지 제출 ID"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "원 작성자 이름"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "소유자 약속 ID"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "응답 요청됨"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "보낸 메시지 주소 종류"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "보낸 메시지 이메일 주소"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "대화 주제"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "대화 색인"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "TNEF 연계 키"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "답장 요청됨"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "보낸 사람 이름"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "보낸 사람 검색 키"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "보낸 사람 주소 종류"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "보낸 사람 이메일 주소"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "전송 이후 삭제"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "숨은 참조 표시"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "참조 표시"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "받는 사람 표시"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "메시지 전송 시간"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "메시지 플래그"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "메시지 크기"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "부모 항목 ID"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "보낸 편지 항목 ID"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "메시지 수신자"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "첨부 플래그"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "첨부 파일 포함"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "정규화된 제목"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF 동기화됨"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "첨부 크기"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "첨부 번호"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "접근"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "접근 단계"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "매핑 서명"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "기록 키"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "저장소 기록 키"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "저장소 항목 ID"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "객체 종류"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "항목 ID"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "메시지 본문"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "RTF 동기화 본문 CRC"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "RTF 동기화 본문 개수"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "RTF 동기화 본문 태그"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF 압축"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "RTF 동기화 접두사 개수"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "RTF 동기화 접미사 개수"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "HTML 메시지 본문"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "메시지 ID"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "부모 메시지 ID"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "동작"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "동작 플래그"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "동작 날짜"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "표시 이름"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "생성 시간"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "마지막 수정 시간"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "검색 키"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "저장소 지원 마스크"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "MDB 공급자"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "첨부 데이터"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "첨부 인코딩"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "첨부 확장자"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "첨부 방식"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "첨부 긴 파일 이름"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "첨부 표시 위치"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "첨부 MIME 태그"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "첨부 플래그"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "계정"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "세대"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "성 제외 이름"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "두문자"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "키워드"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "언어"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "위치"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "성"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "회사 이름"
+
+#: mapi.cpp:116
+msgid "Title"
+msgstr "직위"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "부서 이름"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "국가"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "자치구"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "도/광역시"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "가운데 이름"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "표시 이름 접두사"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "보낸 사람"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "보낸 날짜"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "받은 날짜"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "메시지 상태"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "부모 ID"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "대화 ID"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "본문"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "첨부 제목"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "첨부 메타 파일"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "첨부 생성 날짜"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "첨부 수정한 날짜"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "수정한 날짜"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "첨부 전송 파일 이름"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "첨부 표시 데이터"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "MAPI 속성"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "수신자 테이블"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "첨부 MAPI 속성"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "TNEF 버전"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "OEM 코드 페이지"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "연락처 분류"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "연락처 이름과 성"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "연락처 회사 및 전체 이름"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "연락처 EMail-1 전체"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "연락처 EMail-1 주소"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "연락처 EMail-1 주소"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "연락처 EMail-1 표시 이름"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "연락처 EMail-1 항목 ID"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "연락처 EMail-2 전체"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "연락처 EMail-2 주소 종류"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "연락처 EMail-2 주소"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "연락처 EMail-2 표시 이름"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "연락처 EMail-2 항목 ID"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "약속 위치"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "약속 시작 날짜"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "약속 종료 날짜"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "약속 기간"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "약속 응답 상태"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "약속이 반복됨"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "약속 반복 종류"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "약속 반복 패턴"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "알림 시간"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "알림 설정됨"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "시작 날짜"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "종료 날짜"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "알림 다음 시간"

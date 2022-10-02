@@ -1,0 +1,597 @@
+# Irish translation of libktnef
+# Copyright (C) 2009 This_file_is_part_of_KDE
+# This file is distributed under the same license as the libktnef package.
+# Kevin Scannell <kscanne@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: libktnef\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"PO-Revision-Date: 2007-04-15 19:05-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+#: formatter.cpp:298
+#, kde-format
+msgid "Reminder"
+msgstr "Meabhrúchán"
+
+#: mapi.cpp:26
+msgid "Alternate Recipient Allowed"
+msgstr "Ceadaítear Faighteoir Malartach"
+
+#: mapi.cpp:27 mapi.cpp:132
+msgid "Message Class"
+msgstr "Aicme Teachtaireachta"
+
+#: mapi.cpp:28
+msgid "Originator Delivery Report Requested"
+msgstr "Iarradh Tuairisc Seachadta ón Tionscnóir"
+
+#: mapi.cpp:29
+msgid "Originator Return Address"
+msgstr "Seoladh Fillte an Tionscnóra"
+
+#: mapi.cpp:30 mapi.cpp:137
+msgid "Priority"
+msgstr "Tosaíocht"
+
+#: mapi.cpp:31
+msgid "Read Receipt Requested"
+msgstr "Iarradh Admháil Léite"
+
+#: mapi.cpp:32
+msgid "Recipient Reassignment Prohibited"
+msgstr "Cuireadh Toirmeasc ar Athshannadh Faighteora"
+
+#: mapi.cpp:33
+msgid "Original Sensitivity"
+msgstr "Bun-Íogaireacht"
+
+#: mapi.cpp:34
+msgid "Report Tag"
+msgstr "Clib Thuairisce"
+
+#: mapi.cpp:35
+msgid "Sensitivity"
+msgstr "Íogaireacht"
+
+#: mapi.cpp:36 mapi.cpp:128
+#, fuzzy
+#| msgctxt "@label The subject of an email"
+#| msgid "Subject"
+msgid "Subject"
+msgstr "Ábhar"
+
+#: mapi.cpp:37
+msgid "Client Submit Time"
+msgstr "Am Seolta an Chliaint"
+
+#: mapi.cpp:38
+msgid "Sent Representing Search Key"
+msgstr "Seoladh Eochair Chuardaigh Léirithe"
+
+#: mapi.cpp:39
+msgid "Subject Prefix"
+msgstr "Réimír Ábhair"
+
+#: mapi.cpp:40
+msgid "Sent Representing Entry ID"
+msgstr "Seoladh Aitheantas Iontrála Léirithe"
+
+#: mapi.cpp:41
+msgid "Sent Representing Name"
+msgstr "Seoladh Ainm Léirithe"
+
+#: mapi.cpp:42
+msgid "Message Submission ID"
+msgstr "Aitheantas Seolta na Teachtaireachta"
+
+#: mapi.cpp:43
+msgid "Original Author Name"
+msgstr "Ainm an Bhunúdair"
+
+#: mapi.cpp:44 mapi.cpp:125
+msgid "Owner Appointment ID"
+msgstr "Aitheantas Coinne an Úinéara"
+
+#: mapi.cpp:45 mapi.cpp:126
+msgid "Response Requested"
+msgstr "Iarradh Freagra"
+
+#: mapi.cpp:46
+msgid "Sent Representing Address Type"
+msgstr "Seoladh Cineál Seolta Léirithe"
+
+#: mapi.cpp:47
+msgid "Sent Representing E-mail Address"
+msgstr "Seoladh an Seoladh Ríomhphoist Léirithe"
+
+#: mapi.cpp:48
+msgid "Conversation Topic"
+msgstr "Ábhar an Chomhrá"
+
+#: mapi.cpp:49
+msgid "Conversation Index"
+msgstr "Innéacs an Chomhrá"
+
+#: mapi.cpp:50
+msgid "TNEF Correlation Key"
+msgstr "Eochair Chomhghaolaithe TNEF"
+
+#: mapi.cpp:51
+msgid "Reply Requested"
+msgstr "Iarradh Freagra"
+
+#: mapi.cpp:52
+msgid "Sender Name"
+msgstr "Ainm an tSeoltóra"
+
+#: mapi.cpp:53
+msgid "Sender Search Key"
+msgstr "Eochair Chuardaigh an tSeoltóra"
+
+#: mapi.cpp:54
+msgid "Sender Address Type"
+msgstr "Cineál Seolta an tSeoltóra"
+
+#: mapi.cpp:55
+msgid "Sender E-mail Address"
+msgstr "Seoladh Ríomhphoist an tSeoltóra"
+
+#: mapi.cpp:56
+msgid "Delete After Submit"
+msgstr "Scrios Tar Éis Seolta"
+
+#: mapi.cpp:57
+msgid "Display Bcc"
+msgstr "Taispeáin Bcc"
+
+#: mapi.cpp:58
+msgid "Display Cc"
+msgstr "Taispeáin Cc"
+
+#: mapi.cpp:59
+msgid "Display To"
+msgstr "Taispeáin Faighteoir"
+
+#: mapi.cpp:60
+msgid "Message Delivery Time"
+msgstr "Am Seachadta na Teachtaireachta"
+
+#: mapi.cpp:61
+msgid "Message Flags"
+msgstr "Bratacha Teachtaireachta"
+
+#: mapi.cpp:62
+msgid "Message Size"
+msgstr "Méid na Teachtaireachta"
+
+#: mapi.cpp:63
+msgid "Parent Entry ID"
+msgstr "Aitheantas Iontrála na Máthar"
+
+#: mapi.cpp:64
+msgid "Sent-Mail Entry ID"
+msgstr "Aitheantas Iontrála Ríomhphoist Seolta"
+
+#: mapi.cpp:65
+msgid "Message Recipients"
+msgstr "Faighteoirí na Teachtaireachta"
+
+#: mapi.cpp:66
+msgid "Submit Flags"
+msgstr "Bratacha Seolta"
+
+#: mapi.cpp:67
+msgid "Has Attachment"
+msgstr "Le hIatán"
+
+#: mapi.cpp:68
+msgid "Normalized Subject"
+msgstr "Ábhar Normalaithe"
+
+#: mapi.cpp:69
+msgid "RTF In Sync"
+msgstr "RTF Sioncrónaithe"
+
+#: mapi.cpp:70
+msgid "Attachment Size"
+msgstr "Méid an Iatáin"
+
+#: mapi.cpp:71
+msgid "Attachment Number"
+msgstr "Uimhir an Iatáin"
+
+#: mapi.cpp:72
+msgid "Access"
+msgstr "Rochtain"
+
+#: mapi.cpp:73
+msgid "Access Level"
+msgstr "Leibhéal Rochtana"
+
+#: mapi.cpp:74
+msgid "Mapping Signature"
+msgstr "Síniú Mapála"
+
+#: mapi.cpp:75
+msgid "Record Key"
+msgstr "Eochair Thaifid"
+
+#: mapi.cpp:76
+msgid "Store Record Key"
+msgstr "Stóráil Eochair Thaifid"
+
+#: mapi.cpp:77
+msgid "Store Entry ID"
+msgstr "Stóráil Aitheantas Iontrála"
+
+#: mapi.cpp:78
+msgid "Object Type"
+msgstr "Cineál Réada"
+
+#: mapi.cpp:79
+msgid "Entry ID"
+msgstr "Aitheantas Iontrála"
+
+#: mapi.cpp:80
+msgid "Message Body"
+msgstr "Corp na Teachtaireachta"
+
+#: mapi.cpp:81
+msgid "RTF Sync Body CRC"
+msgstr "Sionc RTF: CRC an Choirp"
+
+#: mapi.cpp:82
+msgid "RTF Sync Body Count"
+msgstr "Sionc RTF: Líon Coirp"
+
+#: mapi.cpp:83
+msgid "RTF Sync Body Tag"
+msgstr "Sionc RTF: Clib an Choirp"
+
+#: mapi.cpp:84
+msgid "RTF Compressed"
+msgstr "RTF Comhbhrúite"
+
+#: mapi.cpp:85
+msgid "RTF Sync Prefix Count"
+msgstr "Sionc RTF: Líon Réimíreanna"
+
+#: mapi.cpp:86
+msgid "RTF Sync Trailing Count"
+msgstr "Sionc RTF: Líon Deiridh"
+
+#: mapi.cpp:87
+msgid "HTML Message Body"
+msgstr "Corp na Teachtaireachta HTML"
+
+#: mapi.cpp:88 mapi.cpp:133
+msgid "Message ID"
+msgstr "Aitheantas na Teachtaireachta"
+
+#: mapi.cpp:89
+msgid "Parent's Message ID"
+msgstr "Aitheantas Teachtaireachta na Máthar"
+
+#: mapi.cpp:90
+msgid "Action"
+msgstr "Gníomh"
+
+#: mapi.cpp:91
+msgid "Action Flag"
+msgstr "Bratach Ghnímh"
+
+#: mapi.cpp:92
+msgid "Action Date"
+msgstr "Dáta Gnímh"
+
+#: mapi.cpp:93
+msgid "Display Name"
+msgstr "Ainm le taispeáint"
+
+#: mapi.cpp:94
+msgid "Creation Time"
+msgstr "Am Cruthaithe"
+
+#: mapi.cpp:95
+msgid "Last Modification Time"
+msgstr "Am Athraithe"
+
+#: mapi.cpp:96
+msgid "Search Key"
+msgstr "Eochair Chuardaigh"
+
+#: mapi.cpp:97
+msgid "Store Support Mask"
+msgstr "Stóráil Masc Tacaíochta"
+
+#: mapi.cpp:98
+msgid "MDB Provider"
+msgstr "Soláthraí MDB"
+
+#: mapi.cpp:99 mapi.cpp:138
+msgid "Attachment Data"
+msgstr "Sonraí an Iatáin"
+
+#: mapi.cpp:100
+msgid "Attachment Encoding"
+msgstr "Ionchódú an Iatáin"
+
+#: mapi.cpp:101
+msgid "Attachment Extension"
+msgstr "Iarmhír an Iatáin"
+
+#: mapi.cpp:102
+msgid "Attachment Method"
+msgstr "Modh an Iatáin"
+
+#: mapi.cpp:103
+msgid "Attachment Long File Name"
+msgstr "Ainm Fada an Iatáin"
+
+#: mapi.cpp:104
+msgid "Attachment Rendering Position"
+msgstr "Ionad Rindreála an Iatáin"
+
+#: mapi.cpp:105
+msgid "Attachment Mime Tag"
+msgstr "Clib MIME an Iatáin"
+
+#: mapi.cpp:106
+msgid "Attachment Flags"
+msgstr "Bratacha an Iatáin"
+
+#: mapi.cpp:107
+msgid "Account"
+msgstr "Cuntas"
+
+#: mapi.cpp:108
+msgid "Generation"
+msgstr "Giniúint"
+
+#: mapi.cpp:109
+msgid "Given Name"
+msgstr "Ainm"
+
+#: mapi.cpp:110
+msgid "Initials"
+msgstr "Túslitreacha"
+
+#: mapi.cpp:111
+msgid "Keyword"
+msgstr "Lorgfhocal"
+
+#: mapi.cpp:112
+msgid "Language"
+msgstr "Teanga"
+
+#: mapi.cpp:113
+msgid "Location"
+msgstr "Suíomh"
+
+#: mapi.cpp:114
+msgid "Surname"
+msgstr "Sloinne"
+
+#: mapi.cpp:115
+msgid "Company Name"
+msgstr "Comhlacht"
+
+#: mapi.cpp:116
+#, fuzzy
+#| msgctxt "@label The title of a person"
+#| msgid "Title"
+msgid "Title"
+msgstr "Teideal"
+
+#: mapi.cpp:117
+msgid "Department Name"
+msgstr "Roinn"
+
+#: mapi.cpp:118
+msgid "Country"
+msgstr "Tír"
+
+#: mapi.cpp:119
+msgid "Locality"
+msgstr "Ceantar"
+
+#: mapi.cpp:120
+msgid "State/Province"
+msgstr "Stát/Cúige"
+
+#: mapi.cpp:121
+msgid "Middle Name"
+msgstr "Ainm Láir"
+
+#: mapi.cpp:122
+msgid "Display Name Prefix"
+msgstr "Réimír Ainm Taispeána"
+
+#: mapi.cpp:127
+msgid "From"
+msgstr "Ó"
+
+#: mapi.cpp:129
+msgid "Date Sent"
+msgstr "Dáta a Seoladh"
+
+#: mapi.cpp:130
+msgid "Date Received"
+msgstr "Dáta a Fuarthas"
+
+#: mapi.cpp:131
+msgid "Message Status"
+msgstr "Stádas na Teachtaireachta"
+
+#: mapi.cpp:134
+msgid "Parent ID"
+msgstr "Aitheantas na Máthar"
+
+#: mapi.cpp:135
+msgid "Conversation ID"
+msgstr "Aitheantas an Chomhrá"
+
+#: mapi.cpp:136
+msgid "Body"
+msgstr "Corp"
+
+#: mapi.cpp:139
+msgid "Attachment Title"
+msgstr "Teideal an Iatáin"
+
+#: mapi.cpp:140
+msgid "Attachment Meta File"
+msgstr "Meiteachomhad an Iatáin"
+
+#: mapi.cpp:141
+msgid "Attachment Create Date"
+msgstr "Dáta Cruthaithe an Iatáin"
+
+#: mapi.cpp:142
+msgid "Attachment Modify Date"
+msgstr "Dáta Athraithe an Iatáin"
+
+#: mapi.cpp:143
+msgid "Date Modified"
+msgstr "Dáta Athraithe"
+
+#: mapi.cpp:144
+msgid "Attachment Transport File Name"
+msgstr "Ainm Iompartha an Iatáin"
+
+#: mapi.cpp:145
+msgid "Attachment Rendering Data"
+msgstr "Sonraí Rindreála an Iatáin"
+
+#: mapi.cpp:146
+msgid "MAPI Properties"
+msgstr "Airíonna MAPI"
+
+#: mapi.cpp:147
+msgid "Recipients Table"
+msgstr "Tábla Faighteoirí"
+
+#: mapi.cpp:148
+msgid "Attachment MAPI Properties"
+msgstr "Airíonna MAPI an Iatáin"
+
+#: mapi.cpp:149
+msgid "TNEF Version"
+msgstr "Leagan TNEF"
+
+#: mapi.cpp:150
+msgid "OEM Code Page"
+msgstr "Códleathanach OEM"
+
+#: mapi.cpp:152
+msgid "Contact File Under"
+msgstr "Teagmháil: Cuir i gComhad Faoi"
+
+#: mapi.cpp:153
+msgid "Contact Last Name And First Name"
+msgstr "Teagmháil: Sloinne agus Ainm"
+
+#: mapi.cpp:154
+msgid "Contact Company And Full Name"
+msgstr "Teagmháil: Comhlacht agus Ainm Iomlán"
+
+#: mapi.cpp:156
+msgid "Contact EMail-1 Full"
+msgstr "Teagmháil: Seoladh Iomlán Ríomhphoist 1"
+
+#: mapi.cpp:157
+msgid "Contact EMail-1 Address Type"
+msgstr "Teagmháil: Cineál Seolta Ríomhphoist 1"
+
+#: mapi.cpp:158
+msgid "Contact EMail-1 Address"
+msgstr "Teagmháil: Seoladh Ríomhphoist 1"
+
+#: mapi.cpp:159
+msgid "Contact EMail-1 Display Name"
+msgstr "Teagmháil: Ainm Taispeána do Sheoladh Ríomhphoist 1"
+
+#: mapi.cpp:160
+msgid "Contact EMail-1 Entry ID"
+msgstr "Teagmháil: Aitheantas Iontrála do Sheoladh Ríomhphoist 1"
+
+#: mapi.cpp:162
+msgid "Contact EMail-2 Full"
+msgstr "Teagmháil: Seoladh Iomlán Ríomhphoist 2"
+
+#: mapi.cpp:163
+msgid "Contact EMail-2 Address Type"
+msgstr "Teagmháil: Cineál Seolta Ríomhphoist 2"
+
+#: mapi.cpp:164
+msgid "Contact EMail-2 Address"
+msgstr "Teagmháil: Seoladh Ríomhphoist 2"
+
+#: mapi.cpp:165
+msgid "Contact EMail-2 Display Name"
+msgstr "Teagmháil: Ainm Taispeána do Sheoladh Ríomhphoist 2"
+
+#: mapi.cpp:166
+msgid "Contact EMail-2 Entry ID"
+msgstr "Teagmháil: Aitheantas Iontrála do Sheoladh Ríomhphoist 2"
+
+#: mapi.cpp:168 mapi.cpp:169
+msgid "Appointment Location"
+msgstr "Coinne: Suíomh"
+
+#: mapi.cpp:170
+msgid "Appointment Start Date"
+msgstr "Coinne: Dáta Tosaigh"
+
+#: mapi.cpp:171
+msgid "Appointment End Date"
+msgstr "Coinne: Dáta Deiridh"
+
+#: mapi.cpp:172
+msgid "Appointment Duration"
+msgstr "Coinne: Fad"
+
+#: mapi.cpp:173
+msgid "Appointment Response Status"
+msgstr "Coinne: Stádas Freagra"
+
+#: mapi.cpp:174
+msgid "Appointment Is Recurring"
+msgstr "Coinne: Atarlú"
+
+#: mapi.cpp:175
+msgid "Appointment Recurrence Type"
+msgstr "Coinne: Cineál Atarlaithe"
+
+#: mapi.cpp:176
+msgid "Appointment Recurrence Pattern"
+msgstr "Coinne: Patrún Atarlaithe"
+
+#: mapi.cpp:177
+msgid "Reminder Time"
+msgstr "Am an Mheabhrúcháin"
+
+#: mapi.cpp:178
+msgid "Reminder Set"
+msgstr "Socraíodh Meabhrúchán"
+
+#: mapi.cpp:179
+msgid "Start Date"
+msgstr "Dáta Tosaigh"
+
+#: mapi.cpp:180
+msgid "End Date"
+msgstr "Dáta Deiridh"
+
+#: mapi.cpp:181
+msgid "Reminder Next Time"
+msgstr "Meabhrúchán an Chéad Uair Eile"
