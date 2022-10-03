@@ -18,8 +18,6 @@
 #include "ktnefpropertyset.h"
 #include "ktnefproperty.h"
 
-#include "ktnef_debug.h"
-
 #include <QList>
 
 using namespace KTnef;

@@ -16,7 +16,6 @@
  */
 
 #include "ktnefattach.h"
-#include "ktnefproperty.h"
 
 using namespace KTnef;
 
