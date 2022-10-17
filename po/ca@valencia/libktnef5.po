@@ -297,7 +297,7 @@ msgstr "Data de l'acció"
 
 #: mapi.cpp:93
 msgid "Display Name"
-msgstr "Nom que es mostrarà"
+msgstr "Nom que s'ha de mostrar"
 
 #: mapi.cpp:94
 msgid "Creation Time"
