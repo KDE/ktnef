@@ -39,11 +39,11 @@ target_include_directories(KF5Tnef PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DIR}
 
 target_link_libraries(KF5Tnef
 PUBLIC
-  KF5::CalendarCore
+  KF${KF_MAJOR_VERSION}::CalendarCore
 PRIVATE
   KF5::CalendarUtils
-  KF5::Contacts
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::Contacts
+  KF${KF_MAJOR_VERSION}::I18n
 )
 
 set_target_properties(KF5Tnef PROPERTIES

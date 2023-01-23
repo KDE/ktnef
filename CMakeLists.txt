@@ -33,6 +33,11 @@ set(CALENDARUTILS_LIB_VERSION "5.22.40")
 set(QT_REQUIRED_VERSION "5.15.2")
 if (QT_MAJOR_VERSION STREQUAL "6")
     set(QT_REQUIRED_VERSION "6.4.0")
+    set(KF_MIN_VERSION "5.240.0")
+    set(KF_MAJOR_VERSION "6")
+else()
+    set(KF_MIN_VERSION "5.100.0")
+    set(KF_MAJOR_VERSION "5")
 endif()
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
@@ -44,12 +49,12 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Tnef")
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets)
-find_package(KF5CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5CalendarUtils ${CALENDARUTILS_LIB_VERSION} CONFIG REQUIRED)
-find_package(KF5Contacts ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}Contacts ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF${KF_MAJOR_VERSION}I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 
-ecm_set_disabled_deprecation_versions(QT 5.15.2  KF 5.102.0)
+ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.102.0)
 
 
 
