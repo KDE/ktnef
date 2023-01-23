@@ -752,7 +752,11 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align, int len_
     }
     QString res;
     if (isUnicode) {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
         res = QString::fromUtf16((const unsigned short *)buf);
+#else
+        res = QString::fromUtf16((const char16_t *)buf);
+#endif
     } else {
         res = QString::fromLatin1(buf);
     }
