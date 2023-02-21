@@ -6,7 +6,7 @@ if (@KTNEF_KF5_COMPAT@)
     message(WARNING "\n"
                     "************* DEPRECATION WARNING *************\n"
                     "Using find_package(KF5Tnef) and KF5::Tnef targets is deprecated. "
-                    "Please use find_package(KPimTnef) and KPim@KF_MAJOR_VERSION@::Tnef instead. This backwards "
+                    "Please use find_package(KPim@KF_MAJOR_VERSION@Tnef) and KPim@KF_MAJOR_VERSION@::Tnef instead. This backwards "
                     "compatibility will be removed in the next major version.\n"
                     "***********************************************\n")
 endif()
