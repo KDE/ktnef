@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-set(PIM_VERSION "5.22.40")
+set(PIM_VERSION "5.22.41")
 
 project(KTnef VERSION ${PIM_VERSION})
 
@@ -41,12 +41,12 @@ else()
 endif()
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
-                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfigVersion.cmake"
+                        PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
                         SOVERSION 5
 )
 
 ########### Find packages ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Tnef")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Tnef")
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets)
 find_package(KF${KF_MAJOR_VERSION}CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
@@ -59,30 +59,59 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.103.0)
 
 
 configure_package_config_file(
-  "${KTnef_SOURCE_DIR}/KF5TnefConfig.cmake.in"
-  "${KTnef_BINARY_DIR}/KF5TnefConfig.cmake"
+  "${KTnef_SOURCE_DIR}/KPimTnefConfig.cmake.in"
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
   INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
 )
 
 install(FILES
-  "${KTnef_BINARY_DIR}/KF5TnefConfig.cmake"
-  "${KTnef_BINARY_DIR}/KF5TnefConfigVersion.cmake"
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
   DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
   COMPONENT Devel
 )
 
-install(EXPORT KF5TnefTargets
+install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        FILE KF5TnefTargets.cmake
-        NAMESPACE KF5::
+        FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
+        NAMESPACE KPim${KF_MAJOR_VERSION}::
 )
 
 install(FILES
    ${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h
-   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KTNEF/
+   DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/KTNEF/
    COMPONENT Devel
 )
 
+
+
+##
+# TODO: Backwards compatiblity. Remove in next major version
+##
+set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Tnef")
+set(KTNEF_KF5_COMPAT TRUE)
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KPimTnefConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
+)
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfig.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
+    RENAME "KF5TnefConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    COMPONENT Devel
+)
+install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
+    FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
+    NAMESPACE KF5::
+)
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
