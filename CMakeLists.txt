@@ -84,7 +84,7 @@ install(FILES
 )
 
 
-
+if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
 ##
@@ -112,6 +112,7 @@ install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
     FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
     NAMESPACE KF5::
 )
+endif()
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
