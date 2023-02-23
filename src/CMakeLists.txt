@@ -42,7 +42,7 @@ target_link_libraries(KPim${KF_MAJOR_VERSION}Tnef
 PUBLIC
   KF${KF_MAJOR_VERSION}::CalendarCore
 PRIVATE
-  KF5::CalendarUtils
+  KPim${KF_MAJOR_VERSION}::CalendarUtils
   KF${KF_MAJOR_VERSION}::Contacts
   KF${KF_MAJOR_VERSION}::I18n
 )
