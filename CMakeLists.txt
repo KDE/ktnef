@@ -83,7 +83,9 @@ install(FILES
    COMPONENT Devel
 )
 
+option(BUILD_WITH_COMPAT_LIBS "Generate compat cmake file (Set at false will allow to co-install lib)" ON)
 
+if (BUILD_WITH_COMPAT_LIBS)
 if (QT_MAJOR_VERSION STREQUAL "5")
 ##
 # TODO: Backwards compatiblity. Remove in next major version
@@ -112,6 +114,7 @@ install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
     FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
     NAMESPACE KF5::
 )
+endif()
 endif()
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
