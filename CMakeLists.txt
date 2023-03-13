@@ -36,7 +36,6 @@ if (QT_MAJOR_VERSION STREQUAL "6")
     set(KF_MIN_VERSION "5.240.0")
     set(KF_MAJOR_VERSION "6")
 else()
-    set(KF_MIN_VERSION "5.104.0")
     set(KF_MAJOR_VERSION "5")
 endif()
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
