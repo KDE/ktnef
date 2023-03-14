@@ -1,6 +1,5 @@
 add_library(KPim${KF_MAJOR_VERSION}Tnef)
 add_library(KPim${KF_MAJOR_VERSION}::Tnef ALIAS KPim${KF_MAJOR_VERSION}Tnef)
-add_library(KF5::Tnef ALIAS KPim${KF_MAJOR_VERSION}Tnef)
 
 target_sources(KPim${KF_MAJOR_VERSION}Tnef PRIVATE
   ktnefparser.cpp
