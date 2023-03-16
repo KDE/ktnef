@@ -46,7 +46,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
 
 ########### Find packages ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}Tnef")
-set(KTNEF_KF5_COMPAT FALSE)
 find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets)
 find_package(KF${KF_MAJOR_VERSION}CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KPim${KF_MAJOR_VERSION}CalendarUtils ${CALENDARUTILS_LIB_VERSION} CONFIG REQUIRED)
@@ -82,39 +81,6 @@ install(FILES
    COMPONENT Devel
 )
 
-option(BUILD_WITH_COMPAT_LIBS "Generate compat cmake file (Set at false will allow to co-install lib)" ON)
-
-if (BUILD_WITH_COMPAT_LIBS)
-if (QT_MAJOR_VERSION STREQUAL "5")
-##
-# TODO: Backwards compatiblity. Remove in next major version
-##
-set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Tnef")
-set(KTNEF_KF5_COMPAT TRUE)
-configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KPimTnefConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfig.cmake"
-    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
-)
-
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5TnefConfig.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
-    RENAME "KF5TnefConfigVersion.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
-    NAMESPACE KF5::
-)
-endif()
-endif()
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef5\")
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
