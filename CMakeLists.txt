@@ -24,8 +24,10 @@ file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES *.cpp *.h *.c)
 kde_clang_format(${ALL_CLANG_FORMAT_SOURCE_FILES})
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
+include(ECMAddQch)
 
-
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
+add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
@@ -56,19 +58,6 @@ ecm_set_disabled_deprecation_versions(QT 6.4  KF 5.104.0)
 
 
 
-configure_package_config_file(
-  "${KTnef_SOURCE_DIR}/KPimTnefConfig.cmake.in"
-  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
-  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-)
-
-install(FILES
-  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
-  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
-  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-  COMPONENT Devel
-)
-
 install(EXPORT KPim${KF_MAJOR_VERSION}TnefTargets
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         FILE KPim${KF_MAJOR_VERSION}TnefTargets.cmake
@@ -94,6 +83,31 @@ add_subdirectory(src)
 if(BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
+
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KPim${KF_MAJOR_VERSION}Tnef_QCH
+        FILE KPim${KF_MAJOR_VERSION}TnefQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}TnefQchTargets.cmake\")")
+endif()
+
+configure_package_config_file(
+  "${KTnef_SOURCE_DIR}/KPimTnefConfig.cmake.in"
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
+  INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
+)
+
+
+install(FILES
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfig.cmake"
+  "${KTnef_BINARY_DIR}/KPim${KF_MAJOR_VERSION}TnefConfigVersion.cmake"
+  DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+  COMPONENT Devel
+)
+
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
