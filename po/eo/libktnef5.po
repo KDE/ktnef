@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2009-11-15 12:06+0100\n"
-"Last-Translator: Axel Rousseau <axel@esperanto-jeunes.org>\n"
+"PO-Revision-Date: 2023-03-25 16:19+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
@@ -62,9 +62,6 @@ msgid "Sensitivity"
 msgstr ""
 
 #: mapi.cpp:36 mapi.cpp:128
-#, fuzzy
-#| msgctxt "@label The subject of an email"
-#| msgid "Subject"
 msgid "Subject"
 msgstr "Temo"
 
@@ -233,9 +230,8 @@ msgid "Store Entry ID"
 msgstr ""
 
 #: mapi.cpp:78
-#, fuzzy
 msgid "Object Type"
-msgstr "Objektotipo:"
+msgstr ""
 
 #: mapi.cpp:79
 msgid "Entry ID"
@@ -366,9 +362,8 @@ msgid "Initials"
 msgstr ""
 
 #: mapi.cpp:111
-#, fuzzy
 msgid "Keyword"
-msgstr "Kenora"
+msgstr ""
 
 #: mapi.cpp:112
 msgid "Language"
@@ -379,20 +374,14 @@ msgid "Location"
 msgstr "Loko"
 
 #: mapi.cpp:114
-#, fuzzy
-#| msgctxt "City name (optional, probably does not need a translation)"
-#| msgid "Hungnam"
 msgid "Surname"
-msgstr "Hungnam"
+msgstr ""
 
 #: mapi.cpp:115
 msgid "Company Name"
 msgstr ""
 
 #: mapi.cpp:116
-#, fuzzy
-#| msgctxt "@label The title of a person"
-#| msgid "Title"
 msgid "Title"
 msgstr "Titolo"
 
@@ -433,10 +422,8 @@ msgid "Date Received"
 msgstr ""
 
 #: mapi.cpp:131
-#, fuzzy
-#| msgid "&Message"
 msgid "Message Status"
-msgstr "&Mesaĝo"
+msgstr ""
 
 #: mapi.cpp:134
 msgid "Parent ID"
@@ -447,10 +434,8 @@ msgid "Conversation ID"
 msgstr ""
 
 #: mapi.cpp:136
-#, fuzzy
-#| msgid "Modify"
 msgid "Body"
-msgstr "Modifi"
+msgstr ""
 
 #: mapi.cpp:139
 msgid "Attachment Title"
