@@ -409,7 +409,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
     }
 
     // Compose return string
-    const QString iCal = calFormat.toString(cal, QString());
+    const QString iCal = calFormat.toString(cal);
     if (!iCal.isEmpty()) {
         // This was an iCal
         return iCal;
