@@ -581,7 +581,7 @@ msgstr "Aviso Programado"
 
 #: mapi.cpp:179
 msgid "Start Date"
-msgstr "Data Inicial"
+msgstr "Data de Início"
 
 #: mapi.cpp:180
 msgid "End Date"
