@@ -65,11 +65,7 @@ KTNEFProperty &KTNEFProperty::operator=(const KTNEFProperty &other)
 QString KTNEFProperty::keyString() const
 {
     if (d->_name.isValid()) {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        if (d->_name.type() == QVariant::String) {
-#else
         if (d->_name.metaType().id() == QMetaType::QString) {
-#endif
             return d->_name.toString();
         } else {
             return mapiNamedTagString(d->_name.toUInt(), d->_key);
@@ -81,11 +77,7 @@ QString KTNEFProperty::keyString() const
 
 QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    if (value.type() == QVariant::ByteArray) {
-#else
     if (value.metaType().id() == QMetaType::QByteArray) {
-#endif
         // check the first bytes (up to 8) if they are
         // printable characters
         QByteArray arr = value.toByteArray();
@@ -141,9 +133,5 @@ QVariant KTNEFProperty::name() const
 
 bool KTNEFProperty::isVector() const
 {
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    return d->_value.type() == QVariant::List;
-#else
     return d->_value.metaType().id() == QMetaType::QVariantList;
-#endif
 }

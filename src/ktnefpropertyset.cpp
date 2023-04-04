@@ -68,11 +68,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name, const QString &fall
     for (QMap<int, KTNEFProperty *>::Iterator it = d->properties_.begin(), protEnd = d->properties_.end(); it != protEnd; ++it) {
         if ((*it)->name().isValid()) {
             QString s;
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-            if ((*it)->name().type() == QVariant::String) {
-#else
             if ((*it)->name().metaType().id() == QMetaType::QString) {
-#endif
                 s = (*it)->name().toString();
             } else {
                 s = QString::asprintf("0X%04X", (*it)->name().toUInt());
@@ -80,11 +76,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name, const QString &fall
 
             if (s.toUpper() == name.toUpper()) {
                 QVariant value = (*it)->value();
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-                if (value.type() == QVariant::List) {
-#else
                 if (value.metaType().id() == QMetaType::QVariantList) {
-#endif
                     QList<QVariant> l = value.toList();
                     s.clear();
                     for (QList<QVariant>::ConstIterator lit = l.constBegin(), litEnd = l.constEnd(); lit != litEnd; ++lit) {

@@ -90,12 +90,7 @@ void KTNEFMessage::clearAttachments()
 QString KTNEFMessage::rtfString() const
 {
     QVariant prop = property(0x1009);
-    if (prop.isNull()
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        || prop.type() != QVariant::ByteArray) {
-#else
-        || prop.metaType().id() != QMetaType::QByteArray) {
-#endif
+    if (prop.isNull() || prop.metaType().id() != QMetaType::QByteArray) {
         return {};
     } else {
         QByteArray rtf;
