@@ -12,8 +12,8 @@ deprecated: false
 release: false
 libraries:
  - qmake: KTNef
-   cmake: "KF5::Tnef"
-cmakename: KF5Tnef
+   cmake: "KPim6::Tnef"
+cmakename: KPim6Tnef
 
 public_lib: true
 group: kdepim
