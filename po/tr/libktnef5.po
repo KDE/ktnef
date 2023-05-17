@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: kdepimlibs-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2023-04-02 17:28+0300\n"
+"PO-Revision-Date: 2023-05-15 21:34+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.03.70\n"
 "(http: //www.transifex.com/projects/p/kdepimlibs-k-tr/language/tr/)\n"
 
 #: formatter.cpp:298
@@ -195,7 +195,7 @@ msgstr "Gönderme Bayrakları"
 
 #: mapi.cpp:67
 msgid "Has Attachment"
-msgstr "Eklentisi Var"
+msgstr "Eki Var"
 
 #: mapi.cpp:68
 msgid "Normalized Subject"
@@ -207,11 +207,11 @@ msgstr "Eşzamanlamada RTF"
 
 #: mapi.cpp:70
 msgid "Attachment Size"
-msgstr "Eklenti Boyutu"
+msgstr "Ek Boyutu"
 
 #: mapi.cpp:71
 msgid "Attachment Number"
-msgstr "Eklenti Sayısı"
+msgstr "Ek Numarası"
 
 #: mapi.cpp:72
 msgid "Access"
@@ -323,35 +323,35 @@ msgstr "MDB Sağlayıcı"
 
 #: mapi.cpp:99 mapi.cpp:138
 msgid "Attachment Data"
-msgstr "Eklenti Verisi"
+msgstr "Ek Verisi"
 
 #: mapi.cpp:100
 msgid "Attachment Encoding"
-msgstr "Eklenti Kodlaması"
+msgstr "Ek Kodlaması"
 
 #: mapi.cpp:101
 msgid "Attachment Extension"
-msgstr "Eklenti Uzantısı"
+msgstr "Ek Uzantısı"
 
 #: mapi.cpp:102
 msgid "Attachment Method"
-msgstr "Eklenti Yöntemi"
+msgstr "Ek Yöntemi"
 
 #: mapi.cpp:103
 msgid "Attachment Long File Name"
-msgstr "Eklentinin Uzun Dosya Adı"
+msgstr "Ekin Uzun Dosya Adı"
 
 #: mapi.cpp:104
 msgid "Attachment Rendering Position"
-msgstr "Eklenti Sunum Konumu"
+msgstr "Ek Sunum Konumu"
 
 #: mapi.cpp:105
 msgid "Attachment Mime Tag"
-msgstr "Eklenti Mime Etiketi"
+msgstr "Ek MIME Etiketi"
 
 #: mapi.cpp:106
 msgid "Attachment Flags"
-msgstr "Eklenti Bayrakları"
+msgstr "Ek Bayrakları"
 
 #: mapi.cpp:107
 msgid "Account"
@@ -447,19 +447,19 @@ msgstr "Gövde"
 
 #: mapi.cpp:139
 msgid "Attachment Title"
-msgstr "Eklenti Başlığı"
+msgstr "Ek Başlığı"
 
 #: mapi.cpp:140
 msgid "Attachment Meta File"
-msgstr "Eklenti Meta Dosyası"
+msgstr "Ek Üst Veri Dosyası"
 
 #: mapi.cpp:141
 msgid "Attachment Create Date"
-msgstr "Eklenti Oluşturulma Tarihi"
+msgstr "Ek Oluşturulma Tarihi"
 
 #: mapi.cpp:142
 msgid "Attachment Modify Date"
-msgstr "Eklenti Değiştirilme Tarihi"
+msgstr "Ek Değiştirilme Tarihi"
 
 #: mapi.cpp:143
 msgid "Date Modified"
@@ -467,11 +467,11 @@ msgstr "Değiştirilme Tarihi"
 
 #: mapi.cpp:144
 msgid "Attachment Transport File Name"
-msgstr "Eklenti Taşıması Dosya Adı"
+msgstr "Ek Taşıması Dosya Adı"
 
 #: mapi.cpp:145
 msgid "Attachment Rendering Data"
-msgstr "Eklenti Sunum Verisi"
+msgstr "Ek Sunum Verisi"
 
 #: mapi.cpp:146
 msgid "MAPI Properties"
@@ -483,7 +483,7 @@ msgstr "Alıcılar Tablosu"
 
 #: mapi.cpp:148
 msgid "Attachment MAPI Properties"
-msgstr "Eklenti MAPI Özellikleri"
+msgstr "Ek MAPI Özellikleri"
 
 #: mapi.cpp:149
 msgid "TNEF Version"
