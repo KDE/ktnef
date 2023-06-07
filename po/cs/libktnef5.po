@@ -1,6 +1,6 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2013, 2014.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2013, 2014, 2023.
 # Tomáš Chvátal <tomas.chvatal@gmail.com>, 2012.
 #
 msgid ""
@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2014-10-21 13:47+0200\n"
-"Last-Translator: Vít Pelčák <vit@pelcak.org>\n"
+"PO-Revision-Date: 2023-04-17 15:22+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: formatter.cpp:298
 #, kde-format
@@ -541,7 +541,7 @@ msgstr "Kontakt EMail-2 ID záznamu"
 
 #: mapi.cpp:168 mapi.cpp:169
 msgid "Appointment Location"
-msgstr "Umístění schůzky"
+msgstr "Místo schůzky"
 
 #: mapi.cpp:170
 msgid "Appointment Start Date"
