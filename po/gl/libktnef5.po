@@ -154,27 +154,27 @@ msgstr "Eliminar despois do envío"
 
 #: mapi.cpp:57
 msgid "Display Bcc"
-msgstr "Mostrar para quen é a copia agochada"
+msgstr "Amosar para quen é a copia agochada"
 
 #: mapi.cpp:58
 msgid "Display Cc"
-msgstr "Mostrar para quen é a copia"
+msgstr "Amosar para quen é a copia"
 
 #: mapi.cpp:59
 msgid "Display To"
-msgstr "Mostrar o destinatario"
+msgstr "Amosar o destinatario"
 
 #: mapi.cpp:60
 msgid "Message Delivery Time"
-msgstr "Mostrar a hora de envío"
+msgstr "Amosar a hora de envío"
 
 #: mapi.cpp:61
 msgid "Message Flags"
-msgstr "Mostrar as bandeiras"
+msgstr "Amosar as bandeiras"
 
 #: mapi.cpp:62
 msgid "Message Size"
-msgstr "Mostrar o tamaño"
+msgstr "Amosar o tamaño"
 
 #: mapi.cpp:63
 msgid "Parent Entry ID"
@@ -298,7 +298,7 @@ msgstr "Data da acción"
 
 #: mapi.cpp:93
 msgid "Display Name"
-msgstr "Nome para mostrar"
+msgstr "Nome para amosar"
 
 #: mapi.cpp:94
 msgid "Creation Time"
@@ -414,7 +414,7 @@ msgstr "Segundo nome"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
-msgstr "Prefixo do nome para mostrar"
+msgstr "Prefixo do nome para amosar"
 
 #: mapi.cpp:127
 msgid "From"
@@ -518,7 +518,7 @@ msgstr "Enderezo de correo electrónico 1 do contacto"
 
 #: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
-msgstr "Nome para mostrar do correo electrónico 1 do contacto"
+msgstr "Nome para amosar do correo electrónico 1 do contacto"
 
 #: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
@@ -538,7 +538,7 @@ msgstr "Enderezo do correo electrónico 2 do contacto"
 
 #: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
-msgstr "Nome para mostrar do correo electrónico 2 do contacto"
+msgstr "Nome para amosar do correo electrónico 2 do contacto"
 
 #: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
