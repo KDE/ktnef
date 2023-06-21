@@ -100,3 +100,5 @@ void ParserTest::testUmlautAttachmentFilenames()
     KTNEFAttach *att = atts.first();
     QCOMPARE(att->fileName(), QString::fromUtf8("döcument.pdf"));
 }
+
+#include "moc_parsertest.cpp"
