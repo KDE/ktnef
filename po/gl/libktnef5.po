@@ -1,19 +1,19 @@
 # translation of libktnef.po to galician
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # mvillarino <mvillarino@users.sourceforge.net>, 2007, 2008, 2009.
 # marce villarino <mvillarino@users.sourceforge.net>, 2009.
 # Marce Villarino <mvillarino@gmail.com>, 2009, 2014.
 # Xosé <xosecalvo@gmail.com>, 2010.
 # Adrián Chaves Fernández (Gallaecio) <adriyetichaves@gmail.com>, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2019, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2019-10-26 14:15+0200\n"
+"PO-Revision-Date: 2023-06-17 10:13+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.2\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #: formatter.cpp:298
 #, kde-format
@@ -154,27 +154,27 @@ msgstr "Eliminar despois do envío"
 
 #: mapi.cpp:57
 msgid "Display Bcc"
-msgstr "Mostrar para quen é a copia agochada"
+msgstr "Amosar para quen é a copia agochada"
 
 #: mapi.cpp:58
 msgid "Display Cc"
-msgstr "Mostrar para quen é a copia"
+msgstr "Amosar para quen é a copia"
 
 #: mapi.cpp:59
 msgid "Display To"
-msgstr "Mostrar o destinatario"
+msgstr "Amosar o destinatario"
 
 #: mapi.cpp:60
 msgid "Message Delivery Time"
-msgstr "Mostrar a hora de envío"
+msgstr "Amosar a hora de envío"
 
 #: mapi.cpp:61
 msgid "Message Flags"
-msgstr "Mostrar as bandeiras"
+msgstr "Amosar as bandeiras"
 
 #: mapi.cpp:62
 msgid "Message Size"
-msgstr "Mostrar o tamaño"
+msgstr "Amosar o tamaño"
 
 #: mapi.cpp:63
 msgid "Parent Entry ID"
@@ -298,7 +298,7 @@ msgstr "Data da acción"
 
 #: mapi.cpp:93
 msgid "Display Name"
-msgstr "Nome para mostrar"
+msgstr "Nome para amosar"
 
 #: mapi.cpp:94
 msgid "Creation Time"
@@ -414,7 +414,7 @@ msgstr "Segundo nome"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
-msgstr "Prefixo do nome para mostrar"
+msgstr "Prefixo do nome para amosar"
 
 #: mapi.cpp:127
 msgid "From"
@@ -494,7 +494,7 @@ msgstr "Páxina do código OEM"
 
 #: mapi.cpp:152
 msgid "Contact File Under"
-msgstr "Arquivar o contacto en"
+msgstr "Ficheiro de contacto en"
 
 #: mapi.cpp:153
 msgid "Contact Last Name And First Name"
@@ -518,7 +518,7 @@ msgstr "Enderezo de correo electrónico 1 do contacto"
 
 #: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
-msgstr "Nome para mostrar do correo electrónico 1 do contacto"
+msgstr "Nome para amosar do correo electrónico 1 do contacto"
 
 #: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
@@ -538,7 +538,7 @@ msgstr "Enderezo do correo electrónico 2 do contacto"
 
 #: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
-msgstr "Nome para mostrar do correo electrónico 2 do contacto"
+msgstr "Nome para amosar do correo electrónico 2 do contacto"
 
 #: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
