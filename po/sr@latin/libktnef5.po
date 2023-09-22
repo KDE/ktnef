@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-24 03:25+0200\n"
+"POT-Creation-Date: 2022-01-12 00:46+0000\n"
 "PO-Revision-Date: 2010-09-23 13:01+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -19,725 +19,585 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 "X-Environment: kde\n"
 
-#: formatter.cpp:322
+#: formatter.cpp:298
 #, kde-format
 msgid "Reminder"
 msgstr "Podsetnik"
 
-#: mapi.cpp:39
-#, kde-format
+#: mapi.cpp:26
 msgid "Alternate Recipient Allowed"
 msgstr "dopušten alternativni primalac"
 
-#: mapi.cpp:40 mapi.cpp:145
-#, kde-format
+#: mapi.cpp:27 mapi.cpp:132
 msgid "Message Class"
 msgstr "klasa poruke"
 
-#: mapi.cpp:41
-#, kde-format
+#: mapi.cpp:28
 msgid "Originator Delivery Report Requested"
 msgstr "zahtev za izveštaj o isporuci pošiljaocu"
 
-#: mapi.cpp:42
-#, kde-format
+#: mapi.cpp:29
 msgid "Originator Return Address"
 msgstr "povratna adresa pošiljaoca"
 
-#: mapi.cpp:43 mapi.cpp:150
-#, kde-format
+#: mapi.cpp:30 mapi.cpp:137
 msgid "Priority"
 msgstr "prioritet"
 
-#: mapi.cpp:44
-#, kde-format
+#: mapi.cpp:31
 msgid "Read Receipt Requested"
 msgstr "zatražena potvrda čitanja"
 
-#: mapi.cpp:45
-#, kde-format
+#: mapi.cpp:32
 msgid "Recipient Reassignment Prohibited"
 msgstr "zabranjena promena primaoca"
 
-#: mapi.cpp:46
-#, kde-format
+#: mapi.cpp:33
 msgid "Original Sensitivity"
 msgstr "osetljivost pošiljaoca"
 
-#: mapi.cpp:47
-#, kde-format
+#: mapi.cpp:34
 msgid "Report Tag"
 msgstr "oznaka izveštaja"
 
-#: mapi.cpp:48
-#, kde-format
+#: mapi.cpp:35
 msgid "Sensitivity"
 msgstr "osetljivost"
 
 # >> @item +
-#: mapi.cpp:49 mapi.cpp:141
-#, fuzzy, kde-format
+#: mapi.cpp:36 mapi.cpp:128
+#, fuzzy
 #| msgctxt "@label The subject of an email"
 #| msgid "Subject"
 msgid "Subject"
 msgstr "tema"
 
-#: mapi.cpp:50
-#, kde-format
+#: mapi.cpp:37
 msgid "Client Submit Time"
 msgstr "vreme predaje klijenta"
 
-#: mapi.cpp:51
-#, kde-format
+#: mapi.cpp:38
 msgid "Sent Representing Search Key"
 msgstr "poslat predstavljajući ključ pretrage"
 
-#: mapi.cpp:52
-#, kde-format
+#: mapi.cpp:39
 msgid "Subject Prefix"
 msgstr "prefiks teme"
 
-#: mapi.cpp:53
-#, kde-format
+#: mapi.cpp:40
 msgid "Sent Representing Entry ID"
 msgstr "poslat predstavljajući ID unosa"
 
-#: mapi.cpp:54
-#, kde-format
+#: mapi.cpp:41
 msgid "Sent Representing Name"
 msgstr "poslato predstavljajuće ime"
 
-#: mapi.cpp:55
-#, kde-format
+#: mapi.cpp:42
 msgid "Message Submission ID"
 msgstr "ID predaje poruke"
 
-#: mapi.cpp:56
-#, kde-format
+#: mapi.cpp:43
 msgid "Original Author Name"
 msgstr "ime prvobitnog autora"
 
-#: mapi.cpp:57 mapi.cpp:138
-#, kde-format
+#: mapi.cpp:44 mapi.cpp:125
 msgid "Owner Appointment ID"
 msgstr "ID sastanka vlasnika"
 
-#: mapi.cpp:58 mapi.cpp:139
-#, kde-format
+#: mapi.cpp:45 mapi.cpp:126
 msgid "Response Requested"
 msgstr "zatražen odziv"
 
-#: mapi.cpp:59
-#, kde-format
+#: mapi.cpp:46
 msgid "Sent Representing Address Type"
 msgstr "poslat predstavljajući tip adrese"
 
-#: mapi.cpp:60
-#, kde-format
+#: mapi.cpp:47
 msgid "Sent Representing E-mail Address"
 msgstr "poslata predstavljajuća adresa e‑pošte"
 
-#: mapi.cpp:61
-#, kde-format
+#: mapi.cpp:48
 msgid "Conversation Topic"
 msgstr "tema razgovora"
 
-#: mapi.cpp:62
-#, kde-format
+#: mapi.cpp:49
 msgid "Conversation Index"
 msgstr "indeks razgovora"
 
-#: mapi.cpp:63
-#, kde-format
+#: mapi.cpp:50
 msgid "TNEF Correlation Key"
 msgstr "TNEF korelacioni ključ"
 
-#: mapi.cpp:64
-#, kde-format
+#: mapi.cpp:51
 msgid "Reply Requested"
 msgstr "zatražen odgovor"
 
-#: mapi.cpp:65
-#, kde-format
+#: mapi.cpp:52
 msgid "Sender Name"
 msgstr "ime pošiljaoca"
 
-#: mapi.cpp:66
-#, kde-format
+#: mapi.cpp:53
 msgid "Sender Search Key"
 msgstr "ključ pretrage pošiljaoca"
 
-#: mapi.cpp:67
-#, kde-format
+#: mapi.cpp:54
 msgid "Sender Address Type"
 msgstr "tip adrese pošiljaoca"
 
-#: mapi.cpp:68
-#, kde-format
+#: mapi.cpp:55
 msgid "Sender E-mail Address"
 msgstr "adresa e‑pošte pošiljaoca"
 
-#: mapi.cpp:69
-#, kde-format
+#: mapi.cpp:56
 msgid "Delete After Submit"
 msgstr "brisanje po predaji"
 
-#: mapi.cpp:70
-#, kde-format
+#: mapi.cpp:57
 msgid "Display Bcc"
 msgstr "prikaz BCC‑a"
 
-#: mapi.cpp:71
-#, kde-format
+#: mapi.cpp:58
 msgid "Display Cc"
 msgstr "prikaz CC‑a"
 
-#: mapi.cpp:72
-#, kde-format
+#: mapi.cpp:59
 msgid "Display To"
 msgstr "prikaz za‑polja"
 
-#: mapi.cpp:73
-#, kde-format
+#: mapi.cpp:60
 msgid "Message Delivery Time"
 msgstr "vreme isporuke poruke"
 
-#: mapi.cpp:74
-#, kde-format
+#: mapi.cpp:61
 msgid "Message Flags"
 msgstr "zastavice poruke"
 
-#: mapi.cpp:75
-#, kde-format
+#: mapi.cpp:62
 msgid "Message Size"
 msgstr "veličina poruke"
 
-#: mapi.cpp:76
-#, kde-format
+#: mapi.cpp:63
 msgid "Parent Entry ID"
 msgstr "ID roditelja unosa"
 
-#: mapi.cpp:77
-#, kde-format
+#: mapi.cpp:64
 msgid "Sent-Mail Entry ID"
 msgstr "ID poslate-pošte unosa"
 
-#: mapi.cpp:78
-#, kde-format
+#: mapi.cpp:65
 msgid "Message Recipients"
 msgstr "primaoci poruke"
 
-#: mapi.cpp:79
-#, kde-format
+#: mapi.cpp:66
 msgid "Submit Flags"
 msgstr "zastavice predaje"
 
-#: mapi.cpp:80
-#, kde-format
+#: mapi.cpp:67
 msgid "Has Attachment"
 msgstr "ima prilog"
 
-#: mapi.cpp:81
-#, kde-format
+#: mapi.cpp:68
 msgid "Normalized Subject"
 msgstr "normalizovana tema"
 
-#: mapi.cpp:82
-#, kde-format
+#: mapi.cpp:69
 msgid "RTF In Sync"
 msgstr "RTF usklađen"
 
-#: mapi.cpp:83
-#, kde-format
+#: mapi.cpp:70
 msgid "Attachment Size"
 msgstr "veličina priloga"
 
-#: mapi.cpp:84
-#, kde-format
+#: mapi.cpp:71
 msgid "Attachment Number"
 msgstr "broj priloga"
 
-#: mapi.cpp:85
-#, kde-format
+#: mapi.cpp:72
 msgid "Access"
 msgstr "pristup"
 
-#: mapi.cpp:86
-#, kde-format
+#: mapi.cpp:73
 msgid "Access Level"
 msgstr "stepen pristupa"
 
-#: mapi.cpp:87
-#, kde-format
+#: mapi.cpp:74
 msgid "Mapping Signature"
 msgstr "mapirajući potpis"
 
-#: mapi.cpp:88
-#, kde-format
+#: mapi.cpp:75
 msgid "Record Key"
 msgstr "ključ sloga"
 
-#: mapi.cpp:89
-#, kde-format
+#: mapi.cpp:76
 msgid "Store Record Key"
 msgstr "skladištenje ključa sloga"
 
-#: mapi.cpp:90
-#, kde-format
+#: mapi.cpp:77
 msgid "Store Entry ID"
 msgstr "skladištenje ID‑a unosa"
 
-#: mapi.cpp:91
-#, kde-format
+#: mapi.cpp:78
 msgid "Object Type"
 msgstr "tip objekta"
 
-#: mapi.cpp:92
-#, kde-format
+#: mapi.cpp:79
 msgid "Entry ID"
 msgstr "ID unosa"
 
-#: mapi.cpp:93
-#, kde-format
+#: mapi.cpp:80
 msgid "Message Body"
 msgstr "telo poruke"
 
-#: mapi.cpp:94
-#, kde-format
+#: mapi.cpp:81
 msgid "RTF Sync Body CRC"
 msgstr "CRC tela RTF‑a usklađivanja"
 
-#: mapi.cpp:95
-#, kde-format
+#: mapi.cpp:82
 msgid "RTF Sync Body Count"
 msgstr "broj tela RTF‑a usklađivanja"
 
-#: mapi.cpp:96
-#, kde-format
+#: mapi.cpp:83
 msgid "RTF Sync Body Tag"
 msgstr "oznaka tela RTF‑a usklađivanja"
 
-#: mapi.cpp:97
-#, kde-format
+#: mapi.cpp:84
 msgid "RTF Compressed"
 msgstr "RTF kompresovano"
 
-#: mapi.cpp:98
-#, kde-format
+#: mapi.cpp:85
 msgid "RTF Sync Prefix Count"
 msgstr "broj prefiksa RTF‑a usklađivanja"
 
-#: mapi.cpp:99
-#, kde-format
+#: mapi.cpp:86
 msgid "RTF Sync Trailing Count"
 msgstr "broj pratećih RTF‑a usklađivanja"
 
-#: mapi.cpp:100
-#, kde-format
+#: mapi.cpp:87
 msgid "HTML Message Body"
 msgstr "telo HTML poruke"
 
-#: mapi.cpp:101 mapi.cpp:146
-#, kde-format
+#: mapi.cpp:88 mapi.cpp:133
 msgid "Message ID"
 msgstr "ID poruke"
 
-#: mapi.cpp:102
-#, kde-format
+#: mapi.cpp:89
 msgid "Parent's Message ID"
 msgstr "ID poruke roditelja"
 
-#: mapi.cpp:103
-#, kde-format
+#: mapi.cpp:90
 msgid "Action"
 msgstr "radnja"
 
-#: mapi.cpp:104
-#, kde-format
+#: mapi.cpp:91
 msgid "Action Flag"
 msgstr "zastavica radnje"
 
-#: mapi.cpp:105
-#, kde-format
+#: mapi.cpp:92
 msgid "Action Date"
 msgstr "datum radnje"
 
-#: mapi.cpp:106
-#, kde-format
+#: mapi.cpp:93
 msgid "Display Name"
 msgstr "prikazno ime"
 
-#: mapi.cpp:107
-#, kde-format
+#: mapi.cpp:94
 msgid "Creation Time"
 msgstr "vreme stvaranja"
 
-#: mapi.cpp:108
-#, kde-format
+#: mapi.cpp:95
 msgid "Last Modification Time"
 msgstr "vreme poslednje izmene"
 
-#: mapi.cpp:109
-#, kde-format
+#: mapi.cpp:96
 msgid "Search Key"
 msgstr "ključ pretrage"
 
-#: mapi.cpp:110
-#, kde-format
+#: mapi.cpp:97
 msgid "Store Support Mask"
 msgstr "skladištenje maske podrške"
 
-#: mapi.cpp:111
-#, kde-format
+#: mapi.cpp:98
 msgid "MDB Provider"
 msgstr "dobavljač MDB‑a"
 
-#: mapi.cpp:112 mapi.cpp:151
-#, kde-format
+#: mapi.cpp:99 mapi.cpp:138
 msgid "Attachment Data"
 msgstr "podaci priloga"
 
-#: mapi.cpp:113
-#, kde-format
+#: mapi.cpp:100
 msgid "Attachment Encoding"
 msgstr "kodiranje priloga"
 
-#: mapi.cpp:114
-#, kde-format
+#: mapi.cpp:101
 msgid "Attachment Extension"
 msgstr "nastavak priloga"
 
-#: mapi.cpp:115
-#, kde-format
+#: mapi.cpp:102
 msgid "Attachment Method"
 msgstr "metod priloga"
 
-#: mapi.cpp:116
-#, kde-format
+#: mapi.cpp:103
 msgid "Attachment Long File Name"
 msgstr "dugo ime fajla priloga"
 
 # rewrite-msgid: /Rendering/Display/
-#: mapi.cpp:117
-#, kde-format
+#: mapi.cpp:104
 msgid "Attachment Rendering Position"
 msgstr "položaj iscrtavanja priloga"
 
-#: mapi.cpp:118
-#, kde-format
+#: mapi.cpp:105
 msgid "Attachment Mime Tag"
 msgstr "MIME oznaka priloga"
 
-#: mapi.cpp:119
-#, kde-format
+#: mapi.cpp:106
 msgid "Attachment Flags"
 msgstr "zastavice priloga"
 
-#: mapi.cpp:120
-#, kde-format
+#: mapi.cpp:107
 msgid "Account"
 msgstr "nalog"
 
-#: mapi.cpp:121
-#, kde-format
+#: mapi.cpp:108
 msgid "Generation"
 msgstr "generacija"
 
-#: mapi.cpp:122
-#, kde-format
+#: mapi.cpp:109
 msgid "Given Name"
 msgstr "ime"
 
-#: mapi.cpp:123
-#, kde-format
+#: mapi.cpp:110
 msgid "Initials"
 msgstr "inicijali"
 
-#: mapi.cpp:124
-#, kde-format
+#: mapi.cpp:111
 msgid "Keyword"
 msgstr "ključna reč"
 
-#: mapi.cpp:125
-#, kde-format
+#: mapi.cpp:112
 msgid "Language"
 msgstr "jezik"
 
-#: mapi.cpp:126
-#, kde-format
+#: mapi.cpp:113
 msgid "Location"
 msgstr "lokacija"
 
-#: mapi.cpp:127
-#, kde-format
+#: mapi.cpp:114
 msgid "Surname"
 msgstr "prezime"
 
-#: mapi.cpp:128
-#, kde-format
+#: mapi.cpp:115
 msgid "Company Name"
 msgstr "ime firme"
 
 # >> @item +
-#: mapi.cpp:129
-#, fuzzy, kde-format
+#: mapi.cpp:116
+#, fuzzy
 #| msgctxt "@label The title of a person"
 #| msgid "Title"
 msgid "Title"
 msgstr "titula"
 
-#: mapi.cpp:130
-#, kde-format
+#: mapi.cpp:117
 msgid "Department Name"
 msgstr "ime odeljenja"
 
-#: mapi.cpp:131
-#, kde-format
+#: mapi.cpp:118
 msgid "Country"
 msgstr "država"
 
-#: mapi.cpp:132
-#, kde-format
+#: mapi.cpp:119
 msgid "Locality"
 msgstr "lokalitet"
 
-#: mapi.cpp:133
-#, kde-format
+#: mapi.cpp:120
 msgid "State/Province"
 msgstr "republika/provincija"
 
-#: mapi.cpp:134
-#, kde-format
+#: mapi.cpp:121
 msgid "Middle Name"
 msgstr "srednje ime"
 
-#: mapi.cpp:135
-#, kde-format
+#: mapi.cpp:122
 msgid "Display Name Prefix"
 msgstr "prefiks prikaznog imena"
 
-#: mapi.cpp:140
-#, kde-format
+#: mapi.cpp:127
 msgid "From"
 msgstr "od"
 
-#: mapi.cpp:142
-#, kde-format
+#: mapi.cpp:129
 msgid "Date Sent"
 msgstr "datum slanja"
 
-#: mapi.cpp:143
-#, kde-format
+#: mapi.cpp:130
 msgid "Date Received"
 msgstr "datum prijema"
 
-#: mapi.cpp:144
-#, kde-format
+#: mapi.cpp:131
 msgid "Message Status"
 msgstr "stanje poruke"
 
-#: mapi.cpp:147
-#, kde-format
+#: mapi.cpp:134
 msgid "Parent ID"
 msgstr "ID roditelja"
 
-#: mapi.cpp:148
-#, kde-format
+#: mapi.cpp:135
 msgid "Conversation ID"
 msgstr "ID razgovora"
 
-#: mapi.cpp:149
-#, kde-format
+#: mapi.cpp:136
 msgid "Body"
 msgstr "telo"
 
-#: mapi.cpp:152
-#, kde-format
+#: mapi.cpp:139
 msgid "Attachment Title"
 msgstr "naslov priloga"
 
-#: mapi.cpp:153
-#, kde-format
+#: mapi.cpp:140
 msgid "Attachment Meta File"
 msgstr "metafajl priloga"
 
-#: mapi.cpp:154
-#, kde-format
+#: mapi.cpp:141
 msgid "Attachment Create Date"
 msgstr "datum stvaranja priloga"
 
-#: mapi.cpp:155
-#, kde-format
+#: mapi.cpp:142
 msgid "Attachment Modify Date"
 msgstr "datum izmene priloga"
 
-#: mapi.cpp:156
-#, kde-format
+#: mapi.cpp:143
 msgid "Date Modified"
 msgstr "datum izmene"
 
-#: mapi.cpp:157
-#, kde-format
+#: mapi.cpp:144
 msgid "Attachment Transport File Name"
 msgstr "ime fajla priloga u transportu"
 
 # rewrite-msgid: /Rendering/Display/
-#: mapi.cpp:158
-#, kde-format
+#: mapi.cpp:145
 msgid "Attachment Rendering Data"
 msgstr "podaci iscrtavanja priloga"
 
-#: mapi.cpp:159
-#, kde-format
+#: mapi.cpp:146
 msgid "MAPI Properties"
 msgstr "MAPI svojstva"
 
-#: mapi.cpp:160
-#, kde-format
+#: mapi.cpp:147
 msgid "Recipients Table"
 msgstr "tabela primalaca"
 
-#: mapi.cpp:161
-#, kde-format
+#: mapi.cpp:148
 msgid "Attachment MAPI Properties"
 msgstr "MAPI svojstva priloga"
 
-#: mapi.cpp:162
-#, kde-format
+#: mapi.cpp:149
 msgid "TNEF Version"
 msgstr "verzija TNEF‑a"
 
-#: mapi.cpp:163
-#, kde-format
+#: mapi.cpp:150
 msgid "OEM Code Page"
 msgstr "OEM kodna stranica"
 
-#: mapi.cpp:168
-#, kde-format
+#: mapi.cpp:152
 msgid "Contact File Under"
 msgstr "fajl kontakta pod"
 
-#: mapi.cpp:169
-#, kde-format
+#: mapi.cpp:153
 msgid "Contact Last Name And First Name"
 msgstr "ime i prezime kontakta"
 
-#: mapi.cpp:170
-#, kde-format
+#: mapi.cpp:154
 msgid "Contact Company And Full Name"
 msgstr "firma i puno ime kontakta"
 
-#: mapi.cpp:172
-#, kde-format
+#: mapi.cpp:156
 msgid "Contact EMail-1 Full"
 msgstr "puna e‑pošta‑1 za kontakt"
 
-#: mapi.cpp:173
-#, kde-format
+#: mapi.cpp:157
 msgid "Contact EMail-1 Address Type"
 msgstr "tip adrese e‑pošte‑1 za kontakt"
 
-#: mapi.cpp:174
-#, kde-format
+#: mapi.cpp:158
 msgid "Contact EMail-1 Address"
 msgstr "adresa e‑pošte‑1 za kontakt"
 
-#: mapi.cpp:175
-#, kde-format
+#: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
 msgstr "prikazno ime e‑pošte‑1 za kontakt"
 
-#: mapi.cpp:176
-#, kde-format
+#: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
 msgstr "ID unosa e‑pošte‑1 za kontakt"
 
-#: mapi.cpp:178
-#, kde-format
+#: mapi.cpp:162
 msgid "Contact EMail-2 Full"
 msgstr "puna e‑pošta‑2 za kontakt"
 
-#: mapi.cpp:179
-#, kde-format
+#: mapi.cpp:163
 msgid "Contact EMail-2 Address Type"
 msgstr "tip adrese e‑pošte‑2 za kontakt"
 
-#: mapi.cpp:180
-#, kde-format
+#: mapi.cpp:164
 msgid "Contact EMail-2 Address"
 msgstr "adresa e‑pošte‑2 za kontakt"
 
-#: mapi.cpp:181
-#, kde-format
+#: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
 msgstr "prikazno ime e‑pošte‑2 za kontakt"
 
-#: mapi.cpp:182
-#, kde-format
+#: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
 msgstr "ID unosa e‑pošte‑2 za kontakt"
 
-#: mapi.cpp:184 mapi.cpp:185
-#, kde-format
+#: mapi.cpp:168 mapi.cpp:169
 msgid "Appointment Location"
 msgstr "lokacija sastanka"
 
-#: mapi.cpp:186
-#, kde-format
+#: mapi.cpp:170
 msgid "Appointment Start Date"
 msgstr "datum početka sastanka"
 
-#: mapi.cpp:187
-#, kde-format
+#: mapi.cpp:171
 msgid "Appointment End Date"
 msgstr "datum kraja sastanka"
 
-#: mapi.cpp:188
-#, kde-format
+#: mapi.cpp:172
 msgid "Appointment Duration"
 msgstr "trajanje sastanka"
 
-#: mapi.cpp:189
-#, kde-format
+#: mapi.cpp:173
 msgid "Appointment Response Status"
 msgstr "stanje odziva za sastanak"
 
-#: mapi.cpp:190
-#, kde-format
+#: mapi.cpp:174
 msgid "Appointment Is Recurring"
 msgstr "sastanak se ponavlja"
 
-#: mapi.cpp:191
-#, kde-format
+#: mapi.cpp:175
 msgid "Appointment Recurrence Type"
 msgstr "tip ponavljanja sastanka"
 
-#: mapi.cpp:192
-#, kde-format
+#: mapi.cpp:176
 msgid "Appointment Recurrence Pattern"
 msgstr "obrazac ponavljanja sastanka"
 
-#: mapi.cpp:193
-#, kde-format
+#: mapi.cpp:177
 msgid "Reminder Time"
 msgstr "vreme podsetnika"
 
-#: mapi.cpp:194
-#, kde-format
+#: mapi.cpp:178
 msgid "Reminder Set"
 msgstr "podsetnik postavljen"
 
-#: mapi.cpp:195
-#, kde-format
+#: mapi.cpp:179
 msgid "Start Date"
 msgstr "datum početka"
 
-#: mapi.cpp:196
-#, kde-format
+#: mapi.cpp:180
 msgid "End Date"
 msgstr "datum kraja"
 
-#: mapi.cpp:197
-#, kde-format
+#: mapi.cpp:181
 msgid "Reminder Next Time"
 msgstr "podsetnik sledeći put"
