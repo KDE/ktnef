@@ -11,8 +11,7 @@ portingAid: false
 deprecated: false
 release: false
 libraries:
- - qmake: KTNef
-   cmake: "KPim6::Tnef"
+ - cmake: "KPim6::Tnef"
 cmakename: KPim6Tnef
 
 public_lib: true
