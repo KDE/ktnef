@@ -222,7 +222,7 @@ msgstr "Nivel de acceso"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
-msgstr "Estase a trazar a sinatura"
+msgstr "Trazando a sinatura"
 
 #: mapi.cpp:75
 msgid "Record Key"
