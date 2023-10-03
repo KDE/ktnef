@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2023-03-25 16:19+0100\n"
+"PO-Revision-Date: 2023-10-02 15:52+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -19,23 +19,23 @@ msgstr ""
 #: formatter.cpp:298
 #, kde-format
 msgid "Reminder"
-msgstr ""
+msgstr "Rememorigilo"
 
 #: mapi.cpp:26
 msgid "Alternate Recipient Allowed"
-msgstr ""
+msgstr "Alterna Ricevanto Permesita"
 
 #: mapi.cpp:27 mapi.cpp:132
 msgid "Message Class"
-msgstr ""
+msgstr "Mesaĝa Klaso"
 
 #: mapi.cpp:28
 msgid "Originator Delivery Report Requested"
-msgstr ""
+msgstr "Farinto Livera Raporto Petita"
 
 #: mapi.cpp:29
 msgid "Originator Return Address"
-msgstr ""
+msgstr "Revenadreso de la aŭtoro"
 
 #: mapi.cpp:30 mapi.cpp:137
 msgid "Priority"
@@ -43,23 +43,23 @@ msgstr "Prioritato"
 
 #: mapi.cpp:31
 msgid "Read Receipt Requested"
-msgstr ""
+msgstr "Lego Kvitanco Petita"
 
 #: mapi.cpp:32
 msgid "Recipient Reassignment Prohibited"
-msgstr ""
+msgstr "Reasigno de Ricevanto Malpermesita"
 
 #: mapi.cpp:33
 msgid "Original Sensitivity"
-msgstr ""
+msgstr "Origina Sentemo"
 
 #: mapi.cpp:34
 msgid "Report Tag"
-msgstr ""
+msgstr "Raporta Etikedo"
 
 #: mapi.cpp:35
 msgid "Sensitivity"
-msgstr ""
+msgstr "Sentemeco"
 
 #: mapi.cpp:36 mapi.cpp:128
 msgid "Subject"
@@ -67,123 +67,123 @@ msgstr "Temo"
 
 #: mapi.cpp:37
 msgid "Client Submit Time"
-msgstr ""
+msgstr "Kliento Submeti Tempon"
 
 #: mapi.cpp:38
 msgid "Sent Representing Search Key"
-msgstr ""
+msgstr "Sendita Reprezentanta Serĉŝlosilon"
 
 #: mapi.cpp:39
 msgid "Subject Prefix"
-msgstr ""
+msgstr "Subjekta Prefikso"
 
 #: mapi.cpp:40
 msgid "Sent Representing Entry ID"
-msgstr ""
+msgstr "Sendita Reprezentanta Eniron ID"
 
 #: mapi.cpp:41
 msgid "Sent Representing Name"
-msgstr ""
+msgstr "Sendita Reprezentanta Nomo"
 
 #: mapi.cpp:42
 msgid "Message Submission ID"
-msgstr ""
+msgstr "Submet-ID de Mesaĝo"
 
 #: mapi.cpp:43
 msgid "Original Author Name"
-msgstr ""
+msgstr "Origina Aŭtornomo"
 
 #: mapi.cpp:44 mapi.cpp:125
 msgid "Owner Appointment ID"
-msgstr ""
+msgstr "Nomum-ID de Posedanto"
 
 #: mapi.cpp:45 mapi.cpp:126
 msgid "Response Requested"
-msgstr ""
+msgstr "Respondo Petita"
 
 #: mapi.cpp:46
 msgid "Sent Representing Address Type"
-msgstr ""
+msgstr "Sendita Reprezentanta Adrestipo"
 
 #: mapi.cpp:47
 msgid "Sent Representing E-mail Address"
-msgstr ""
+msgstr "Sendita Reprezentanta Retpoŝta Adreso"
 
 #: mapi.cpp:48
 msgid "Conversation Topic"
-msgstr ""
+msgstr "Konversacia Temo"
 
 #: mapi.cpp:49
 msgid "Conversation Index"
-msgstr ""
+msgstr "Konversacia Indekso"
 
 #: mapi.cpp:50
 msgid "TNEF Correlation Key"
-msgstr ""
+msgstr "TNEF Korelacia Ŝlosilo"
 
 #: mapi.cpp:51
 msgid "Reply Requested"
-msgstr ""
+msgstr "Respondo Petita"
 
 #: mapi.cpp:52
 msgid "Sender Name"
-msgstr ""
+msgstr "Sendanto Nomo"
 
 #: mapi.cpp:53
 msgid "Sender Search Key"
-msgstr ""
+msgstr "Sendanto Serĉŝlosilo"
 
 #: mapi.cpp:54
 msgid "Sender Address Type"
-msgstr ""
+msgstr "Sendanto-Adrestipo"
 
 #: mapi.cpp:55
 msgid "Sender E-mail Address"
-msgstr ""
+msgstr "Sendinto Retpoŝta Adreso"
 
 #: mapi.cpp:56
 msgid "Delete After Submit"
-msgstr ""
+msgstr "Forigi Post Sendi"
 
 #: mapi.cpp:57
 msgid "Display Bcc"
-msgstr ""
+msgstr "Vidigi Bcc"
 
 #: mapi.cpp:58
 msgid "Display Cc"
-msgstr ""
+msgstr "Vidigi Cc"
 
 #: mapi.cpp:59
 msgid "Display To"
-msgstr ""
+msgstr "Vidigi Al"
 
 #: mapi.cpp:60
 msgid "Message Delivery Time"
-msgstr ""
+msgstr "Mesaĝolivera Tempo"
 
 #: mapi.cpp:61
 msgid "Message Flags"
-msgstr ""
+msgstr "Mesaĝaj Flagoj"
 
 #: mapi.cpp:62
 msgid "Message Size"
-msgstr ""
+msgstr "Mesaĝa Grandeco"
 
 #: mapi.cpp:63
 msgid "Parent Entry ID"
-msgstr ""
+msgstr "Gepatra Enir-ID"
 
 #: mapi.cpp:64
 msgid "Sent-Mail Entry ID"
-msgstr ""
+msgstr "Send-Mail Eniro-ID"
 
 #: mapi.cpp:65
 msgid "Message Recipients"
-msgstr ""
+msgstr "Mesaĝaj Ricevantoj"
 
 #: mapi.cpp:66
 msgid "Submit Flags"
-msgstr ""
+msgstr "Sendaj Flagoj"
 
 #: mapi.cpp:67
 msgid "Has Attachment"
@@ -191,51 +191,51 @@ msgstr "Kun kunsendaĵo"
 
 #: mapi.cpp:68
 msgid "Normalized Subject"
-msgstr ""
+msgstr "Normigita Temo"
 
 #: mapi.cpp:69
 msgid "RTF In Sync"
-msgstr ""
+msgstr "RTF Sinkronigita"
 
 #: mapi.cpp:70
 msgid "Attachment Size"
-msgstr ""
+msgstr "Grandeco de Kunsendaĵo"
 
 #: mapi.cpp:71
 msgid "Attachment Number"
-msgstr ""
+msgstr "Kunsendaĵo-Nombro"
 
 #: mapi.cpp:72
 msgid "Access"
-msgstr ""
+msgstr "Aliro"
 
 #: mapi.cpp:73
 msgid "Access Level"
-msgstr ""
+msgstr "Alirnivelo"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
-msgstr ""
+msgstr "Mapita Subskribo"
 
 #: mapi.cpp:75
 msgid "Record Key"
-msgstr ""
+msgstr "Rikorda Ŝlosilo"
 
 #: mapi.cpp:76
 msgid "Store Record Key"
-msgstr ""
+msgstr "Konservi Rikordan Ŝlosilon"
 
 #: mapi.cpp:77
 msgid "Store Entry ID"
-msgstr ""
+msgstr "Konservi Eniro ID"
 
 #: mapi.cpp:78
 msgid "Object Type"
-msgstr ""
+msgstr "Objekta Tipo"
 
 #: mapi.cpp:79
 msgid "Entry ID"
-msgstr ""
+msgstr "Enira ID"
 
 #: mapi.cpp:80
 msgid "Message Body"
@@ -243,39 +243,39 @@ msgstr "Mesaĝokorpo"
 
 #: mapi.cpp:81
 msgid "RTF Sync Body CRC"
-msgstr ""
+msgstr "RTF Sync Korpa CRC"
 
 #: mapi.cpp:82
 msgid "RTF Sync Body Count"
-msgstr ""
+msgstr "RTF Sync Korpokalkulo"
 
 #: mapi.cpp:83
 msgid "RTF Sync Body Tag"
-msgstr ""
+msgstr "RTF Sync Korpa Etikedo"
 
 #: mapi.cpp:84
 msgid "RTF Compressed"
-msgstr ""
+msgstr "RTF Kunpremita"
 
 #: mapi.cpp:85
 msgid "RTF Sync Prefix Count"
-msgstr ""
+msgstr "RTF Sync Prefiksa Nombro"
 
 #: mapi.cpp:86
 msgid "RTF Sync Trailing Count"
-msgstr ""
+msgstr "RTF Sync Malantaŭa Nombro"
 
 #: mapi.cpp:87
 msgid "HTML Message Body"
-msgstr ""
+msgstr "HTML Mesaĝa Korpo"
 
 #: mapi.cpp:88 mapi.cpp:133
 msgid "Message ID"
-msgstr ""
+msgstr "Mesaĝa ID"
 
 #: mapi.cpp:89
 msgid "Parent's Message ID"
-msgstr ""
+msgstr "Mesaĝa ID de Gepatro"
 
 #: mapi.cpp:90
 msgid "Action"
@@ -283,11 +283,11 @@ msgstr "Ago"
 
 #: mapi.cpp:91
 msgid "Action Flag"
-msgstr ""
+msgstr "Agoflago"
 
 #: mapi.cpp:92
 msgid "Action Date"
-msgstr ""
+msgstr "Agodato"
 
 #: mapi.cpp:93
 msgid "Display Name"
@@ -295,55 +295,55 @@ msgstr "Nomo de la ekrano"
 
 #: mapi.cpp:94
 msgid "Creation Time"
-msgstr ""
+msgstr "Krea Tempo"
 
 #: mapi.cpp:95
 msgid "Last Modification Time"
-msgstr ""
+msgstr "Lastmodifa Tempo"
 
 #: mapi.cpp:96
 msgid "Search Key"
-msgstr ""
+msgstr "Serĉa Ŝlosilo"
 
 #: mapi.cpp:97
 msgid "Store Support Mask"
-msgstr ""
+msgstr "Konservi Subtenan Maskon"
 
 #: mapi.cpp:98
 msgid "MDB Provider"
-msgstr ""
+msgstr "MDB-Provizanto"
 
 #: mapi.cpp:99 mapi.cpp:138
 msgid "Attachment Data"
-msgstr ""
+msgstr "Datumoj de Kunsendaĵo"
 
 #: mapi.cpp:100
 msgid "Attachment Encoding"
-msgstr ""
+msgstr "Aldonaĵa Kodado"
 
 #: mapi.cpp:101
 msgid "Attachment Extension"
-msgstr ""
+msgstr "Finaĵo de Kunsendaĵo"
 
 #: mapi.cpp:102
 msgid "Attachment Method"
-msgstr ""
+msgstr "Kunsenda Metodo"
 
 #: mapi.cpp:103
 msgid "Attachment Long File Name"
-msgstr ""
+msgstr "Kunsendaĵo Longa Dosiernomo"
 
 #: mapi.cpp:104
 msgid "Attachment Rendering Position"
-msgstr ""
+msgstr "Kunsendaĵo Rendering Pozicio"
 
 #: mapi.cpp:105
 msgid "Attachment Mime Tag"
-msgstr ""
+msgstr "Aldonaĵo Mime-Etikedo"
 
 #: mapi.cpp:106
 msgid "Attachment Flags"
-msgstr ""
+msgstr "Aldonaj Flagoj"
 
 #: mapi.cpp:107
 msgid "Account"
@@ -351,19 +351,19 @@ msgstr "Konto"
 
 #: mapi.cpp:108
 msgid "Generation"
-msgstr ""
+msgstr "Generacio"
 
 #: mapi.cpp:109
 msgid "Given Name"
-msgstr ""
+msgstr "Antaŭnomo"
 
 #: mapi.cpp:110
 msgid "Initials"
-msgstr ""
+msgstr "Inicialoj"
 
 #: mapi.cpp:111
 msgid "Keyword"
-msgstr ""
+msgstr "Ŝlosilvorto"
 
 #: mapi.cpp:112
 msgid "Language"
@@ -375,11 +375,11 @@ msgstr "Loko"
 
 #: mapi.cpp:114
 msgid "Surname"
-msgstr ""
+msgstr "Familia nomo"
 
 #: mapi.cpp:115
 msgid "Company Name"
-msgstr ""
+msgstr "Nomo de Firmo"
 
 #: mapi.cpp:116
 msgid "Title"
@@ -387,7 +387,7 @@ msgstr "Titolo"
 
 #: mapi.cpp:117
 msgid "Department Name"
-msgstr ""
+msgstr "Fako Nomo"
 
 #: mapi.cpp:118
 msgid "Country"
@@ -395,19 +395,19 @@ msgstr "Lando"
 
 #: mapi.cpp:119
 msgid "Locality"
-msgstr ""
+msgstr "Loko"
 
 #: mapi.cpp:120
 msgid "State/Province"
-msgstr ""
+msgstr "Ŝtato/Provinco"
 
 #: mapi.cpp:121
 msgid "Middle Name"
-msgstr ""
+msgstr "Meza Nomo"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
-msgstr ""
+msgstr "Montrnomo Prefikso"
 
 #: mapi.cpp:127
 msgid "From"
@@ -415,43 +415,43 @@ msgstr "El"
 
 #: mapi.cpp:129
 msgid "Date Sent"
-msgstr ""
+msgstr "Dato Sendita"
 
 #: mapi.cpp:130
 msgid "Date Received"
-msgstr ""
+msgstr "Dato Ricevita"
 
 #: mapi.cpp:131
 msgid "Message Status"
-msgstr ""
+msgstr "Mesaĝo-Stato"
 
 #: mapi.cpp:134
 msgid "Parent ID"
-msgstr ""
+msgstr "Gepatra ID"
 
 #: mapi.cpp:135
 msgid "Conversation ID"
-msgstr ""
+msgstr "Konversacia ID"
 
 #: mapi.cpp:136
 msgid "Body"
-msgstr ""
+msgstr "Korpo"
 
 #: mapi.cpp:139
 msgid "Attachment Title"
-msgstr ""
+msgstr "Aldonaĵa Titolo"
 
 #: mapi.cpp:140
 msgid "Attachment Meta File"
-msgstr ""
+msgstr "Aldonaĵo Metadosiero"
 
 #: mapi.cpp:141
 msgid "Attachment Create Date"
-msgstr ""
+msgstr "Aldonaĵo Krei Daton"
 
 #: mapi.cpp:142
 msgid "Attachment Modify Date"
-msgstr ""
+msgstr "Aldono Modifi Daton"
 
 #: mapi.cpp:143
 msgid "Date Modified"
@@ -459,132 +459,132 @@ msgstr "Dato de modifado"
 
 #: mapi.cpp:144
 msgid "Attachment Transport File Name"
-msgstr ""
+msgstr "Aldonaĵo Transporta Dosiernomo"
 
 #: mapi.cpp:145
 msgid "Attachment Rendering Data"
-msgstr ""
+msgstr "Aldonaĵo Rendering Datumoj"
 
 #: mapi.cpp:146
 msgid "MAPI Properties"
-msgstr ""
+msgstr "MAPI Propraĵoj"
 
 #: mapi.cpp:147
 msgid "Recipients Table"
-msgstr ""
+msgstr "Tabelo de Ricevantoj"
 
 #: mapi.cpp:148
 msgid "Attachment MAPI Properties"
-msgstr ""
+msgstr "Aldonaĵo MAPI-Propertoj"
 
 #: mapi.cpp:149
 msgid "TNEF Version"
-msgstr ""
+msgstr "TNEF-versio"
 
 #: mapi.cpp:150
 msgid "OEM Code Page"
-msgstr ""
+msgstr "OEM Kodpaĝo"
 
 #: mapi.cpp:152
 msgid "Contact File Under"
-msgstr ""
+msgstr "Kontaktdosiero Sub"
 
 #: mapi.cpp:153
 msgid "Contact Last Name And First Name"
-msgstr ""
+msgstr "Kontakto Familia Nomo Kaj Unua Nomo"
 
 #: mapi.cpp:154
 msgid "Contact Company And Full Name"
-msgstr ""
+msgstr "Kontakto Kompanio Kaj Plena Nomo"
 
 #: mapi.cpp:156
 msgid "Contact EMail-1 Full"
-msgstr ""
+msgstr "Kontakto Retpoŝto-1 Plena"
 
 #: mapi.cpp:157
 msgid "Contact EMail-1 Address Type"
-msgstr ""
+msgstr "Kontakto Retpoŝto-1-Adrestipo"
 
 #: mapi.cpp:158
 msgid "Contact EMail-1 Address"
-msgstr ""
+msgstr "Kontakto Retpoŝto-1-Adreso"
 
 #: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
-msgstr ""
+msgstr "Kontakto Retpoŝto-1 Vidiga Nomo"
 
 #: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
-msgstr ""
+msgstr "Kontakto Retpoŝto-1 Eniridentigilo"
 
 #: mapi.cpp:162
 msgid "Contact EMail-2 Full"
-msgstr ""
+msgstr "Kontakto Retpoŝto-2 Plena"
 
 #: mapi.cpp:163
 msgid "Contact EMail-2 Address Type"
-msgstr ""
+msgstr "Kontakto Retpoŝto-2-Adrestipo"
 
 #: mapi.cpp:164
 msgid "Contact EMail-2 Address"
-msgstr ""
+msgstr "Kontakto Retpoŝtadreso-2"
 
 #: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
-msgstr ""
+msgstr "Kontakto Retpoŝto-2 Vidiga Nomo"
 
 #: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
-msgstr ""
+msgstr "Kontakto Retpoŝto-2 Eniridentigilo"
 
 #: mapi.cpp:168 mapi.cpp:169
 msgid "Appointment Location"
-msgstr ""
+msgstr "Loko de rendevuo"
 
 #: mapi.cpp:170
 msgid "Appointment Start Date"
-msgstr ""
+msgstr "Nomumo Komenca Dato"
 
 #: mapi.cpp:171
 msgid "Appointment End Date"
-msgstr ""
+msgstr "Nomumo Fina Dato"
 
 #: mapi.cpp:172
 msgid "Appointment Duration"
-msgstr ""
+msgstr "Nomumo Daŭro"
 
 #: mapi.cpp:173
 msgid "Appointment Response Status"
-msgstr ""
+msgstr "Nomumo-Responda Statuso"
 
 #: mapi.cpp:174
 msgid "Appointment Is Recurring"
-msgstr ""
+msgstr "Nomumo Revenas"
 
 #: mapi.cpp:175
 msgid "Appointment Recurrence Type"
-msgstr ""
+msgstr "Nomumo-Ripettipo"
 
 #: mapi.cpp:176
 msgid "Appointment Recurrence Pattern"
-msgstr ""
+msgstr "Nomumo-Revena Ŝablono"
 
 #: mapi.cpp:177
 msgid "Reminder Time"
-msgstr ""
+msgstr "Rememoriga Tempo"
 
 #: mapi.cpp:178
 msgid "Reminder Set"
-msgstr ""
+msgstr "Memorigilo Aro"
 
 #: mapi.cpp:179
 msgid "Start Date"
-msgstr ""
+msgstr "Komenca dato"
 
 #: mapi.cpp:180
 msgid "End Date"
-msgstr ""
+msgstr "Findato"
 
 #: mapi.cpp:181
 msgid "Reminder Next Time"
-msgstr ""
+msgstr "Rememorigilo Venontfoje"
