@@ -135,7 +135,7 @@ public:
      * @return false if an invalid @acronym TNEF tag was specified by @p tag or
      * if there are no properties to write; else true.
      */
-    Q_REQUIRED_RESULT bool writeProperty(QDataStream &stream, int &bytes, int tag) const;
+    [[nodiscard]] bool writeProperty(QDataStream &stream, int &bytes, int tag) const;
 
     /**
      * Writes the attachment to the #QIODevice specified by @p file.
@@ -143,7 +143,7 @@ public:
      * @param file is the #QIODevice to write.
      * @return true if the write was successful; otherwise false.
      */
-    Q_REQUIRED_RESULT bool writeFile(QIODevice &file) const;
+    [[nodiscard]] bool writeFile(QIODevice &file) const;
 
     /**
      * Writes the attachment to the #QDataStream specified by @p stream.
@@ -151,7 +151,7 @@ public:
      * @param stream is the #QDataStream to write.
      * @return true if the write was successful; otherwise false.
      */
-    Q_REQUIRED_RESULT bool writeFile(QDataStream &stream) const;
+    [[nodiscard]] bool writeFile(QDataStream &stream) const;
 
     /**
      * Sets the sender's @p name and @p email address.

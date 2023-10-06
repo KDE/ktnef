@@ -80,17 +80,17 @@ public:
     /**
      * Returns true if the #TitleParsed flag is set; else returns false.
      */
-    Q_REQUIRED_RESULT bool titleParsed() const;
+    [[nodiscard]] bool titleParsed() const;
 
     /**
      * Returns true if the ParseState::DataParsed flag is set; else returns false.
      */
-    Q_REQUIRED_RESULT bool dataParsed() const;
+    [[nodiscard]] bool dataParsed() const;
 
     /**
      * Returns true if the #InfoParsed flag is set; else returns false.
      */
-    Q_REQUIRED_RESULT bool infoParsed() const;
+    [[nodiscard]] bool infoParsed() const;
 
     /**
      * Sets/Unsets the attachment state according to the @p state flag
@@ -99,7 +99,7 @@ public:
      * @param state a #ParseState type.
      * @return true if the state is turned-on; else returns false.
      */
-    Q_REQUIRED_RESULT bool checkState(int state) const;
+    [[nodiscard]] bool checkState(int state) const;
 
     /**
      * Sets the offset value of this attachment to @p offset.
@@ -111,7 +111,7 @@ public:
     /**
      * Returns the offset value of the attachment.
      */
-    Q_REQUIRED_RESULT int offset() const;
+    [[nodiscard]] int offset() const;
 
     /**
      * Sets the size of the attachment to @p size.
@@ -123,7 +123,7 @@ public:
     /**
      * Returns the size of the attachment.
      */
-    Q_REQUIRED_RESULT int size() const;
+    [[nodiscard]] int size() const;
 
     /**
      * Sets the display size of the attachment to @p size.
@@ -135,7 +135,7 @@ public:
     /**
      * Returns the display size of the attachment.
      */
-    Q_REQUIRED_RESULT int displaySize() const;
+    [[nodiscard]] int displaySize() const;
 
     /**
      * Sets the name of this attachment to @p str.
@@ -147,7 +147,7 @@ public:
     /**
      * Returns the name of the attachment.
      */
-    Q_REQUIRED_RESULT QString name() const;
+    [[nodiscard]] QString name() const;
 
     /**
      * Sets the index of this attachment to @p indx.
@@ -159,7 +159,7 @@ public:
     /**
      * Returns the index of the attachment.
      */
-    Q_REQUIRED_RESULT int index() const;
+    [[nodiscard]] int index() const;
 
     /**
      * Sets the filename of this attachment to @p str.
@@ -171,7 +171,7 @@ public:
     /**
      * Returns the filename of the attachment.
      */
-    Q_REQUIRED_RESULT QString fileName() const;
+    [[nodiscard]] QString fileName() const;
 
     /**
      * Sets the display name of this attachment to @p str.
@@ -183,7 +183,7 @@ public:
     /**
      * Returns the display name of the attachment.
      */
-    Q_REQUIRED_RESULT QString displayName() const;
+    [[nodiscard]] QString displayName() const;
 
     /**
      * Sets the @acronym MIME tag of this attachment to @p str.
@@ -195,7 +195,7 @@ public:
     /**
      * Returns the @acronym MIME tag of the attachment.
      */
-    Q_REQUIRED_RESULT QString mimeTag() const;
+    [[nodiscard]] QString mimeTag() const;
 
     /**
      * Sets the filename extension of this attachment to @p str.
@@ -207,7 +207,7 @@ public:
     /**
      * Returns the filename extension of the attachment.
      */
-    Q_REQUIRED_RESULT QString extension() const;
+    [[nodiscard]] QString extension() const;
 
 private:
     //@cond PRIVATE

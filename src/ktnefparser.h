@@ -52,7 +52,7 @@ public:
       @param filename is the name of the file to open.
       @return true if the open succeeded; otherwise false.
     */
-    Q_REQUIRED_RESULT bool openFile(const QString &filename) const;
+    [[nodiscard]] bool openFile(const QString &filename) const;
 
     /**
       Opens the #QIODevice @p device for parsing.
@@ -60,7 +60,7 @@ public:
       @param device is the #QIODevice to open.
       @return true if the open succeeded; otherwise false.
     */
-    Q_REQUIRED_RESULT bool openDevice(QIODevice *device);
+    [[nodiscard]] bool openDevice(QIODevice *device);
 
     /**
       Extracts a @acronym TNEF attachment having filename @p filename
@@ -69,7 +69,7 @@ public:
       @param filename is the name of the file to extract the attachment into.
       @return true if the extraction succeeds; otherwise false.
     */
-    Q_REQUIRED_RESULT bool extractFile(const QString &filename) const;
+    [[nodiscard]] bool extractFile(const QString &filename) const;
 
     /**
       Extracts a @acronym TNEF attachment having filename @p filename
@@ -81,14 +81,14 @@ public:
 
       @return true if the extraction succeeds; otherwise false.
     */
-    Q_REQUIRED_RESULT bool extractFileTo(const QString &filename, const QString &dirname) const;
+    [[nodiscard]] bool extractFileTo(const QString &filename, const QString &dirname) const;
 
     /**
       Extracts all @acronym TNEF attachments into the default directory.
 
       @return true if the extraction succeeds; otherwise false.
     */
-    Q_REQUIRED_RESULT bool extractAll();
+    [[nodiscard]] bool extractAll();
 
     /**
       Sets the default extraction directory to @p dirname.

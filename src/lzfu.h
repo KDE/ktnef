@@ -25,5 +25,5 @@ namespace KTnef
  * @param input compressed input data.
  * @param output decompressed output data.
  */
-Q_REQUIRED_RESULT int lzfu_decompress(QIODevice *input, QIODevice *output);
+[[nodiscard]] int lzfu_decompress(QIODevice *input, QIODevice *output);
 }

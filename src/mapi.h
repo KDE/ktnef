@@ -25,7 +25,7 @@ namespace KTnef
  * @param key The input code to convert.
  * @return A QString containing the tag string.
  */
-Q_REQUIRED_RESULT QString mapiTagString(int key);
+[[nodiscard]] QString mapiTagString(int key);
 
 /**
  * Convert a keycode to a @acronym MAPI named tag string.
@@ -33,5 +33,5 @@ Q_REQUIRED_RESULT QString mapiTagString(int key);
  * @param tag An input tag.
  * @return A QString containing the named tag string.
  */
-Q_REQUIRED_RESULT QString mapiNamedTagString(int key, int tag = -1);
+[[nodiscard]] QString mapiNamedTagString(int key, int tag = -1);
 }

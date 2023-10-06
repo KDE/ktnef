@@ -68,7 +68,7 @@ public:
 
       @return a formatted value string.
     */
-    Q_REQUIRED_RESULT QString findProp(int key, const QString &fallback = QString(), bool convertToUpper = false) const;
+    [[nodiscard]] QString findProp(int key, const QString &fallback = QString(), bool convertToUpper = false) const;
 
     /**
       Finds a property by @p name, returning a formatted value.
@@ -81,7 +81,7 @@ public:
 
       @return a formatted value string.
     */
-    Q_REQUIRED_RESULT QString findNamedProp(const QString &name, const QString &fallback = QString(), bool convertToUpper = false) const;
+    [[nodiscard]] QString findNamedProp(const QString &name, const QString &fallback = QString(), bool convertToUpper = false) const;
 
     /**
       Returns a #QMap of all (key,@acronym MAPI) properties
@@ -100,7 +100,7 @@ public:
 
       @return the property.q
     */
-    Q_REQUIRED_RESULT QVariant property(int key) const;
+    [[nodiscard]] QVariant property(int key) const;
 
     /**
       Adds a @acronym TNEF attribute.
@@ -115,7 +115,7 @@ public:
     /**
       Returns a #QMap of all (key,@acronym TNEF) attributes.
     */
-    Q_REQUIRED_RESULT QMap<int, KTNEFProperty *> &attributes();
+    [[nodiscard]] QMap<int, KTNEFProperty *> &attributes();
 
     /**
       Returns a #QMap of all (key,@acronym TNEF) attributes.
@@ -129,7 +129,7 @@ public:
 
       @return the attribute associated with the key.
     */
-    Q_REQUIRED_RESULT QVariant attribute(int key) const;
+    [[nodiscard]] QVariant attribute(int key) const;
 
     /**
       Clears the @acronym MAPI and @acronym TNEF maps.
