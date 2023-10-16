@@ -16,7 +16,6 @@
  */
 
 #pragma once
-#include <QtGlobal>
 class QIODevice;
 namespace KTnef
 {
