@@ -53,7 +53,7 @@ msgstr "S'ha sol·licitat un comprovant de lectura"
 
 #: mapi.cpp:32
 msgid "Recipient Reassignment Prohibited"
-msgstr "És prohibit de reassignar el destinatari"
+msgstr "Està prohibit tornar a assignar el destinatari"
 
 #: mapi.cpp:33
 msgid "Original Sensitivity"
