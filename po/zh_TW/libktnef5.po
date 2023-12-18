@@ -2,20 +2,20 @@
 #
 # Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2006, 2010.
 # Franklin Weng <franklin at goodhorse dot idv dot tw>, 2007.
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-01-12 00:46+0000\n"
-"PO-Revision-Date: 2023-06-15 04:22+0900\n"
+"PO-Revision-Date: 2023-12-17 19:09+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
-"Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: formatter.cpp:298
@@ -213,7 +213,7 @@ msgstr "存取"
 
 #: mapi.cpp:73
 msgid "Access Level"
-msgstr "存取等級"
+msgstr "存取層級"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
