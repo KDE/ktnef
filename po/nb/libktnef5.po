@@ -1,4 +1,4 @@
-# Translation of libktnef5 to Norwegian Bokmål
+# Translation of libktnef6 to Norwegian Bokmål
 #
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2007, 2010.
 msgid ""

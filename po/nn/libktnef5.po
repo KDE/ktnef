@@ -1,4 +1,4 @@
-# Translation of libktnef5 to Norwegian Nynorsk
+# Translation of libktnef6 to Norwegian Nynorsk
 #
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2003, 2004.
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2004.
