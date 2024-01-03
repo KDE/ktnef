@@ -1,4 +1,4 @@
-# Translation of libktnef5 to Northern Sami
+# Translation of libktnef6 to Northern Sami
 #
 # Børre Gaup <boerre@skolelinux.no>, 2009.
 msgid ""
