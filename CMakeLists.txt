@@ -46,7 +46,7 @@ find_package(KF6Contacts ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.6.0 KF 5.248.0)
+ecm_set_disabled_deprecation_versions(QT 6.6.0 KF 5.249.0)
 
 
 
