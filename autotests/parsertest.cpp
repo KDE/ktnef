@@ -9,9 +9,9 @@
 
 #include "config-ktnef-tests.h"
 
-#include <ktnef/ktnefattach.h>
-#include <ktnef/ktnefmessage.h>
-#include <ktnef/ktnefparser.h>
+#include "ktnef/ktnefattach.h"
+#include "ktnef/ktnefmessage.h"
+#include "ktnef/ktnefparser.h"
 
 #include <QString>
 #include <QTest>
