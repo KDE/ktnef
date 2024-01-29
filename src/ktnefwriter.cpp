@@ -212,7 +212,7 @@ bool KTNEFWriter::writeProperty(QDataStream &stream, int &bytes, int tag) const
         assert(list.count() == 2);
 
         cs = list[0].toString().toLocal8Bit(); // Name
-        cs2 = QString(QLatin1String("smtp:") + list[1].toString()).toLocal8Bit(); // Email address
+        cs2 = QString(QLatin1StringView("smtp:") + list[1].toString()).toLocal8Bit(); // Email address
         i = 18 + cs.length() + cs2.length(); // 2 * sizof(TRP) + strings + 2x'\0'
 
         stream << (quint8)LVL_MESSAGE;
@@ -377,28 +377,28 @@ void KTNEFWriter::setMessageType(MessageType m)
     QVariant v;
     switch (m) {
     case Appointment:
-        v = QVariant(QLatin1String("IPM.Appointment"));
+        v = QVariant(QLatin1StringView("IPM.Appointment"));
         break;
 
     case MeetingCancelled:
-        v = QVariant(QLatin1String("IPM.Schedule.Meeting.Cancelled"));
+        v = QVariant(QLatin1StringView("IPM.Schedule.Meeting.Cancelled"));
         break;
 
     case MeetingRequest:
-        v = QVariant(QLatin1String("IPM.Schedule.Meeting.Request"));
+        v = QVariant(QLatin1StringView("IPM.Schedule.Meeting.Request"));
         break;
 
     case MeetingNo:
-        v = QVariant(QLatin1String("IPM.Schedule.Meeting.Resp.Neg"));
+        v = QVariant(QLatin1StringView("IPM.Schedule.Meeting.Resp.Neg"));
         break;
 
     case MeetingYes:
-        v = QVariant(QLatin1String("IPM.Schedule.Meeting.Resp.Pos"));
+        v = QVariant(QLatin1StringView("IPM.Schedule.Meeting.Resp.Pos"));
         break;
 
     case MeetingTent:
         // Tent?
-        v = QVariant(QLatin1String("IPM.Schedule.Meeting.Resp.Tent"));
+        v = QVariant(QLatin1StringView("IPM.Schedule.Meeting.Resp.Tent"));
         break;
 
     default:

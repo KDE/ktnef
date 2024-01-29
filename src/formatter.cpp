@@ -113,29 +113,29 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
             bool bCompatMethodAccepted = false;
             bool bCompatMethodAcceptedCond = false;
             bool bCompatMethodDeclined = false;
-            if (msgClass.startsWith(QLatin1String("IPM.MICROSOFT SCHEDULE."))) {
+            if (msgClass.startsWith(QLatin1StringView("IPM.MICROSOFT SCHEDULE."))) {
                 bCompatClassAppointment = true;
-                if (msgClass.endsWith(QLatin1String(".MTGREQ"))) {
+                if (msgClass.endsWith(QLatin1StringView(".MTGREQ"))) {
                     bCompatMethodRequest = true;
-                } else if (msgClass.endsWith(QLatin1String(".MTGCNCL"))) {
+                } else if (msgClass.endsWith(QLatin1StringView(".MTGCNCL"))) {
                     bCompatMethodCancled = true;
-                } else if (msgClass.endsWith(QLatin1String(".MTGRESPP"))) {
+                } else if (msgClass.endsWith(QLatin1StringView(".MTGRESPP"))) {
                     bCompatMethodAccepted = true;
-                } else if (msgClass.endsWith(QLatin1String(".MTGRESPA"))) {
+                } else if (msgClass.endsWith(QLatin1StringView(".MTGRESPA"))) {
                     bCompatMethodAcceptedCond = true;
-                } else if (msgClass.endsWith(QLatin1String(".MTGRESPN"))) {
+                } else if (msgClass.endsWith(QLatin1StringView(".MTGRESPN"))) {
                     bCompatMethodDeclined = true;
                 }
             }
-            bool bCompatClassNote = (msgClass == QLatin1String("IPM.MICROSOFT MAIL.NOTE"));
+            bool bCompatClassNote = (msgClass == QLatin1StringView("IPM.MICROSOFT MAIL.NOTE"));
 
-            if (bCompatClassAppointment || QLatin1String("IPM.APPOINTMENT") == msgClass) {
+            if (bCompatClassAppointment || QLatin1StringView("IPM.APPOINTMENT") == msgClass) {
                 // Compose a vCal
                 bool bIsReply = false;
                 QString prodID = QStringLiteral("-//Microsoft Corporation//Outlook ");
                 prodID += tnefMsg->findNamedProp(QStringLiteral("0x8554"), QStringLiteral("9.0"));
-                prodID += QLatin1String("MIMEDIR/EN\n");
-                prodID += QLatin1String("VERSION:2.0\n");
+                prodID += QLatin1StringView("MIMEDIR/EN\n");
+                prodID += QLatin1StringView("VERSION:2.0\n");
                 calFormat.setApplication(QStringLiteral("Outlook"), prodID);
 
                 // iTIPMethod method;
@@ -308,7 +308,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 cal->addEvent(event);
                 // bOk = true;
                 // we finished composing a vCal
-            } else if (bCompatClassNote || QLatin1String("IPM.CONTACT") == msgClass) {
+            } else if (bCompatClassNote || QLatin1StringView("IPM.CONTACT") == msgClass) {
                 addressee.setUid(stringProp(tnefMsg, attMSGID));
                 addressee.setFormattedName(stringProp(tnefMsg, MAPI_TAG_PR_DISPLAY_NAME));
                 KContacts::Email email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL1EMAILADDRESS)));
@@ -403,7 +403,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 }
 
                 // bOk = (!addressee.isEmpty());
-            } else if (QLatin1String("IPM.NOTE") == msgClass) {
+            } else if (QLatin1StringView("IPM.NOTE") == msgClass) {
             } // else if ... and so on ...
         }
     }

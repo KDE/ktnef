@@ -96,7 +96,7 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
                 }
             }
             if (i < arr.size()) {
-                s.append(QLatin1String("... (size=") + QString::number(arr.size()) + QLatin1Char(')'));
+                s.append(QLatin1StringView("... (size=") + QString::number(arr.size()) + QLatin1Char(')'));
             }
             return s;
         }
