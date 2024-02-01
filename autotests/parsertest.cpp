@@ -23,7 +23,7 @@ QTEST_GUILESS_MAIN(ParserTest)
 void ParserTest::testSingleAttachment()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1String("one-file.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("one-file.tnef"))) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -40,7 +40,7 @@ void ParserTest::testSingleAttachment()
 void ParserTest::testTwoAttachments()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1String("two-files.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("two-files.tnef"))) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -62,7 +62,7 @@ void ParserTest::testTwoAttachments()
 void ParserTest::testMAPIAttachments()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1String("mapi_attach_data_obj.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("mapi_attach_data_obj.tnef"))) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -89,7 +89,7 @@ void ParserTest::testMAPIAttachments()
 void ParserTest::testUmlautAttachmentFilenames()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1String("umlaut-filename.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("umlaut-filename.tnef"))) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
