@@ -16,6 +16,8 @@
  */
 
 #include "ktnefparser.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ktnefattach.h"
 #include "ktnefdefs.h"
 #include "ktnefmessage.h"
@@ -569,7 +571,7 @@ void KTNEFParser::ParserPrivate::checkCurrent(int key)
                     if (!mimetype.isValid()) {
                         return; // FIXME
                     }
-                    if (mimetype.name() == QLatin1StringView("application/octet-stream") && current_->size() > 0) {
+                    if (mimetype.name() == "application/octet-stream"_L1 && current_->size() > 0) {
                         qint64 oldOffset = device_->pos();
                         QByteArray buffer(qMin(32, current_->size()), '\0');
                         device_->seek(current_->offset());
@@ -667,7 +669,7 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
         s.append(QLatin1Char(' ') + dn);
     }
     if (!addr.isEmpty() && addr != dn) {
-        s.append(QLatin1StringView(" <") + addr + QLatin1Char('>'));
+        s.append(" <"_L1 + addr + QLatin1Char('>'));
     }
 
     return s.trimmed();
@@ -695,9 +697,9 @@ QString readTNEFAddress(QDataStream &stream)
     QString s;
     stream >> totalLen >> totalLen >> strLen >> addrLen;
     s.append(readMAPIString(stream, false, false, strLen));
-    s.append(QLatin1StringView(" <"));
+    s.append(" <"_L1);
     s.append(readMAPIString(stream, false, false, addrLen));
-    s.append(QLatin1StringView(">"));
+    s.append(">"_L1);
     quint8 c;
     for (int i = 8 + strLen + addrLen; i < totalLen; i++) {
         stream >> c;
@@ -930,7 +932,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
             qCDebug(KTNEF_LOG) << "MAPI data: size=" << mapi.value.toByteArray().size();
             break;
         default: {
-            QString mapiname = QLatin1StringView("");
+            QString mapiname = ""_L1;
             if (mapi.tag >= 0x8000 && mapi.tag <= 0xFFFE) {
                 if (mapi.name.type == 0) {
                     mapiname = QString::asprintf(" [name = 0x%04x]", mapi.name.value.toUInt());

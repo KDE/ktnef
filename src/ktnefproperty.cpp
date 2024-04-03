@@ -16,6 +16,8 @@
  */
 
 #include "ktnefproperty.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "mapi.h"
 
 #include <cctype>
@@ -96,7 +98,7 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
                 }
             }
             if (i < arr.size()) {
-                s.append(QLatin1StringView("... (size=") + QString::number(arr.size()) + QLatin1Char(')'));
+                s.append("... (size="_L1 + QString::number(arr.size()) + QLatin1Char(')'));
             }
             return s;
         }

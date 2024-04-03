@@ -6,6 +6,7 @@
 */
 
 #include "parsertest.h"
+using namespace Qt::Literals::StringLiterals;
 
 #include "config-ktnef-tests.h"
 
@@ -23,7 +24,7 @@ QTEST_GUILESS_MAIN(ParserTest)
 void ParserTest::testSingleAttachment()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("one-file.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + "one-file.tnef"_L1)) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -34,13 +35,13 @@ void ParserTest::testSingleAttachment()
     KTNEFAttach *att = atts.first();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 244);
-    QVERIFY(att->name() == QLatin1StringView("AUTHORS"));
+    QVERIFY(att->name() == "AUTHORS"_L1);
 }
 
 void ParserTest::testTwoAttachments()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("two-files.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + "two-files.tnef"_L1)) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -51,18 +52,18 @@ void ParserTest::testTwoAttachments()
     KTNEFAttach *att = atts.takeFirst();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 244);
-    QVERIFY(att->name() == QLatin1StringView("AUTHORS"));
+    QVERIFY(att->name() == "AUTHORS"_L1);
 
     att = atts.takeFirst();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 893);
-    QVERIFY(att->name() == QLatin1StringView("README"));
+    QVERIFY(att->name() == "README"_L1);
 }
 
 void ParserTest::testMAPIAttachments()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("mapi_attach_data_obj.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + "mapi_attach_data_obj.tnef"_L1)) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
@@ -73,23 +74,23 @@ void ParserTest::testMAPIAttachments()
     KTNEFAttach *att = atts.takeFirst();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 61952);
-    QVERIFY(att->name() == QLatin1StringView("VIA_Nytt_1402.doc"));
+    QVERIFY(att->name() == "VIA_Nytt_1402.doc"_L1);
 
     att = atts.takeFirst();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 213688);
-    QVERIFY(att->name() == QLatin1StringView("VIA_Nytt_1402.pdf"));
+    QVERIFY(att->name() == "VIA_Nytt_1402.pdf"_L1);
 
     att = atts.takeFirst();
     QVERIFY(att != nullptr);
     QVERIFY(att->size() == 68920);
-    QVERIFY(att->name() == QLatin1StringView("VIA_Nytt_14021.htm"));
+    QVERIFY(att->name() == "VIA_Nytt_14021.htm"_L1);
 }
 
 void ParserTest::testUmlautAttachmentFilenames()
 {
     KTNEFParser parser;
-    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + QLatin1StringView("umlaut-filename.tnef"))) == true);
+    QVERIFY(parser.openFile(QString(QLatin1StringView(TESTSOURCEDIR) + "umlaut-filename.tnef"_L1)) == true);
 
     KTNEFMessage *msg = parser.message();
     QVERIFY(msg != nullptr);
