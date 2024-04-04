@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KDE 4.0\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2021-09-22 09:19+0200\n"
 "Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.03.80\n"
 
-#: formatter.cpp:298
+#: formatter.cpp:300
 #, kde-format
 msgid "Reminder"
 msgstr "Emlékeztető"

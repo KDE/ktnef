@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2007-04-04 20:43+0530\n"
 "Last-Translator: A S Alam <aalam@users.sf.net>\n"
 "Language-Team: Panjabi <punjabi-l10n@lists.sf.net>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: formatter.cpp:298
+#: formatter.cpp:300
 #, kde-format
 msgid "Reminder"
 msgstr "ਰੀਮਾਈਡਰ"

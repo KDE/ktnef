@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-12 00:46+0000\n"
+"POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2010-12-13 09:03+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: formatter.cpp:298
+#: formatter.cpp:300
 #, kde-format
 msgid "Reminder"
 msgstr "កម្មវិធីរំលឹក"
