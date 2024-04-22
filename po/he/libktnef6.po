@@ -7,14 +7,15 @@ msgstr ""
 "Project-Id-Version: ktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2024-04-20 07:55+0300\n"
+"PO-Revision-Date: 2024-04-21 12:39+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Lokalize 23.08.5\n"
 
 #: formatter.cpp:300
@@ -60,11 +61,11 @@ msgstr ""
 
 #: mapi.cpp:35
 msgid "Sensitivity"
-msgstr ""
+msgstr "רגישות"
 
 #: mapi.cpp:36 mapi.cpp:128
 msgid "Subject"
-msgstr ""
+msgstr "נושא"
 
 #: mapi.cpp:37
 msgid "Client Submit Time"
@@ -208,11 +209,11 @@ msgstr ""
 
 #: mapi.cpp:72
 msgid "Access"
-msgstr ""
+msgstr "גישה"
 
 #: mapi.cpp:73
 msgid "Access Level"
-msgstr ""
+msgstr "רמת גישה"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
@@ -348,115 +349,115 @@ msgstr ""
 
 #: mapi.cpp:107
 msgid "Account"
-msgstr ""
+msgstr "חשבון"
 
 #: mapi.cpp:108
 msgid "Generation"
-msgstr ""
+msgstr "דור"
 
 #: mapi.cpp:109
 msgid "Given Name"
-msgstr ""
+msgstr "שם נפוץ"
 
 #: mapi.cpp:110
 msgid "Initials"
-msgstr ""
+msgstr "ראשי תיבות"
 
 #: mapi.cpp:111
 msgid "Keyword"
-msgstr ""
+msgstr "מילת מפתח"
 
 #: mapi.cpp:112
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 #: mapi.cpp:113
 msgid "Location"
-msgstr ""
+msgstr "מקום"
 
 #: mapi.cpp:114
 msgid "Surname"
-msgstr ""
+msgstr "שם משפחה"
 
 #: mapi.cpp:115
 msgid "Company Name"
-msgstr ""
+msgstr "שם החברה"
 
 #: mapi.cpp:116
 msgid "Title"
-msgstr ""
+msgstr "תפקיד"
 
 #: mapi.cpp:117
 msgid "Department Name"
-msgstr ""
+msgstr "שם המחלקה"
 
 #: mapi.cpp:118
 msgid "Country"
-msgstr ""
+msgstr "מדינה"
 
 #: mapi.cpp:119
 msgid "Locality"
-msgstr ""
+msgstr "אזור"
 
 #: mapi.cpp:120
 msgid "State/Province"
-msgstr ""
+msgstr "מדינה/מחוז"
 
 #: mapi.cpp:121
 msgid "Middle Name"
-msgstr ""
+msgstr "שם אמצעי"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
-msgstr ""
+msgstr "קידומת שם תצוגה"
 
 #: mapi.cpp:127
 msgid "From"
-msgstr ""
+msgstr "מאת"
 
 #: mapi.cpp:129
 msgid "Date Sent"
-msgstr ""
+msgstr "תאריך השליחה"
 
 #: mapi.cpp:130
 msgid "Date Received"
-msgstr ""
+msgstr "תאריך הקבלה"
 
 #: mapi.cpp:131
 msgid "Message Status"
-msgstr ""
+msgstr "מצב ההודעה"
 
 #: mapi.cpp:134
 msgid "Parent ID"
-msgstr ""
+msgstr "מזהה הורה"
 
 #: mapi.cpp:135
 msgid "Conversation ID"
-msgstr ""
+msgstr "מזהה דיון"
 
 #: mapi.cpp:136
 msgid "Body"
-msgstr ""
+msgstr "תוכן"
 
 #: mapi.cpp:139
 msgid "Attachment Title"
-msgstr ""
+msgstr "כותרת צרופה"
 
 #: mapi.cpp:140
 msgid "Attachment Meta File"
-msgstr ""
+msgstr "קובץ על צרופה"
 
 #: mapi.cpp:141
 msgid "Attachment Create Date"
-msgstr ""
+msgstr "תאריך יצירת צרופה"
 
 #: mapi.cpp:142
 msgid "Attachment Modify Date"
-msgstr ""
+msgstr "תאריך עריכת צרופה"
 
 #: mapi.cpp:143
 msgid "Date Modified"
-msgstr ""
+msgstr "תאריך השינוי"
 
 #: mapi.cpp:144
 msgid "Attachment Transport File Name"
