@@ -10,4 +10,4 @@ Dependencies:
     'pim/kcalutils' : '@same'
 
 Options:
-  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
+  require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]
