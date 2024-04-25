@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2024-04-22 06:54+0300\n"
+"PO-Revision-Date: 2024-04-24 08:24+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -33,11 +33,11 @@ msgstr "מחלקת הודעה"
 
 #: mapi.cpp:28
 msgid "Originator Delivery Report Requested"
-msgstr ""
+msgstr "התבקש דוח מסירה מהמוען"
 
 #: mapi.cpp:29
 msgid "Originator Return Address"
-msgstr ""
+msgstr "כתובת החזרה למוען"
 
 #: mapi.cpp:30 mapi.cpp:137
 msgid "Priority"
@@ -49,7 +49,7 @@ msgstr "התבקש אישור קריאה"
 
 #: mapi.cpp:32
 msgid "Recipient Reassignment Prohibited"
-msgstr ""
+msgstr "הקצאת נמען מחדש אסורה"
 
 #: mapi.cpp:33
 msgid "Original Sensitivity"
@@ -57,7 +57,7 @@ msgstr "רגישות מקורית"
 
 #: mapi.cpp:34
 msgid "Report Tag"
-msgstr ""
+msgstr "תגית דיווח"
 
 #: mapi.cpp:35
 msgid "Sensitivity"
@@ -69,47 +69,47 @@ msgstr "נושא"
 
 #: mapi.cpp:37
 msgid "Client Submit Time"
-msgstr ""
+msgstr "זמן שליחת לקוח"
 
 #: mapi.cpp:38
 msgid "Sent Representing Search Key"
-msgstr ""
+msgstr "מפתח חיפוש שליחה מייצגת"
 
 #: mapi.cpp:39
 msgid "Subject Prefix"
-msgstr ""
+msgstr "קידומת נושא"
 
 #: mapi.cpp:40
 msgid "Sent Representing Entry ID"
-msgstr ""
+msgstr "מזהה רשומת שליחה מייצגת"
 
 #: mapi.cpp:41
 msgid "Sent Representing Name"
-msgstr ""
+msgstr "שם שליחה מייצגת"
 
 #: mapi.cpp:42
 msgid "Message Submission ID"
-msgstr ""
+msgstr "מזהה הגשת הודעה"
 
 #: mapi.cpp:43
 msgid "Original Author Name"
-msgstr ""
+msgstr "שם יוצר מקורי"
 
 #: mapi.cpp:44 mapi.cpp:125
 msgid "Owner Appointment ID"
-msgstr ""
+msgstr "מזהה בעלות על פגישה"
 
 #: mapi.cpp:45 mapi.cpp:126
 msgid "Response Requested"
-msgstr ""
+msgstr "התבקשה תגובה"
 
 #: mapi.cpp:46
 msgid "Sent Representing Address Type"
-msgstr ""
+msgstr "סוג כתובת שליחה מייצגת"
 
 #: mapi.cpp:47
 msgid "Sent Representing E-mail Address"
-msgstr ""
+msgstr "כתובת דוא״ל שליחה מייצגת"
 
 #: mapi.cpp:48
 msgid "Conversation Topic"
@@ -149,15 +149,15 @@ msgstr "מחיקה לאחר ההגשה"
 
 #: mapi.cpp:57
 msgid "Display Bcc"
-msgstr ""
+msgstr "הצגת עותק נסתר"
 
 #: mapi.cpp:58
 msgid "Display Cc"
-msgstr ""
+msgstr "הצגת עותק"
 
 #: mapi.cpp:59
 msgid "Display To"
-msgstr ""
+msgstr "הצגת אל"
 
 #: mapi.cpp:60
 msgid "Message Delivery Time"
@@ -185,7 +185,7 @@ msgstr "נמעני הודעה"
 
 #: mapi.cpp:66
 msgid "Submit Flags"
-msgstr ""
+msgstr "דגלוני הגשה"
 
 #: mapi.cpp:67
 msgid "Has Attachment"
@@ -193,11 +193,11 @@ msgstr "עם צרופה"
 
 #: mapi.cpp:68
 msgid "Normalized Subject"
-msgstr ""
+msgstr "נושא מנורמל"
 
 #: mapi.cpp:69
 msgid "RTF In Sync"
-msgstr ""
+msgstr "RTF בסנכרון"
 
 #: mapi.cpp:70
 msgid "Attachment Size"
@@ -217,7 +217,7 @@ msgstr "רמת גישה"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
-msgstr ""
+msgstr "חתימת מיפוי"
 
 #: mapi.cpp:75
 msgid "Record Key"
