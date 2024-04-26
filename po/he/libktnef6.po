@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2024-04-24 08:24+0300\n"
+"PO-Revision-Date: 2024-04-25 08:40+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -245,27 +245,27 @@ msgstr "תוכן ההודעה"
 
 #: mapi.cpp:81
 msgid "RTF Sync Body CRC"
-msgstr ""
+msgstr "CRC של סנכרון תוכן RTF"
 
 #: mapi.cpp:82
 msgid "RTF Sync Body Count"
-msgstr ""
+msgstr "ספירת סנכרון תוכן של RTF"
 
 #: mapi.cpp:83
 msgid "RTF Sync Body Tag"
-msgstr ""
+msgstr "תגית סנכרון תוכן של RTF"
 
 #: mapi.cpp:84
 msgid "RTF Compressed"
-msgstr ""
+msgstr "RTF דחוס"
 
 #: mapi.cpp:85
 msgid "RTF Sync Prefix Count"
-msgstr ""
+msgstr "ספירת קידומות של סנכרון RTF"
 
 #: mapi.cpp:86
 msgid "RTF Sync Trailing Count"
-msgstr ""
+msgstr "ספירת קידומות של סנכרון RTF"
 
 #: mapi.cpp:87
 msgid "HTML Message Body"
@@ -309,7 +309,7 @@ msgstr "מפתח חיפוש"
 
 #: mapi.cpp:97
 msgid "Store Support Mask"
-msgstr ""
+msgstr "מסכת תמיכת אחסון"
 
 #: mapi.cpp:98
 msgid "MDB Provider"
@@ -485,59 +485,59 @@ msgstr "גרסאת TNEF"
 
 #: mapi.cpp:150
 msgid "OEM Code Page"
-msgstr ""
+msgstr "עמוד קוד יצרן"
 
 #: mapi.cpp:152
 msgid "Contact File Under"
-msgstr ""
+msgstr "תיוק איש קשר תחת"
 
 #: mapi.cpp:153
 msgid "Contact Last Name And First Name"
-msgstr ""
+msgstr "שם משפחה ופרטים של איש קשר"
 
 #: mapi.cpp:154
 msgid "Contact Company And Full Name"
-msgstr ""
+msgstr "חברה ושם מלא של איש קשר"
 
 #: mapi.cpp:156
 msgid "Contact EMail-1 Full"
-msgstr ""
+msgstr "דוא״ל-1 מלא של איש קשר"
 
 #: mapi.cpp:157
 msgid "Contact EMail-1 Address Type"
-msgstr ""
+msgstr "סוג כתובת דוא״ל-1 של איש קשר"
 
 #: mapi.cpp:158
 msgid "Contact EMail-1 Address"
-msgstr ""
+msgstr "כתובת דוא״ל-1 של איש קשר"
 
 #: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
-msgstr ""
+msgstr "שם תצוגת דוא״ל-1 של איש קשר"
 
 #: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
-msgstr ""
+msgstr "מזהה רשומת דוא״ל-1 של איש קשר"
 
 #: mapi.cpp:162
 msgid "Contact EMail-2 Full"
-msgstr ""
+msgstr "דוא״ל-2 מלא של איש קשר"
 
 #: mapi.cpp:163
 msgid "Contact EMail-2 Address Type"
-msgstr ""
+msgstr "סוג כתובת דוא״ל-2 של איש קשר"
 
 #: mapi.cpp:164
 msgid "Contact EMail-2 Address"
-msgstr ""
+msgstr "כתובת דוא״ל-2 של איש קשר"
 
 #: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
-msgstr ""
+msgstr "שם תצוגת דוא״ל-2 של איש קשר"
 
 #: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
-msgstr ""
+msgstr "מזהה רשומת דוא״ל-2 של איש קשר"
 
 #: mapi.cpp:168 mapi.cpp:169
 msgid "Appointment Location"
