@@ -68,7 +68,7 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libktnef6\")
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
-if (USE_UNITY_CMAKE_SUPPORT)
+if(USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
 endif()
 add_subdirectory(src)
@@ -77,13 +77,13 @@ if(BUILD_TESTING)
     add_subdirectory(autotests)
 endif()
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_install_qch_export(
         TARGETS KPim6Tnef_QCH
         FILE KPim6TnefQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
-    )
+)
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6TnefQchTargets.cmake\")")
 endif()
 
