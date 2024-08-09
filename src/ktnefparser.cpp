@@ -474,8 +474,8 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QSt
 
     const QFileInfo fi(filename);
     if (!fi.absoluteFilePath().startsWith(destDir)) {
-        qWarning() << "Attempted extract into" << fi.absoluteFilePath() << "which is outside of the extraction root folder" << destDir << "."
-                   << "Changing export of contained files to extraction root folder.";
+        qCWarning(KTNEF_LOG) << "Attempted extract into" << fi.absoluteFilePath() << "which is outside of the extraction root folder" << destDir << "."
+                             << "Changing export of contained files to extraction root folder.";
         filename = destDir + QLatin1Char('/') + fi.fileName();
     }
 

@@ -16,6 +16,7 @@
  */
 
 #include "ktnefmessage.h"
+#include "ktnef_debug.h"
 #include "ktnefattach.h"
 #include "lzfu.h"
 
@@ -99,7 +100,7 @@ QString KTNEFMessage::rtfString() const
         QBuffer output(&rtf);
         if (input.open(QIODevice::ReadOnly) && output.open(QIODevice::WriteOnly)) {
             if (KTnef::lzfu_decompress(&input, &output) == 0) {
-                qWarning() << "Error when decompress data";
+                qCWarning(KTNEF_LOG) << "Error when decompress data";
             }
         }
         return QString::fromLatin1(rtf);
