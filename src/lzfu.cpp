@@ -23,7 +23,7 @@
 #include <cstring>
 #include <sys/types.h>
 
-//#define DO_DEBUG
+// #define DO_DEBUG
 
 //@cond IGNORE
 #define LZFU_COMPRESSED 0x75465a4c
