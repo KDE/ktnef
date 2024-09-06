@@ -3,7 +3,7 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: libktnef\n"
+"Project-Id-Version: libktnef6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
 "PO-Revision-Date: 2019-11-02 07:38+0100\n"
