@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Viesturs Zarins <viesturs.zarins@mii.lu.lv>, 2007, 2008.
+# SPDX-FileCopyrightText: 2024 Toms Trasuns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-04-04 00:39+0000\n"
-"PO-Revision-Date: 2008-05-31 20:50+0300\n"
-"Last-Translator: Viesturs Zarins <viesturs.zarins@mii.lu.lv>\n"
-"Language-Team: Latvian <locale@laka.lv>\n"
+"PO-Revision-Date: 2024-11-22 13:18+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 24.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
@@ -30,7 +31,7 @@ msgstr "Atļauts alternatīvs saņēmējs"
 
 #: mapi.cpp:27 mapi.cpp:132
 msgid "Message Class"
-msgstr "Ziņojuma klase"
+msgstr "Vēstules klase"
 
 #: mapi.cpp:28
 msgid "Originator Delivery Report Requested"
@@ -58,17 +59,15 @@ msgstr "Orģinālā sensitivitāte"
 
 #: mapi.cpp:34
 msgid "Report Tag"
-msgstr "Atskaites tags"
+msgstr "Ziņošanas birka"
 
 #: mapi.cpp:35
 msgid "Sensitivity"
-msgstr "Jūtība"
+msgstr "Jutība"
 
 #: mapi.cpp:36 mapi.cpp:128
-#, fuzzy
-#| msgid "Subject"
 msgid "Subject"
-msgstr "Tēma"
+msgstr "Temats"
 
 #: mapi.cpp:37
 msgid "Client Submit Time"
@@ -76,31 +75,31 @@ msgstr "Klienta nosūtīšanas laiks"
 
 #: mapi.cpp:38
 msgid "Sent Representing Search Key"
-msgstr "Nosūtīts pārstāvot meklēšanas atslēgu"
+msgstr "Nosūtīts, pārstāvot meklēšanas atslēgu"
 
 #: mapi.cpp:39
 msgid "Subject Prefix"
-msgstr "Tēmas prefikss"
+msgstr "Temata prefikss"
 
 #: mapi.cpp:40
 msgid "Sent Representing Entry ID"
-msgstr "Nosūtīts pārstāvot ieraksta ID"
+msgstr "Nosūtīts, pārstāvot ieraksta ID"
 
 #: mapi.cpp:41
 msgid "Sent Representing Name"
-msgstr "Nosūtīts pārstāvot vārdu"
+msgstr "Nosūtīts, pārstāvot vārdu"
 
 #: mapi.cpp:42
 msgid "Message Submission ID"
-msgstr "Ziņojuma nosūtīšanas ID"
+msgstr "Vēstules nosūtīšanas ID"
 
 #: mapi.cpp:43
 msgid "Original Author Name"
-msgstr "Orģinālā autora nosaukums"
+msgstr "Sākotnējā autora vārds"
 
 #: mapi.cpp:44 mapi.cpp:125
 msgid "Owner Appointment ID"
-msgstr "Piederošās satikšanās ID"
+msgstr "Īpašnieka tikšanās ID"
 
 #: mapi.cpp:45 mapi.cpp:126
 msgid "Response Requested"
@@ -108,15 +107,15 @@ msgstr "Pieprasīta reakcija"
 
 #: mapi.cpp:46
 msgid "Sent Representing Address Type"
-msgstr "Nosūtīts pārstāvot adreses tipu"
+msgstr "Nosūtīts, pārstāvot adreses tipu"
 
 #: mapi.cpp:47
 msgid "Sent Representing E-mail Address"
-msgstr "Nosūtīts pārstāvot e-pasta adresi"
+msgstr "Nosūtīts, pārstāvot e-pasta adresi"
 
 #: mapi.cpp:48
 msgid "Conversation Topic"
-msgstr "Sarunas tēma"
+msgstr "Sarunas temats"
 
 #: mapi.cpp:49
 msgid "Conversation Index"
@@ -132,7 +131,7 @@ msgstr "Pieprasīta atbilde"
 
 #: mapi.cpp:52
 msgid "Sender Name"
-msgstr "Sūtītāja nosaukums"
+msgstr "Sūtītāja vārds"
 
 #: mapi.cpp:53
 msgid "Sender Search Key"
@@ -152,27 +151,27 @@ msgstr "Izdzēst pēc nosūtīšanas"
 
 #: mapi.cpp:57
 msgid "Display Bcc"
-msgstr "Rādīt Bcc"
+msgstr "Rādīt BCC lauku"
 
 #: mapi.cpp:58
 msgid "Display Cc"
-msgstr "Rādīt Cc"
+msgstr "Rādīt CC lauku"
 
 #: mapi.cpp:59
 msgid "Display To"
-msgstr "Rādīt saņēmējus"
+msgstr "Rādīt „Kam“ lauku"
 
 #: mapi.cpp:60
 msgid "Message Delivery Time"
-msgstr "Ziņojuma piegādes laiks"
+msgstr "Vēstules piegādes laiks"
 
 #: mapi.cpp:61
 msgid "Message Flags"
-msgstr "Ziņojuma karodziņi"
+msgstr "Vēstules karodziņi"
 
 #: mapi.cpp:62
 msgid "Message Size"
-msgstr "Ziņojuma izmērs"
+msgstr "Vēstules izmērs"
 
 #: mapi.cpp:63
 msgid "Parent Entry ID"
@@ -184,7 +183,7 @@ msgstr "Nosūtītāja ziņojuma kopijas ieraksta ID"
 
 #: mapi.cpp:65
 msgid "Message Recipients"
-msgstr "Ziņojuma saņēmēji"
+msgstr "Vēstuļu saņēmēji"
 
 #: mapi.cpp:66
 msgid "Submit Flags"
@@ -196,7 +195,7 @@ msgstr "Ir pielikums"
 
 #: mapi.cpp:68
 msgid "Normalized Subject"
-msgstr "Normalizēta tēma"
+msgstr "Normalizēts temats"
 
 #: mapi.cpp:69
 msgid "RTF In Sync"
@@ -228,11 +227,11 @@ msgstr "Ieraksta atslēga"
 
 #: mapi.cpp:76
 msgid "Store Record Key"
-msgstr "Glabātavas ieraksta atslēga"
+msgstr "Glabāt ieraksta atslēga"
 
 #: mapi.cpp:77
 msgid "Store Entry ID"
-msgstr "Glabātavas ieraksta ID"
+msgstr "Glabāt ieraksta ID"
 
 #: mapi.cpp:78
 msgid "Object Type"
@@ -244,19 +243,19 @@ msgstr "Ieraksta ID"
 
 #: mapi.cpp:80
 msgid "Message Body"
-msgstr "Ziņojuma ķermenis"
+msgstr "Vēstules pamatteksts"
 
 #: mapi.cpp:81
 msgid "RTF Sync Body CRC"
-msgstr "RTF sinhronizācijas ķermeņa CRC"
+msgstr "RTF sinhronizācijas pamatteksta CRC"
 
 #: mapi.cpp:82
 msgid "RTF Sync Body Count"
-msgstr "RTF sinhronizācijas ķermeņu skaits"
+msgstr "RTF sinhronizācijas pamattekstu skaits"
 
 #: mapi.cpp:83
 msgid "RTF Sync Body Tag"
-msgstr "RTF sinhronizācijas ķermeņa tags"
+msgstr "RTF sinhronizācijas pamatteksta birka"
 
 #: mapi.cpp:84
 msgid "RTF Compressed"
@@ -272,15 +271,15 @@ msgstr "RTF sinhronizācijas beigu skaits"
 
 #: mapi.cpp:87
 msgid "HTML Message Body"
-msgstr "HTML ziņojuma ķermenis"
+msgstr "HTML vēstules pamatteksts"
 
 #: mapi.cpp:88 mapi.cpp:133
 msgid "Message ID"
-msgstr "Ziņojuma ID"
+msgstr "Vēstules ID"
 
 #: mapi.cpp:89
 msgid "Parent's Message ID"
-msgstr "Vecāka ziņojuma ID"
+msgstr "Vecāka vēstules ID"
 
 #: mapi.cpp:90
 msgid "Action"
@@ -292,7 +291,7 @@ msgstr "Darbības karogs"
 
 #: mapi.cpp:92
 msgid "Action Date"
-msgstr "Darības datums"
+msgstr "Darbības datums"
 
 #: mapi.cpp:93
 msgid "Display Name"
@@ -312,7 +311,7 @@ msgstr "Meklēšanas atslēga"
 
 #: mapi.cpp:97
 msgid "Store Support Mask"
-msgstr "Glabātavas atbalsta maska"
+msgstr "Saglabāt atbalsta maska"
 
 #: mapi.cpp:98
 msgid "MDB Provider"
@@ -336,19 +335,19 @@ msgstr "Pielikuma metode"
 
 #: mapi.cpp:103
 msgid "Attachment Long File Name"
-msgstr "Pielikuma pilns faila nosaukums"
+msgstr "Pielikuma pilns datnes nosaukums"
 
 #: mapi.cpp:104
 msgid "Attachment Rendering Position"
-msgstr "Pielikuma attēlošanas pozīcija"
+msgstr "Pielikuma attēlošanas novietojums"
 
 #: mapi.cpp:105
 msgid "Attachment Mime Tag"
-msgstr "Pielikuma mime tags"
+msgstr "Pielikuma MIME birka"
 
 #: mapi.cpp:106
 msgid "Attachment Flags"
-msgstr "Pielikum karodziņi"
+msgstr "Pielikuma karodziņi"
 
 #: mapi.cpp:107
 msgid "Account"
@@ -356,7 +355,7 @@ msgstr "Konts"
 
 #: mapi.cpp:108
 msgid "Generation"
-msgstr "Paaudze"
+msgstr "Ģenerēšana"
 
 #: mapi.cpp:109
 msgid "Given Name"
@@ -387,10 +386,8 @@ msgid "Company Name"
 msgstr "Uzņēmuma nosaukums"
 
 #: mapi.cpp:116
-#, fuzzy
-#| msgid "Title"
 msgid "Title"
-msgstr "Tituls"
+msgstr "Uzruna"
 
 #: mapi.cpp:117
 msgid "Department Name"
@@ -414,7 +411,7 @@ msgstr "Otrais vārds"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
-msgstr "Tituls vārda priekšā"
+msgstr "Uzruna vārda priekšā"
 
 #: mapi.cpp:127
 msgid "From"
@@ -430,7 +427,7 @@ msgstr "Saņemšanas datums"
 
 #: mapi.cpp:131
 msgid "Message Status"
-msgstr "Ziņojuma statuss"
+msgstr "Vēstules statuss"
 
 #: mapi.cpp:134
 msgid "Parent ID"
@@ -442,7 +439,7 @@ msgstr "Sarunas ID"
 
 #: mapi.cpp:136
 msgid "Body"
-msgstr "Ķermenis"
+msgstr "Pamatteksts"
 
 #: mapi.cpp:139
 msgid "Attachment Title"
@@ -450,11 +447,11 @@ msgstr "Pielikuma virsraksts"
 
 #: mapi.cpp:140
 msgid "Attachment Meta File"
-msgstr "Pielikuma meta fails"
+msgstr "Pielikuma meta datne"
 
 #: mapi.cpp:141
 msgid "Attachment Create Date"
-msgstr "Pielikuma radīšanas datums"
+msgstr "Pielikuma izveidošanas datums"
 
 #: mapi.cpp:142
 msgid "Attachment Modify Date"
@@ -466,7 +463,7 @@ msgstr "Izmainīšanas datums"
 
 #: mapi.cpp:144
 msgid "Attachment Transport File Name"
-msgstr "Pielikuma transportēšanas faila nosaukums"
+msgstr "Pielikuma transportēšanas datnes nosaukums"
 
 #: mapi.cpp:145
 msgid "Attachment Rendering Data"
@@ -494,7 +491,7 @@ msgstr "OEM koda lapa"
 
 #: mapi.cpp:152
 msgid "Contact File Under"
-msgstr "Kontakta fails zem"
+msgstr "Kontakta datne zem"
 
 #: mapi.cpp:153
 msgid "Contact Last Name And First Name"
@@ -506,43 +503,43 @@ msgstr "Kontakta uzņēmums un pilns vārds"
 
 #: mapi.cpp:156
 msgid "Contact EMail-1 Full"
-msgstr "Kontakta e-pasts 1, pilns"
+msgstr "Kontakta e-pasts 1 ir pilns"
 
 #: mapi.cpp:157
 msgid "Contact EMail-1 Address Type"
-msgstr "Kontakta e-pasts 1, adreses tips"
+msgstr "Kontakta e-pasta 1 adreses tips"
 
 #: mapi.cpp:158
 msgid "Contact EMail-1 Address"
-msgstr "Kontakta e-pasts 1, adrese"
+msgstr "Kontakta e-pasta 1 adrese"
 
 #: mapi.cpp:159
 msgid "Contact EMail-1 Display Name"
-msgstr "Kontakta e-pasts 1, attēlojamais nosaukums"
+msgstr "Kontakta e-pasta 1 attēlojamais nosaukums"
 
 #: mapi.cpp:160
 msgid "Contact EMail-1 Entry ID"
-msgstr "Kontakta e-pasts 1, ieraksta ID"
+msgstr "Kontakta e-pasta 1 ieraksta ID"
 
 #: mapi.cpp:162
 msgid "Contact EMail-2 Full"
-msgstr "Kontakta e-pasts 2, pilns"
+msgstr "Kontakta e-pasts 2 ir pilns"
 
 #: mapi.cpp:163
 msgid "Contact EMail-2 Address Type"
-msgstr "Kontakta e-pasts 2, adreses tips"
+msgstr "Kontakta e-pasts 2 adreses tips"
 
 #: mapi.cpp:164
 msgid "Contact EMail-2 Address"
-msgstr "Kontakta e-pasts 2, adrese"
+msgstr "Kontakta e-pasta 2 adrese"
 
 #: mapi.cpp:165
 msgid "Contact EMail-2 Display Name"
-msgstr "Kontakta e-pasts 2, attēlojamais nosaukums"
+msgstr "Kontakta e-pasta 2 attēlojamais nosaukums"
 
 #: mapi.cpp:166
 msgid "Contact EMail-2 Entry ID"
-msgstr "Kontakta e-pasts 2, ieraksta ID"
+msgstr "Kontakta e-pasta 2 ieraksta ID"
 
 #: mapi.cpp:168 mapi.cpp:169
 msgid "Appointment Location"
@@ -574,7 +571,7 @@ msgstr "Tikšanās atkārtošanās tips"
 
 #: mapi.cpp:176
 msgid "Appointment Recurrence Pattern"
-msgstr "Tikšanās atkārtošanās raksts"
+msgstr "Tikšanās atkārtošanās paraugs"
 
 #: mapi.cpp:177
 msgid "Reminder Time"
