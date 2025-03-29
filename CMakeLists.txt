@@ -44,7 +44,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARUTILS_LIB_VERSION "6.3.90")
+set(CALENDARUTILS_LIB_VERSION "6.4.0")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6TnefConfigVersion.cmake"
