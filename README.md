@@ -1,4 +1,4 @@
-# KTNEF - an API for handling TNEF data.
+# KTNEF - an API for handling TNEF data
 
 ## Purpose
 
