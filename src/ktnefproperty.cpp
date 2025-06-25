@@ -94,11 +94,11 @@ QString KTNEFProperty::formatValue(const QVariant &value, bool beautify)
             for (i = 0; i < txtCount; ++i) {
                 s.append(QString::asprintf("%02X", (uchar)arr[i]));
                 if (beautify) {
-                    s.append(QLatin1Char(' '));
+                    s.append(u' ');
                 }
             }
             if (i < arr.size()) {
-                s.append("... (size="_L1 + QString::number(arr.size()) + QLatin1Char(')'));
+                s.append("... (size="_L1 + QString::number(arr.size()) + u')');
             }
             return s;
         }

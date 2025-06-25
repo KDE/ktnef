@@ -431,7 +431,7 @@ void KTNEFWriter::addAttendee(const QString &cn, Role r, PartStat p, bool rsvp, 
 // U also assume that this is like "Name <address>"
 void KTNEFWriter::setOrganizer(const QString &organizer)
 {
-    int i = organizer.indexOf(QLatin1Char('<'));
+    int i = organizer.indexOf(u'<');
 
     if (i == -1) {
         return;

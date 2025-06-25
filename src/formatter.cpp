@@ -77,7 +77,7 @@ static QDateTime pureISOToLocalQDateTime(const QString &dtStr)
         QDateTime dT = QDateTime(tmpDate, tmpTime);
 
         // correct for GMT ( == Zulu time == UTC )
-        if (dtStr.at(dtStr.length() - 1) == QLatin1Char('Z')) {
+        if (dtStr.at(dtStr.length() - 1) == u'Z') {
             // dT = dT.addSecs( 60 * KRFCDate::localUTCOffset() );
             // localUTCOffset( dT ) );
             dT = dT.toLocalTime();
@@ -134,11 +134,11 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
             if (bCompatClassAppointment || "IPM.APPOINTMENT"_L1 == msgClass) {
                 // Compose a vCal
                 bool bIsReply = false;
-                QString prodID = QStringLiteral("-//Microsoft Corporation//Outlook ");
-                prodID += tnefMsg->findNamedProp(QStringLiteral("0x8554"), QStringLiteral("9.0"));
+                QString prodID = u"-//Microsoft Corporation//Outlook "_s;
+                prodID += tnefMsg->findNamedProp(u"0x8554"_s, u"9.0"_s);
                 prodID += "MIMEDIR/EN\n"_L1;
                 prodID += "VERSION:2.0\n"_L1;
-                calFormat.setApplication(QStringLiteral("Outlook"), prodID);
+                calFormat.setApplication(u"Outlook"_s, prodID);
 
                 // iTIPMethod method;
                 if (bCompatMethodRequest) {
@@ -157,7 +157,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                     //
                     //
 
-                    if (tnefMsg->findProp(0x0c17) == QLatin1Char('1')) {
+                    if (tnefMsg->findProp(0x0c17) == u'1') {
                         bIsReply = true;
                     }
                     // method = iTIPRequest;
@@ -172,7 +172,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 }
 
                 if (!sSenderSearchKeyEmail.isEmpty()) {
-                    const int colon = sSenderSearchKeyEmail.indexOf(QLatin1Char(':'));
+                    const int colon = sSenderSearchKeyEmail.indexOf(u':');
                     // May be e.g. "SMTP:KHZ@KDE.ORG"
                     if (colon == -1) {
                         sSenderSearchKeyEmail.remove(0, colon + 1);
@@ -180,12 +180,12 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 }
 
                 QString s(tnefMsg->findProp(0x8189));
-                const QStringList attendees = s.split(QLatin1Char(';'));
+                const QStringList attendees = s.split(u';');
                 if (!attendees.isEmpty()) {
                     for (auto it = attendees.cbegin(), end = attendees.cend(); it != end; ++it) {
                         // Skip all entries that have no '@' since these are
                         // no mail addresses
-                        if (!(*it).contains(QLatin1Char('@'))) {
+                        if (!(*it).contains(u'@')) {
                             s = (*it).trimmed();
 
                             Attendee attendee(s, s, true);
@@ -263,11 +263,11 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 // PENDING(khz): is this value in local timezone? Must it be
                 // adjusted? Most likely this is a bug in the server or in
                 // Outlook - we ignore it for now.
-                s = tnefMsg->findProp(0x8202).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
+                s = tnefMsg->findProp(0x8202).remove(u'-').remove(u':');
                 // ### kcal always uses currentDateTime()
                 // event->setDtStamp( QDateTime::fromString( s ) );
 
-                s = tnefMsg->findNamedProp(QStringLiteral("Keywords"));
+                s = tnefMsg->findNamedProp(u"Keywords"_s);
                 event->setCategories(s);
 
                 s = tnefMsg->findProp(0x1000);
@@ -287,8 +287,8 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 // is reminder flag set ?
                 if (!tnefMsg->findProp(0x8503).isEmpty()) {
                     Alarm::Ptr alarm(new Alarm(event.data())); // TODO: fix when KCalendarCore::Alarm is fixed
-                    QDateTime highNoonTime = pureISOToLocalQDateTime(tnefMsg->findProp(0x8502).remove(QLatin1Char('-')).remove(QLatin1Char(':')));
-                    QDateTime wakeMeUpTime = pureISOToLocalQDateTime(tnefMsg->findProp(0x8560, QString()).remove(QLatin1Char('-')).remove(QLatin1Char(':')));
+                    QDateTime highNoonTime = pureISOToLocalQDateTime(tnefMsg->findProp(0x8502).remove(u'-').remove(u':'));
+                    QDateTime wakeMeUpTime = pureISOToLocalQDateTime(tnefMsg->findProp(0x8560, QString()).remove(u'-').remove(u':'));
                     alarm->setTime(wakeMeUpTime);
 
                     if (highNoonTime.isValid() && wakeMeUpTime.isValid()) {
@@ -318,19 +318,17 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 addressee.addEmail(email);
                 addressee.addEmail(KContacts::Email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL2EMAILADDRESS))));
                 addressee.addEmail(KContacts::Email(sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_EMAIL3EMAILADDRESS))));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"),
-                                       QStringLiteral("X-IMAddress"),
-                                       sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_IMADDRESS)));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-SpousesName"), stringProp(tnefMsg, MAPI_TAG_PR_SPOUSE_NAME));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-ManagersName"), stringProp(tnefMsg, MAPI_TAG_PR_MANAGER_NAME));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-AssistantsName"), stringProp(tnefMsg, MAPI_TAG_PR_ASSISTANT));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Department"), stringProp(tnefMsg, MAPI_TAG_PR_DEPARTMENT_NAME));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Office"), stringProp(tnefMsg, MAPI_TAG_PR_OFFICE_LOCATION));
-                addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Profession"), stringProp(tnefMsg, MAPI_TAG_PR_PROFESSION));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-IMAddress"_s, sNamedProp(tnefMsg, QStringLiteral(MAPI_TAG_CONTACT_IMADDRESS)));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-SpousesName"_s, stringProp(tnefMsg, MAPI_TAG_PR_SPOUSE_NAME));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-ManagersName"_s, stringProp(tnefMsg, MAPI_TAG_PR_MANAGER_NAME));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-AssistantsName"_s, stringProp(tnefMsg, MAPI_TAG_PR_ASSISTANT));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-Department"_s, stringProp(tnefMsg, MAPI_TAG_PR_DEPARTMENT_NAME));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-Office"_s, stringProp(tnefMsg, MAPI_TAG_PR_OFFICE_LOCATION));
+                addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-Profession"_s, stringProp(tnefMsg, MAPI_TAG_PR_PROFESSION));
 
-                QString s = tnefMsg->findProp(MAPI_TAG_PR_WEDDING_ANNIVERSARY).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
+                QString s = tnefMsg->findProp(MAPI_TAG_PR_WEDDING_ANNIVERSARY).remove(u'-').remove(u':');
                 if (!s.isEmpty()) {
-                    addressee.insertCustom(QStringLiteral("KADDRESSBOOK"), QStringLiteral("X-Anniversary"), s);
+                    addressee.insertCustom(u"KADDRESSBOOK"_s, u"X-Anniversary"_s, s);
                 }
 
                 KContacts::ResourceLocatorUrl url;
@@ -399,7 +397,7 @@ QString KTnef::msTNEFToVPart(const QByteArray &tnef)
                 nr = stringProp(tnefMsg, MAPI_TAG_PR_BUSINESS_FAX_NUMBER);
                 addressee.insertPhoneNumber(KContacts::PhoneNumber(nr, KContacts::PhoneNumber::Fax | KContacts::PhoneNumber::Work));
 
-                s = tnefMsg->findProp(MAPI_TAG_PR_BIRTHDAY).remove(QLatin1Char('-')).remove(QLatin1Char(':'));
+                s = tnefMsg->findProp(MAPI_TAG_PR_BIRTHDAY).remove(u'-').remove(u':');
                 if (!s.isEmpty()) {
                     addressee.setBirthday(QDateTime::fromString(s));
                 }

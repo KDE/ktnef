@@ -16,6 +16,8 @@
  */
 
 #include "ktnefpropertyset.h"
+using namespace Qt::Literals::StringLiterals;
+
 #include "ktnefproperty.h"
 
 #include <QList>
@@ -81,7 +83,7 @@ QString KTNEFPropertySet::findNamedProp(const QString &name, const QString &fall
                     s.clear();
                     for (QList<QVariant>::ConstIterator lit = l.constBegin(), litEnd = l.constEnd(); lit != litEnd; ++lit) {
                         if (!s.isEmpty()) {
-                            s += QLatin1Char(',');
+                            s += u',';
                         }
                         s += KTNEFProperty::formatValue(*lit, false);
                     }

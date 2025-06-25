@@ -189,7 +189,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
             readMAPIProperties(message_->properties(), nullptr);
             device_->seek(i2);
             qCDebug(KTNEF_LOG) << "Properties:" << message_->properties().count();
-            value = QStringLiteral("< %1 properties >").arg(message_->properties().count() - nProps);
+            value = u"< %1 properties >"_s.arg(message_->properties().count() - nProps);
         }
         break;
     case attTNEFVERSION: {
@@ -327,7 +327,7 @@ bool KTNEFParser::ParserPrivate::decodeAttachment()
         current_->setSize(i);
         current_->setOffset(device_->pos());
         device_->seek(device_->pos() + i);
-        value = QStringLiteral("< size=%1 >").arg(i);
+        value = u"< size=%1 >"_s.arg(i);
         qCDebug(KTNEF_LOG) << "Attachment Data: size=" << i;
         break;
     case attATTACHMENT: // try to get attachment info
@@ -346,7 +346,7 @@ bool KTNEFParser::ParserPrivate::decodeAttachment()
             current_->setMimeTag(str);
         }
         current_->setExtension(current_->property(MAPI_TAG_EXTENSION).toString());
-        value = QStringLiteral("< %1 properties >").arg(current_->properties().count());
+        value = u"< %1 properties >"_s.arg(current_->properties().count());
         break;
     case attATTACHMODDATE:
         value = readTNEFDate(stream_);
@@ -406,7 +406,7 @@ bool KTNEFParser::ParserPrivate::parseDevice()
     stream_ >> i;
     if (i == TNEF_SIGNATURE) {
         stream_ >> u;
-        qCDebug(KTNEF_LOG).nospace() << "Attachment cross reference key: 0x" << Qt::hex << qSetFieldWidth(4) << qSetPadChar(QLatin1Char('0')) << u;
+        qCDebug(KTNEF_LOG).nospace() << "Attachment cross reference key: 0x" << Qt::hex << qSetFieldWidth(4) << qSetPadChar(u'0') << u;
         // qCDebug(KTNEF_LOG) << "stream:" << device_->pos();
         while (!stream_.atEnd()) {
             stream_ >> c;
@@ -455,13 +455,13 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QSt
 {
     const QString destDir(QDir(dirname).absolutePath()); // get directory path without any "." or ".."
 
-    QString filename = destDir + QLatin1Char('/');
+    QString filename = destDir + u'/';
     if (!att->fileName().isEmpty()) {
         filename += att->fileName();
     } else {
         filename += att->name();
     }
-    if (filename.endsWith(QLatin1Char('/'))) {
+    if (filename.endsWith(u'/')) {
         return false;
     }
 
@@ -476,7 +476,7 @@ bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QSt
     if (!fi.absoluteFilePath().startsWith(destDir)) {
         qCWarning(KTNEF_LOG) << "Attempted extract into" << fi.absoluteFilePath() << "which is outside of the extraction root folder" << destDir << "."
                              << "Changing export of contained files to extraction root folder.";
-        filename = destDir + QLatin1Char('/') + fi.fileName();
+        filename = destDir + u'/' + fi.fileName();
     }
 
     QSaveFile outfile(filename);
@@ -557,7 +557,7 @@ void KTNEFParser::ParserPrivate::checkCurrent(int key)
         if (current_->attributes().contains(key)) {
             if (current_->offset() >= 0) {
                 if (current_->name().isEmpty()) {
-                    current_->setName(QStringLiteral("Unnamed"));
+                    current_->setName(u"Unnamed"_s);
                 }
                 if (current_->mimeTag().isEmpty()) {
                     // No mime type defined in the TNEF structure,
@@ -627,7 +627,7 @@ QDateTime formatTime(quint32 lowB, quint32 highB)
     if (u64 <= 0xffffffffU) {
         dt = QDateTime::fromSecsSinceEpoch((unsigned int)u64);
     } else {
-        qCWarning(KTNEF_LOG).nospace() << "Invalid date: low byte=" << Qt::showbase << qSetFieldWidth(8) << qSetPadChar(QLatin1Char('0')) << lowB
+        qCWarning(KTNEF_LOG).nospace() << "Invalid date: low byte=" << Qt::showbase << qSetFieldWidth(8) << qSetPadChar(u'0') << lowB
                                        << ", high byte=" << highB;
     }
     return dt;
@@ -649,16 +649,16 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
     if ((it = props.find(0x0C15)) != props.end()) {
         switch ((*it)->value().toInt()) {
         case 0:
-            t = QStringLiteral("From:");
+            t = u"From:"_s;
             break;
         case 1:
-            t = QStringLiteral("To:");
+            t = u"To:"_s;
             break;
         case 2:
-            t = QStringLiteral("Cc:");
+            t = u"Cc:"_s;
             break;
         case 3:
-            t = QStringLiteral("Bcc:");
+            t = u"Bcc:"_s;
             break;
         }
     }
@@ -666,10 +666,10 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props)
         s.append(t);
     }
     if (!dn.isEmpty()) {
-        s.append(QLatin1Char(' ') + dn);
+        s.append(u' ' + dn);
     }
     if (!addr.isEmpty() && addr != dn) {
-        s.append(" <"_L1 + addr + QLatin1Char('>'));
+        s.append(" <"_L1 + addr + u'>');
     }
 
     return s.trimmed();
@@ -914,8 +914,8 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                     attach->unsetDataParser();
                     attach->setOffset(device_->pos() + 12);
                     attach->setSize(data.size() - 16);
-                    attach->setMimeTag(QStringLiteral("application/vnd.ms-tnef"));
-                    attach->setDisplayName(QStringLiteral("Embedded Message"));
+                    attach->setMimeTag(u"application/vnd.ms-tnef"_s);
+                    attach->setDisplayName(u"Embedded Message"_s);
                     qCDebug(KTNEF_LOG) << "MAPI Embedded Message: size=" << data.size();
                 }
                 device_->seek(device_->pos() + (len - 4));
@@ -926,7 +926,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                 ALIGN(len, 4)
                 attach->setSize(len);
                 attach->setOffset(device_->pos() - len);
-                attach->addAttribute(attATTACHDATA, atpBYTE, QStringLiteral("< size=%1 >").arg(len), false);
+                attach->addAttribute(attATTACHDATA, atpBYTE, u"< size=%1 >"_s.arg(len), false);
             }
         }
             qCDebug(KTNEF_LOG) << "MAPI data: size=" << mapi.value.toByteArray().size();
@@ -937,7 +937,7 @@ bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &
                 if (mapi.name.type == 0) {
                     mapiname = QString::asprintf(" [name = 0x%04x]", mapi.name.value.toUInt());
                 } else {
-                    mapiname = QStringLiteral(" [name = %1]").arg(mapi.name.value.toString());
+                    mapiname = u" [name = %1]"_s.arg(mapi.name.value.toString());
                 }
             }
             switch (mapi.type & 0x0FFF) {
