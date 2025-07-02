@@ -31,38 +31,40 @@ ecm_qt_declare_logging_category(KPim6Tnef HEADER ktnef_debug.h IDENTIFIER KTNEF_
 )
 
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6Tnef PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6Tnef
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 generate_export_header(KPim6Tnef BASE_NAME ktnef)
 
-target_include_directories(
-    KPim6Tnef
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF>"
-)
-target_include_directories(
-    KPim6Tnef
-    PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DIR}/src;${KTnef_BINARY_DIR}/src>"
-)
+target_include_directories(KPim6Tnef INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF>")
+target_include_directories(KPim6Tnef PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DIR}/src;${KTnef_BINARY_DIR}/src>")
 
 target_link_libraries(
     KPim6Tnef
-    PUBLIC KF6::CalendarCore
-    PRIVATE KPim6::CalendarUtils KF6::Contacts KF6::I18n
+    PUBLIC
+        KF6::CalendarCore
+    PRIVATE
+        KPim6::CalendarUtils
+        KF6::Contacts
+        KF6::I18n
 )
 
 set_target_properties(
     KPim6Tnef
     PROPERTIES
-        VERSION ${KTNEF_VERSION}
-        SOVERSION ${KTNEF_SOVERSION}
-        EXPORT_NAME Tnef
+        VERSION
+            ${KTNEF_VERSION}
+        SOVERSION
+            ${KTNEF_SOVERSION}
+        EXPORT_NAME
+            Tnef
 )
 
-install(
-    TARGETS KPim6Tnef
-    EXPORT KPim6TnefTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6Tnef EXPORT KPim6TnefTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(KTnef_CamelCase_HEADERS
   HEADER_NAMES
@@ -78,14 +80,12 @@ ecm_generate_headers(KTnef_CamelCase_HEADERS
   REQUIRED_HEADERS KTnef_HEADERS
 )
 
-install(
-    FILES ${KTnef_CamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF/KTNEF/
-    COMPONENT Devel
-)
+install(FILES ${KTnef_CamelCase_HEADERS} DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF/KTNEF/ COMPONENT Devel)
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/ktnef_export.h ${KTnef_HEADERS}
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/ktnef_export.h
+        ${KTnef_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF/ktnef
     COMPONENT Devel
 )

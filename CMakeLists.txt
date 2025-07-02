@@ -55,11 +55,7 @@ ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
 include(ECMAddQch)
 
-option(
-    BUILD_QCH
-    "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-    OFF
-)
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(
     QCH
     ${BUILD_QCH}
@@ -85,25 +81,17 @@ find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
 ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.15.0)
 
-install(
-    EXPORT KPim6TnefTargets
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-    FILE KPim6TnefTargets.cmake
-    NAMESPACE KPim6::
-)
+install(EXPORT KPim6TnefTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6TnefTargets.cmake NAMESPACE KPim6::)
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/KTNEF/
     COMPONENT Devel
 )
 
 add_definitions(-DTRANSLATION_DOMAIN=\"libktnef6\")
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -122,9 +110,7 @@ if(BUILD_QCH)
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6TnefQchTargets.cmake\")"
-    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6TnefQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
