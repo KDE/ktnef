@@ -79,7 +79,7 @@ find_package(KF6Contacts ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.15.0)
+ecm_set_disabled_deprecation_versions(QT 6.10.0 KF 6.16.0)
 
 install(EXPORT KPim6TnefTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6TnefTargets.cmake NAMESPACE KPim6::)
 
