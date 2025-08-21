@@ -86,7 +86,7 @@ void addToChecksum(quint32 i, quint16 &checksum)
     checksum += (i >> 24) & 0xff;
 }
 
-void addToChecksum(QByteArray &cs, quint16 &checksum)
+void addToChecksum(const QByteArray &cs, quint16 &checksum)
 {
     int len = cs.length();
     for (int i = 0; i < len; i++) {
