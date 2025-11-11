@@ -64,7 +64,7 @@ add_feature_info(
 )
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARUTILS_LIB_VERSION "6.5.40")
+set(CALENDARUTILS_LIB_VERSION "6.6.40")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6TnefConfigVersion.cmake"
