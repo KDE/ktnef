@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = KTNef
+description = The ktnef library contains an API for the handling of TNEF data.
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "KTNef"
+
+qhp.projects            = KTNef
+
+qhp.ktnef.file                = ktnef.qhp
+qhp.ktnef.namespace           = org.kde.ktnef.$QT_VERSION_TAG
+qhp.ktnef.virtualFolder       = ktnef
+qhp.ktnef.indexTitle          = KTNef
+qhp.ktnef.indexRoot           =
+
+qhp.ktnef.subprojects         = classes
+qhp.ktnef.subprojects.classes.title = C++ Classes
+qhp.ktnef.subprojects.classes.indexTitle = KTNef C++ Classes
+qhp.ktnef.subprojects.classes.selectors = class fake:headerfile
+qhp.ktnef.subprojects.classes.sortPages = true
+
+tagfile = ktnef.tags

@@ -1,0 +1,20 @@
+/*!
+    \page ktnef-index.html
+    \title KTNef
+
+    The ktnef library contains an API for the handling of TNEF data.
+
+    \section1 Using the Module
+
+    \include {module-use.qdocinc} {using the c++ api}
+
+    \section2 Building with CMake
+
+    \include {module-use.qdocinc} {building with cmake} {KPim6} {Tnef} {KPim6::Tnef}
+
+    \section1 API Reference
+
+    \list
+        \li \l{KTNef C++ Classes}
+    \endlist
+*/

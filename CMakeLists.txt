@@ -77,14 +77,7 @@ file(
 )
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
-include(ECMAddQch)
-
-option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
-add_feature_info(
-    QCH
-    ${BUILD_QCH}
-    "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-)
+include(ECMGenerateQDoc)
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
 set(CALENDARUTILS_LIB_VERSION "6.6.40")
@@ -125,16 +118,6 @@ add_subdirectory(src)
 
 if(BUILD_TESTING)
     add_subdirectory(autotests)
-endif()
-
-if(BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim6Tnef_QCH
-        FILE KPim6TnefQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6TnefQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
