@@ -4,12 +4,12 @@
 
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
-/**
+/*!
   @file
   This file is part of the API for handling TNEF data and provides
   static Formatter helpers.
 
-  @brief
+  \brief
   Provides helpers too format @acronym TNEF attachments into different
   formats like eg. a HTML representation.
 
@@ -31,23 +31,23 @@ class InvitationFormatterHelper;
 
 namespace KTnef
 {
-/**
+/*!
     Formats a @acronym TNEF attachment to an HTML mail.
 
-    @param tnef is the QByteArray contain the @acronym TNEF data.
-    @param cal is a pointer to a Calendar object.
-    @param h is a pointer to a InvitationFormatterHelp object.
+    \a tnef is the QByteArray contain the @acronym TNEF data.
+    \a cal is a pointer to a Calendar object.
+    \a h is a pointer to a InvitationFormatterHelp object.
   */
 [[nodiscard]] KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
                                                         const KCalendarCore::MemoryCalendar::Ptr &cal,
                                                         KCalUtils::InvitationFormatterHelper *h);
 
-/**
+/*!
     Transforms a @acronym TNEF attachment to an iCal or vCard.
 
-    @param tnef is the QByteArray containing the @acronym TNEF data.
+    \a tnef is the QByteArray containing the @acronym TNEF data.
 
-    @return a string containing the transformed attachment.
+    Returns a string containing the transformed attachment.
   */
 [[nodiscard]] KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
 }

@@ -7,7 +7,7 @@
 
     SPDX-License-Identifier: LGPL-2.0-or-later
  */
-/**
+/*!
  * @file
  * This file is part of the API for handling TNEF data and
  * defines the KTNEFWriter class.
@@ -31,251 +31,249 @@ class QDateTime;
 namespace KTnef
 {
 class KTNEFWriterPrivateData;
-/**
- * @brief
+/*!
+ * \brief
  * Manages the writing of @acronym TNEF attachments.
  */
 class KTNEF_EXPORT KTNEFWriter
 {
 public:
-    /**
+    /*!
      * The different types of messages.
      */
     enum MessageType {
-        Appointment, /**< Appointment */
-        MeetingCancelled, /**< The meeting is cancelled */
-        MeetingRequest, /**< Meeting request */
-        MeetingNo, /**< Negative response to a meeting request */
-        MeetingYes, /**< Affirmative response to a meeting request */
-        MeetingTent /**< Tentative affirmative to a meeting request */
+        Appointment, /*!< Appointment */
+        MeetingCancelled, /*!< The meeting is cancelled */
+        MeetingRequest, /*!< Meeting request */
+        MeetingNo, /*!< Negative response to a meeting request */
+        MeetingYes, /*!< Affirmative response to a meeting request */
+        MeetingTent /*!< Tentative affirmative to a meeting request */
     };
 
-    /**
+    /*!
      * The different types of message statuses.
      */
     enum Method {
-        PublishNew, /**< Publish new */
-        Obsolete, /**< Replace the message */
-        RequestNew, /**< Request a new message */
-        RequestUpdate, /**< Request an update */
-        Unknown /**< Unknown */
+        PublishNew, /*!< Publish new */
+        Obsolete, /*!< Replace the message */
+        RequestNew, /*!< Request a new message */
+        RequestUpdate, /*!< Request an update */
+        Unknown /*!< Unknown */
     };
 
-    /**
+    /*!
      * The different types of meeting roles.
      */
     enum Role {
-        ReqParticipant, /**< Required participant */
-        OptParticipant, /**< Optional participant */
-        NonParticipant, /**< Non-participant */
-        Chair /**< Meeting chairperson */
+        ReqParticipant, /*!< Required participant */
+        OptParticipant, /*!< Optional participant */
+        NonParticipant, /*!< Non-participant */
+        Chair /*!< Meeting chairperson */
     };
 
-    /**
+    /*!
      * The different types of participant statuses.
      */
     enum PartStat {
-        NeedsAction, /**< No information about the task/invitation received */
-        Accepted, /**< Accepted the task/invitation */
-        Declined, /**< Declined the task/invitation */
-        Tentative, /**< Tentatively accepted the task/invitation */
-        Delegated, /**< Delegated the task to another */
-        Completed, /**< Completed the task */
-        InProcess /**< Work on the task is in-progress */
+        NeedsAction, /*!< No information about the task/invitation received */
+        Accepted, /*!< Accepted the task/invitation */
+        Declined, /*!< Declined the task/invitation */
+        Tentative, /*!< Tentatively accepted the task/invitation */
+        Delegated, /*!< Delegated the task to another */
+        Completed, /*!< Completed the task */
+        InProcess /*!< Work on the task is in-progress */
     };
 
-    /**
+    /*!
      * The different priorities.
      */
     enum Priority {
-        High = 2, /**< High priority task */
-        Normal = 3, /**< Normal priority task */
-        Low = 1 /**< Low priority task */
+        High = 2, /*!< High priority task */
+        Normal = 3, /*!< Normal priority task */
+        Low = 1 /*!< Low priority task */
     };
 
-    /**
+    /*!
      * The different alarm actions.
      */
     enum AlarmAction {
-        Display /**< Display the alarm */
+        Display /*!< Display the alarm */
     };
 
-    /**
+    /*!
      * Constructs a @acronym TNEF writer object.
      */
     KTNEFWriter();
 
-    /**
+    /*!
      * Destroys the @acronym TNEF writer object.
      */
     ~KTNEFWriter();
 
-    /**
+    /*!
      * Adds a @acronym TNEF property.
      *
-     * @param tag is the @acronym TNEF tag
-     * @param type is the property type
-     * @param value is the property value
+     * \a tag is the @acronym TNEF tag
+     * \a type is the property type
+     * \a value is the property value
      */
     void addProperty(int tag, int type, const QVariant &value);
 
-    /**
-     * Writes a @acronym TNEF property to the #QDataStream specified by @p stream.
+    /*!
+     * Writes a @acronym TNEF property to the #QDataStream specified by \a stream.
      *
      * A @acronym TNEF property has a 1 byte type (LVL_MESSAGE or LVL_ATTACHMENT),
      * a 4 byte type/tag, a 4 byte length, the data and finally the checksum.
      *
      * The checksum is a 16 byte int with all bytes in the data added.
      *
-     * @param stream is the #QDataStream to write
-     * @param bytes is a pointer to an int type that will contain
-     * the number of bytes written to the @p stream
-     * @param tag is the @acronym TNEF tag
+     * \a stream is the #QDataStream to write
+     * \a bytes is a pointer to an int type that will contain
+     * the number of bytes written to the \a stream
+     * \a tag is the @acronym TNEF tag
      *
-     * @return false if an invalid @acronym TNEF tag was specified by @p tag or
+     * Returns false if an invalid @acronym TNEF tag was specified by \a tag or
      * if there are no properties to write; else true.
      */
     [[nodiscard]] bool writeProperty(QDataStream &stream, int &bytes, int tag) const;
 
-    /**
-     * Writes the attachment to the #QIODevice specified by @p file.
+    /*!
+     * Writes the attachment to the #QIODevice specified by \a file.
      *
-     * @param file is the #QIODevice to write.
-     * @return true if the write was successful; otherwise false.
+     * \a file is the #QIODevice to write.
+     * Returns true if the write was successful; otherwise false.
      */
     [[nodiscard]] bool writeFile(QIODevice &file) const;
 
-    /**
-     * Writes the attachment to the #QDataStream specified by @p stream.
+    /*!
+     * Writes the attachment to the #QDataStream specified by \a stream.
      *
-     * @param stream is the #QDataStream to write.
-     * @return true if the write was successful; otherwise false.
+     * \a stream is the #QDataStream to write.
+     * Returns true if the write was successful; otherwise false.
      */
     [[nodiscard]] bool writeFile(QDataStream &stream) const;
 
-    /**
-     * Sets the sender's @p name and @p email address.
+    /*!
+     * Sets the sender's \a name and \a email address.
      *
-     * @param name is the sender's name.
-     * @param email is the sender's email address.
+     * \a name is the sender's name.
+     * \a email is the sender's email address.
      */
     void setSender(const QString &name, const QString &email);
 
-    /**
-     * Sets the #MessageType to @p methodType.
+    /*!
+     * Sets the #MessageType to \a methodType.
      *
-     * @param methodType is the #MessageType.
+     * \a methodType is the #MessageType.
      */
     void setMessageType(MessageType methodType);
 
-    /**
-     * Sets the #Method to @p method.
+    /*!
+     * Sets the #Method to \a method.
      *
-     * @param method is the #Method.
+     * \a method is the #Method.
      */
     void setMethod(Method method);
 
-    /**
+    /*!
      * Clears the attendees list.
      */
     void clearAttendees();
 
-    /**
+    /*!
      * Adds a meeting participant (attendee).
      *
-     * @param name is the name of the attendee
-     * @param role is the #Role of the attendee
-     * @param partstat is the status #PartStat of the attendee
-     * @param rsvp is true if the attendee will attend the meeting; else false
-     * @param email is the email address of the attendee
+     * \a name is the name of the attendee
+     * \a role is the #Role of the attendee
+     * \a partstat is the status #PartStat of the attendee
+     * \a rsvp is true if the attendee will attend the meeting; else false
+     * \a email is the email address of the attendee
      */
     void addAttendee(const QString &name, Role role, PartStat partstat, bool rsvp, const QString &email);
 
-    /**
-     * Sets the name of the organizer to @p organizer.
+    /*!
+     * Sets the name of the organizer to \a organizer.
      * The organizer is any string identifier; it could be the name
      * of a person, or the application that sent the invitation, for example.
      *
-     * @param organizer is the organizer identifier.
+     * \a organizer is the organizer identifier.
      */
     void setOrganizer(const QString &organizer);
 
-    /**
-     * Sets the Starting Date and Time to @p dtStart.
+    /*!
+     * Sets the Starting Date and Time to \a dtStart.
      *
-     * @param dtStart is the starting date/time.
+     * \a dtStart is the starting date/time.
      */
     void setDtStart(const QDateTime &dtStart);
 
-    /**
-     * Sets the Ending Date and Time to @p dtEnd.
+    /*!
+     * Sets the Ending Date and Time to \a dtEnd.
      *
-     * @param dtEnd is the ending date/time.
+     * \a dtEnd is the ending date/time.
      */
     void setDtEnd(const QDateTime &dtEnd);
 
-    /**
-     * Sets the Location to @p location.
+    /*!
+     * Sets the Location to \a location.
      *
-     * @param location is the location.
+     * \a location is the location.
      */
     void setLocation(const QString &location);
 
-    /**
-     * Sets the @acronym UID to @p uid.
+    /*!
+     * Sets the @acronym UID to \a uid.
      *
-     * @param uid is the @acronym UID.
+     * \a uid is the @acronym UID.
      */
     void setUID(const QString &uid);
 
-    /**
-     * Sets the timestamp to @p dtStamp.
+    /*!
+     * Sets the timestamp to \a dtStamp.
      *
-     * @param dtStamp is the timestamp.
+     * \a dtStamp is the timestamp.
      */
     void setDtStamp(const QDateTime &dtStamp);
 
-    /**
-     * Sets the category list to @p categories.
+    /*!
+     * Sets the category list to \a categories.
      *
-     * @param categories is the list categories.
+     * \a categories is the list categories.
      */
     void setCategories(const QStringList &categories);
 
-    /**
-     * Sets the description to @p description.
+    /*!
+     * Sets the description to \a description.
      *
-     * @param description is the description.
+     * \a description is the description.
      */
     void setDescription(const QString &description);
 
-    /**
-     * Sets the summary to @p summary.
+    /*!
+     * Sets the summary to \a summary.
      *
-     * @param summary is the summary.
+     * \a summary is the summary.
      */
     void setSummary(const QString &summary);
 
-    /**
-     * Sets the priority to @p priority.
+    /*!
+     * Sets the priority to \a priority.
      *
-     * @param priority is the #Priority.
+     * \a priority is the #Priority.
      */
     void setPriority(Priority priority);
 
-    /**
+    /*!
      * Sets the alarm.
      *
-     * @param description is the alarm description
-     * @param action is the alaram #AlarmAction
-     * @param wakeBefore is the alarm Date/Time
+     * \a description is the alarm description
+     * \a action is the alaram #AlarmAction
+     * \a wakeBefore is the alarm Date/Time
      */
     void setAlarm(const QString &description, AlarmAction action, const QDateTime &wakeBefore);
 
 private:
-    //@cond PRIVATE
     std::unique_ptr<KTNEFWriterPrivateData> const d;
-    //@endcond
 
     Q_DISABLE_COPY(KTNEFWriter)
 };
