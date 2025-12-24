@@ -2,13 +2,14 @@
 # Copyright (C) 2009 This_file_is_part_of_KDE
 # This file is distributed under the same license as the libktnef package.
 # Kevin Scannell <kscanne@gmail.com>, 2009.
+# SPDX-FileCopyrightText: 2025 Charlotte <altronic25@protonmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: libktnef\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:41+0000\n"
-"PO-Revision-Date: 2007-04-15 19:05-0500\n"
-"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"PO-Revision-Date: 2025-12-19 03:33+0000\n"
+"Last-Translator: Charlotte <altronic25@protonmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
@@ -63,9 +64,6 @@ msgid "Sensitivity"
 msgstr "Íogaireacht"
 
 #: mapi.cpp:36 mapi.cpp:128
-#, fuzzy
-#| msgctxt "@label The subject of an email"
-#| msgid "Subject"
 msgid "Subject"
 msgstr "Ábhar"
 
@@ -386,9 +384,6 @@ msgid "Company Name"
 msgstr "Comhlacht"
 
 #: mapi.cpp:116
-#, fuzzy
-#| msgctxt "@label The title of a person"
-#| msgid "Title"
 msgid "Title"
 msgstr "Teideal"
 
