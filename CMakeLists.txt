@@ -88,7 +88,7 @@ ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 include(ECMGenerateQDoc)
 
 set(KTNEF_LIB_VERSION ${PIM_VERSION})
-set(CALENDARUTILS_LIB_VERSION "6.6.80")
+set(CALENDARUTILS_LIB_VERSION "6.6.90")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6TnefConfigVersion.cmake"
