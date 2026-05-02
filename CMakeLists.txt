@@ -117,7 +117,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     # see e.g. https://gcc.gnu.org/bugzilla/show_bug.cgi?id=56556 or https://gcc.gnu.org/bugzilla/show_bug.cgi?id=79328
     string(APPEND CMAKE_CXX_FLAGS " -Wshadow")
 endif()
-ecm_set_disabled_deprecation_versions(QT 6.12.0 KF 6.25.0)
+ecm_set_disabled_deprecation_versions(QT 6.12.0 KF 6.26.0)
 add_compile_definitions(QT_ENABLE_STRICT_MODE_UP_TO=0x060B00)
 
 install(EXPORT KPim6TnefTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6TnefTargets.cmake NAMESPACE KPim6::)
