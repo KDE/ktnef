@@ -71,7 +71,7 @@ QString formatRecipient(const QMap<int, KTnef::KTNEFProperty *> &props);
  * @internal
  */
 //@cond PRIVATE
-class KTnef::KTNEFParser::ParserPrivate
+class KTnef::ParserPrivate
 {
 public:
     ParserPrivate()
@@ -116,7 +116,7 @@ KTNEFMessage *KTNEFParser::message() const
     return d->message_;
 }
 
-void KTNEFParser::ParserPrivate::deleteDevice()
+void ParserPrivate::deleteDevice()
 {
     if (deleteDevice_) {
         delete device_;
@@ -125,7 +125,7 @@ void KTNEFParser::ParserPrivate::deleteDevice()
     deleteDevice_ = false;
 }
 
-bool KTNEFParser::ParserPrivate::decodeMessage()
+bool ParserPrivate::decodeMessage()
 {
     quint32 i1;
     quint32 i2;
@@ -303,7 +303,7 @@ bool KTNEFParser::ParserPrivate::decodeMessage()
     return true;
 }
 
-bool KTNEFParser::ParserPrivate::decodeAttachment()
+bool ParserPrivate::decodeAttachment()
 {
     quint32 i;
     quint16 tag;
@@ -380,7 +380,7 @@ void KTNEFParser::setDefaultExtractDir(const QString &dirname)
     d->defaultdir_ = dirname;
 }
 
-bool KTNEFParser::ParserPrivate::parseDevice()
+bool ParserPrivate::parseDevice()
 {
     quint16 u;
     quint32 i;
@@ -451,7 +451,7 @@ bool KTNEFParser::extractFile(const QString &filename) const
     return d->extractAttachmentTo(att, d->defaultdir_);
 }
 
-bool KTNEFParser::ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QString &dirname)
+bool ParserPrivate::extractAttachmentTo(KTNEFAttach *att, const QString &dirname)
 {
     const QString destDir(QDir(dirname).absolutePath()); // get directory path without any "." or ".."
 
@@ -549,7 +549,7 @@ bool KTNEFParser::openDevice(QIODevice *device)
     return d->parseDevice();
 }
 
-void KTNEFParser::ParserPrivate::checkCurrent(int key)
+void ParserPrivate::checkCurrent(int key)
 {
     if (!current_) {
         current_ = new KTNEFAttach();
@@ -873,7 +873,7 @@ quint16 readMAPIValue(QDataStream &stream, MAPI_value &mapi)
 }
 //@endcond
 
-bool KTNEFParser::ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &props, KTNEFAttach *attach)
+bool ParserPrivate::readMAPIProperties(QMap<int, KTNEFProperty *> &props, KTNEFAttach *attach)
 {
     quint32 n;
     MAPI_value mapi;

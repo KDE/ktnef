@@ -25,10 +25,8 @@
 namespace KTnef
 {
 class KTNEFMessage;
-}
+class ParserPrivate;
 
-namespace KTnef
-{
 /*!
  * \brief
  * Provides an @acronym TNEF parser.
@@ -105,7 +103,6 @@ public:
     KTNEFMessage *message() const;
 
 private:
-    class ParserPrivate;
     std::unique_ptr<ParserPrivate> const d;
 
     Q_DISABLE_COPY(KTNEFParser)
