@@ -10,7 +10,6 @@ target_sources(
         mapi.cpp
         ktnefpropertyset.cpp
         ktnefmessage.cpp
-        ktnefwriter.cpp
         lzfu.cpp
         formatter.cpp
         ktnefpropertyset.h
@@ -21,7 +20,6 @@ target_sources(
         ktnefmessage.h
         ktnefdefs.h
         formatter.h
-        ktnefwriter.h
         ktnefproperty.h
 )
 
@@ -75,7 +73,6 @@ ecm_generate_headers(KTnef_CamelCase_HEADERS
   KTNEFParser
   KTNEFProperty
   KTNEFPropertySet
-  KTNEFWriter
   PREFIX KTNEF
   REQUIRED_HEADERS KTnef_HEADERS
 )
