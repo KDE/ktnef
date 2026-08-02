@@ -31,6 +31,29 @@ class InvitationFormatterHelper;
 
 namespace KTnef
 {
+
+class KTNEFMessage;
+
+/*!
+    Create an iCal representation of an event, todo or invitation in a TNEF message.
+
+    If the message does not contain a calendar object, an empty string is returned.
+
+    \a tnefMsg the TNEF message to convert.
+    \since 26.12
+*/
+[[nodiscard]] KTNEF_EXPORT QString messageToIcal(const KTnef::KTNEFMessage *tnefMsg);
+
+/*!
+    Create a vCard representation of a contact contained in a TNEF message.
+
+    If the message does not contain a contact, an empty string is returned.
+
+    \a tnefMsg the TNEF message to convert.
+    \since 26.12
+*/
+[[nodiscard]] KTNEF_EXPORT QByteArray messageToVcard(const KTnef::KTNEFMessage *tnefMsg);
+
 /*!
     Formats a @acronym TNEF attachment to an HTML mail.
 
