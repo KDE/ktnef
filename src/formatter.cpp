@@ -414,7 +414,12 @@ QByteArray KTnef::messageToVcard(const KTNEFMessage *tnefMsg)
 
             // bOk = (!addressee.isEmpty());
             KContacts::VCardConverter converter;
-            return converter.createVCard(addressee);
+            auto vcard = converter.createVCard(addressee);
+            if (std::ranges::any_of(converter.parseVCards(vcard), [](const KContacts::Addressee &a) {
+                    return !a.isEmpty();
+                })) {
+                return vcard;
+            }
         }
     }
 
