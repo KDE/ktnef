@@ -2,6 +2,7 @@
 #
 # Håvard Korsvoll <korsvoll@skulelinux.no>, 2003, 2004.
 # Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2004.
+# Karl Ove Hufthammer <karl@huftis.org>, 2008, 2020, 2026.
 # Eirik U. Birkeland <eirbir@gmail.com>, 2008.
 msgid ""
 msgstr ""
