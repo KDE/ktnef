@@ -44,9 +44,9 @@ target_include_directories(KPim6Tnef PUBLIC "$<BUILD_INTERFACE:${KTnef_SOURCE_DI
 target_link_libraries(
     KPim6Tnef
     PUBLIC
-        KF6::CalendarCore
+        Qt6::Core
     PRIVATE
-        KPim6::CalendarUtils
+        KF6::CalendarCore
         KF6::Contacts
         KF6::I18n
 )

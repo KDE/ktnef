@@ -29,9 +29,9 @@ using namespace Qt::Literals::StringLiterals;
 #include <KContacts/PhoneNumber>
 #include <KContacts/VCardConverter>
 
-#include <KCalUtils/IncidenceFormatter>
 #include <KCalendarCore/Calendar>
 #include <KCalendarCore/ICalFormat>
+#include <KCalendarCore/MemoryCalendar>
 
 #include <KLocalizedString>
 
@@ -419,32 +419,4 @@ QByteArray KTnef::messageToVcard(const KTNEFMessage *tnefMsg)
     }
 
     return {};
-}
-
-QString KTnef::msTNEFToVPart(const QByteArray &tnef)
-{
-    KTNEFParser parser;
-    QByteArray b(tnef);
-    QBuffer buf(&b);
-
-    if (parser.openDevice(&buf)) {
-        KTNEFMessage *tnefMsg = parser.message();
-        if (const auto ical = messageToIcal(tnefMsg); !ical.isEmpty()) {
-            return ical;
-        }
-        return QString::fromUtf8(messageToVcard(tnefMsg));
-    }
-
-    return {};
-}
-
-QString KTnef::formatTNEFInvitation(const QByteArray &tnef, const MemoryCalendar::Ptr &cal, KCalUtils::InvitationFormatterHelper *h)
-{
-    const QString vPart = msTNEFToVPart(tnef);
-    QString iCal = KCalUtils::IncidenceFormatter::formatICalInvitation(vPart, cal, h);
-    if (!iCal.isEmpty()) {
-        return iCal;
-    } else {
-        return vPart;
-    }
 }

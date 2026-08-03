@@ -7,7 +7,6 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'frameworks/kcontacts': '@latest-kf6'
     'frameworks/kcalendarcore': '@latest-kf6'
-    'pim/kcalutils': '@same'
 
 Options:
  require-passing-tests-on: ['@all']

@@ -97,7 +97,6 @@ ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_SOURCE_FILES})
 
 include(ECMGenerateQDoc)
 
-set(CALENDARUTILS_LIB_VERSION "6.7.40")
 ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
                         VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/ktnef_version.h"
                         PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6TnefConfigVersion.cmake"
@@ -108,7 +107,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KTNEF
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6Tnef")
 find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Widgets)
 find_package(KF6CalendarCore ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KPim6CalendarUtils ${CALENDARUTILS_LIB_VERSION} CONFIG REQUIRED)
 find_package(KF6Contacts ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 

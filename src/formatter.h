@@ -19,15 +19,9 @@
 
 #pragma once
 
-#include <KCalendarCore/MemoryCalendar>
 #include <QString>
 
 #include "ktnef_export.h"
-
-namespace KCalUtils
-{
-class InvitationFormatterHelper;
-}
 
 namespace KTnef
 {
@@ -53,24 +47,4 @@ class KTNEFMessage;
     \since 26.12
 */
 [[nodiscard]] KTNEF_EXPORT QByteArray messageToVcard(const KTnef::KTNEFMessage *tnefMsg);
-
-/*!
-    Formats a @acronym TNEF attachment to an HTML mail.
-
-    \a tnef is the QByteArray contain the @acronym TNEF data.
-    \a cal is a pointer to a Calendar object.
-    \a h is a pointer to a InvitationFormatterHelp object.
-  */
-[[nodiscard]] KTNEF_EXPORT QString formatTNEFInvitation(const QByteArray &tnef,
-                                                        const KCalendarCore::MemoryCalendar::Ptr &cal,
-                                                        KCalUtils::InvitationFormatterHelper *h);
-
-/*!
-    Transforms a @acronym TNEF attachment to an iCal or vCard.
-
-    \a tnef is the QByteArray containing the @acronym TNEF data.
-
-    Returns a string containing the transformed attachment.
-  */
-[[nodiscard]] KTNEF_EXPORT QString msTNEFToVPart(const QByteArray &tnef);
 }
