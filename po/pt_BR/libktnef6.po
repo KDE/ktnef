@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libktnef5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:53+0000\n"
+"POT-Creation-Date: 2026-08-04 00:46+0000\n"
 "PO-Revision-Date: 2019-10-24 22:14-0300\n"
 "Last-Translator: André Marcelo Alvarenga <alvarenga@kde.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_br@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 19.04.3\n"
 
-#: formatter.cpp:300
+#: formatter.cpp:292
 #, kde-format
 msgid "Reminder"
 msgstr "Lembrete"
