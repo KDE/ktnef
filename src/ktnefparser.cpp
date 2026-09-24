@@ -752,11 +752,12 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align, int len_
     for (uint i = len; i < fullLen; i++) {
         stream >> c;
     }
+    len = std::min<quint32>(strnlen(buf, len), len);
     QString res;
     if (isUnicode) {
-        res = QString::fromUtf16((const char16_t *)buf);
+        res = QString::fromUtf16((const char16_t *)buf, len);
     } else {
-        res = QString::fromLatin1(buf);
+        res = QString::fromLatin1(buf, len);
     }
     delete[] buf;
     return res;
