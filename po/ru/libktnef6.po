@@ -61,7 +61,7 @@ msgstr "Перенаправление другому получателю за�
 
 #: mapi.cpp:33
 msgid "Original Sensitivity"
-msgstr "Первоначальная чувствительность"
+msgstr "Первоначальная конфиденциальность"
 
 #: mapi.cpp:34
 msgid "Report Tag"
@@ -69,7 +69,7 @@ msgstr "Отчёт"
 
 #: mapi.cpp:35
 msgid "Sensitivity"
-msgstr "Чувствительность"
+msgstr "Конфиденциальность"
 
 #: mapi.cpp:36 mapi.cpp:128
 msgid "Subject"
@@ -77,11 +77,11 @@ msgstr "Тема"
 
 #: mapi.cpp:37
 msgid "Client Submit Time"
-msgstr "Время сохранения письма"
+msgstr "Время отправки клиентом"
 
 #: mapi.cpp:38
 msgid "Sent Representing Search Key"
-msgstr "Отправленный ключ поиска"
+msgstr "Отправлено от имени: ключ поиска"
 
 #: mapi.cpp:39
 msgid "Subject Prefix"
@@ -89,15 +89,15 @@ msgstr "Префикс темы"
 
 #: mapi.cpp:40
 msgid "Sent Representing Entry ID"
-msgstr "Отправленный идентификатор элемента"
+msgstr "Отправлено от имени: идентификатор элемента"
 
 #: mapi.cpp:41
 msgid "Sent Representing Name"
-msgstr "Отправленное имя"
+msgstr "Отправлено от имени: имя"
 
 #: mapi.cpp:42
 msgid "Message Submission ID"
-msgstr "Идентификатор подчинённого письма"
+msgstr "Идентификатор отправки письма"
 
 #: mapi.cpp:43
 msgid "Original Author Name"
@@ -113,11 +113,11 @@ msgstr "Запрошен ответ"
 
 #: mapi.cpp:46
 msgid "Sent Representing Address Type"
-msgstr "Отправленный тип адреса"
+msgstr "Отправлено от имени: тип адреса"
 
 #: mapi.cpp:47
 msgid "Sent Representing E-mail Address"
-msgstr "Отправленный адрес электронной почты"
+msgstr "Отправлено от имени: адрес электронной почты"
 
 #: mapi.cpp:48
 msgid "Conversation Topic"
@@ -193,7 +193,7 @@ msgstr "Получатели письма"
 
 #: mapi.cpp:66
 msgid "Submit Flags"
-msgstr "Флаги рассмотрения"
+msgstr "Флаги отправки"
 
 #: mapi.cpp:67
 msgid "Has Attachment"
@@ -225,7 +225,7 @@ msgstr "Уровень доступа"
 
 #: mapi.cpp:74
 msgid "Mapping Signature"
-msgstr "Подпись"
+msgstr "Подпись сопоставления"
 
 #: mapi.cpp:75
 msgid "Record Key"
@@ -233,11 +233,11 @@ msgstr "Ключ записи"
 
 #: mapi.cpp:76
 msgid "Store Record Key"
-msgstr "Сохранять ключ записи"
+msgstr "Ключ записи хранилища"
 
 #: mapi.cpp:77
 msgid "Store Entry ID"
-msgstr "Сохранять идентификатор элемента"
+msgstr "Идентификатор хранилища"
 
 #: mapi.cpp:78
 msgid "Object Type"
@@ -245,7 +245,7 @@ msgstr "Тип объекта"
 
 #: mapi.cpp:79
 msgid "Entry ID"
-msgstr "Номер записи"
+msgstr "Идентификатор элемента"
 
 #: mapi.cpp:80
 msgid "Message Body"
@@ -317,7 +317,7 @@ msgstr "Ключ поиска"
 
 #: mapi.cpp:97
 msgid "Store Support Mask"
-msgstr "Сохранять маску поддержки"
+msgstr "Маска поддержки хранилища"
 
 #: mapi.cpp:98
 msgid "MDB Provider"
@@ -353,7 +353,7 @@ msgstr "MIME-тег вложения"
 
 #: mapi.cpp:106
 msgid "Attachment Flags"
-msgstr "Метки вложения"
+msgstr "Флаги вложения"
 
 #: mapi.cpp:107
 msgid "Account"
@@ -361,11 +361,11 @@ msgstr "Учётная запись"
 
 #: mapi.cpp:108
 msgid "Generation"
-msgstr "Создание"
+msgstr "Поколение"
 
 #: mapi.cpp:109
 msgid "Given Name"
-msgstr "Заданное имя"
+msgstr "Имя"
 
 #: mapi.cpp:110
 msgid "Initials"
@@ -385,7 +385,7 @@ msgstr "Местонахождение"
 
 #: mapi.cpp:114
 msgid "Surname"
-msgstr "Отчество"
+msgstr "Фамилия"
 
 #: mapi.cpp:115
 msgid "Company Name"
@@ -405,7 +405,7 @@ msgstr "Страна"
 
 #: mapi.cpp:119
 msgid "Locality"
-msgstr "Регион"
+msgstr "Населённый пункт"
 
 #: mapi.cpp:120
 msgid "State/Province"
@@ -413,7 +413,7 @@ msgstr "Штат/Область"
 
 #: mapi.cpp:121
 msgid "Middle Name"
-msgstr "Инициал"
+msgstr "Отчество"
 
 #: mapi.cpp:122
 msgid "Display Name Prefix"
@@ -433,7 +433,7 @@ msgstr "Дата получения"
 
 #: mapi.cpp:131
 msgid "Message Status"
-msgstr "Статус письма"
+msgstr "Состояние письма"
 
 #: mapi.cpp:134
 msgid "Parent ID"
@@ -497,7 +497,7 @@ msgstr "Кодировка OEM"
 
 #: mapi.cpp:152
 msgid "Contact File Under"
-msgstr "Файл"
+msgstr "Сохранять как"
 
 #: mapi.cpp:153
 msgid "Contact Last Name And First Name"
@@ -565,11 +565,11 @@ msgstr "Продолжительность встречи"
 
 #: mapi.cpp:173
 msgid "Appointment Response Status"
-msgstr "Состояние запроса встречи"
+msgstr "Состояние ответа на встречу"
 
 #: mapi.cpp:174
 msgid "Appointment Is Recurring"
-msgstr "Встреча состоится снова"
+msgstr "Повторяющаяся встреча"
 
 #: mapi.cpp:175
 msgid "Appointment Recurrence Type"
