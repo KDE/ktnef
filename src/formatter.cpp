@@ -20,7 +20,6 @@
 */
 
 #include "formatter.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ktnefdefs.h"
 #include "ktnefmessage.h"
@@ -40,6 +39,7 @@ using namespace Qt::Literals::StringLiterals;
 
 #include <ctime>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KCalendarCore;
 using namespace KTnef;
 

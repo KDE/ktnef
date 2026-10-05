@@ -16,7 +16,6 @@
  */
 
 #include "ktnefparser.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ktnefattach.h"
 #include "ktnefdefs.h"
@@ -37,6 +36,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QStandardPaths>
 #include <QVariant>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KTnef;
 
 //@cond PRIVATE

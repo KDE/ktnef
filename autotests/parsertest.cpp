@@ -6,7 +6,6 @@
 */
 
 #include "parsertest.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "config-ktnef-tests.h"
 
@@ -17,6 +16,7 @@ using namespace Qt::Literals::StringLiterals;
 #include <QString>
 #include <QTest>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KTnef;
 
 QTEST_GUILESS_MAIN(ParserTest)

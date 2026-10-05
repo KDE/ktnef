@@ -16,12 +16,12 @@
  */
 
 #include "ktnefproperty.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "mapi.h"
 
 #include <cctype>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KTnef;
 
 class KTNEFPropertyPrivate

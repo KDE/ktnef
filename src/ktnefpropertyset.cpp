@@ -16,12 +16,12 @@
  */
 
 #include "ktnefpropertyset.h"
-using namespace Qt::Literals::StringLiterals;
 
 #include "ktnefproperty.h"
 
 #include <QList>
 
+using namespace Qt::Literals::StringLiterals;
 using namespace KTnef;
 
 class KTNEFPropertySetPrivate
