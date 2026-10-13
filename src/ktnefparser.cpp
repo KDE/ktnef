@@ -747,16 +747,22 @@ QString readMAPIString(QDataStream &stream, bool isUnicode, bool align, int len_
         ALIGN(fullLen, 4)
     }
     buf = new char[len];
-    stream.readRawData(buf, len);
+    const auto readLen = stream.readRawData(buf, len);
+    if (readLen != len) {
+        return {};
+    }
     quint8 c;
     for (uint i = len; i < fullLen; i++) {
         stream >> c;
     }
-    len = std::min<quint32>(strnlen(buf, len), len);
     QString res;
     if (isUnicode) {
-        res = QString::fromUtf16((const char16_t *)buf, len);
+        if (const auto endIdx = QByteArrayView(buf, len).indexOf("\0\0"); endIdx >= 0) {
+            len = endIdx;
+        }
+        res = QString::fromUtf16((const char16_t *)buf, len / 2);
     } else {
+        len = std::min<quint32>(strnlen(buf, len), len);
         res = QString::fromLatin1(buf, len);
     }
     delete[] buf;
