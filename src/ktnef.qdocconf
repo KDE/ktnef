@@ -16,7 +16,7 @@ depends += \
 
 navigation.landingpage = "KTNef"
 
-qhp.projects            = KTNef
+qhp.projects            = ktnef
 
 qhp.ktnef.file                = ktnef.qhp
 qhp.ktnef.namespace           = org.kde.ktnef.$QT_VERSION_TAG
