@@ -1,6 +1,7 @@
 include($KDE_DOCS/global/qt-module-defaults.qdocconf)
 
 project = KTNef
+moduleheader = ktnef_qdocmoduleheader.h
 description = The ktnef library contains an API for the handling of TNEF data.
 
 
