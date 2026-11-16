@@ -2,8 +2,8 @@
     \module KTNef
     \title KTNef C++ Classes
     \ingroup modules
-    \cmakepackage KPim6
-    \cmakecomponent Tnef
+    \cmakepackage KPim6Tnef
+    \cmaketargetitem KPim6::Tnef
 
     \brief The ktnef library contains an API for the handling of TNEF data.
 */
