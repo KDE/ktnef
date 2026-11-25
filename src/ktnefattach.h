@@ -31,6 +31,9 @@ class KTNEFProperty;
 namespace KTnef
 {
 /*!
+ * \class KTnef::KTNEFAttach
+ * \inmodule KTNef
+ * \inheaderfile KTNEF/KTNEFAttach
  * \brief
  * Represents a @acronym TNEF attachment.
  */

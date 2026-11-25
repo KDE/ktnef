@@ -7,3 +7,9 @@
 
     \brief The ktnef library contains an API for the handling of TNEF data.
 */
+
+/*!
+    \namespace KTnef
+    \inmodule KTNef
+    \brief The KTnef namespace contains the classes of the KTNef module.
+*/

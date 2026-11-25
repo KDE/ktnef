@@ -25,6 +25,9 @@ class KTNEFPropertyPrivate;
 namespace KTnef
 {
 /*!
+ * \class KTnef::KTNEFProperty
+ * \inmodule KTNef
+ * \inheaderfile KTNEF/KTNEFProperty
  * \brief
  * Interface for setting @acronym MAPI properties.
  */
@@ -74,6 +77,8 @@ public:
      */
     ~KTNEFProperty();
 
+    /*!
+     */
     KTNEFProperty &operator=(const KTNEFProperty &other);
 
     /*!

@@ -30,6 +30,9 @@ class KTNEFAttach;
 namespace KTnef
 {
 /*!
+ * \class KTnef::KTNEFMessage
+ * \inmodule KTNef
+ * \inheaderfile KTNEF/KTNEFMessage
  * \brief
  * Represents a @acronym TNEF message.
  */

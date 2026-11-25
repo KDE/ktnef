@@ -30,6 +30,9 @@ class KTNEFProperty;
 namespace KTnef
 {
 /*!
+ * \class KTnef::KTNEFPropertySet
+ * \inmodule KTNef
+ * \inheaderfile KTNEF/KTNEFPropertySet
  * \brief
  * Interface for setting @acronym MAPI properties and @acronym TNEF attributes.
  */

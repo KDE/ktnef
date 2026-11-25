@@ -28,6 +28,9 @@ class KTNEFMessage;
 class ParserPrivate;
 
 /*!
+ * \class KTnef::KTNEFParser
+ * \inmodule KTNef
+ * \inheaderfile KTNEF/KTNEFParser
  * \brief
  * Provides an @acronym TNEF parser.
  */
